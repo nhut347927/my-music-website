@@ -1,12 +1,10 @@
+import PlaylistsClient from "./playlists-client";
+
 export const metadata = {
-  title: "Playlist | MyMusic",
+  title: "Playlists | MyMusic",
+  description: "Những bài hát theo chủ đề và tâm trạng khác nhau",
 };
 
 export default function PlaylistsPage() {
-  return (
-    <section>
-      <h2 className="text-2xl font-bold mb-4">🎧 Playlist nổi bật</h2>
-      <p>Nghe nhạc theo chủ đề bạn yêu thích.</p>
-    </section>
-  );
+  return <PlaylistsClient />;
 }
