@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
 
-  metadataBase: new URL("https://moechan.vn"), // đổi thành domain thật
+  metadataBase: new URL("https://moe-chan.vercel.app"), // đổi thành domain thật
 
   title: "Moe | Tâm sự cùng bạn",
   description:
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Moe | Tâm sự cùng bạn",
     description:
       "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bình thường",
-    url: "https://moechan.vn",
+    url: "https://moe-chan.vercel.app",
     siteName: "Moe",
     images: [
       {
@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     type: "website",
   },
+   other: {
+    "google-site-verification": "uEUgiQeU6YdKH1CMnr9o7_2idQdvF7FLqvRwBUBw6Kc" // xac minh google site
+  }
 };
 
 
