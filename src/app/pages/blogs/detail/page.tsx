@@ -3,17 +3,18 @@ import { BlogsDetailPage } from "./blogs-detail-client";
 
 // --------------------- Meta data ---------------------
 export const metadata = {
-  title: "Tuyển tập nhạc Anime TikTok | Moe",
+  title: "Blog âm nhạc | Moe",
   description:
-    "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
+    "Khám phá các bài viết về âm nhạc, playlist, tin tức, và những câu chuyện thú vị xoay quanh thế giới nhạc Việt và quốc tế.",
   openGraph: {
-    title: "Tuyển tập nhạc Anime TikTok | Moe",
+    title: "Blog âm nhạc | Moe",
     description:
-      "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
-    images: ["/asset/playlist/anime-tiktok-banner.jpg"],
-    type: "music.playlist",
+      "Khám phá các bài viết về âm nhạc, playlist, tin tức, và những câu chuyện thú vị xoay quanh thế giới nhạc Việt và quốc tế.",
+    images: ["/asset/blog/default-blog-banner.jpg"], // ảnh chung cho blog
+    type: "website",
   },
 };
+
 
 // --------------------- Trang ---------------------
 export default function BlogsPage() {

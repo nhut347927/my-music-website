@@ -3,17 +3,18 @@ import { PlaylistDetailPage } from "./playlist-detail-client";
 
 // --------------------- Meta data ---------------------
 export const metadata = {
-  title: "Tuyển tập nhạc Anime TikTok | Moe",
+  title: "Khám phá các playlist âm nhạc | Moe",
   description:
-    "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
+    "Khám phá các playlist âm nhạc đa dạng từ nhiều thể loại – lofi, remix, pop, rock, và những giai điệu hay nhất cho mọi tâm trạng.",
   openGraph: {
-    title: "Tuyển tập nhạc Anime TikTok | Moe",
+    title: "Khám phá các playlist âm nhạc | Moe",
     description:
-      "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
-    images: ["/asset/playlist/anime-tiktok-banner.jpg"],
+      "Khám phá các playlist âm nhạc đa dạng từ nhiều thể loại – lofi, remix, pop, rock, và những giai điệu hay nhất cho mọi tâm trạng.",
+    images: ["/asset/playlist/default-playlist-banner.jpg"], // ảnh chung cho tất cả playlist
     type: "music.playlist",
   },
 };
+
 
 // --------------------- Trang ---------------------
 export default function PlaylistPage() {
