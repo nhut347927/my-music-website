@@ -62,18 +62,18 @@ export default function RootLayout({
           {/* FOOTER */}
           <Footer />
 
-          {/* GOOGLE ANALYTICS */}
+          {/* Google Analytics */}
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-MQOWEUJNW"
+            src="https://www.googletagmanager.com/gtag/js?id=G-X22ZH1QRQ6"
             strategy="afterInteractive"
           />
           <Script id="google-analytics" strategy="afterInteractive">
             {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-MQOWEUJNW');
-            `}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X22ZH1QRQ6');
+  `}
           </Script>
         </ThemeProvider>
       </body>
