@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
 import logo from "./asset/logo.png";
 import { Metadata } from "next";
+import Script from "next/script";
 
 import Header from "@/app/components/layout/header";
 import Footer from "./components/layout/footer";
@@ -10,8 +11,7 @@ import Footer from "./components/layout/footer";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-
-  metadataBase: new URL("https://moe-chan.vercel.app"), // đổi thành domain thật
+  metadataBase: new URL("https://moe-chan.vercel.app"),
 
   title: "Moe | Tâm sự cùng bạn",
   description:
@@ -39,11 +39,10 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     type: "website",
   },
-   other: {
-    "google-site-verification": "uEUgiQeU6YdKH1CMnr9o7_2idQdvF7FLqvRwBUBw6Kc" // xac minh google site
-  }
+  other: {
+    "google-site-verification": "uEUgiQeU6YdKH1CMnr9o7_2idQdvF7FLqvRwBUBw6Kc", // Xác minh Google
+  },
 };
-
 
 export default function RootLayout({
   children,
@@ -55,13 +54,27 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {/* HEADER */}
-         <Header/>
+          <Header />
 
           {/* MAIN */}
           <main className="max-w-6xl mx-auto p-4">{children}</main>
 
           {/* FOOTER */}
-        <Footer/>
+          <Footer />
+
+          {/* GOOGLE ANALYTICS */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-MQOWEUJNW"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MQOWEUJNW');
+            `}
+          </Script>
         </ThemeProvider>
       </body>
     </html>

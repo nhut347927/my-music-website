@@ -1,5 +1,3 @@
-// src/app/sitemap.js
-
 export default async function sitemap() {
   const baseUrl = "https://moe-chan.vercel.app";
 
