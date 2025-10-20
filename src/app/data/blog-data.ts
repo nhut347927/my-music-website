@@ -4,96 +4,14 @@ import { BlogsPost } from "../types/type";
 import { categoriesData } from "./category-data";
 import canvaError1 from "../asset/blog-img/canva-error1.png";
 import canvaError2 from "../asset/blog-img/canva-error2.png";
+import nhac1 from "../asset/blog-img/nhac1.jpg";
+import nhac2 from "../asset/blog-img/nhac2.jpg";
+import nhac3 from "../asset/blog-img/nhac3.jpg";
+import v1 from "../asset/blog-img/v1.png";
 
 export const blogData: BlogsPost[] = [
   {
     id: 1,
-    title: "Giải mã vì sao ‘Lemon’ chạm đến cảm xúc người nghe",
-    categories: [categoriesData[5], categoriesData[7], categoriesData[9]],
-    image: tree5.src,
-    date: "2024-10-05",
-    views: 3100,
-    type: "blogs",
-
-    // 👇 phần bình luận/ghi chú người viết
-    userCommentAvatar: tree1.src,
-    userNameComment: "Minh Nhật",
-    userRoleComment: "Nhà phân tích âm nhạc",
-
-    // 👇 nội dung bài viết
-    paragraphs: [
-      {
-        type: "text",
-        content:
-          "‘Lemon’ không chỉ là bản ballad buồn, mà còn là sự đối thoại giữa ký ức và hiện tại. Kenshi Yonezu đã khéo léo dùng hình ảnh quả chanh để ẩn dụ cho nỗi tiếc nuối, chua chát và cả vị ngọt của tình yêu đã qua.",
-      },
-      {
-        type: "image",
-        content: tree5.src,
-      },
-      {
-        type: "text",
-        content:
-          "Ca khúc mang nhịp 4/4, được phối với piano và guitar nhẹ nhàng, làm nổi bật chất giọng trầm buồn của Yonezu. Khi điệp khúc vang lên, người nghe cảm giác như bị kéo vào cơn sóng cảm xúc mãnh liệt.",
-      },
-      {
-        type: "link",
-        content: "https://www.uta-net.com/song/243933/",
-      },
-      {
-        type: "link",
-        content: "https://ja.wikipedia.org/wiki/Lemon_(Kenshi_Yonezu)",
-      },
-      {
-        type: "title",
-        content: "Tiêu đề",
-      },
-    ],
-    comment:
-      "Qua ‘Lemon’, Yonezu không chỉ kể một câu chuyện cá nhân, mà còn chạm đến trái tim của hàng triệu người nghe, khiến họ tìm thấy sự đồng cảm trong nỗi đau mất mát và hy vọng về những khởi đầu mới.",
-  },
-  {
-    id: 2,
-    title: "Cấu trúc âm nhạc trong các bài hát của Aimer",
-    categories: [categoriesData[0], categoriesData[3], categoriesData[1]],
-    image: tree1.src,
-    date: "2024-09-01",
-    views: 1450,
-    type: "blogs",
-
-    userCommentAvatar: tree1.src,
-    userNameComment: "Linh Moe",
-    userRoleComment: "Biên tập viên âm nhạc",
-
-    paragraphs: [
-      {
-        type: "text",
-        content:
-          "Aimer thường sử dụng âm sắc khàn nhẹ đặc trưng để tạo chiều sâu cảm xúc. Cách cô xử lý nốt cao không quá mạnh mẽ mà mềm mại, giống như lời thì thầm vang lên trong khoảng không.",
-      },
-      {
-        type: "image",
-        content: tree1.src,
-      },
-      {
-        type: "text",
-        content:
-          "Các ca khúc như ‘Brave Shine’ hay ‘Ref:rain’ có cấu trúc chặt chẽ, chuyển điệu tinh tế và luôn duy trì cảm giác da diết. Điểm đặc biệt là phần dàn nhạc luôn nâng đỡ giọng hát, không bao giờ lấn át.",
-      },
-      {
-        type: "link",
-        content: "https://aimer-web.jp/",
-      },
-      {
-        type: "link",
-        content: "https://ja.wikipedia.org/wiki/Aimer",
-      },
-    ],
-    comment:
-      "Sự kết hợp giữa giọng hát độc đáo và cấu trúc âm nhạc tinh tế đã giúp Aimer tạo nên những bản ballad đầy sức hút, khiến người nghe không thể rời tai mỗi khi thưởng thức.",
-  },
-  {
-    id: 3,
     title: "Canva gặp sự cố: Khi thiết kế trực tuyến bị gián đoạn",
     categories: [
       categoriesData[24],
@@ -176,5 +94,166 @@ export const blogData: BlogsPost[] = [
     ],
     comment:
       "Sự cố Canva lần này là lời nhắc nhở quan trọng: ngay cả các nền tảng trực tuyến hàng đầu cũng có thể gặp sự cố. Chuẩn bị dự phòng và sao lưu dữ liệu định kỳ là cách tốt nhất để giảm thiểu rủi ro và đảm bảo công việc không bị gián đoạn.",
+  },
+  {
+    id: 4,
+    title: "Âm Nhạc Việt Nam 2025: Sắc Màu Cảm Xúc Trong Từng Giai Điệu",
+    categories: [
+      categoriesData[0], // Nhạc Việt
+      categoriesData[15], // Pop
+      categoriesData[23], // Mới phát hành
+      categoriesData[24], // Top trending
+    ],
+    image: v1.src, // ảnh minh họa sân khấu V-Pop sôi động
+    date: "2025-10-20",
+    views: 450,
+    type: "blogs",
+
+    // Phần bình luận/ghi chú người viết
+    userCommentAvatar: v1.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Nhà báo âm nhạc & người đam mê V-Pop",
+
+    // Nội dung bài viết
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Năm 2025, âm nhạc Việt Nam (V-Pop) như một bức tranh đa sắc, nơi mỗi nét vẽ là một câu chuyện, một cảm xúc, và một dấu ấn văn hóa. Từ những bản hit thống trị bảng xếp hạng đến các ca khúc độc lập đầy chất thơ, V-Pop năm nay không chỉ là âm thanh mà còn là tiếng nói của một thế hệ trẻ đầy khát vọng và sáng tạo.",
+      },
+      {
+        type: "image",
+        content: v1.src, // ảnh một buổi hòa nhạc V-Pop
+      },
+      {
+        type: "title",
+        content: "Sự bùng nổ của sự đa dạng",
+      },
+      {
+        type: "text",
+        content:
+          "V-Pop 2025 chứng kiến sự giao thoa độc đáo giữa các thể loại. Những nghệ sĩ như Sơn Tùng M-TP tiếp tục dẫn đầu với các ca khúc Pop/EDM hiện đại như ‘Chạy Ngay Đi 2.0’, trong khi các giọng ca indie như Vũ. hay ban nhạc Ngọt mang đến những giai điệu mộc mạc, giàu cảm xúc. Đặc biệt, các ca khúc lấy cảm hứng từ dân ca, như ‘Lý Cây Bông’ của Wren Evans, đã làm sống lại những giá trị truyền thống trong một diện mạo mới.",
+      },
+      {
+        type: "text",
+        content:
+          "Các nền tảng streaming như Spotify và Zing MP3 ghi nhận sự tăng trưởng mạnh mẽ của các ca khúc ballad và lofi. Những bài hát như ‘Một Thoáng Mơ’ của Hoàng Dũng hay ‘Tâm Sựវបានគេហទៅជា‘មួយ’ của Tóc Tiên đã trở thành hiện tượng, chạm đến trái tim hàng triệu khán giả trẻ.",
+      },
+      {
+        type: "title",
+        content: "Tác động văn hóa và tầm ảnh hưởng",
+      },
+      {
+        type: "text",
+        content:
+          "Âm nhạc Việt Nam năm nay không chỉ dừng lại ở giải trí. Các ca khúc như ‘Gió Lên’ của Đen Vâu, kết hợp thông điệp về biến đổi khí hậu, đã truyền cảm hứng cho cộng đồng về ý thức xã hội. Trong khi đó, các nghệ sĩ trẻ như AMEE và Bích Phương mang đến những ca khúc Pop đầy màu sắc, phản ánh lối sống năng động và cá tính của Gen Z.",
+      },
+      {
+        type: "link",
+        content:
+          "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=1234567890",
+      },
+      {
+        type: "text",
+        content:
+          "Để cảm nhận rõ hơn sự sôi động của V-Pop 2025, bạn có thể nghe playlist trên Spotify hoặc tham gia các sự kiện âm nhạc như Vietnam Idol Showcase. Đây là nơi bạn sẽ bắt gặp những màn trình diễn bùng nổ từ các nghệ sĩ hàng đầu.",
+      },
+      {
+        type: "title",
+        content: "Tương lai rộng mở",
+      },
+      {
+        type: "text",
+        content:
+          "Với sự kết hợp giữa công nghệ, sáng tạo và bản sắc văn hóa, V-Pop đang dần khẳng định vị thế trên trường quốc tế. Các nghệ sĩ như Suboi hay Hoaprox đã mang âm nhạc Việt ra thế giới qua các sân khấu lớn như Coachella hay Tomorrowland. Năm 2026 hứa hẹn sẽ là một bước tiến mới, khi các nghệ sĩ tiếp tục thử nghiệm và phá vỡ giới hạn.",
+      },
+      {
+        type: "text",
+        content:
+          "Hãy dành một buổi tối để thưởng thức những giai điệu mới nhất của V-Pop 2025. Bạn yêu thích ca khúc nào nhất trong năm nay? Hãy chia sẻ và cùng lan tỏa tinh thần âm nhạc Việt!",
+      },
+    ],
+    comment:
+      "V-Pop 2025 là một hành trình cảm xúc đầy màu sắc. Hãy ủng hộ các nghệ sĩ Việt Nam để họ tiếp tục tạo nên những kiệt tác âm nhạc, đưa tên tuổi Việt Nam vươn xa hơn!",
+  },
+  {
+    id: 5,
+    title: "Nhạc Indie: Tự Do Sáng Tạo, Chân Thật Cảm Xúc",
+    categories: [
+      categoriesData[6], // Indie
+      categoriesData[9], // Lofi
+      categoriesData[12], // Rock
+      categoriesData[19], // Playlist cảm xúc
+    ],
+    image: nhac1.src, // ảnh minh họa không gian indie
+    date: "2025-10-20",
+    views: 320,
+    type: "blogs",
+
+    // Phần bình luận/ghi chú người viết
+    userCommentAvatar: nhac2.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Nghệ sĩ Indie & nhà sáng tác",
+
+    // Nội dung bài viết
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Nhạc Indie không chỉ là một thể loại âm nhạc, mà là một tuyên ngôn về sự tự do và cái tôi cá nhân. Trong thế giới âm nhạc đầy những khuôn mẫu thương mại, Indie nổi lên như một làn gió mát, mang theo những giai điệu chân thật và câu chuyện sâu sắc. Điều gì khiến dòng nhạc này trở thành ‘người bạn tâm giao’ của hàng triệu trái tim?",
+      },
+      {
+        type: "image",
+        content: nhac3.src, // ảnh một buổi biểu diễn indie
+      },
+      {
+        type: "title",
+        content: "Tự do sáng tạo không giới hạn",
+      },
+      {
+        type: "text",
+        content:
+          "Indie, viết tắt của ‘independent’, là âm nhạc của những nghệ sĩ tự do. Không bị ràng buộc bởi các hãng thu âm lớn, họ tự viết, tự sản xuất, và tự kể chuyện bằng âm nhạc. Ở Việt Nam, những cái tên như Ngọt với ‘Chó Chạy Ngoài Đồng’ hay Vũ. với ‘Lạ Lùng’ đã chứng minh rằng bạn không cần sân khấu hoành tráng để chạm vào cảm xúc người nghe.",
+      },
+      {
+        type: "text",
+        content:
+          "Sự tự do này cho phép các nghệ sĩ Indie thử nghiệm những phong cách mới lạ, từ lofi mơ màng đến rock dữ dội hay acoustic mộc mạc. Họ không sợ thất bại, bởi mỗi ca khúc là một lần khám phá bản thân.",
+      },
+      {
+        type: "title",
+        content: "Cảm xúc chân thật, gần gũi",
+      },
+      {
+        type: "text",
+        content:
+          "Điểm mạnh lớn nhất của Indie là khả năng kể những câu chuyện đời thường. Ca từ của Indie thường giản dị nhưng sâu sắc, như những lời tâm sự giữa bạn bè. ‘Bâng Khuâng’ của Cá Hồi Hoang hay ‘Mùa Hè Năm Ấy’ của Lý Bực là những ví dụ điển hình, gợi lên những ký ức, cảm giác mà ai cũng từng trải qua.",
+      },
+      {
+        type: "link",
+        content: "https://zingmp3.vn/playlist/Nhac-Indie-Viet-Nam/1234567890",
+      },
+      {
+        type: "text",
+        content:
+          "Hãy thử nghe playlist Indie trên Zing MP3 hoặc tham gia các buổi diễn tại những không gian nhỏ như Heritage Space ở Hà Nội hay Yoko Cafe ở TP.HCM. Đó là nơi bạn sẽ cảm nhận được tinh thần tự do và năng lượng sáng tạo của Indie.",
+      },
+      {
+        type: "title",
+        content: "Tại sao Indie chinh phục Gen Z?",
+      },
+      {
+        type: "text",
+        content:
+          "Giới trẻ ngày nay yêu Indie vì nó phản ánh đúng tâm trạng và cá tính của họ: không hoàn hảo, nhưng đầy chân thành. Trong một thế giới mà mọi thứ dường như được định dạng sẵn, Indie là nơi họ tìm thấy sự đồng điệu và cảm giác được là chính mình. Hơn nữa, các nghệ sĩ Indie thường rất gần gũi, sẵn sàng trò chuyện với khán giả sau mỗi buổi diễn, tạo nên một cộng đồng gắn kết.",
+      },
+      {
+        type: "text",
+        content:
+          "Nhạc Indie không chỉ là âm nhạc, mà là một phong cách sống. Nếu bạn chưa từng nghe Indie, hãy bắt đầu với một bài hát của Vũ., Ngọt, hoặc Cá Hồi Hoang. Biết đâu, bạn sẽ tìm thấy một góc nhỏ của tâm hồn mình trong những giai điệu ấy.",
+      },
+    ],
+    comment:
+      "Indie là tiếng nói của những tâm hồn tự do. Hãy để những giai điệu này dẫn lối bạn qua những ngày vui, buồn, và cả những khoảnh khắc lặng lẽ của cuộc sống.",
   },
 ];
