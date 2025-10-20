@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -56,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-2 text-neutral-600 dark:text-neutral-400 leading-relaxed">
             <li>
               <Link
-                href="/about"
+                href="/"
                 className="hover:text-foreground transition-colors"
               >
                 Về chúng tôi
@@ -64,7 +63,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/pricing"
+                href="/"
                 className="hover:text-foreground transition-colors"
               >
                 Gói dịch vụ
@@ -72,15 +71,15 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/blogs"
+                href="/"
                 className="hover:text-foreground transition-colors"
               >
-                Blogs âm nhạc
+                Blogs
               </Link>
             </li>
             <li>
               <Link
-                href="/privacy"
+                href="/"
                 className="hover:text-foreground transition-colors"
               >
                 Chính sách bảo mật

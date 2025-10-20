@@ -15,14 +15,12 @@ import {
   PaginationItem,
   PaginationLink,
 } from "@/components/ui/pagination";
-import { Card, CardContent } from "@/components/ui/card";
-import { Funnel, ChevronDown, Search, Filter, SortAsc } from "lucide-react";
+import {Search, Filter, SortAsc } from "lucide-react";
 
 import PostCard from "@/app/components/items/post-card";
 import { Post } from "@/app/types/type";
 import { categoriesData } from "@/app/data/category-data";
 import { playlistsData } from "@/app/data/playlists-data";
-import { div } from "framer-motion/client";
 
 export default function BlogClient(): JSX.Element {
   const [search, setSearch] = useState<string>("");
