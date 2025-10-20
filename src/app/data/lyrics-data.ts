@@ -157,7 +157,7 @@ export const lyricsData: LyricPost[] = [
     composer: "Hngle, Ari",
     producer: "Hngle",
     otherSongs: ["Cô Đơn", "Nói Anh Nghe", "Ur Last"],
-    userCommentAvatar: "user-avatar.jpg",
+    userCommentAvatar: tree2.src,
     userNameComment: "Nguyen Thi B",
     userRoleComment: "Admin",
     comment: "Bài hát này thực sự chạm đến trái tim tôi mỗi khi nghe.",

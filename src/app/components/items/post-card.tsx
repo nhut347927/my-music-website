@@ -38,7 +38,7 @@ export default function PostCard({ post }: PostCardProps) {
       <div className="mt-3 mb-1">
         {/* 🏷️ CATEGORY (hiển thị tối đa 3) */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {post.categories.slice(0, 3).map((cat, i) => (
+          {post?.categories?.slice(0, 3).map((cat, i) => (
             <span
               key={i}
               className="inline-block text-[11px] border border-neutral-300 dark:border-neutral-700 

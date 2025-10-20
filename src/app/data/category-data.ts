@@ -26,4 +26,7 @@ export const categoriesData: Category[] = [
   { name: "Cover" },
   { name: "Mới phát hành" },
   { name: "Top trending" },
+  { name: "Công nghệ" },         // thêm category mới
+  { name: "Công cụ thiết kế" },  // thêm category mới
+  { name: "Tin tức công nghệ" },
 ];

@@ -49,20 +49,31 @@ export const BlogsDetailPage: React.FC = () => {
               key={idx}
               className="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300"
             >
-              {cat.name}
+              {cat?.name}
             </span>
           ))}
         </div>
 
         <p className="text-gray-500 dark:text-gray-400 text-sm">
           👁 {blog.views.toLocaleString()} lượt xem
-          {blog.date && ` • 🗓 ${new Date(blog.date).toLocaleDateString("vi-VN")}`}
+          {blog.date &&
+            ` • 🗓 ${new Date(blog.date).toLocaleDateString("vi-VN")}`}
         </p>
       </div>
 
       {/* Nội dung bài viết */}
       <article className="space-y-8 leading-relaxed text-gray-800 dark:text-gray-300">
         {blog.paragraphs.map((para, idx) => {
+          if (para.type === "title") {
+            return (
+              <h2
+                key={idx}
+                className="text-2xl sm:text-3xl font-bold my-6 text-center"
+              >
+                {para.content}
+              </h2>
+            );
+          }
           if (para.type === "text") {
             return (
               <p
@@ -105,30 +116,30 @@ export const BlogsDetailPage: React.FC = () => {
         })}
       </article>
 
-     {/* Section 3: Cảm nghĩ */}
-        <div className="flex items-start gap-6 my-16 rounded-2xl max-w-6xl py-4">
-          <Avatar className="w-16 h-16">
-            <AvatarImage src={blog?.userCommentAvatar} alt="Nhựt Nguyễn" />
-            <AvatarFallback>N</AvatarFallback>
-          </Avatar>
-          <div className="flex-1">
-            <p className="text-xl font-bold text-black dark:text-white">
-              {blog?.userNameComment}
-              <span className="text-lg font-normal text-gray-500 dark:text-gray-400">
-                ({blog?.userRoleComment})
-              </span>
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-gray-800 dark:text-gray-200 relative pl-6">
-              <span className="absolute -left-4 top-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
-                “
-              </span>
-              {blog?.comment}
-              <span className="absolute -right-4 bottom-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
-                ”
-              </span>
-            </p>
-          </div>
+      {/* Section 3: Cảm nghĩ */}
+      <div className="flex items-start gap-6 my-16 rounded-2xl max-w-6xl py-4">
+        <Avatar className="w-16 h-16">
+          <AvatarImage src={blog?.userCommentAvatar} alt="Nhựt Nguyễn" />
+          <AvatarFallback>N</AvatarFallback>
+        </Avatar>
+        <div className="flex-1">
+          <p className="text-xl font-bold text-black dark:text-white">
+            {blog?.userNameComment}
+            <span className="text-lg font-normal text-gray-500 dark:text-gray-400">
+              ({blog?.userRoleComment})
+            </span>
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-gray-800 dark:text-gray-200 relative pl-6">
+            <span className="absolute -left-4 top-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
+              “
+            </span>
+            {blog?.comment}
+            <span className="absolute -right-4 bottom-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
+              ”
+            </span>
+          </p>
         </div>
+      </div>
     </div>
   );
 };

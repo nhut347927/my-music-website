@@ -68,7 +68,7 @@ export interface BlogsPost extends BasePost {
 }
 
 export interface paragraph {
-  type: "text" | "image" | "link"|"title";
+  type: "text" | "image" | "link" | "title";
   content: string;
 }
 

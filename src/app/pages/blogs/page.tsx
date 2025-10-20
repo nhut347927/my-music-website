@@ -1,4 +1,4 @@
-import BlogClient from "./blogs-client";
+import BlogsClient from "./blogs-client";
 
 export const metadata = {
   title: "Blogs | Moe",
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  return <BlogClient />;
+  return <BlogsClient />;
 }
