@@ -1,7 +1,7 @@
 import PlaylistsClient from "./playlists-client";
 
 export const metadata = {
-  title: "Playlists | MyMusic",
+  title: "Playlists | Moe",
   description: "Những bài hát theo chủ đề và tâm trạng khác nhau",
 };
 

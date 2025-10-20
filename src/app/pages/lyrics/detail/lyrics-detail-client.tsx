@@ -86,7 +86,7 @@ export const DetailLyricPage: React.FC = () => {
           </h2>
           <div className="space-y-6">
             {song?.lyrics.map((lyric, idx) => (
-              <div key={idx} className="space-y-1">
+              <div key={idx} className="space-y-4">
                 <p className="font-semibold text-gray-700 dark:text-gray-300 text-lg">
                   {lyric.type}
                 </p>

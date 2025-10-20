@@ -3,17 +3,18 @@ import { DetailLyricPage } from "./lyrics-detail-client";
 
 // --------------------- Meta data ---------------------
 export const metadata = {
-  title: "Ấm - Sweet Liquor | MyMusic",
+  title: "Nghe nhạc và xem lời bài hát | MyMusic",
   description:
-    "Nghe nhạc Ấm của Sweet Liquor, xem lời bài hát và các bài hát khác cùng ca sĩ.",
+    "Nghe các bài hát yêu thích và xem lời bài hát chi tiết cùng các bài hát khác từ nhiều ca sĩ.",
   openGraph: {
-    title: "Ấm - Sweet Liquor | MyMusic",
+    title: "Nghe nhạc và xem lời bài hát | MyMusic",
     description:
-      "Nghe nhạc Ấm của Sweet Liquor, xem lời bài hát và các bài hát khác cùng ca sĩ.",
-    images: ["/asset/lyric-img/sweet-liquor-am.jpg"],
+      "Nghe các bài hát yêu thích và xem lời bài hát chi tiết cùng các bài hát khác từ nhiều ca sĩ.",
+    images: ["/asset/lyric-img/default-lyric.jpg"], // ảnh chung cho tất cả bài hát
     type: "music.song",
   },
 };
+
 
 // --------------------- Trang ---------------------
 export default function LyricsPage() {

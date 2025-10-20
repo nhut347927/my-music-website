@@ -3,11 +3,11 @@ import { PlaylistDetailPage } from "./playlist-detail-client";
 
 // --------------------- Meta data ---------------------
 export const metadata = {
-  title: "Tuyển tập nhạc Anime TikTok | MyMusic",
+  title: "Tuyển tập nhạc Anime TikTok | Moe",
   description:
     "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
   openGraph: {
-    title: "Tuyển tập nhạc Anime TikTok | MyMusic",
+    title: "Tuyển tập nhạc Anime TikTok | Moe",
     description:
       "Tuyển tập 20 bài nhạc Anime TikTok hay nhất mọi thời đại – lofi, remix và những giai điệu gợi nhớ tuổi thơ.",
     images: ["/asset/playlist/anime-tiktok-banner.jpg"],
