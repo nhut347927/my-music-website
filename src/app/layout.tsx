@@ -13,31 +13,20 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://moe-chan.vercel.app"),
 
-  title: "Moe | Tâm sự cùng bạn",
-  description:
-    "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bình thường",
-  keywords: ["Moe", "lời bài hát", "playlist", "phân tích bài hát"],
+ title: "Moe | Tâm sự cùng bạn",
+  description: "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bạn.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Moe | Tâm sự cùng bạn",
-    description:
-      "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bình thường",
-    url: "https://moe-chan.vercel.app",
-    siteName: "Moe",
-    images: [
-      {
-        url: logo.src,
-        width: 200,
-        height: 200,
-        alt: "Moe Logo",
-      },
-    ],
-    locale: "vi_VN",
-    type: "website",
+    description: "Phân tích bài hát, cảm xúc và playlist yêu thích.",
+    images: ["/logo.png"],
   },
   other: {
     "google-site-verification": "uEUgiQeU6YdKH1CMnr9o7_2idQdvF7FLqvRwBUBw6Kc", // Xác minh Google
