@@ -7,6 +7,7 @@ export interface Category {
 // 🎵 Cấu trúc cơ bản của mọi bài post
 export interface BasePost {
   id: number;
+  slug: string;
   title: string;
   categories: Category[]; // ✅ Dùng Category[]
   image: string;

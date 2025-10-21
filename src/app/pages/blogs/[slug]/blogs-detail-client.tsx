@@ -3,27 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
-import { blogData } from "@/app/data/blog-data"; // 👉 bạn cần có file dữ liệu tương tự playlistsData
 import { BlogsPost } from "@/app/types/type";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export const BlogsDetailPage: React.FC = () => {
-  const searchParams = useSearchParams();
-  const idParam = searchParams.get("id");
-  const blogId = idParam ? parseInt(idParam) : 1;
+interface BlogsDetailClientProps {
+  blog: BlogsPost;
+}
 
-  const blog: BlogsPost | undefined = blogData.find((b) => b.id === blogId);
-
-  if (!blog)
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          Bài viết không tồn tại.
-        </p>
-      </div>
-    );
-
+export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
   return (
     <div className="max-w-6xl mx-auto mt-14 space-y-16">
       {/* Ảnh banner */}
@@ -84,7 +71,6 @@ export const BlogsDetailPage: React.FC = () => {
               </p>
             );
           }
-
           if (para.type === "image") {
             return (
               <div key={idx} className="relative w-full h-80 sm:h-96 my-6">
@@ -97,7 +83,6 @@ export const BlogsDetailPage: React.FC = () => {
               </div>
             );
           }
-
           if (para.type === "link") {
             return (
               <p key={idx} className="text-center my-4">
@@ -111,7 +96,6 @@ export const BlogsDetailPage: React.FC = () => {
               </p>
             );
           }
-
           return null;
         })}
       </article>
@@ -119,14 +103,17 @@ export const BlogsDetailPage: React.FC = () => {
       {/* Section 3: Cảm nghĩ */}
       <div className="flex items-start gap-6 my-16 rounded-2xl max-w-6xl py-4">
         <Avatar className="w-16 h-16">
-          <AvatarImage src={blog?.userCommentAvatar} alt="Nhựt Nguyễn" />
-          <AvatarFallback>N</AvatarFallback>
+          <AvatarImage
+            src={blog?.userCommentAvatar}
+            alt={blog?.userNameComment || "User"}
+          />
+          <AvatarFallback>{blog?.userNameComment?.[0] || "N"}</AvatarFallback>
         </Avatar>
         <div className="flex-1">
           <p className="text-xl font-bold text-black dark:text-white">
             {blog?.userNameComment}
             <span className="text-lg font-normal text-gray-500 dark:text-gray-400">
-              ({blog?.userRoleComment})
+              {blog?.userRoleComment && ` (${blog.userRoleComment})`}
             </span>
           </p>
           <p className="mt-4 text-lg leading-relaxed text-gray-800 dark:text-gray-200 relative pl-6">
@@ -142,4 +129,4 @@ export const BlogsDetailPage: React.FC = () => {
       </div>
     </div>
   );
-};
+}

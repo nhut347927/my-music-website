@@ -14,6 +14,7 @@ import longlay from "../asset/playlist-img/longlay.jpg";
 export const playlistsData: PlaylistPost[] = [
   {
     id: 1,
+    slug: "nhung-khoanh-khac-cua-hai-ta",
     title: "Những Khoảnh Khắc Của Hai Ta",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
     image: khoanhkhac.src, // placeholder, replace with actual src
@@ -62,7 +63,7 @@ export const playlistsData: PlaylistPost[] = [
         youtube: "https://www.youtube.com/watch?v=iwGuiSnr2Qc",
       },
       {
-        name: "3107 – 3",
+        name: "3107 - 3",
         desc: "Giai điệu lofi pha buồn, cực hợp để nghe đêm khuya.",
         youtube: "https://www.youtube.com/watch?v=kfw7MYah2nU",
       },
@@ -91,12 +92,13 @@ export const playlistsData: PlaylistPost[] = [
   },
   {
     id: 2,
+    slug: "mot-not-tram-trong-tim",
     title: "Một Nốt Trầm Trong Tim",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
     image: tram.src, // placeholder, replace with actual src
     banner: live.src, // placeholder, replace with actual src
     description:
-      "Khi tình yêu không còn rực rỡ như ban đầu, chỉ còn lại những giai điệu nhẹ tênh, mang theo ký ức. Đây là playlist dành cho những đêm yên ắng – khi bạn muốn nghe để thấy mình vẫn biết yêu.",
+      "Khi tình yêu không còn rực rỡ như ban đầu, chỉ còn lại những giai điệu nhẹ tênh, mang theo ký ức. Đây là playlist dành cho những đêm yên ắng - khi bạn muốn nghe để thấy mình vẫn biết yêu.",
     songs: [
       {
         name: "Chạy Về Khóc Với Anh",
@@ -110,7 +112,7 @@ export const playlistsData: PlaylistPost[] = [
       },
       {
         name: "Đông Kiếm Em",
-        desc: "Không gian lạnh của mùa đông và nỗi nhớ len lỏi – một bài hát rất “trầm” và tinh tế.",
+        desc: "Không gian lạnh của mùa đông và nỗi nhớ len lỏi - một bài hát rất “trầm” và tinh tế.",
         youtube: "https://www.youtube.com/watch?v=h6RONxjPBf4",
       },
       {
@@ -135,7 +137,7 @@ export const playlistsData: PlaylistPost[] = [
       },
       {
         name: "Cứ Thế Rời Xa",
-        desc: "Giọng hát day dứt, đầy cảm xúc – kể về sự buông tay bất đắc dĩ.",
+        desc: "Giọng hát day dứt, đầy cảm xúc - kể về sự buông tay bất đắc dĩ.",
         youtube: "https://www.youtube.com/watch?v=zQwKxVCR1y8",
       },
       {
@@ -168,6 +170,7 @@ export const playlistsData: PlaylistPost[] = [
   },
   {
     id: 3,
+    slug: "khi-ta-du-lon-de-hieu-minh",
     title: "Khi Ta Đủ Lớn Để Hiểu Mình",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
     image: chualanh.src, // placeholder, replace with actual src
@@ -227,12 +230,12 @@ export const playlistsData: PlaylistPost[] = [
       },
       {
         name: "Có Chàng Trai Viết Lên Cây",
-        desc: "Nhẹ nhàng, mộc mạc, nhưng là bản tóm tắt hoàn hảo cho hành trình của tuổi trẻ – từ mộng mơ đến trưởng thành.",
+        desc: "Nhẹ nhàng, mộc mạc, nhưng là bản tóm tắt hoàn hảo cho hành trình của tuổi trẻ - từ mộng mơ đến trưởng thành.",
         youtube: "https://www.youtube.com/watch?v=EUEUZDV-in0",
       },
       {
         name: "Đi Về Nhà",
-        desc: "Kết lại bằng sự trở về – không phải chỉ về nơi chốn, mà là về chính con người mình. Khi đã đi đủ xa, ta hiểu: hạnh phúc đôi khi là điều giản đơn nhất.",
+        desc: "Kết lại bằng sự trở về - không phải chỉ về nơi chốn, mà là về chính con người mình. Khi đã đi đủ xa, ta hiểu: hạnh phúc đôi khi là điều giản đơn nhất.",
         youtube: "https://www.youtube.com/watch?v=vTJdVE_gjI0",
       },
     ],
@@ -245,7 +248,8 @@ export const playlistsData: PlaylistPost[] = [
   },
   {
     id: 4,
-    title: "Vibe Việt Gần Đây – Những Hit Đỉnh Cao 2023-2025",
+    slug: "vibe-viet-gan-day-nhung-hit-dinh-cao-2023-2025",
+    title: "Vibe Việt Gần Đây - Những Hit Đỉnh Cao 2023-2025",
     categories: [categoriesData[0], categoriesData[15], categoriesData[24]],
     image: cao.src, // placeholder, replace with actual src
     banner: longlay.src, // placeholder, replace with actual src

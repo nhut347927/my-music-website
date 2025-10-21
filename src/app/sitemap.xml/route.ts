@@ -5,11 +5,8 @@ const baseUrl = 'https://moe-chan.vercel.app';
 const urls = [
   { loc: '/', changefreq: 'daily', priority: '1.0' },
   { loc: '/pages/blogs', changefreq: 'weekly', priority: '0.8' },
-  { loc: '/pages/blogs/detail', changefreq: 'weekly', priority: '0.7' },
   { loc: '/pages/lyrics', changefreq: 'weekly', priority: '0.8' },
-  { loc: '/pages/lyrics/detail', changefreq: 'weekly', priority: '0.7' },
   { loc: '/pages/playlists', changefreq: 'weekly', priority: '0.8' },
-  { loc: '/pages/playlists/detail', changefreq: 'weekly', priority: '0.7' },
 ];
 
 // Hàm tạo nội dung sitemap XML

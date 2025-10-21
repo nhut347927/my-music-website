@@ -50,7 +50,7 @@ export default function PostCard({ post }: PostCardProps) {
         </div>
 
         {/* TIÊU ĐỀ */}
-        <Link href={post.id ? `/pages/${post.type}/detail?id=${post.id}` : "#"}>
+        <Link href={post.id ? `/pages/${post.type}/${post.slug}` : "#"}>
         <h3 className="text-sm sm:text-base font-medium mb-3 text-neutral-900 dark:text-neutral-100 leading-tight line-clamp-2 hover:underline">
           {post.title}
         </h3></Link>

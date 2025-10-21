@@ -12,6 +12,7 @@ import v1 from "../asset/blog-img/v1.png";
 export const blogData: BlogsPost[] = [
   {
     id: 1,
+    slug: "canva-gap-su-co-khi-thiet-ke-truc-tuyen-bi-gian-doan",
     title: "Canva gặp sự cố: Khi thiết kế trực tuyến bị gián đoạn",
     categories: [
       categoriesData[24],
@@ -96,7 +97,8 @@ export const blogData: BlogsPost[] = [
       "Sự cố Canva lần này là lời nhắc nhở quan trọng: ngay cả các nền tảng trực tuyến hàng đầu cũng có thể gặp sự cố. Chuẩn bị dự phòng và sao lưu dữ liệu định kỳ là cách tốt nhất để giảm thiểu rủi ro và đảm bảo công việc không bị gián đoạn.",
   },
   {
-    id: 4,
+    id: 2,
+    slug: "am-nhac-viet-nam-2025-sac-mau-cam-xuc-trong-tung-giai-dieu",
     title: "Âm Nhạc Việt Nam 2025: Sắc Màu Cảm Xúc Trong Từng Giai Điệu",
     categories: [
       categoriesData[0], // Nhạc Việt
@@ -177,7 +179,8 @@ export const blogData: BlogsPost[] = [
       "V-Pop 2025 là một hành trình cảm xúc đầy màu sắc. Hãy ủng hộ các nghệ sĩ Việt Nam để họ tiếp tục tạo nên những kiệt tác âm nhạc, đưa tên tuổi Việt Nam vươn xa hơn!",
   },
   {
-    id: 5,
+    id: 3,
+    slug: "nhac-indie-tu-do-sang-tao-chan-that-cam-xuc",
     title: "Nhạc Indie: Tự Do Sáng Tạo, Chân Thật Cảm Xúc",
     categories: [
       categoriesData[6], // Indie
