@@ -62,7 +62,7 @@ export async function generateMetadata({
       ...playlist.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://www.moechan.top/pages/playebdits/${slug}`,
+      canonical: `https://www.moechan.top/pages/playlists/${slug}`,
     },
     robots: {
       index: true,
