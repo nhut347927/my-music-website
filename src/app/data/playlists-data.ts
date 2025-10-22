@@ -1,7 +1,5 @@
 import { PlaylistPost } from "../types/type";
 import { categoriesData } from "./category-data";
-import tree3 from "../asset/tree3.jpg";
-import tree4 from "../asset/tree4.jpg";
 import khoanhkhac from "../asset/playlist-img/khoangkhac.jpg";
 import doita from "../asset/playlist-img/doita.jpg";
 import tram from "../asset/playlist-img/tram.jpg";
@@ -17,8 +15,8 @@ export const playlistsData: PlaylistPost[] = [
     slug: "nhung-khoanh-khac-cua-hai-ta",
     title: "Những Khoảnh Khắc Của Hai Ta",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
-    image: "khoanhkhac.src",
-    banner: "doita.src",
+    image: khoanhkhac.src,
+    banner: doita.src,
     description:
       "Những Khoảnh Khắc Của Hai Ta không chỉ là một playlist âm nhạc, mà là một hành trình cảm xúc đầy sắc màu, nơi mỗi nốt nhạc, mỗi ca từ đều là một mảnh ghép của câu chuyện tình yêu. Đây là món quà dành cho những ai đã, đang, hoặc từng đắm mình trong những cung bậc cảm xúc của tình yêu – từ những rung động đầu tiên đầy bối rối, những khoảnh khắc ngọt ngào bên nhau, đến những nỗi đau day dứt khi chia xa. Playlist này như một cuốn nhật ký âm nhạc, nơi bạn có thể tìm thấy chính mình trong những giai điệu nhẹ nhàng, những lời ca sâu lắng, và cả những khoảng lặng đầy suy tư. Mỗi bài hát trong *Những Khoảnh Khắc Của Hai Ta* đều mang một màu sắc riêng, từ sự trong trẻo của những ngày tháng thanh xuân, sự cuồng nhiệt của tình yêu mãnh liệt, đến những giấc mơ tình yêu mong manh hay nỗi nhớ da diết khi người ấy đã rời xa. Dù bạn đang yêu, đang nhớ, hay đang chữa lành, playlist này sẽ là người bạn đồng hành, giúp bạn sống lại những khoảnh khắc yêu thương đáng trân trọng, để bạn cảm nhận được rằng tình yêu, dù ở bất kỳ hình dạng nào, luôn là điều đẹp đẽ nhất trong cuộc sống. Hãy bật playlist, nhắm mắt, và để âm nhạc dẫn bạn qua những cung bậc cảm xúc, từ ngọt ngào, lãng mạn, đến sâu lắng, day dứt, để bạn tìm thấy chính mình trong từng giai điệu.",
     songs: [
@@ -95,8 +93,8 @@ export const playlistsData: PlaylistPost[] = [
     slug: "mot-not-tram-trong-tim",
     title: "Một Nốt Trầm Trong Tim",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
-    image: "tram.src",
-    banner: "live.src",
+    image: tram.src,
+    banner: live.src,
     description:
       "Khi tình yêu không còn rực rỡ như những ngày đầu, chỉ còn lại những giai điệu nhẹ nhàng, sâu lắng, mang theo những ký ức đã từng rực cháy trong trái tim. *Một Nốt Trầm Trong Tim* là một playlist được tạo nên dành riêng cho những khoảnh khắc tĩnh lặng, khi bạn muốn đắm mình trong những cảm xúc sâu sắc, những nỗi nhớ da diết, và những khoảng lặng đầy suy tư. Đây không phải là một playlist để chìm đắm trong nỗi buồn tuyệt vọng, mà là một người bạn đồng hành, giúp bạn lắng nghe chính trái tim mình, hiểu những cảm xúc đang chất chứa, và tìm thấy sự an ủi trong những giai điệu dịu dàng. Mỗi bài hát trong playlist này là một mảnh ghép của câu chuyện tình yêu – từ những rung động đầu tiên, những khoảnh khắc hạnh phúc ngắn ngủi, đến những nỗi đau khi phải buông tay. Dành cho những đêm yên ắng, khi ánh đèn mờ ảo và tâm hồn bạn cần một nơi để trở về, playlist này sẽ là không gian âm nhạc để bạn sống lại những ký ức, để bạn cảm nhận được rằng, dù tình yêu có phai nhạt, những cảm xúc ấy vẫn đẹp đẽ và đáng trân trọng. Hãy bật playlist, để những nốt trầm trong tim bạn được cất lời, dẫn bạn qua những cung bậc cảm xúc, từ hoài niệm, day dứt, đến sự chữa lành chậm rãi nhưng đầy ý nghĩa.",
     songs: [
@@ -173,8 +171,8 @@ export const playlistsData: PlaylistPost[] = [
     slug: "khi-ta-du-lon-de-hieu-minh",
     title: "Khi Ta Đủ Lớn Để Hiểu Mình",
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]],
-    image: "chualanh.src",
-    banner: "buocqua.src",
+    image: chualanh.src,
+    banner: buocqua.src,
     description:
       "Khi Ta Đủ Lớn Để Hiểu Mình là một hành trình âm nhạc sâu sắc, dẫn dắt bạn qua những cung bậc cảm xúc của sự trưởng thành, nơi tổn thương, cô đơn và hoang mang trở thành những bài học quý giá để bạn tìm thấy chính mình. Đây không chỉ là một playlist, mà là một cuốn nhật ký âm nhạc, nơi mỗi bài hát là một mảnh ghép của câu chuyện về hành trình tự nhận thức. Dành cho những đêm lặng im khi bạn ngồi nhìn lại chính mình, những buổi sáng đứng dậy sau những vấp ngã, và những ngày bạn học cách tha thứ cho bản thân, playlist này như một người bạn đồng hành, nhẹ nhàng nhưng sâu sắc. Mỗi giai điệu, mỗi ca từ đều là một lời nhắc nhở rằng chẳng ai có thể cứu bạn ngoài chính bạn, và sự trưởng thành không phải là đích đến, mà là hành trình học cách yêu thương và chấp nhận bản thân. Từ những lời rap chân thật, những giai điệu buồn man mác, đến những khoảnh khắc tỉnh thức đầy ý nghĩa, Khi Ta Đủ Lớn Để Hiểu Mình là không gian âm nhạc để bạn đối diện với những góc khuất trong tâm hồn, để bạn tìm thấy ánh sáng trong những ngày u tối, và để bạn nhận ra rằng, dù có lạc lối, bạn vẫn luôn có thể tìm đường về với chính mình. Hãy bật playlist, nhắm mắt, và để những giai điệu này dẫn bạn qua những cung bậc cảm xúc, từ đau thương, hoài niệm, đến sự chữa lành và trưởng thành.",
     songs: [
@@ -251,8 +249,8 @@ export const playlistsData: PlaylistPost[] = [
     slug: "vibe-viet-gan-day-nhung-hit-dinh-cao-2023-2025",
     title: "Vibe Việt Gần Đây - Những Hit Đỉnh Cao 2023-2025",
     categories: [categoriesData[0], categoriesData[15], categoriesData[24]],
-    image: "cao.src",
-    banner: "longlay.src",
+    image: cao.src,
+    banner: longlay.src,
     description:
       "Vibe Việt Gần Đây - Những Hit Đỉnh Cao 2023-2025 là một playlist âm nhạc sôi động, tổng hợp những ca khúc Việt Nam hay nhất và được yêu thích nhất từ năm 2023 đến nay (2025), mang đến sự đa dạng phong phú từ những bản ballad sâu lắng chạm đến trái tim, những track rap sôi động đầy năng lượng, đến những bản pop bắt tai khiến bạn không thể ngừng lắc lư theo điệu nhạc. Đây là bộ sưu tập âm nhạc hoàn hảo dành cho những ai đam mê V-pop và muốn cập nhật nhanh chóng những xu hướng âm nhạc mới nhất của làng nhạc Việt, với sự góp mặt của các nghệ sĩ hàng đầu như Sơn Tùng M-TP với sức hút không thể chối cãi, HIEUTHUHAI với phong cách trẻ trung hiện đại, Vũ. với những giai điệu đầy cảm xúc, cùng nhiều tài năng trẻ khác như Tăng Duy Tân, Hòa Minzy, Rhyder, CoolKid, Văn Mai Hương, Pháo, Nguyễn Hữu Kha và hơn thế nữa. Mỗi bài hát trong playlist này không chỉ là những hit phá kỷ lục streaming trên Spotify, Zing MP3 hay YouTube, mà còn là những câu chuyện âm nhạc phản ánh nhịp sống đương đại của giới trẻ Việt Nam, từ những nỗi đau tình yêu da diết, những khoảnh khắc vui tươi viral trên TikTok, đến những thông điệp mạnh mẽ về sự tự do và trưởng thành. Hãy tưởng tượng bạn đang lái xe dọc theo những con phố Sài Gòn nhộn nhịp, hoặc ngồi chill bên ly cà phê sữa đá, và những giai điệu này vang lên, khiến mọi lo toan tan biến, thay vào đó là sự hứng khởi và kết nối với thế hệ trẻ Việt. Playlist này được thiết kế để bạn có thể dễ dàng chuyển đổi giữa các mood khác nhau: từ những bản ballad chill để thư giãn sau ngày dài, đến những track rap sôi động để party cùng bạn bè, hoặc pop vui tươi để khởi đầu một ngày mới tràn đầy năng lượng. Với hơn 12 ca khúc được chọn lọc kỹ lưỡng, mỗi bài đều đại diện cho một đỉnh cao của V-pop trong giai đoạn 2023-2025, từ những MV triệu view phá kỷ lục đến những bản hit thống trị các bảng xếp hạng Billboard Vietnam Hot 100 và Top Vietnamese Songs. Nếu bạn là fan của Sơn Tùng M-TP, đừng bỏ lỡ 'Đừng Làm Trái Tim Anh Đau' với drama hiện đại; nếu yêu thích sự kết hợp dân gian đương đại, 'Thị Mầu' của Hòa Minzy sẽ khiến bạn bất ngờ; hay đắm chìm trong nỗi nhớ với 'Hoa Cỏ Lau' của Vũ.. Đây không chỉ là một playlist, mà còn là một hành trình âm nhạc qua những năm tháng sôi động của V-pop, giúp bạn khám phá và yêu thêm nền âm nhạc Việt Nam đang ngày càng vươn tầm quốc tế. Hãy bật playlist ngay hôm nay, để những hit đỉnh cao này trở thành soundtrack cho cuộc sống của bạn, và chia sẻ với bạn bè để cùng vibe cùng nhau!",
     songs: [
