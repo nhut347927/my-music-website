@@ -29,8 +29,8 @@ import only from "../asset/lyric-img/only.jpg";
 export const lyricsData: LyricPost[] = [
   {
     id: 1,
-    slug: "am-sweet-liquor",
-    title: "ấm - Sweet Liquor",
+    slug: "lyric-am-sweet-liquor",
+    title: "Lyric ấm - Sweet Liquor",
     categories: [categoriesData[5], categoriesData[6], categoriesData[7]],
     image: sweetliquorAm.src,
     date: "2024-11-19", // ngày phát hành theo thông tin SoundCloud :contentReference[oaicite:2]{index=2}
@@ -76,8 +76,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 2,
-    slug: "vet-mua-vu-cat-tuong",
-    title: "Vết mưa - Vũ Cát Tường",
+    slug: "lyric-vet-mua-vu-cat-tuong",
+    title: "Lyric Vết mưa - Vũ Cát Tường",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vctVetmua.src, // ảnh đại diện bài hát
@@ -135,8 +135,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 3,
-    slug: "khong-buong-hngle-ft-ari",
-    title: "Không Buông - Hngle ft. Ari",
+    slug: "lyric-khong-buong-hngle-ft-ari",
+    title: "Lyric Không Buông - Hngle ft. Ari",
     categories: [categoriesData[0], categoriesData[7], categoriesData[14]],
     image: kbly.src,
     date: "2025-08-25",
@@ -183,8 +183,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 4,
-    slug: "nguoi-binh-thuong-vu-cat-tuong",
-    title: "Người Bình Thường - Vũ Cát Tường",
+    slug: "lyric-nguoi-binh-thuong-vu-cat-tuong",
+    title: "Lyric Người Bình Thường - Vũ Cát Tường",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vctNguoiBinhThuong.src, // ảnh đại diện bài hát
@@ -248,8 +248,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 5,
-    slug: "goi-ten-em-min",
-    title: "Gọi Tên Em - MIN",
+    slug: "lyric-goi-ten-em-min",
+    title: "Lyric Gọi Tên Em - MIN",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
     image: minGoiTenEm.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     date: "2016-12-09", // ngày phát hành chính thức
@@ -307,8 +307,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 6,
-    slug: "vi-yeu-cu-dam-dau-min",
-    title: "Vì Yêu Cứ Đâm Đầu - MIN",
+    slug: "lyric-vi-yeu-cu-dam-dau-min",
+    title: "Lyric Vì Yêu Cứ Đâm Đầu - MIN",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vycdd.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -362,8 +362,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 7,
-    slug: "id-072019-wn",
-    title: "id 072019 - W/n",
+    slug: "lyric-id-072019-wn",
+    title: "Lyric id 072019 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id072019.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     date: "2023-07-31", // ngày phát hành chính thức
@@ -410,8 +410,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 8,
-    slug: "id-t41104-wn",
-    title: "id T41104 - W/n",
+    slug: "lyric-id-t41104-wn",
+    title: "Lyric id T41104 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: idt41104.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     date: "2023-10-31", // ngày phát hành chính thức
@@ -458,8 +458,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 9,
-    slug: "id-2022-wn",
-    title: "id 2022 - W/n",
+    slug: "lyric-id-2022-wn",
+    title: "Lyric id 2022 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id2022.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     date: "2023-12-31", // ngày phát hành chính thức
@@ -507,8 +507,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 10,
-    slug: "vuon-may-vua-hay-an-ngo",
-    title: "Vườn Mây Vừa Hay - Ân Ngờ",
+    slug: "lyric-vuon-may-vua-hay-an-ngo",
+    title: "Lyric Vườn Mây Vừa Hay - Ân Ngờ",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vuonmayvuahay.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -561,8 +561,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 11,
-    slug: "thang-dien-justatee-ft-phuong-ly",
-    title: "Thằng Điên - JustaTee ft. Phương Ly",
+    slug: "lyric-thang-dien-justatee-ft-phuong-ly",
+    title: "Lyric Thằng Điên - JustaTee ft. Phương Ly",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: thangdien.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -616,8 +616,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 12,
-    slug: "mot-ai-ke-ben-mylina",
-    title: "Một Ai Kề Bên - MYLINA",
+    slug: "lyric-mot-ai-ke-ben-mylina",
+    title: "Lyric Một Ai Kề Bên - MYLINA",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: aikeben.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -686,8 +686,8 @@ export const lyricsData: LyricPost[] = [
   },
   {
     id: 13,
-    slug: "only-lee-hi",
-    title: "ONLY - Lee Hi",
+    slug: "lyric-only-lee-hi",
+    title: "Lyric ONLY - Lee Hi",
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]],
     image: only.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     date: "2021-08-27", // ngày phát hành chính thức
