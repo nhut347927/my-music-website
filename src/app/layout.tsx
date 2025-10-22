@@ -4,9 +4,11 @@ import { Inter } from "next/font/google";
 import logo from "./asset/logo.png";
 import { Metadata } from "next";
 import Script from "next/script";
-
 import Header from "@/app/components/layout/header";
 import Footer from "./components/layout/footer";
+import { GoogleAnalytics } from "nextjs-google-analytics";
+
+
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -64,6 +66,7 @@ export default function RootLayout({
     gtag('config', 'G-X22ZH1QRQ6');
   `}
           </Script> */}
+          <GoogleAnalytics trackPageViews gaMeasurementId="G-X22ZH1QRQ6" />
         </ThemeProvider>
       </body>
     </html>
