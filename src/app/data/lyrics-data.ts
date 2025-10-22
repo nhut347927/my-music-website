@@ -295,7 +295,7 @@ export const lyricsData: LyricPost[] = [
     ],
     year: "2016",
     duration: "03:00", // thời lượng bài hát
-    singerPhoto: "min_singer.jpg", // ảnh ca sĩ (placeholder, replace with actual src)
+    singerPhoto: minSinger, // ảnh ca sĩ (placeholder, replace with actual src)
     composer: "Kai Đinh",
     producer: "Khắc Hưng",
     otherSongs: ["Ghen", "Có Em Chờ", "Đừng Yêu Nữa Em Mệt Rồi"], // các bài khác của MIN
