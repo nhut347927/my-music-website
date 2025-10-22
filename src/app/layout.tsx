@@ -6,16 +6,13 @@ import { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/app/components/layout/header";
 import Footer from "./components/layout/footer";
-import { GoogleAnalytics } from "nextjs-google-analytics";
-
-
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.moechan.top"),
 
- title: "Moe | Tâm sự cùng bạn",
+  title: "Moe | Tâm sự cùng bạn",
   description: "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bạn.",
   icons: {
     icon: [
@@ -54,7 +51,7 @@ export default function RootLayout({
           <Footer />
 
           {/* Google Analytics */}
-          {/* <Script
+          <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-X22ZH1QRQ6"
             strategy="afterInteractive"
           />
@@ -65,8 +62,7 @@ export default function RootLayout({
     gtag('js', new Date());
     gtag('config', 'G-X22ZH1QRQ6');
   `}
-          </Script> */}
-          <GoogleAnalytics trackPageViews gaMeasurementId="G-X22ZH1QRQ6" />
+          </Script>
         </ThemeProvider>
       </body>
     </html>
