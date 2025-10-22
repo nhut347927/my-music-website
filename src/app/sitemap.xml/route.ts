@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 // Định nghĩa danh sách URL tĩnh
-const baseUrl = 'https://moe-chan.vercel.app';
+const baseUrl = 'https://www.moechan.top';
 const urls = [
   { loc: '/', changefreq: 'daily', priority: '1.0' },
   { loc: '/pages/blogs', changefreq: 'weekly', priority: '0.8' },

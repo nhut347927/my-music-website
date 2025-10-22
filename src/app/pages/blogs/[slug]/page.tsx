@@ -61,7 +61,7 @@ export async function generateMetadata({
       ...blog.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://moe-chan.vercel.app/pages/blogs/${slug}`,
+      canonical: `https://www.moechan.top/pages/blogs/${slug}`,
     },
     robots: {
       index: true,
@@ -78,7 +78,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "article",
-      url: `https://moe-chan.vercel.app/pages/blogs/${slug}`,
+      url: `https://www.moechan.top/pages/blogs/${slug}`,
       title: `${blog.title} | Moe`,
       description,
       siteName: "Moe",
@@ -129,7 +129,7 @@ export default async function BlogsDetailPage({
     "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://moe-chan.vercel.app/pages/blogs/${slug}`,
+      "@id": `https://www.moechan.top/pages/blogs/${slug}`,
     },
     headline: blog.title,
     description: getBlogDescription(blog),
@@ -143,7 +143,7 @@ export default async function BlogsDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://moe-chan.vercel.app/logo.png",
+        url: "https://www.moechan.top/logo.png",
       },
     },
     datePublished: blog.date,

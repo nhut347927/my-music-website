@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://moe-chan.vercel.app";
+  const baseUrl = "https://www.moechan.top";
   return {
     rules: [
       {

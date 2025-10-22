@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "câu chuyện cuộc sống",
   ],
   alternates: {
-    canonical: "https://moe-chan.vercel.app/pages/blogs",
+    canonical: "https://www.moechan.top/pages/blogs",
   },
   icons: {
     icon: "/favicon.ico",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://moe-chan.vercel.app/pages/blogs",
+    url: "https://www.moechan.top/pages/blogs",
     title: "Blogs | Moe - Nơi chia sẻ cảm xúc & câu chuyện cuộc sống",
     description:
       "Khám phá những bài viết đầy cảm xúc về âm nhạc, cuộc sống và tâm sự cùng Moe. Đọc ngay để tìm nguồn cảm hứng!",

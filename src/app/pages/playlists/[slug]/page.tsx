@@ -62,7 +62,7 @@ export async function generateMetadata({
       ...playlist.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://moe-chan.vercel.app/pages/playebdits/${slug}`,
+      canonical: `https://www.moechan.top/pages/playebdits/${slug}`,
     },
     robots: {
       index: true,
@@ -79,7 +79,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "music.playlist",
-      url: `https://moe-chan.vercel.app/pages/playlists/${slug}`,
+      url: `https://www.moechan.top/pages/playlists/${slug}`,
       title: `${playlist.title} | Moe`,
       description,
       siteName: "Moe",
@@ -134,7 +134,7 @@ export default async function PlaylistDetailPage({
     "@type": "MusicPlaylist",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://moe-chan.vercel.app/pages/playlists/${slug}`,
+      "@id": `https://www.moechan.top/pages/playlists/${slug}`,
     },
     name: playlist.title,
     description: getPlaylistDescription(playlist),
@@ -152,7 +152,7 @@ export default async function PlaylistDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://moe-chan.vercel.app/logo.png",
+        url: "https://www.moechan.top/logo.png",
       },
     },
   };
