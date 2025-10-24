@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "tâm sự qua lời hát",
   ],
   alternates: {
-    canonical: "https://www.moechan.top/pages/lyrics",
+    canonical: "https://moechan.top/pages/lyrics",
   },
   icons: {
     icon: "/favicon.ico",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://www.moechan.top/pages/lyrics",
+    url: "https://moechan.top/pages/lyrics",
     title: "Lyrics | Moe - Lời bài hát ý nghĩa & cảm xúc",
     description:
       "Khám phá bộ sưu tập lời bài hát hay, ý nghĩa và đầy cảm xúc tại Moe. Tìm cảm hứng từ những giai điệu yêu thích!",

@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://www.moechan.top";
+  const baseUrl = "https://moechan.top";
   return {
     rules: [
       {

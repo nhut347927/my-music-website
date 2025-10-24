@@ -62,7 +62,7 @@ export async function generateMetadata({
       ...song.artist.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://www.moechan.top/pages/lyrics/${slug}`,
+      canonical: `https://moechan.top/pages/lyrics/${slug}`,
     },
     robots: {
       index: true,
@@ -79,7 +79,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "music.song",
-      url: `https://www.moechan.top/pages/lyrics/${slug}`,
+      url: `https://moechan.top/pages/lyrics/${slug}`,
       title: `${song.title} - ${song.artist} | Moe`,
       description,
       siteName: "Moe",
@@ -128,7 +128,7 @@ export default async function LyricsDetailPage({
     "@type": "MusicRecording",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.moechan.top/pages/lyrics/${slug}`,
+      "@id": `https://moechan.top/pages/lyrics/${slug}`,
     },
     name: song.title,
     description: getSongDescription(song),
@@ -145,7 +145,7 @@ export default async function LyricsDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.moechan.top/logo.png",
+        url: "https://moechan.top/logo.png",
       },
     },
   };

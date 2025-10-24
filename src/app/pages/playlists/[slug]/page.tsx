@@ -62,7 +62,7 @@ export async function generateMetadata({
       ...playlist.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://www.moechan.top/pages/playlists/${slug}`,
+      canonical: `https://moechan.top/pages/playlists/${slug}`,
     },
     robots: {
       index: true,
@@ -79,7 +79,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "music.playlist",
-      url: `https://www.moechan.top/pages/playlists/${slug}`,
+      url: `https://moechan.top/pages/playlists/${slug}`,
       title: `${playlist.title} | Moe`,
       description,
       siteName: "Moe",
@@ -134,7 +134,7 @@ export default async function PlaylistDetailPage({
     "@type": "MusicPlaylist",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.moechan.top/pages/playlists/${slug}`,
+      "@id": `https://moechan.top/pages/playlists/${slug}`,
     },
     name: playlist.title,
     description: getPlaylistDescription(playlist),
@@ -152,7 +152,7 @@ export default async function PlaylistDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.moechan.top/logo.png",
+        url: "https://moechan.top/logo.png",
       },
     },
   };

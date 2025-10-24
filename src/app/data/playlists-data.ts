@@ -267,7 +267,7 @@ export const playlistsData: PlaylistPost[] = [
       {
         name: "Cắt Đôi Nỗi Sầu",
         desc: "Bản ballad buồn đầy cảm xúc của Tăng Duy Tân hợp tác với DRUM7 năm 2023-2024, 'Cắt Đôi Nỗi Sầu' đã trở thành hot trend trên TikTok với hàng ngàn video cover và challenge, lời ca chạm đến nỗi đau tình yêu tan vỡ một cách chân thực và sâu sắc. Được phát hành như track đầu tiên trong EP cùng tên, bài hát với giai điệu chậm rãi, vocal run rẩy và beat sản xuất bởi DRUM7 đã nhanh chóng thống trị Zing MP3 và các bảng xếp hạng, đạt chứng nhận triệu view trên YouTube chỉ sau thời gian ngắn. Nội dung kể về việc cố gắng chia đôi nỗi buồn để bớt đau đớn, nhưng càng làm tim thêm nhói, khiến khán giả trẻ đồng cảm sâu sắc, đặc biệt là những ai từng trải qua chia tay. MV với hình ảnh tối giản nhưng đầy biểu cảm, kết hợp hiệu ứng mưa rơi tượng trưng cho nước mắt, đã góp phần tạo nên sức viral mạnh mẽ. Đây là một trong những hit tiêu biểu của V-pop gần đây, đại diện cho thế hệ nghệ sĩ trẻ biết cách biến nỗi đau thành nghệ thuật, và nó hoàn hảo cho những khoảnh khắc bạn muốn thả hồn vào âm nhạc để chữa lành.",
-        youtube: "##https://www.youtube.com/watch?v=GpmOn4RyzZI",
+        youtube: "https://www.youtube.com/watch?v=GpmOn4RyzZI",
       },
       {
         name: "Thị Mầu",

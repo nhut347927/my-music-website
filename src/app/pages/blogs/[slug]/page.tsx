@@ -61,7 +61,7 @@ export async function generateMetadata({
       ...blog.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://www.moechan.top/pages/blogs/${slug}`,
+      canonical: `https://moechan.top/pages/blogs/${slug}`,
     },
     robots: {
       index: true,
@@ -78,7 +78,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "article",
-      url: `https://www.moechan.top/pages/blogs/${slug}`,
+      url: `https://moechan.top/pages/blogs/${slug}`,
       title: `${blog.title} | Moe`,
       description,
       siteName: "Moe",
@@ -129,7 +129,7 @@ export default async function BlogsDetailPage({
     "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.moechan.top/pages/blogs/${slug}`,
+      "@id": `https://moechan.top/pages/blogs/${slug}`,
     },
     headline: blog.title,
     description: getBlogDescription(blog),
@@ -143,7 +143,7 @@ export default async function BlogsDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.moechan.top/logo.png",
+        url: "https://moechan.top/logo.png",
       },
     },
     datePublished: blog.date,

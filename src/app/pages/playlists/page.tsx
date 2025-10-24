@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "rock",
   ],
   alternates: {
-    canonical: "https://www.moechan.top/pages/playlists",
+    canonical: "https://moechan.top/pages/playlists",
   },
   icons: {
     icon: "/favicon.ico",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://www.moechan.top/pages/playlists",
+    url: "https://moechan.top/pages/playlists",
     title: "Playlists | Moe - Âm nhạc theo tâm trạng & chủ đề",
     description:
       "Khám phá các playlist âm nhạc được tuyển chọn theo chủ đề và tâm trạng tại Moe. Tìm giai điệu phù hợp với mọi khoảnh khắc!",

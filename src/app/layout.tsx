@@ -10,7 +10,7 @@ import Footer from "./components/layout/footer";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.moechan.top"),
+  metadataBase: new URL("https://moechan.top"),
 
   title: "Moe | Tâm sự cùng bạn",
   description: "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bạn.",
