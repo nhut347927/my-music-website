@@ -50,7 +50,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
         </div>
 
         {/* Bên PHẢI: Hình ảnh banner */}
-         <div className="relative w-full h-full min-h-[20rem] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-full min-h-[20rem] rounded-2xl overflow-hidden">
           <Image
             src={blog.image}
             alt={blog.title}
@@ -77,12 +77,11 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "text") {
             return (
-            <p
-  key={originalIdx}
-  className="text-base sm:text-lg text-justify leading-relaxed whitespace-pre-line"
-  dangerouslySetInnerHTML={{ __html: para.content }}
-/>
-
+              <p
+                key={originalIdx}
+                className="text-base sm:text-lg text-justify leading-relaxed whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: para.content }}
+              />
             );
           }
           if (para.type === "image") {
@@ -105,7 +104,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
               <p key={originalIdx} className="text-center my-4">
                 <Link
                   href={para.content}
-                  className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700"
+                  className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 break-words whitespace-pre-wrap"
                   target="_blank"
                 >
                   {para.content}

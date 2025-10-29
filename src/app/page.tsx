@@ -143,6 +143,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* <section>
+
+        thử gửi chính mình
+      </section> */}
+
       {/* 📊 BLOGS SECTION */}
       <section className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 text-center sm:text-left">
