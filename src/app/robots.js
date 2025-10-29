@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "https://moechan.top";
+  const baseUrl = "https://moe.io.vn";
   return {
     rules: [
       {

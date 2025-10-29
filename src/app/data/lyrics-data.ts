@@ -1,4 +1,4 @@
-import tree1 from "../asset/tree1.jpg";
+import anonymous from "../asset/anonymous.jpg";
 import tree2 from "../asset/tree2.jpg";
 import { LyricPost } from "../types/type";
 import { categoriesData } from "./category-data";
@@ -69,10 +69,10 @@ export const lyricsData: LyricPost[] = [
       "guardian angel",
       "hai chúng ta giữa thế gian",
     ], // các bài khác của artist :contentReference[oaicite:7]{index=7}
-    userCommentAvatar: tree1.src,
-    userNameComment: "Nguyen Van A",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
-    comment: "Bài hát này thực sự chạm đến trái tim tôi mỗi khi nghe.",
+    comment: "Một bản nhạc nhẹ nhàng, sâu lắng về tình yêu và sự an trú trong vòng tay người thương. Giai điệu êm dịu kết hợp với lời ca ý nghĩa tạo nên một trải nghiệm âm nhạc đầy cảm xúc. Bài hát như một lời nhắc nhở về việc tìm thấy sự bình yên và hạnh phúc trong những khoảnh khắc giản đơn bên người mình yêu. Một tác phẩm tuyệt vời từ Sweet Liquor.",
   },
   {
     id: 2,
@@ -128,10 +128,10 @@ export const lyricsData: LyricPost[] = [
     composer: "Vũ Cát Tường",
     producer: "Huy Tuấn",
     otherSongs: ["Từng là", "Mơ", "Yêu xa"], // các bài khác của Vũ Cát Tường
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
-    comment: "Bài hát đầy cảm xúc, khiến lòng người lắng lại mỗi khi nghe.",
+    comment: "Bài hát 'Vết mưa' của Vũ Cát Tường là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu. Giai điệu nhẹ nhàng, sâu lắng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự tiếc nuối và nỗi buồn khi phải rời xa người mình yêu thương. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của Vũ Cát Tường.",
   },
   {
     id: 3,
@@ -176,10 +176,10 @@ export const lyricsData: LyricPost[] = [
     composer: "Hngle, Ari",
     producer: "Hngle",
     otherSongs: ["Cô Đơn", "Nói Anh Nghe", "Ur Last"],
-    userCommentAvatar: tree2.src,
-    userNameComment: "Nguyen Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
-    comment: "Bài hát này thực sự chạm đến trái tim tôi mỗi khi nghe.",
+    comment: "Bài hát 'Không Buông' của Hngle ft. Ari là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu. Giai điệu nhẹ nhàng, sâu lắng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự tiếc nuối và nỗi buồn khi phải rời xa người mình yêu thương. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của Hngle và Ari.",
   },
   {
     id: 4,
@@ -240,11 +240,11 @@ export const lyricsData: LyricPost[] = [
     composer: "Vũ Cát Tường",
     producer: "Huy Tuấn",
     otherSongs: ["Từng là", "Mơ", "Yêu xa"], // các bài khác của Vũ Cát Tường
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát như một lời tự sự trưởng thành, nhẹ nhàng nhưng đầy sâu sắc của Vũ Cát Tường.",
+      "'Người Bình Thường' là một bản ballad sâu lắng của Vũ Cát Tường, thể hiện hành trình trưởng thành và tìm kiếm hạnh phúc trong cuộc sống. Bài hát mang thông điệp về việc trân trọng những điều giản đơn và sống chậm lại để tận hưởng từng khoảnh khắc. Giai điệu nhẹ nhàng kết hợp với lời ca ý nghĩa đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe, khiến họ suy ngẫm về giá trị thực sự của cuộc sống và tình yêu.",
   },
   {
     id: 5,
@@ -299,11 +299,11 @@ export const lyricsData: LyricPost[] = [
     composer: "Kai Đinh",
     producer: "Khắc Hưng",
     otherSongs: ["Ghen", "Có Em Chờ", "Đừng Yêu Nữa Em Mệt Rồi"], // các bài khác của MIN
-    userCommentAvatar: minSinger.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát mang giai điệu nhẹ nhàng, lãng mạn, khắc họa nỗi nhớ da diết qua từng lời gọi tên, là một trong những ca khúc thành công của MIN.",
+      "'Gọi Tên Em' là một bản ballad nhẹ nhàng, sâu lắng của MIN, kể về cảm xúc khi yêu và sự an ủi mà tình yêu mang lại. Giai điệu êm dịu kết hợp với lời ca ý nghĩa đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Bài hát như một lời nhắc nhở về việc tìm thấy sự bình yên và hạnh phúc trong những khoảnh khắc giản đơn bên người mình yêu. Một tác phẩm tuyệt vời từ MIN.",
   },
   {
     id: 6,
@@ -354,11 +354,11 @@ export const lyricsData: LyricPost[] = [
     composer: "Nguyễn Hoàng Tôn, Đen Vâu, JustaTee",
     producer: "Khắc Hưng",
     otherSongs: ["Gọi Tên Em", "Ghen", "Có Em Chờ"], // các bài khác của MIN
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát là sự kết hợp thú vị giữa MIN, Đen Vâu và JustaTee, mang giai điệu chill, lãng mạn, nói về tình yêu cuồng nhiệt và bất chấp lý trí.",
+      "'Vì Yêu Cứ Đâm Đầu' là một bản ballad nhẹ nhàng, sâu lắng của MIN, kể về cảm xúc khi yêu và sự an ủi mà tình yêu mang lại. Giai điệu êm dịu kết hợp với lời ca ý nghĩa đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Bài hát như một lời nhắc nhở về việc tìm thấy sự bình yên và hạnh phúc trong những khoảnh khắc giản đơn bên người mình yêu. Một tác phẩm tuyệt vời từ MIN.",
   },
   {
     id: 7,
@@ -402,11 +402,11 @@ export const lyricsData: LyricPost[] = [
     composer: "W/n",
     producer: "W/n",
     otherSongs: ["id T41104", "id 2022", "3107"], // các bài khác của W/n
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát thuộc series 3107, mang giai điệu lo-fi ballad buồn bã, kể về nỗi nhớ và sự chia ly trong tình yêu.",
+      "Bài hát 'id 072019' của W/n là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu. Giai điệu nhẹ nhàng, sâu lắng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự tiếc nuối và nỗi buồn khi phải rời xa người mình yêu thương. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của W/n.",
   },
   {
     id: 8,
@@ -450,11 +450,11 @@ export const lyricsData: LyricPost[] = [
     composer: "W/n",
     producer: "W/n",
     otherSongs: ["id 072019", "id 2022", "3107"], // các bài khác của W/n
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Ca khúc Halloween 2023 của W/n, với giai điệu lofi buồn, khắc họa nỗi đau sau chia tay và những kỷ niệm ám ảnh.",
+      "Bài hát 'id T41104' của W/n là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu. Giai điệu nhẹ nhàng, sâu lắng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự tiếc nuối và nỗi buồn khi phải rời xa người mình yêu thương. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của W/n.",
   },
   {
     id: 9,
@@ -499,11 +499,11 @@ export const lyricsData: LyricPost[] = [
     composer: "W/n",
     producer: "W/n",
     otherSongs: ["id 072019", "id T41104", "3107"], // các bài khác của W/n
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát kết thúc năm 2023, thuộc series id, mang thông điệp hy vọng và nhìn lại năm cũ với giai điệu lofi chill.",
+      "Bài hát 'id 2022' của W/n là một bản ballad đầy cảm xúc, kể về nỗi lo lắng về tương lai và những ước mơ chưa thành trong cuộc sống. Giai điệu nhẹ nhàng, sâu lắng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự khao khát và hy vọng về một tương lai tươi sáng hơn. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của W/n.",
   },
   {
     id: 10,
@@ -553,11 +553,11 @@ export const lyricsData: LyricPost[] = [
     composer: "Ân Ngờ",
     producer: "Ân Ngờ",
     otherSongs: ["Lạ Lùng", "Đông Kiếm Em", "Mùa Hè Của Em"], // các bài khác liên quan indie
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát mang giai điệu indie pop lãng mạn, mơ mộng, gợi hình ảnh vườn mây như một không gian tình yêu riêng tư và ngất ngây.",
+      "Bài hát ‘Vườn Mây Vừa Hay’ của Ân Ngờ ft. MYLINA là một bản ballad indie đầy cảm xúc, kể về những khoảnh khắc ngọt ngào và bình yên giữa hai tâm hồn đồng điệu. Giai điệu nhẹ nhàng, hòa quyện cùng giọng hát trong trẻo tạo nên một không gian mơ màng — nơi người nghe có thể thả mình vào những cảm xúc trong trẻo nhất. Lời ca chân thật và sâu sắc, như một bức tranh vẽ nên câu chuyện tình yêu giản dị nhưng đầy ý nghĩa. Đây thực sự là một tác phẩm đáng nhớ trong sự nghiệp của Ân Ngờ và MYLINA, mang đến cho người nghe những trải nghiệm âm nhạc tinh tế và đầy cảm xúc.",
   },
   {
     id: 11,
@@ -608,11 +608,11 @@ export const lyricsData: LyricPost[] = [
     composer: "ViruSs & JustaTee",
     producer: "ViruSs",
     otherSongs: ["Vì Yêu Cứ Đâm Đầu", "Gọi Tên Em", "Mơ"], // các bài khác liên quan
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát vui tươi, dễ thương với ca từ lãng mạn, đánh dấu sự trở lại của JustaTee, nói về tình yêu điên cuồng và phiêu lưu.",
+      "Bài hát 'Thằng Điên' của JustaTee ft. Phương Ly là một bản ballad đầy cảm xúc, kể về câu chuyện tình yêu ngọt ngào và đôi khi điên rồ. Giai điệu nhẹ nhàng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự mãnh liệt và chân thành trong tình yêu, dù có thể bị coi là 'thằng điên' trong mắt người khác. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của JustaTee và Phương Ly.",
   },
   {
     id: 12,
@@ -678,11 +678,11 @@ export const lyricsData: LyricPost[] = [
     composer: "MYLINA",
     producer: "Unknown", // không có thông tin chính xác
     otherSongs: ["Vườn Mây Vừa Hay", "Tựa Đêm", "Mơ Một Giấc Mơ"], // các bài khác của MYLINA (giả định)
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát 'Một Ai Kề Bên' của MYLINA mang giai điệu ballad pop tươi sáng, nói về sự giải thoát sau chia tay và hy vọng tìm được một tình yêu mới, với lời ca đầy lạc quan và cảm xúc.",
+      "Bài hát 'Một Ai Kề Bên' của MYLINA là một bản ballad indie đầy cảm xúc, kể về hành trình tìm kiếm tình yêu và sự bình yên trong cuộc sống. Giai điệu nhẹ nhàng kết hợp với lời ca chân thật đã tạo nên một tác phẩm âm nhạc chạm đến trái tim người nghe. Qua từng câu hát, người nghe có thể cảm nhận được sự khao khát và hy vọng về một tương lai tươi sáng hơn bên người mình yêu thương. Đây thực sự là một bài hát đáng nhớ trong sự nghiệp của MYLINA.",
   },
   {
     id: 13,
@@ -742,10 +742,10 @@ export const lyricsData: LyricPost[] = [
     composer: "Ahn Shin Ae",
     producer: "philtre",
     otherSongs: ["Breathe", "No One (feat. B.I)", "Red Lipstick"], // các bài khác của Lee Hi
-    userCommentAvatar: tree2.src,
-    userNameComment: "Tran Thi B",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
     userRoleComment: "Admin",
     comment:
-      "Bài hát ballad R&B sâu lắng của Lee Hi, nói về tình yêu duy nhất và mong muốn được bên nhau mãi mãi, với giai điệu nhẹ nhàng và giọng hát đầy cảm xúc.",
+      "'ONLY' là một bản ballad nhẹ nhàng và sâu lắng của Lee Hi, thể hiện qua giọng hát đầy cảm xúc và kỹ thuật điêu luyện. Bài hát mang đến một không gian âm nhạc êm dịu, nơi người nghe có thể cảm nhận được sự chân thành và tình yêu sâu sắc. Lời ca ý nghĩa kết hợp với giai điệu tinh tế đã tạo nên một tác phẩm âm nhạc đáng nhớ, khiến người nghe dễ dàng bị cuốn hút và đắm chìm trong từng nốt nhạc.",
   },
 ];

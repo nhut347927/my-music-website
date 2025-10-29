@@ -2,20 +2,20 @@ import LyricsClient from "./lyrics-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lyrics | Moe - Lời bài hát ý nghĩa & cảm xúc",
+  title: "Lyrics | Những bài hát tới hiện tại tớ  vẫn nghe",
   description:
-    "Khám phá bộ sưu tập lời bài hát hay, ý nghĩa và đầy cảm xúc tại Moe. Tìm cảm hứng từ những giai điệu yêu thích!",
+    "Những bài hát không chỉ hay về giai điệu mà còn có chiều sâu trong lời, nếu bạn muốn tìm một người không ngại nghe lại những bài cũ xưa thì tớ luôn ở dây.",
   keywords: [
     "Moe",
     "lời bài hát",
     "lyrics",
-    "âm nhạc",
+    "lời",
     "bài hát ý nghĩa",
-    "cảm xúc âm nhạc",
-    "tâm sự qua lời hát",
+    "nhạc hay",
+    "mọi người nghe gì?",
   ],
   alternates: {
-    canonical: "https://moechan.top/pages/lyrics",
+    canonical: "https://moe.io.vn/pages/lyrics",
   },
   icons: {
     icon: "/favicon.ico",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://moechan.top/pages/lyrics",
-    title: "Lyrics | Moe - Lời bài hát ý nghĩa & cảm xúc",
+    url: "https://moe.io.vn/pages/lyrics",
+    title: "Lyrics | Những bài hát tới hiện tại tớ vẫn nghe",
     description:
-      "Khám phá bộ sưu tập lời bài hát hay, ý nghĩa và đầy cảm xúc tại Moe. Tìm cảm hứng từ những giai điệu yêu thích!",
+      "Những bài hát không chỉ hay về giai điệu mà còn có chiều sâu trong lời, nếu bạn muốn tìm một người không ngại nghe lại những bài cũ xưa thì tớ luôn ở dây.",
     siteName: "Moe",
     images: [
       {
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lyrics | Moe - Lời bài hát ý nghĩa & cảm xúc",
+    title: "Lyrics | Những bài hát tới hiện tại tớ  vẫn nghe",
     description:
-      "Tìm lời bài hát yêu thích và cảm xúc sâu sắc tại Moe. Khám phá ngay!",
+      "Những bài hát không chỉ hay về giai điệu mà còn có chiều sâu trong lời, nếu bạn muốn tìm một người không ngại nghe lại những bài cũ xưa thì tớ luôn ở dây.",
     images: ["/logo.png"], // Đảm bảo file này tồn tại trong public
   },
 };

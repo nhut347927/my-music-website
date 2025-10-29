@@ -1,7 +1,6 @@
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
-import logo from "./asset/logo.png";
 import { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/app/components/layout/header";
@@ -10,10 +9,11 @@ import Footer from "./components/layout/footer";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://moechan.top"),
+  metadataBase: new URL("https://moe.io.vn"),
 
-  title: "Moe | Tâm sự cùng bạn",
-  description: "Nơi bạn thấy được cảm nghĩ từ góc nhìn của một người bạn.",
+  title: "Moe | Trang này có những lời ngớ ngẩn",
+  description:
+    "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -23,8 +23,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Moe | Tâm sự cùng bạn",
-    description: "Phân tích bài hát, cảm xúc và playlist yêu thích.",
+    title: "Moe | Trang này có những lời ngớ ngẩn",
+    description:
+      "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
     images: ["/logo.png"],
   },
   // other: {

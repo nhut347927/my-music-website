@@ -19,31 +19,44 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
       <div className="flex-2 space-y-8">
         {/* Section 1 */}
         <div className="flex flex-col sm:flex-row items-start gap-8 relative">
-          <span className="absolute right-8 text-gray-500 dark:text-gray-400 text-base flex items-center">
-            <Eye className="w-4 h-4 mr-2" />
-            {song.views}
-          </span>
           <div className="w-56 h-56 shadow-[0_4px_20px_rgba(0,0,0,0.1)] rounded-xl">
             <Image
               src={song.image}
               alt={`${song.title} - ${song.artist}`}
-              width={224}
-              height={224}
+              width={250}
+              height={250}
               className="object-cover w-full h-full rounded-xl"
             />
           </div>
 
           <div className="flex-1 flex flex-col justify-between h-full">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold leading-tight text-black dark:text-white my-3">
+              <h1 className="text-2xl sm:text-3xl font-extrabold leading-tight text-black dark:text-white ">
                 {song.title}
               </h1>
-              <p className="text-gray-700 dark:text-gray-300 text-lg font-semibold mb-8">
+              <p className="text-gray-700 dark:text-gray-300 text-lg font-semibold mb-4">
                 {song.artist}
               </p>
-              <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2 mb-2">
+               <div className="flex flex-wrap gap-2 mb-4">
+          {song?.categories?.map((cat, i) => (
+            <span
+              key={i}
+              className="inline-block text-[11px] border border-neutral-300 dark:border-neutral-700 
+                px-2.5 py-[3px] rounded-full text-neutral-500 dark:text-neutral-400 tracking-tight"
+            >
+              {cat.name}
+            </span>
+          ))}
+        </div>
+             <div className=" flex items-center space-x-6">
+               <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2 mb-2">
                 <Calendar className="w-4 h-4" /> {song.year}
               </p>
+              <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2 mb-2">
+               <Eye className="w-4 h-4" />
+            {song.views}
+              </p>
+             </div>
               <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2">
                 <Clock className="w-4 h-4" /> {song.duration}
               </p>
@@ -86,9 +99,10 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
         </div>
 
         {/* Section 3: Cảm nghĩ */}
-        <div className="flex items-start gap-6 my-16 rounded-2xl max-w-3xl py-4">
-          <Avatar className="w-16 h-16">
+        <div className="flex items-start gap-6 my-16 max-w-3xl py-4">
+          <Avatar className="w-16 h-16 ">
             <AvatarImage
+             className="object-cover"
               src={song.userCommentAvatar}
               alt={song.userNameComment || "User"}
             />

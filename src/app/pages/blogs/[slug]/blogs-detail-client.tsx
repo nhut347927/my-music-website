@@ -13,48 +13,62 @@ interface BlogsDetailClientProps {
 export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
   return (
     <div className="max-w-6xl mx-auto mt-14 space-y-16">
-      {/* Ảnh banner */}
-      <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden">
-        <Image
-          src={blog.image}
-          alt={blog.title}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center p-8 sm:p-12">
-          <h1 className="text-3xl sm:text-5xl font-bold text-white text-center drop-shadow-md">
+      {/* Phần 50:50 - Thông tin bên TRÁI + Ảnh bên PHẢI */}
+      <div className="grid md:grid-cols-2 gap-8 items-stretch">
+        {/* Bên TRÁI: Tiêu đề + Danh mục + Lượt xem + Đoạn đầu */}
+        <div className="flex flex-col justify-center space-y-6">
+          {/* Tiêu đề */}
+          <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             {blog.title}
           </h1>
+
+          {/* Danh mục */}
+          <div className="flex flex-wrap gap-2">
+            {blog.categories.map((cat, idx) => (
+              <span
+                key={idx}
+                className="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300"
+              >
+                {cat?.name}
+              </span>
+            ))}
+          </div>
+
+          {/* Lượt xem + ngày */}
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            👁 {blog.views.toLocaleString()} lượt xem
+            {blog.date &&
+              ` • 🗓 ${new Date(blog.date).toLocaleDateString("vi-VN")}`}
+          </p>
+
+          {/* Đoạn văn đầu tiên (paragraphs[0]) - chỉ nếu là text */}
+          {blog.paragraphs[0]?.type === "text" && (
+            <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line">
+              {blog.paragraphs[0].content}
+            </p>
+          )}
+        </div>
+
+        {/* Bên PHẢI: Hình ảnh banner */}
+         <div className="relative w-full h-full min-h-[20rem] rounded-2xl overflow-hidden">
+          <Image
+            src={blog.image}
+            alt={blog.title}
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
 
-      {/* Thông tin cơ bản */}
-      <div className="text-center space-y-3">
-        <div className="flex flex-wrap justify-center gap-2">
-          {blog.categories.map((cat, idx) => (
-            <span
-              key={idx}
-              className="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300"
-            >
-              {cat?.name}
-            </span>
-          ))}
-        </div>
-
-        <p className="text-gray-500 dark:text-gray-400 text-sm">
-          👁 {blog.views.toLocaleString()} lượt xem
-          {blog.date &&
-            ` • 🗓 ${new Date(blog.date).toLocaleDateString("vi-VN")}`}
-        </p>
-      </div>
-
-      {/* Nội dung bài viết */}
+      {/* Nội dung bài viết - từ paragraphs[1] trở đi */}
       <article className="space-y-8 leading-relaxed text-gray-800 dark:text-gray-300">
-        {blog.paragraphs.map((para, idx) => {
+        {blog.paragraphs.slice(1).map((para, idx) => {
+          const originalIdx = idx + 1;
+
           if (para.type === "title") {
             return (
               <h2
-                key={idx}
+                key={originalIdx}
                 className="text-2xl sm:text-3xl font-bold my-6 text-center"
               >
                 {para.content}
@@ -63,20 +77,23 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "text") {
             return (
-              <p
-                key={idx}
-                className="text-base sm:text-lg text-justify leading-relaxed"
-              >
-                {para.content}
-              </p>
+            <p
+  key={originalIdx}
+  className="text-base sm:text-lg text-justify leading-relaxed whitespace-pre-line"
+  dangerouslySetInnerHTML={{ __html: para.content }}
+/>
+
             );
           }
           if (para.type === "image") {
             return (
-              <div key={idx} className="relative w-full h-80 sm:h-96 my-6">
+              <div
+                key={originalIdx}
+                className="relative w-full h-80 sm:h-96 my-6"
+              >
                 <Image
                   src={para.content}
-                  alt={`Hình ảnh ${idx + 1}`}
+                  alt={`Hình ảnh ${originalIdx}`}
                   fill
                   className="object-cover rounded-2xl"
                 />
@@ -85,7 +102,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "link") {
             return (
-              <p key={idx} className="text-center my-4">
+              <p key={originalIdx} className="text-center my-4">
                 <Link
                   href={para.content}
                   className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700"
@@ -100,10 +117,11 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
         })}
       </article>
 
-      {/* Section 3: Cảm nghĩ */}
+      {/* Section: Cảm nghĩ */}
       <div className="flex items-start gap-6 my-16 rounded-2xl max-w-6xl py-4">
-        <Avatar className="w-16 h-16">
+        <Avatar className="w-16 h-16 flex-shrink-0">
           <AvatarImage
+            className="object-cover"
             src={blog?.userCommentAvatar}
             alt={blog?.userNameComment || "User"}
           />

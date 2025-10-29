@@ -2,9 +2,9 @@ import PlaylistsClient from "./playlists-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Playlists | Moe - Âm nhạc theo tâm trạng & chủ đề",
+  title: "Playlists | Những list mà tớ chọn giúp bạn",
   description:
-    "Khám phá các playlist âm nhạc được tuyển chọn theo chủ đề và tâm trạng tại Moe. Tìm giai điệu phù hợp với mọi khoảnh khắc!",
+    "Playlist theo mùa xuân, hè, thu, đông và theo cả những sự kiện đặc biệt đối với tớ.",
   keywords: [
     "Moe",
     "playlist âm nhạc",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "rock",
   ],
   alternates: {
-    canonical: "https://moechan.top/pages/playlists",
+    canonical: "https://moe.io.vn/pages/playlists",
   },
   icons: {
     icon: "/favicon.ico",
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://moechan.top/pages/playlists",
-    title: "Playlists | Moe - Âm nhạc theo tâm trạng & chủ đề",
+    url: "https://moe.io.vn/pages/playlists",
+    title: "Playlists | Những list mà tớ chọn giúp bạn",
     description:
-      "Khám phá các playlist âm nhạc được tuyển chọn theo chủ đề và tâm trạng tại Moe. Tìm giai điệu phù hợp với mọi khoảnh khắc!",
+      "Playlist theo mùa xuân, hè, thu, đông và theo cả những sự kiện đặc biệt đối với tớ.",
     siteName: "Moe",
     images: [
       {
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Playlists | Moe - Âm nhạc theo tâm trạng & chủ đề",
+    title: "Playlists | Những list mà tớ chọn giúp bạn",
     description:
-      "Tìm playlist âm nhạc phù hợp tâm trạng và chủ đề tại Moe. Khám phá ngay!",
+      "Playlist theo mùa xuân, hè, thu, đông và theo cả những sự kiện đặc biệt đối với tớ.",
     images: ["/logo.png"], // Đảm bảo file này tồn tại trong public
   },
 };

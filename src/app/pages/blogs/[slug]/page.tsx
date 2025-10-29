@@ -15,7 +15,7 @@ const getBlogDescription = (blog: BlogsPost): string =>
     .find((p) => p.type === "text")
     ?.content.slice(0, 160)
     .replace(/[\n\r]+|[\s]{2,}/g, " ") ||
-  "Khám phá bài viết sâu sắc về âm nhạc và cuộc sống tại Moe.";
+  "Khám phá bài viết sâu sắc về trải nghiệm và cuộc sống.";
 
 // Metadata động
 export async function generateMetadata({
@@ -54,14 +54,14 @@ export async function generateMetadata({
     description,
     keywords: [
       "Moe",
-      "blog âm nhạc",
+      "blog cá nhân",
       "câu chuyện cuộc sống",
       "chia sẻ cảm xúc",
       ...blog.categories.map((cat) => cat.name.toLowerCase()),
       ...blog.title.toLowerCase().split(" "),
     ],
     alternates: {
-      canonical: `https://moechan.top/pages/blogs/${slug}`,
+      canonical: `https://moe.io.vn/pages/blogs/${slug}`,
     },
     robots: {
       index: true,
@@ -78,7 +78,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "article",
-      url: `https://moechan.top/pages/blogs/${slug}`,
+      url: `https://moe.io.vn/pages/blogs/${slug}`,
       title: `${blog.title} | Moe`,
       description,
       siteName: "Moe",
@@ -129,7 +129,7 @@ export default async function BlogsDetailPage({
     "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://moechan.top/pages/blogs/${slug}`,
+      "@id": `https://moe.io.vn/pages/blogs/${slug}`,
     },
     headline: blog.title,
     description: getBlogDescription(blog),
@@ -143,7 +143,7 @@ export default async function BlogsDetailPage({
       name: "Moe",
       logo: {
         "@type": "ImageObject",
-        url: "https://moechan.top/logo.png",
+        url: "https://moe.io.vn/logo.png",
       },
     },
     datePublished: blog.date,

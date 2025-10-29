@@ -31,7 +31,7 @@ export default function PlaylistDetailClient({
   };
 
   return (
-    <div className="max-w-6xl mx-auto mt-14 space-y-20 px-6">
+    <div className="max-w-6xl mx-auto mt-14 space-y-16 px-6">
       {/* Banner */}
       <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden">
         <Image
@@ -46,10 +46,28 @@ export default function PlaylistDetailClient({
           </h1>
         </div>
       </div>
+  {/* Thông tin cơ bản */}
+      <div className="text-center space-y-3">
+        <div className="flex flex-wrap justify-center gap-2">
+          {playlist.categories.map((cat, idx) => (
+            <span
+              key={idx}
+              className="text-sm px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300"
+            >
+              {cat?.name}
+            </span>
+          ))}
+        </div>
 
+        <p className="text-gray-500 dark:text-gray-400 text-sm">
+          👁 {playlist.views.toLocaleString()} lượt xem
+          {playlist.date &&
+            ` • 🗓 ${new Date(playlist.date).toLocaleDateString("vi-VN")}`}
+        </p>
+      </div>
       {/* Description */}
       <div className="text-justify space-y-4">
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-normal">
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-normal whitespace-pre-line">
           {playlist.description}
         </p>
       </div>
@@ -67,7 +85,7 @@ export default function PlaylistDetailClient({
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white leading-tight">
                   {song.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-relaxed whitespace-pre-line">
                   {song.desc}
                 </p>
               </div>
@@ -88,9 +106,10 @@ export default function PlaylistDetailClient({
       {/* Final Note */}
       {playlist.final && (
         <div className="text-justify my-20">
-          <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-normal">
-            {playlist.final}
-          </p>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-normal whitespace-pre-line">
+  {playlist.final}
+</p>
+
         </div>
       )}
     </div>

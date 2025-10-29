@@ -55,7 +55,7 @@ export default function Footer() {
           <ul className="space-y-2 text-neutral-600 dark:text-neutral-400 leading-relaxed">
             <li>
               <Link
-                href="/"
+                href="/about"
                 className="hover:text-foreground transition-colors"
               >
                 Về chúng tôi
@@ -63,28 +63,29 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/"
+                href="/pages/lyrics"
                 className="hover:text-foreground transition-colors"
               >
-                Gói dịch vụ
+                Lyrics
               </Link>
             </li>
             <li>
               <Link
-                href="/"
+                href="/pages/playlists"
+                className="hover:text-foreground transition-colors"
+              >
+                Playlists
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/pages/blogs"
                 className="hover:text-foreground transition-colors"
               >
                 Blogs
               </Link>
             </li>
-            <li>
-              <Link
-                href="/"
-                className="hover:text-foreground transition-colors"
-              >
-                Chính sách bảo mật
-              </Link>
-            </li>
+            
           </ul>
         </div>
 

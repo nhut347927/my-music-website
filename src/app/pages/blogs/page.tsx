@@ -2,20 +2,20 @@ import BlogsClient from "./blogs-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs | Moe - Chia sẻ câu chuyện & cảm xúc",
+  title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
   description:
-    "Khám phá những bài viết sâu sắc về cuộc sống, âm nhạc và cảm xúc cùng Moe. Đọc các câu chuyện truyền cảm hứng và tâm sự chân thành.",
+    "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
   keywords: [
     "Moe",
     "blog cuộc sống",
     "chia sẻ cảm xúc",
     "tâm sự",
     "blog âm nhạc",
-    "nhật ký Moe",
+    "nhật ký",
     "câu chuyện cuộc sống",
   ],
   alternates: {
-    canonical: "https://moechan.top/pages/blogs",
+    canonical: "https://moe.io.vn/pages/blogs",
   },
   icons: {
     icon: "/favicon.ico",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://moechan.top/pages/blogs",
-    title: "Blogs | Moe - Nơi chia sẻ cảm xúc & câu chuyện cuộc sống",
+    url: "https://moe.io.vn/pages/blogs",
+    title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
     description:
-      "Khám phá những bài viết đầy cảm xúc về âm nhạc, cuộc sống và tâm sự cùng Moe. Đọc ngay để tìm nguồn cảm hứng!",
+      "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
     siteName: "Moe",
     images: [
       {
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blogs | Moe - Chia sẻ câu chuyện & cảm xúc",
+    title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
     description:
-      "Đọc những bài viết sâu sắc về cuộc sống và âm nhạc tại Moe. Khám phá ngay!",
+      "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
     images: ["/logo.png"], // Kiểm tra file này tồn tại
   },
 };
