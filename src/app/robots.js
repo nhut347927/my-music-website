@@ -1,20 +1,16 @@
 export default function robots() {
   const baseUrl = "https://moe.io.vn";
+
   return {
     rules: [
       {
         userAgent: "*",
         allow: ["/", "/pages/blogs", "/pages/lyrics", "/pages/playlists"],
-        disallow: [
-          "/api/*", // Chặn API routes
-          "/admin/*", // Chặn trang admin (nếu có)
-          "/search", // Chặn trang tìm kiếm nội bộ (nếu có)
-          "/private/*", // Chặn các trang riêng tư (nếu có)
-        ],
+        disallow: ["/api/*", "/admin/*", "/search", "/private/*"],
       },
       {
         userAgent: "Googlebot-Image",
-        allow: ["/asset/*"], // Cho phép crawl hình ảnh trong public/asset
+        allow: ["/asset/*"],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
