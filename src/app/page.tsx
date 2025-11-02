@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HomeClient from "./pages/home/home-client";
 
 export const metadata: Metadata = {
-  title: "Moe | Trang này hơi bị thú vị",
+  title: "Moe | Lời bài hát, Playlist hay & Blog",
   description:
     "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://moe.io.vn/",
-    title: "Moe | Trang này có những lời ngớ ngẩn",
+    title: "Moe | Lời bài hát, Playlist hay & Blog",
     description:
       "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
     siteName: "Moe",
@@ -52,14 +52,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moe | Trang này có những lời ngớ ngẩn",
+    title: "Moe | Lời bài hát, Playlist hay & Blog",
     description:
       "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
     images: ["/logo.png"], // Kiểm tra file này tồn tại
   },
 };
 export default function HomePage() {
-  return (
-   <HomeClient />
-  );
+  return <HomeClient />;
 }
