@@ -36,4 +36,10 @@ export const categoriesData: Category[] = [
   { name: "Động lực" },                // [32]
   { name: "Suy ngẫm" },                // [33]
   { name: "Khám phá bản thân" },       // [34]
+  // về ngày lễ
+  { name: "Giáng sinh" },             // [35]
+  { name: "Năm mới" },                // [36]
+  { name: "Valentine" },              // [37]
+  { name: "Tết Nguyên Đán" },         // [38]
+  
 ];

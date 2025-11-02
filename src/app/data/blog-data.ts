@@ -15,6 +15,12 @@ import ct2 from "../asset/blog-img/chitieu2.jpg";
 import ct3 from "../asset/blog-img/chitieu3.jpg";
 import ct4 from "../asset/blog-img/chitieu4.jpg";
 
+import noel1 from "../asset/blog-img/noel1.jpg";
+import noel2 from "../asset/blog-img/noel2.jpg";
+import noel3 from "../asset/blog-img/noel3.jpg";
+import noel4 from "../asset/blog-img/noel4.jpg";
+import noel5 from "../asset/blog-img/noel5.jpg";
+import noel6 from "../asset/blog-img/noel6.jpg";
 
 
 export const blogData: BlogsPost[] = [
@@ -327,17 +333,17 @@ export const blogData: BlogsPost[] = [
     comment:
       "Thời gian không chờ đợi – nhưng bạn có thể làm chủ nó. Xây đập hôm nay, để dòng sông mang bạn đến đích mai sau!",
   },
-    {
+  {
     id: 4,
     slug: "quan-ly-chi-tieu-hieu-qua-bi-quyet-toi-uu-hoa-ngan-sach-ca-nhan",
-    title: "Quản lý Chi Tiêu Hiệu Quả: Bí Quyết Để Tối Ưu Hóa Ngân Sách Cá Nhân",
+    title:
+      "Quản lý Chi Tiêu Hiệu Quả: Bí Quyết Để Tối Ưu Hóa Ngân Sách Cá Nhân",
     categories: [
-       categoriesData[32],
+      categoriesData[32],
       categoriesData[28],
       categoriesData[29],
-      
+
       categoriesData[31],
-     
     ],
     image: ct1.src, // để trống, bạn thêm sau
     date: "2025-10-29",
@@ -411,7 +417,8 @@ export const blogData: BlogsPost[] = [
       },
       {
         type: "title",
-        content: "Cách xây dựng ngân sách: 6 bước 'vun trồng' khu vườn tài chính",
+        content:
+          "Cách xây dựng ngân sách: 6 bước 'vun trồng' khu vườn tài chính",
       },
       {
         type: "text",
@@ -430,7 +437,8 @@ export const blogData: BlogsPost[] = [
       },
       {
         type: "link",
-        content: "https://www.nerdwallet.com/article/finance/nerdwallet-budget-calculator", // link công cụ 50/30/20
+        content:
+          "https://www.nerdwallet.com/article/finance/nerdwallet-budget-calculator", // link công cụ 50/30/20
       },
       {
         type: "text",
@@ -501,5 +509,146 @@ export const blogData: BlogsPost[] = [
     ],
     comment:
       "Tiền không mua được hạnh phúc – nhưng quản lý tốt tiền sẽ giúp bạn mua được tự do. Hãy bắt đầu vun trồng khu vườn tài chính của bạn ngay hôm nay!",
+  },
+  {
+    id: 5,
+    slug: "giang-sinh-noel-la-gi-lich-su-hoat-dong-qua-tang-nui-di-o-viet-nam-va-the-gioi",
+    title:
+      "Giáng Sinh Noel: Hành Trình Từ Quá Khứ Đến Tương Lai, Hoạt Động, Quà Tặng Và Những Nơi Nên Đến",
+    categories: [
+      categoriesData[35], // Giáng sinh
+      categoriesData[29], // Bài học cuộc sống
+      categoriesData[30], // Tư duy tích cực
+      categoriesData[31], // Thành công
+    ],
+    image: noel1.src, // ảnh minh họa: cây thông Noel lung linh với tuyết rơi, quà tặng bên dưới
+    date: "2025-11-15",
+    views: 4567,
+    type: "blogs",
+
+    // 👇 phần bình luận/ghi chú người viết
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Chuyên gia lễ hội & văn hóa",
+
+    // 👇 nội dung bài viết
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Giáng sinh – hay Noel – không chỉ là một ngày lễ, mà là biểu tượng của hy vọng, đoàn tụ và phép màu. Dù bạn theo đạo hay không, không khí se lạnh, ánh đèn lấp lánh và những giai điệu quen thuộc luôn khơi dậy niềm vui trong lòng. Bài viết này sẽ dẫn bạn qua hành trình của Noel: từ nguồn gốc xa xưa, đến tương lai sáng tạo, các hoạt động thú vị, sự khác biệt giữa thế giới và Việt Nam, gợi ý quà tặng ý nghĩa, và những địa điểm không thể bỏ lỡ.",
+      },
+      {
+        type: "text",
+        content:
+          "Hãy tưởng tượng Noel như một món quà bất tận: mở ra lớp giấy gói đầu tiên, bạn sẽ tìm thấy lịch sử; lớp thứ hai là tương lai; và sâu bên trong là những kỷ niệm ấm áp chờ bạn tạo nên.",
+      },
+      {
+        type: "image",
+        content: noel2.src, // ảnh: lịch sử Noel với hang đá Bethlehem cổ xưa
+      },
+      {
+        type: "title",
+        content: "Noel là gì? Ý nghĩa cốt lõi của ngày lễ Giáng sinh",
+      },
+      {
+        type: "text",
+        content:
+          "Noel, hay Giáng sinh, kỷ niệm ngày Chúa Jesus sinh ra tại Bethlehem vào khoảng năm 0 sau Công nguyên. Đây là lễ lớn nhất của Kitô giáo, tượng trưng cho sự ra đời của tình yêu, hòa bình và hy vọng. Trên toàn cầu, nó đã vượt qua ranh giới tôn giáo để trở thành dịp lễ hội chung, với cây thông, ông già Noel (Santa Claus) và quà tặng. Ở Việt Nam, Noel là ngày lễ vui vẻ, không khí lãng mạn cho các cặp đôi và gia đình.",
+      },
+      {
+        type: "title",
+        content:
+          "Quá khứ của Noel: Từ hang đá Bethlehem đến truyền thống hiện đại",
+      },
+      {
+        type: "text",
+        content:
+          "Noel bắt nguồn từ thế kỷ thứ 4 tại La Mã, khi Giáo hoàng Julius I chọn ngày 25/12 để kỷ niệm sinh nhật Chúa, trùng với lễ mặt trời bất diệt của người La Mã cổ. Qua thời gian, nó lan tỏa qua châu Âu: Đức mang đến cây thông trang trí, Hà Lan giới thiệu ông già Noel (Sinterklaas), và Mỹ biến Santa thành biểu tượng với xe trượt tuyết. Đến thế kỷ 19, Charles Dickens với 'A Christmas Carol' đã thêm yếu tố từ thiện và đoàn tụ gia đình.",
+      },
+      {
+        type: "image",
+        content: noel3.src, // ảnh: tranh vẽ cổ về ông già Noel và trẻ em tặng quà
+      },
+      {
+        type: "title",
+        content: "Tương lai của Noel: Công nghệ và bền vững định hình lễ hội",
+      },
+      {
+        type: "text",
+        content:
+          "Với AI và thực tế ảo, tương lai Noel có thể là những buổi tiệc ảo toàn cầu, nơi bạn 'bay' cùng Santa qua Bắc Cực. Xu hướng bền vững đang lên ngôi: cây thông tái chế, quà tặng thân thiện môi trường, và lễ hội carbon-neutral. Dự đoán đến 2050, Noel sẽ tích hợp metaverse, giúp mọi người kết nối mà không cần di chuyển – đặc biệt hữu ích ở Việt Nam với giao thông đông đúc.",
+      },
+      {
+        type: "title",
+        content: "Hoạt động Noel phổ biến: Từ thế giới đến Việt Nam",
+      },
+      {
+        type: "text",
+        content:
+          "Trên thế giới, hoạt động xoay quanh: hát thánh ca (caroling), xem pháo hoa ở New York hay London, và lễ nửa đêm ở Vatican. Ở Việt Nam, Noel mang màu sắc địa phương: chợ đêm Hà Nội với đèn lồng LED, lễ nhà thờ Đức Bà Sài Gòn đông đúc, và các quán cà phê 'Noel hóa' với bánh khúc cây (yule log). Gia đình Việt thường quây quần ăn gà quay, xem phim Giáng sinh, hoặc tham gia tình nguyện phát quà cho trẻ em nghèo.",
+      },
+      {
+        type: "image",
+        content: noel4.src, // ảnh: chợ đêm Noel ở Hà Nội với đèn màu và cặp đôi dạo chơi
+      },
+      {
+        type: "title",
+        content: "Noel thế giới vs Việt Nam: Sự khác biệt thú vị",
+      },
+      {
+        type: "text",
+        content:
+          "Thế giới (Mỹ, châu Âu): Tuyết trắng, lễ hội kéo dài cả tháng, tập trung vào gia đình hạt nhân. Việt Nam: Không tuyết nhưng có không khí se lạnh miền Bắc, lễ hội ngắn (chủ yếu 24-25/12), nhấn mạnh bạn bè và tình yêu – với các cặp đôi 'check-in' phố đi bộ. Ở Việt, Noel còn là dịp mua sắm lớn trên Shopee/Lazada, kết hợp văn hóa Á Đông như chúc phúc năm mới.",
+      },
+      {
+        type: "title",
+        content:
+          "Quà tặng Noel ý nghĩa: Gợi ý cho sếp, bạn bè và các tình huống",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Cho sếp:</strong> Giỏ quà cao cấp như rượu vang, sổ tay da khắc tên, hoặc voucher spa – thể hiện sự tôn trọng chuyên nghiệp.<br>" +
+          "<strong>Cho bạn bè:</strong> Đồ handmade như vòng tay charm, khăn quàng cổ len, hoặc bộ phim Giáng sinh trên Netflix – gần gũi, vui vẻ.<br>" +
+          "<strong>Tình huống lãng mạn (người yêu):</strong> Trang sức bạc hình ngôi sao, bữa tối candlelight, hoặc album ảnh kỷ niệm.<br>" +
+          "<strong>Cho gia đình:</strong> Bánh quy tự làm, áo len đôi, hoặc quyên góp từ thiện nhân danh họ.<br>" +
+          "Mẹo chung: Chọn quà cá nhân hóa, gói giấy đỏ-xanh, kèm thiệp viết tay để tăng giá trị cảm xúc.",
+      },
+      {
+        type: "link",
+        content: "https://www.amazon.com/holiday-gift-guide", // link gợi ý quà tặng quốc tế
+      },
+      {
+        type: "image",
+        content: noel5.src, // ảnh: các món quà Noel được gói đẹp mắt, từ hộp rượu đến vòng tay
+      },
+      {
+        type: "title",
+        content: "Những nơi nên đến dịp Noel: Ở Việt Nam và thế giới",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Việt Nam:</strong> Phố Hàng Mã (Hà Nội) với đèn lồng rực rỡ; Nhà thờ Đức Bà & phố đi bộ Nguyễn Huệ (Sài Gòn) cho không khí sôi động; Đà Lạt với lễ hội hoa và se lạnh tự nhiên.<br>" +
+          "<strong>Thế giới:</strong> Quảng trường Rockefeller (New York) ngắm cây thông khổng lồ; chợ Giáng sinh Strasbourg (Pháp) với rượu mulled wine; Lapland (Phần Lan) gặp Santa thật.<br>" +
+          "Lời khuyên: Đặt vé sớm, mang áo ấm, và tận hưởng bằng cách ghi nhật ký cảm xúc.",
+      },
+      {
+        type: "title",
+        content: "Cảm nghĩ về Noel: Phép màu nằm ở trái tim",
+      },
+      {
+        type: "text",
+        content:
+          "Noel không phải về quà đắt tiền hay tiệc tùng lớn lao, mà là khoảnh khắc bạn ôm lấy người thân dưới ánh đèn mờ ảo, hay gửi tin nhắn chúc phúc đến người xa cách. Với tôi, nó nhắc nhở rằng trong thế giới hối hả, hãy dừng lại để lan tỏa yêu thương. Dù quá khứ có lẫy lừng, tương lai có công nghệ, bản chất Noel vẫn là: 'Peace on Earth, Goodwill to All'.",
+      },
+      {
+        type: "image",
+        content: noel6.src, // ảnh: gia đình quây quần bên cây thông, nụ cười hạnh phúc
+      },
+    ],
+    comment:
+      "Noel là lời nhắc nhở rằng phép màu bắt đầu từ những hành động nhỏ: một nụ cười, một món quà, một lời chúc. Hãy để Giáng sinh này trở thành chương đẹp nhất trong câu chuyện của bạn!",
   },
 ];
