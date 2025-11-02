@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HomeClient from "./pages/home/home-client";
 
 export const metadata: Metadata = {
-  title: "Moe | Trang này có những lời ngớ ngẩn",
+  title: "Moe | Trang này hơi bị thú vị",
   description:
     "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
   keywords: [
