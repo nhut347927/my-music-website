@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "https://moe.io.vn/logo.png",
         width: 1200,
         height: 630,
-        alt: "Moe Blogs - Chia sẻ câu chuyện & cảm xúc",
+        alt: "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
       },
     ],
   },
