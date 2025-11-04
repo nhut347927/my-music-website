@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "Moe",
     images: [
       {
-        url: "/logo.png",
+        url: "https://moe.io.vn/logo.png",
         width: 1200,
         height: 630,
         alt: "Moe Blogs - Chia sẻ câu chuyện & cảm xúc",
@@ -55,9 +55,79 @@ export const metadata: Metadata = {
     title: "Moe | Lời bài hát, Playlist hay & Blog",
     description:
       "Nơi có những bài hát, playlist và những thứ hữu ích mà tớ sưu tầm.",
-    images: ["/logo.png"], // Kiểm tra file này tồn tại
+    images: ["https://moe.io.vn/logo.png"], // Kiểm tra file này tồn tại
+  },
+  robots: {
+    index: true, // Cho phép index
+    follow: true, // Cho phép bot theo link
+    nocache: false, // Cho phép Google lưu cache
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
 };
 export default function HomePage() {
-  return <HomeClient />;
+  // Schema.org (Article)
+ const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://moe.io.vn/#website",
+        url: "https://moe.io.vn/",
+        name: "Moe",
+        description: "Nơi lưu giữ lời bài hát, playlist và những cảm xúc được viết nên từ âm nhạc.",
+        publisher: {
+          "@type": "Organization",
+          "@id": "https://moe.io.vn/#organization",
+        },
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://moe.io.vn/#organization",
+        name: "Moe",
+        url: "https://moe.io.vn/",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://moe.io.vn/logo.png",
+          width: 1200,
+          height: 630,
+        },
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://moe.io.vn/#collectionpage",
+        url: "https://moe.io.vn/",
+        name: "Moe - Lời bài hát, Playlist hay & Blog",
+        isPartOf: { "@id": "https://moe.io.vn/#website" },
+        description: "Khám phá lời bài hát, playlist hay và blog cảm xúc về âm nhạc.",
+        breadcrumb: {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Trang chủ",
+              item: "https://moe.io.vn/",
+            },
+          ],
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <HomeClient />
+    </>
+  );
 }

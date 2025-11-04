@@ -4,12 +4,10 @@ import BlogsDetailClient from "./blogs-detail-client";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-// Định nghĩa interface cho params
 interface BlogsDetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Hàm tái sử dụng để lấy description
 const getBlogDescription = (blog: BlogsPost): string =>
   blog.paragraphs
     .find((p) => p.type === "text")
@@ -17,7 +15,6 @@ const getBlogDescription = (blog: BlogsPost): string =>
     .replace(/[\n\r]+|[\s]{2,}/g, " ") ||
   "Khám phá bài viết sâu sắc về trải nghiệm và cuộc sống.";
 
-// Metadata động
 export async function generateMetadata({
   params,
 }: BlogsDetailPageProps): Promise<Metadata> {
@@ -34,7 +31,7 @@ export async function generateMetadata({
     };
   }
 
-  const blog: BlogsPost | undefined = blogData.find((b) => b.slug === slug);
+  const blog = blogData.find((b) => b.slug === slug);
   if (!blog) {
     return {
       title: "Bài viết không tồn tại | Moe",
@@ -82,11 +79,9 @@ export async function generateMetadata({
       title: `${blog.title} | Moe`,
       description,
       siteName: "Moe",
-      publishedTime: blog.date ?? undefined,
-      modifiedTime: blog.date ?? undefined,
       images: [
         {
-          url: blog.image || "/logo.png",
+          url: blog.image || "https://moe.io.vn/logo.png", // ƯU TIÊN ẢNH BÀI VIẾT
           width: 1200,
           height: 630,
           alt: `${blog.title} - Moe`,
@@ -97,61 +92,75 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${blog.title} | Moe`,
       description,
-      images: [blog.image || "/logo.png"],
+      images: [blog.image || "https://moe.io.vn/logo.png"], // ĐẦY ĐỦ DOMAIN
     },
   };
 }
 
-// Tạo các params tĩnh cho SSG
 export async function generateStaticParams() {
   return blogData.map((blog) => ({
     slug: blog.slug,
   }));
 }
 
-// Server Component chính
 export default async function BlogsDetailPage({
   params,
 }: BlogsDetailPageProps) {
   const { slug } = await params;
-  if (!slug || typeof slug !== "string") {
-    notFound();
-  }
+  if (!slug || typeof slug !== "string") notFound();
 
-  const blog: BlogsPost | undefined = blogData.find((b) => b.slug === slug);
-  if (!blog) {
-    notFound();
-  }
+  const blog = blogData.find((b) => b.slug === slug);
+  if (!blog) notFound();
 
-  // Schema.org (Article)
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://moe.io.vn/pages/blogs/${slug}`,
-    },
-    headline: blog.title,
-    description: getBlogDescription(blog),
-    image: blog.image || "/logo.png",
-    author: {
-      "@type": "Person",
-      name: blog.userNameComment || "Anonymous",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Moe",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://moe.io.vn/logo.png",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://moe.io.vn/#website",
+        url: "https://moe.io.vn/",
+        name: "Moe",
+        description: "Nơi lưu giữ lời bài hát, playlist và những cảm xúc được viết nên từ âm nhạc.",
+        publisher: { "@id": "https://moe.io.vn/#organization" },
       },
-    },
-    datePublished: blog.date,
-    dateModified: blog.date,
-    articleSection: blog.categories.map((cat) => cat.name),
+      {
+        "@type": "Organization",
+        "@id": "https://moe.io.vn/#organization",
+        name: "Moe",
+        url: "https://moe.io.vn/",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://moe.io.vn/logo.png",
+          width: 1200,
+          height: 630,
+        },
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": `https://moe.io.vn/pages/blogs/${slug}#post`,
+        url: `https://moe.io.vn/pages/blogs/${slug}`,
+        headline: blog.title,
+        description: getBlogDescription(blog),
+        image: blog.image || "https://moe.io.vn/logo.png",
+        author: {
+          "@type": "Person",
+          name: blog.userNameComment || "Anonymous",
+        },
+        datePublished: blog.date,
+        dateModified: blog.date,
+        articleSection: blog.categories.map((c) => c.name).join(", "), // STRING, KHÔNG PHẢI MẢNG
+        isPartOf: { "@id": "https://moe.io.vn/#website" },
+        breadcrumb: {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Trang chủ", item: "https://moe.io.vn/" },
+            { "@type": "ListItem", position: 2, name: "Blogs", item: "https://moe.io.vn/pages/blogs" },
+            { "@type": "ListItem", position: 3, name: blog.title, item: `https://moe.io.vn/pages/blogs/${slug}` },
+          ],
+        },
+      },
+    ],
   };
-
-
 
   return (
     <>
