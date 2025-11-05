@@ -10,11 +10,11 @@ import Footer from "./components/layout/footer";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 // ── CHỈ THÊM ĐOẠN NÀY (1 CHỖ DUY NHẤT) ─────────────────────────────────────
-export const metadata: Metadata = {
-  verification: {
-    google: "bwLuvrjjT0lqS0tU90TFX5mm9DG4x3Xu6FLK-8meLgo",
-  },
-};
+// export const metadata: Metadata = {
+//   verification: {
+//     google: "bwLuvrjjT0lqS0tU90TFX5mm9DG4x3Xu6FLK-8meLgo",
+//   },
+// };
 // ─────────────────────────────────────────────────────────────────────
 
 export default function RootLayout({
