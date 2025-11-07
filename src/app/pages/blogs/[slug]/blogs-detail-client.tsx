@@ -88,7 +88,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
             return (
               <div
                 key={originalIdx}
-                className="relative w-full h-80 sm:h-96 my-6"
+                className="relative w-full h-80 sm:h-[80vh] my-6"
               >
                 <Image
                   src={para.content}
