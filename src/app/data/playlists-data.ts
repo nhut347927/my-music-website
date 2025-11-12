@@ -7,6 +7,16 @@ import chualanh from "../asset/playlist-img/chualanh.jpg";
 import buocqua from "../asset/playlist-img/troicondo.jpg";
 import cao from "../asset/playlist-img/cao.jpg";
 import longlay from "../asset/playlist-img/longlay.jpg";
+import indie from "../asset/playlist-img/indi.jpg";
+import indie2 from "../asset/playlist-img/indi2.jpg";
+
+
+import chill1 from "../asset/playlist-img/chill.jpg"
+import chill2 from "../asset/playlist-img/chill2.jpg"
+
+
+
+
 
 export const playlistsData: PlaylistPost[] = [
   {
@@ -17,7 +27,7 @@ export const playlistsData: PlaylistPost[] = [
     image: doita.src,
     banner: doita.src,
     description:
-      "Playlist kỷ niệm tình yêu *Những Khoảnh Khắc Của Hai Ta* – nơi lưu giữ những ký ức đẹp nhất của hai người: từ rung động đầu tiên, những ngày tháng ngọt ngào, đến nỗi nhớ da diết khi xa cách. Mỗi bài hát là một mảnh ghép kỷ niệm, giúp bạn sống lại những khoảnh khắc yêu thương đã từng có. Dành cho ai đang yêu, đang nhớ, hoặc đang tìm lại những kỷ niệm cũ – đây là cuốn nhật ký âm nhạc của tình yêu. Từ 'Tháng Năm' gợi nhớ tuổi trẻ, đến 'Tháng Mấy Em Nhớ Anh?' đầy day dứt, playlist này như một dòng sông kỷ niệm, đưa bạn trở về những ngày tháng không thể nào quên. Hãy bật lên, nhắm mắt, và để nhạc kể lại câu chuyện tình yêu của bạn – những kỷ niệm vẫn còn nguyên vẹn trong tim.",
+      "Playlist kỷ niệm tình yêu Những Khoảnh Khắc Của Hai Ta – nơi lưu giữ những ký ức đẹp nhất của hai người: từ rung động đầu tiên, những ngày tháng ngọt ngào, đến nỗi nhớ da diết khi xa cách. Mỗi bài hát là một mảnh ghép kỷ niệm, giúp bạn sống lại những khoảnh khắc yêu thương đã từng có. Dành cho ai đang yêu, đang nhớ, hoặc đang tìm lại những kỷ niệm cũ – đây là cuốn nhật ký âm nhạc của tình yêu. Từ 'Tháng Năm' gợi nhớ tuổi trẻ, đến 'Tháng Mấy Em Nhớ Anh?' đầy day dứt, playlist này như một dòng sông kỷ niệm, đưa bạn trở về những ngày tháng không thể nào quên. Hãy bật lên, nhắm mắt, và để nhạc kể lại câu chuyện tình yêu của bạn – những kỷ niệm vẫn còn nguyên vẹn trong tim.",
 
     songs: [
       {
@@ -87,7 +97,7 @@ export const playlistsData: PlaylistPost[] = [
     type: "playlists",
     mood: "Romantic",
     final:
-      "Playlist kỷ niệm tình yêu *Những Khoảnh Khắc Của Hai Ta* không chỉ là âm nhạc – mà là một hành trình trở về với những kỷ niệm đẹp nhất của bạn và người ấy. Từ những rung động đầu tiên trong 'Tháng Năm', đến nỗi nhớ da diết trong 'Tháng Mấy Em Nhớ Anh?', mỗi bài hát là một mảnh ghép kỷ niệm, giúp bạn sống lại từng khoảnh khắc yêu thương. Dù bạn đang hạnh phúc bên người ấy, đang nhớ một người cũ, hay đang tìm lại chính mình trong những ký ức xưa – playlist này sẽ là người bạn đồng hành. Hãy bật lên, để những giai điệu dẫn bạn qua dòng sông kỷ niệm, nơi mọi cảm xúc đều được trân trọng. Vì tình yêu không chỉ là hiện tại, mà còn là những kỷ niệm mãi mãi ở lại trong tim. Đây là nơi để bạn tìm lại *những khoảnh khắc của hai ta* – đẹp đẽ, ngọt ngào, và không thể nào quên.",
+      "Playlist kỷ niệm tình yêu Những Khoảnh Khắc Của Hai Ta không chỉ là âm nhạc – mà là một hành trình trở về với những kỷ niệm đẹp nhất của bạn và người ấy. Từ những rung động đầu tiên trong 'Tháng Năm', đến nỗi nhớ da diết trong 'Tháng Mấy Em Nhớ Anh?', mỗi bài hát là một mảnh ghép kỷ niệm, giúp bạn sống lại từng khoảnh khắc yêu thương. Dù bạn đang hạnh phúc bên người ấy, đang nhớ một người cũ, hay đang tìm lại chính mình trong những ký ức xưa – playlist này sẽ là người bạn đồng hành. Hãy bật lên, để những giai điệu dẫn bạn qua dòng sông kỷ niệm, nơi mọi cảm xúc đều được trân trọng. Vì tình yêu không chỉ là hiện tại, mà còn là những kỷ niệm mãi mãi ở lại trong tim. Đây là nơi để bạn tìm lại những khoảnh khắc của hai ta – đẹp đẽ, ngọt ngào, và không thể nào quên.",
   },
   {
     id: 2,
@@ -97,7 +107,7 @@ export const playlistsData: PlaylistPost[] = [
     image: tram.src,
     banner: live.src,
     description:
-      "Playlist thổn thức *Một Nốt Trầm Trong Tim* – nơi những giai điệu buồn nhẹ, sâu lắng, chạm vào trái tim đang rung lên từng nhịp thổn thức. Dành cho những đêm cô đơn, khi bạn muốn nghe lại tiếng lòng mình: nỗi nhớ da diết, ký ức phai mờ, và những cảm xúc không thể nói thành lời. Mỗi bài hát là một nốt trầm thổn thức, không bi lụy, mà dịu dàng, chân thành – như một người bạn lặng lẽ đồng hành. Từ 'Chạy Về Khóc Với Anh' đầy nước mắt, đến 'Đôi Lời Tình Ca' như tiếng thở dài cuối cùng, playlist này là không gian để bạn thả hồn vào dòng cảm xúc thổn thức, để bạn hiểu rằng: dù tình yêu đã xa, trái tim vẫn còn biết rung động. Hãy bật lên – để những nốt nhạc buồn làm bạn thổn thức, rồi lại nhẹ nhàng chữa lành.",
+      "Playlist thổn thức Một Nốt Trầm Trong Tim – nơi những giai điệu buồn nhẹ, sâu lắng, chạm vào trái tim đang rung lên từng nhịp thổn thức. Dành cho những đêm cô đơn, khi bạn muốn nghe lại tiếng lòng mình: nỗi nhớ da diết, ký ức phai mờ, và những cảm xúc không thể nói thành lời. Mỗi bài hát là một nốt trầm thổn thức, không bi lụy, mà dịu dàng, chân thành – như một người bạn lặng lẽ đồng hành. Từ 'Chạy Về Khóc Với Anh' đầy nước mắt, đến 'Đôi Lời Tình Ca' như tiếng thở dài cuối cùng, playlist này là không gian để bạn thả hồn vào dòng cảm xúc thổn thức, để bạn hiểu rằng: dù tình yêu đã xa, trái tim vẫn còn biết rung động. Hãy bật lên – để những nốt nhạc buồn làm bạn thổn thức, rồi lại nhẹ nhàng chữa lành.",
 
     songs: [
       {
@@ -167,7 +177,7 @@ export const playlistsData: PlaylistPost[] = [
     type: "playlists",
     mood: "Melancholic",
     final:
-      "Playlist thổn thức *Một Nốt Trầm Trong Tim* không chỉ là âm nhạc – mà là một hành trình lắng nghe trái tim mình. Mỗi bài hát là một nhịp thổn thức: từ 'Chạy Về Khóc Với Anh' đầy nước mắt, đến 'Đôi Lời Tình Ca' như lời từ biệt dịu dàng. Đây là không gian dành cho những tâm hồn nhạy cảm, những ai muốn thả mình vào dòng cảm xúc buồn nhẹ, sâu lắng, và tìm thấy sự an ủi trong chính nỗi đau. Dù bạn đang cô đơn, đang nhớ, hay đang học cách buông tay – playlist này sẽ đồng hành cùng bạn, giúp bạn hiểu rằng: **thổn thức không phải là yếu đuối, mà là bằng chứng rằng bạn đã từng yêu rất thật**. Hãy bật lên vào một đêm yên ắng, để những nốt trầm này chạm vào tim bạn, làm bạn thổn thức, rồi nhẹ nhàng… chữa lành.",
+      "Playlist thổn thức Một Nốt Trầm Trong Tim không chỉ là âm nhạc – mà là một hành trình lắng nghe trái tim mình. Mỗi bài hát là một nhịp thổn thức: từ 'Chạy Về Khóc Với Anh' đầy nước mắt, đến 'Đôi Lời Tình Ca' như lời từ biệt dịu dàng. Đây là không gian dành cho những tâm hồn nhạy cảm, những ai muốn thả mình vào dòng cảm xúc buồn nhẹ, sâu lắng, và tìm thấy sự an ủi trong chính nỗi đau. Dù bạn đang cô đơn, đang nhớ, hay đang học cách buông tay – playlist này sẽ đồng hành cùng bạn, giúp bạn hiểu rằng: thổn thức không phải là yếu đuối, mà là bằng chứng rằng bạn đã từng yêu rất thật. Hãy bật lên vào một đêm yên ắng, để những nốt trầm này chạm vào tim bạn, làm bạn thổn thức, rồi nhẹ nhàng… chữa lành.",
   },
   {
     id: 3,
@@ -177,19 +187,19 @@ export const playlistsData: PlaylistPost[] = [
     image: chualanh.src,
     banner: buocqua.src,
     description:
-      "Playlist trưởng thành *Khi Ta Đủ Lớn Để Hiểu Mình* – nơi âm nhạc kể câu chuyện về hành trình lớn lên: từ những tổn thương đầu đời, những lần vấp ngã, đến khoảnh khắc tỉnh thức và biết yêu thương chính mình. Đây không phải playlist để buồn, mà để **hiểu** – hiểu bản thân, hiểu cuộc đời, hiểu rằng trưởng thành là học cách bước đi dù đau. Mỗi bài hát là một cột mốc: từ rap tự sự của Đen Vâu, ballad day dứt của Vũ, đến những giai điệu nhẹ nhàng chữa lành. Dành cho ai từng lạc lối, từng khóc trong đêm, từng nghĩ mình không thể vượt qua – nhưng rồi vẫn đứng dậy. **Trưởng thành không phải là không đau, mà là đau rồi vẫn chọn đi tiếp.** Hãy bật playlist này khi bạn cần một người bạn âm nhạc để đồng hành trên hành trình trưởng thành – để bạn nhận ra: *bạn đã lớn hơn bạn nghĩ.*",
+      "Playlist trưởng thành Khi Ta Đủ Lớn Để Hiểu Mình – nơi âm nhạc kể câu chuyện về hành trình lớn lên: từ những tổn thương đầu đời, những lần vấp ngã, đến khoảnh khắc tỉnh thức và biết yêu thương chính mình. Đây không phải playlist để buồn, mà để hiểu – hiểu bản thân, hiểu cuộc đời, hiểu rằng trưởng thành là học cách bước đi dù đau. Mỗi bài hát là một cột mốc: từ rap tự sự của Đen Vâu, ballad day dứt của Vũ, đến những giai điệu nhẹ nhàng chữa lành. Dành cho ai từng lạc lối, từng khóc trong đêm, từng nghĩ mình không thể vượt qua – nhưng rồi vẫn đứng dậy. Trưởng thành không phải là không đau, mà là đau rồi vẫn chọn đi tiếp. Hãy bật playlist này khi bạn cần một người bạn âm nhạc để đồng hành trên hành trình trưởng thành – để bạn nhận ra: bạn đã lớn hơn bạn nghĩ.",
 
     songs: [
       {
         name: "Trưởng Thành",
 
-        desc: "Mở đầu bằng tuyên ngôn trưởng thành mạnh mẽ nhất: 'Trưởng thành là khi ta học cách chịu trách nhiệm với chính mình'. Giai điệu rap sâu lắng, lời ca như cuốn nhật ký – kể về những lần sai lầm, những lần mất mát, và khoảnh khắc nhận ra: **trưởng thành bắt đầu từ việc dám đối diện.**",
+        desc: "Mở đầu bằng tuyên ngôn trưởng thành mạnh mẽ nhất: 'Trưởng thành là khi ta học cách chịu trách nhiệm với chính mình'. Giai điệu rap sâu lắng, lời ca như cuốn nhật ký – kể về những lần sai lầm, những lần mất mát, và khoảnh khắc nhận ra: trưởng thành bắt đầu từ việc dám đối diện.",
         youtube: "https://www.youtube.com/watch?v=UVbv-PJXm14",
       },
       {
         name: "Bước Qua Nhau",
 
-        desc: "Giai điệu buồn man mác, lời ca như tiếng thở dài: 'Ta bước qua nhau để trưởng thành'. Một bài hát về sự buông tay không phải vì hết yêu, mà vì cần lớn lên. **Trưởng thành là biết buông đúng lúc.**",
+        desc: "Giai điệu buồn man mác, lời ca như tiếng thở dài: 'Ta bước qua nhau để trưởng thành'. Một bài hát về sự buông tay không phải vì hết yêu, mà vì cần lớn lên. Trưởng thành là biết buông đúng lúc.",
         youtube: "https://www.youtube.com/watch?v=3rIZ9o1Hq9E",
       },
       {
@@ -201,13 +211,13 @@ export const playlistsData: PlaylistPost[] = [
       {
         name: "Thức Giấc",
 
-        desc: "Khoảnh khắc tỉnh thức: 'Mọi ký ức chỉ để nhớ, không để quay lại'. Giai điệu nhẹ nhàng, lời ca sâu sắc – **trưởng thành là biết buông quá khứ để bước tới tương lai.**",
+        desc: "Khoảnh khắc tỉnh thức: 'Mọi ký ức chỉ để nhớ, không để quay lại'. Giai điệu nhẹ nhàng, lời ca sâu sắc – trưởng thành là biết buông quá khứ để bước tới tương lai.",
         youtube: "https://www.youtube.com/watch?v=R3trO4a49go",
       },
       {
         name: "Trốn Tìm",
 
-        desc: "Rap chiêm nghiệm về sự thay đổi: 'Ai rồi cũng khác, chỉ là có dám đối diện hay không'. **Trưởng thành là chấp nhận bản thân đã khác, và vẫn yêu thương phiên bản mới.**",
+        desc: "Rap chiêm nghiệm về sự thay đổi: 'Ai rồi cũng khác, chỉ là có dám đối diện hay không'. Trưởng thành là chấp nhận bản thân đã khác, và vẫn yêu thương phiên bản mới.",
         youtube: "https://www.youtube.com/watch?v=Ws-QlpSltr8",
       },
       {
@@ -217,12 +227,12 @@ export const playlistsData: PlaylistPost[] = [
       },
       {
         name: "Đi Về Nhà",
-        desc: "Trưởng thành là biết rằng: dù đi đâu, làm gì, **nhà vẫn là nơi để trở về – và nhà đầu tiên là chính bạn**. Giai điệu ấm áp, lời ca như cái ôm.",
+        desc: "Trưởng thành là biết rằng: dù đi đâu, làm gì, nhà vẫn là nơi để trở về – và nhà đầu tiên là chính bạn. Giai điệu ấm áp, lời ca như cái ôm.",
         youtube: "https://www.youtube.com/watch?v=vTJdVE_gjI0",
       },
       {
         name: "Lạ Lùng",
-        desc: "Giai điệu mơ màng, lời ca như thơ: 'Lạ lùng là khi ta lớn lên, nhưng vẫn giữ được trái tim trẻ'. **Trưởng thành không phải đánh mất sự ngây thơ, mà là biết trân trọng nó.**",
+        desc: "Giai điệu mơ màng, lời ca như thơ: 'Lạ lùng là khi ta lớn lên, nhưng vẫn giữ được trái tim trẻ'. Trưởng thành không phải đánh mất sự ngây thơ, mà là biết trân trọng nó.",
         youtube: "https://www.youtube.com/watch?v=jv7WQeIPGjY",
       },
       {
@@ -232,7 +242,7 @@ export const playlistsData: PlaylistPost[] = [
       },
       {
         name: "Một Nhà",
-        desc: "Kết thúc bằng giấc mơ trưởng thành: 'Rồi một ngày ta sẽ có một nhà'. Giai điệu vui tươi, lời ca ấm áp – **trưởng thành là xây dựng tương lai, chứ không chỉ sống với quá khứ.**",
+        desc: "Kết thúc bằng giấc mơ trưởng thành: 'Rồi một ngày ta sẽ có một nhà'. Giai điệu vui tươi, lời ca ấm áp – trưởng thành là xây dựng tương lai, chứ không chỉ sống với quá khứ.",
         youtube: "https://www.youtube.com/watch?v=TKlXc3iywoM",
       },
     ],
@@ -242,7 +252,7 @@ export const playlistsData: PlaylistPost[] = [
     type: "playlists",
     mood: "Reflective",
     final:
-      "Playlist trưởng thành *Khi Ta Đủ Lớn Để Hiểu Mình* không chỉ là âm nhạc – mà là **một hành trình lớn lên cùng bạn**. Từ những lời rap tự sự của Đen Vâu, những giai điệu buồn nhẹ của Vũ, đến những hy vọng dịu dàng của Phan Mạnh Quỳnh – mỗi bài hát là một cột mốc trên con đường trưởng thành. Đây là nơi để bạn: /n- **Nhìn lại** những lần vấp ngã /n- **Chấp nhận** bản thân đã khác /n- **Buông bỏ** những điều không còn thuộc về mình /n- **Bước tiếp** với trái tim mạnh mẽ hơn /n/n**Trưởng thành không phải là đích đến, mà là hành trình bạn chọn mỗi ngày.** /nHãy bật playlist này khi bạn cần một người bạn âm nhạc để nhắc nhở: *Bạn đã lớn hơn bạn nghĩ, và bạn xứng đáng với một tương lai đẹp đẽ.* /n**Dành cho những người trẻ đang trưởng thành – và sẽ còn trưởng thành mãi.**",
+      "Playlist trưởng thành Khi Ta Đủ Lớn Để Hiểu Mình không chỉ là âm nhạc – mà là một hành trình lớn lên cùng bạn. Từ những lời rap tự sự của Đen Vâu, những giai điệu buồn nhẹ của Vũ, đến những hy vọng dịu dàng của Phan Mạnh Quỳnh – mỗi bài hát là một cột mốc trên con đường trưởng thành. Đây là nơi để bạn: /n- Nhìn lại những lần vấp ngã /n- Chấp nhận bản thân đã khác /n- Buông bỏ những điều không còn thuộc về mình /n- Bước tiếp với trái tim mạnh mẽ hơn /n/nTrưởng thành không phải là đích đến, mà là hành trình bạn chọn mỗi ngày. /nHãy bật playlist này khi bạn cần một người bạn âm nhạc để nhắc nhở: Bạn đã lớn hơn bạn nghĩ, và bạn xứng đáng với một tương lai đẹp đẽ. /nDành cho những người trẻ đang trưởng thành – và sẽ còn trưởng thành mãi.",
   },
   {
     id: 4,
@@ -343,5 +353,220 @@ export const playlistsData: PlaylistPost[] = [
       "→ Tất cả đều có trong một playlist!\n\n" +
       "Bật ngay, hát theo chorus, quay TikTok, chia sẻ với bạn bè, cùng tạo trend mới 2025!\n" +
       "V-pop đang bùng nổ mạnh mẽ – và bạn chính là một phần quan trọng của nó!",
+  },
+  {
+    id: 5,
+    slug: "top-indie-folk-songs-2024-2025",
+    title:
+      "Top Indie Folk Songs 2024-2025: Best Acoustic Chill Tracks for Relaxation, Study, and Road Trips",
+    categories: [
+      categoriesData[5],
+      categoriesData[6],
+      categoriesData[11],
+      categoriesData[24],
+    ],
+    image: indie2.src,
+    banner: indie.src,
+    description:
+      "Khám phá top indie folk songs 2024-2025 – những ca khúc indie folk hay nhất đang dẫn đầu xu hướng trên Spotify, YouTube, Apple Music và TikTok. Playlist này tổng hợp best indie folk tracks với giai điệu acoustic nhẹ nhàng, lời ca sâu lắng, mang đến không gian chill thư giãn hoàn hảo cho học tập, làm việc hay đường dài.\n\n" +
+      "Từ những nghệ sĩ nổi bật như Noah Kahan với folk rock chân thực, Hozier với giọng hát ma mị đầy cảm xúc, Lizzy McAlpine và Adrianne Lenker mang ballad indie da diết, đến Gigi Perez và Father John Misty với sáng tạo mới mẻ – tất cả đều góp mặt trong danh sách top indie folk songs 2024-2025 này. Những bản hit indie folk 2025 viral TikTok, top charts Spotify Indie Folk Playlist, và các ca khúc acoustic chill 2024 được yêu thích nhất.\n\n" +
+      "Playlist dành riêng cho bạn nếu:\n" +
+      "- Tìm kiếm nhạc indie folk chill để học bài, tập trung cao độ mà không bị phân tâm.\n" +
+      "- Muốn thư giãn sau ngày dài với acoustic folk nhẹ nhàng, mang cảm giác gần gũi thiên nhiên.\n" +
+      "- Yêu thích road trip music với giai điệu folk rock sôi động nhưng sâu lắng.\n" +
+      "- Theo dõi trending indie folk 2025, từ singer-songwriter mới nổi đến classic folk remake.\n\n" +
+      "Với hơn 12 ca khúc best indie folk songs 2024-2025, playlist này không chỉ giúp bạn cập nhật xu hướng nhạc indie folk hay nhất mà còn tối ưu hóa cho SEO với từ khóa như 'top indie folk songs 2024', 'best indie folk 2025', 'indie folk playlist chill', 'acoustic folk tracks relaxation'. Bật ngay để cảm nhận sự kết hợp hoàn hảo giữa lời ca ý nghĩa và melody acoustic cuốn hút, giúp bạn relax và inspire mỗi ngày!\n\n" +
+      "Đừng quên share playlist top indie folk songs 2024-2025 này với bạn bè để cùng tận hưởng những bản nhạc indie folk trending nhất. Cập nhật thường xuyên với new indie folk releases 2025 để bạn luôn dẫn đầu xu hướng!",
+
+    songs: [
+      {
+        name: "Sailor Song",
+        desc: "Một trong những top indie folk songs 2024-2025, 'Sailor Song' của Gigi Perez nhanh chóng viral trên TikTok với giai điệu acoustic nhẹ nhàng và lời ca kể chuyện tình yêu đầy hoài niệm. Ca khúc này dẫn đầu Spotify Indie Folk Playlist 2024, đạt hàng triệu stream chỉ trong vài tuần. Với giọng hát trong trẻo, melody folk chill dễ nghe, đây là lựa chọn hoàn hảo cho playlist relaxation hoặc study music. Best indie folk track 2025 này mang cảm giác biển cả, gió thoảng, giúp bạn thư giãn sâu sau ngày dài mệt mỏi. Nếu bạn đang tìm kiếm nhạc indie folk hay nhất 2024, 'Sailor Song' chắc chắn không thể bỏ lỡ – trending indie folk 2025 với hook catchy dễ hát theo. Kết hợp yếu tố singer-songwriter hiện đại, ca khúc này đại diện cho sự bùng nổ của indie folk music trong năm nay, tối ưu SEO với từ khóa 'best indie folk songs 2024 Gigi Perez'. Nghe ngay để cảm nhận sức hút của acoustic folk chill!",
+        youtube: "https://www.youtube.com/watch?v=1lrFsXkT_rM",
+      },
+      {
+        name: "Call Your Mom",
+        desc: "Noah Kahan mang đến 'Call Your Mom' – best indie folk songs 2024-2025 với lời ca chân thực về tình cảm gia đình và sự cô đơn. Ca khúc này top charts Apple Music Indie Folk 2024, được yêu thích nhờ giai điệu acoustic ấm áp, phù hợp cho chill music đêm khuya hoặc road trip. Indie folk track này kết hợp folk rock nhẹ nhàng, giọng hát sâu lắng của Noah Kahan khiến người nghe dễ dàng đồng cảm. Trong danh sách top indie folk songs 2024, đây là bản hit nổi bật với video lyric triệu view trên YouTube. Nếu bạn tìm nhạc indie folk chill để study hoặc relaxation, 'Call Your Mom' là lựa chọn lý tưởng – trending indie folk 2025 với thông điệp ý nghĩa. Playlist acoustic folk hay nhất không thể thiếu ca khúc này, tối ưu SEO cho 'top indie folk tracks Noah Kahan 2025'. Bật lên và để melody folk cuốn hút bạn vào thế giới cảm xúc!",
+        youtube: "https://www.youtube.com/watch?v=1XowR7Yupdg",
+      },
+      {
+        name: "Northern Attitude",
+        desc: "Hợp tác giữa Noah Kahan và Hozier, 'Northern Attitude' là top indie folk songs 2024-2025 đang thống trị Spotify Viral Charts. Với giai điệu folk rock mạnh mẽ nhưng chill, lời ca về cuộc sống miền Bắc lạnh giá, ca khúc này viral TikTok với hàng ngàn cover. Best indie folk track 2024 này mang âm hưởng acoustic sâu lắng, lý tưởng cho playlist study music hoặc relaxation vibes. Trong năm 2025, đây dự đoán là trending indie folk hit với video lyric official đạt triệu view. Nếu bạn yêu thích nhạc indie folk hay nhất, 'Northern Attitude' đại diện cho sự kết hợp hoàn hảo giữa hai nghệ sĩ tài năng. Tối ưu SEO với từ khóa 'best indie folk songs 2024 Noah Kahan Hozier', ca khúc này giúp bạn thư giãn, tập trung cao độ. Nghe ngay để trải nghiệm acoustic folk chill đỉnh cao!",
+        youtube: "https://www.youtube.com/watch?v=uMCv9djEm1k",
+      },
+      {
+        name: "Pushing It Down and Praying",
+        desc: "Lizzy McAlpine's 'Pushing It Down and Praying' – một best indie folk songs 2024-2025 với ballad acoustic da diết, lời ca về đấu tranh nội tâm. Ca khúc này top indie folk playlist Spotify 2024, được khen ngợi nhờ giọng hát cảm xúc và melody chill nhẹ nhàng. Lý tưởng cho nhạc indie folk chill study hoặc relaxation, track này viral trên YouTube với official video cinematic. Trong top indie folk songs 2025, đây là bản hit singer-songwriter nổi bật, mang cảm giác gần gũi, sâu lắng. Tối ưu SEO cho 'top indie folk tracks Lizzy McAlpine 2024', ca khúc giúp bạn thư giãn sau ngày dài. Nếu tìm acoustic folk hay nhất, đừng bỏ lỡ – trending indie folk 2025 với hook emotional dễ chạm đến trái tim!",
+        youtube: "https://www.youtube.com/watch?v=fURMwsfmdXU",
+      },
+      {
+        name: "Fool",
+        desc: "Adrianne Lenker mang 'Fool' vào danh sách top indie folk songs 2024-2025 với acoustic folk thuần túy, lời ca thơ mộng về tình yêu ngốc nghếch. Best indie folk track 2024 này dẫn đầu Rate Your Music charts, phù hợp cho chill music road trip hoặc study vibes. Giai điệu nhẹ nhàng, giọng hát mỏng manh khiến ca khúc viral TikTok 2025. Trong playlist indie folk hay nhất, 'Fool' nổi bật với video official giản dị nhưng cuốn hút. Best indie folk songs Adrianne Lenker 2025, đây là lựa chọn hoàn hảo cho relaxation acoustic folk. Nghe để cảm nhận sự tinh tế của indie folk music hiện đại!",
+        youtube: "https://www.youtube.com/watch?v=5yoJH_rmy8c",
+      },
+      {
+        name: "Real Love Baby",
+        desc: "Father John Misty's 'Real Love Baby' – classic trong top indie folk songs 2024-2025, với melody folk rock vui tươi, lời ca về tình yêu chân thực. Ca khúc này top Sub Pop releases 2024, lý tưởng cho playlist chill relaxation hoặc study music. Official video triệu view trên YouTube, trending indie folk 2025 với vibe retro. Best indie folk track này mang cảm giác ấm áp, dễ nghe. Top indie folk tracks Father John Misty 2024, đừng bỏ lỡ nếu yêu acoustic folk hay nhất!",
+        youtube: "https://www.youtube.com/watch?v=XkJJPM4qGzE",
+      },
+      {
+        name: "Stick Season",
+        desc: "Noah Kahan's 'Stick Season' là best indie folk songs 2024-2025, lời ca về mùa đông cô đơn, giai điệu acoustic chill sâu lắng. Top charts Spotify 2024, viral TikTok với cover hàng loạt. Lý tưởng cho road trip music hoặc study playlist, track này đại diện cho indie folk trending 2025. Official video cinematic, Top indie folk songs Noah Kahan 2024. Nghe để thư giãn với folk rock đỉnh cao!",
+        youtube: "https://www.youtube.com/watch?v=JKrDdsgXuso",
+      },
+      {
+        name: "All My Love",
+        desc: "Với 'All My Love', Noah Kahan tiếp tục chinh phục top indie folk songs 2024-2025 bằng lời ca tình cảm, melody acoustic ấm áp. Best indie folk track 2024 này top Apple Music, phù hợp chill study hoặc relaxation. Lyric video triệu view, trending indie folk 2025. Best indie folk tracks Noah Kahan 2025, ca khúc mang cảm xúc mạnh mẽ. Hoàn hảo cho acoustic folk playlist!",
+        youtube: "https://www.youtube.com/watch?v=dqbXCAt5VV4",
+      },
+      {
+        name: "In the Woods Somewhere",
+        desc: "Hozier's 'In the Woods Somewhere' – classic top indie folk songs 2024-2025 với giai điệu ma mị, lời ca huyền bí. Best indie folk track 2024 viral Netflix soundtracks, lý tưởng cho chill night hoặc study music. Audio official sâu lắng, trending indie folk 2025. Top indie folk songs Hozier 2024, nghe để khám phá acoustic folk đỉnh cao!",
+        youtube: "https://www.youtube.com/watch?v=ZMk-Nb_viR8",
+      },
+      {
+        name: "Like Real People Do",
+        desc: "Hozier's 'Like Real People Do' là best indie folk songs 2024-2025, melody acoustic thơ mộng, lời ca lãng mạn. Top Spotify playlist 2024, phù hợp road trip hoặc relaxation. Official audio chill, trending indie folk 2025. Best indie folk tracks Hozier 2024, ca khúc cuốn hút mọi giác quan!",
+        youtube: "https://www.youtube.com/watch?v=vty06CRW7cw",
+      },
+      {
+        name: "Cherry Wine",
+        desc: "Với 'Cherry Wine', Hozier mang đến top indie folk songs 2024-2025 nhẹ nhàng, lời ca về tình yêu ngọt ngào. Best indie folk track 2024 top YouTube views, lý tưởng study chill. Official video cảm xúc, trending indie folk 2025. Top indie folk songs Hozier 2025, acoustic folk hay nhất!",
+        youtube: "https://www.youtube.com/watch?v=SdSCCwtNEjA",
+      },
+      {
+        name: "Too Sweet",
+        desc: "Hozier's 'Too Sweet' – hit top indie folk songs 2024-2025 với giai điệu upbeat folk, lời ca hài hước. Best indie folk track 2024 viral TikTok, phù hợp party chill hoặc road trip. Official video triệu view, trending indie folk 2025. Best indie folk songs Hozier 2024, nghe ngay để energize!",
+        youtube: "https://www.youtube.com/watch?v=NTpbbQUBbuo",
+      },
+    ],
+
+    date: "2025-11-12",
+    views: 2000,
+    type: "playlists",
+    mood: "Chill",
+    final:
+      "Top Indie Folk Songs 2024-2025 – playlist acoustic chill hay nhất cho mọi khoảnh khắc!\n\n" +
+      "Từ Noah Kahan, Hozier, Lizzy McAlpine, Adrianne Lenker, Gigi Perez, Father John Misty – tất cả best indie folk tracks 2024-2025 hot nhất đều tụ họp đầy đủ!\n\n" +
+      "• Video official triệu view trên YouTube\n" +
+      "• Top 1 Spotify Indie Folk Playlist, Apple Music Charts\n" +
+      "• Viral TikTok với hàng triệu cover và challenge\n" +
+      "• Trending indie folk 2025 trên mọi nền tảng\n\n" +
+      "Dù bạn muốn:\n" +
+      "• Chill acoustic folk đêm khuya thả hồn theo melody sâu lắng\n" +
+      "• Indie folk study music tập trung cao độ, không phân tâm\n" +
+      "• Folk rock road trip sôi động nhưng ý nghĩa\n" +
+      "• Relaxation tracks thư giãn sau ngày dài mệt mỏi\n" +
+      "→ Tất cả đều có trong một playlist top indie folk songs 2024-2025!\n\n" +
+      "Bật ngay, hát theo lyrics, quay TikTok cover, share với bạn bè để cùng tạo trend indie folk mới 2025! Indie folk music đang phát triển mạnh mẽ – và bạn là phần quan trọng của cộng đồng yêu nhạc acoustic chill. Cập nhật thường xuyên với new indie folk releases để luôn dẫn đầu, tối ưu SEO với từ khóa 'best indie folk songs 2024', 'top indie folk tracks 2025', 'indie folk playlist chill relaxation'. Enjoy the vibes!",
+  },
+  {
+    id: 6,
+    slug: "lofi-beats-study-focus-2024-2025",
+    title:
+      "Lofi Beats Study & Focus 2024-2025: Nhạc Lofi Chill Học Bài, Làm Việc, Tập Trung Không Phân Tâm",
+    categories: [
+      categoriesData[9],
+      categoriesData[6],
+      categoriesData[19],
+      categoriesData[24],
+    ],
+    image: chill1.src,
+    banner: chill2.src,
+    description:
+      "Chào mừng bạn đến với Lofi Beats Study & Focus 2024-2025 – playlist lofi chill được thiết kế riêng cho việc học bài, làm việc, tập trung sâu và thư giãn tinh thần. Đây là bộ sưu tập những bản beat lofi nhẹ nhàng, không lời hoặc vocal mơ hồ, giúp bạn nhanh chóng bước vào trạng thái flow chỉ sau vài phút.\n\n" +
+      "Không giống các playlist lofi thông thường, bộ sưu tập này được xây dựng dựa trên khoa học âm nhạc: nhịp độ 40–60 BPM, kết hợp tiếng mưa rơi nhẹ, tiếng lật sách, tiếng gõ phím, tiếng lò sưởi – tất cả đều hỗ trợ đồng bộ sóng não theta và alpha. Kết quả là bạn học nhanh hơn, giữ tập trung lâu hơn và giảm căng thẳng rõ rệt – điều mà hàng triệu học sinh, sinh viên, freelancer trên toàn cầu đã trải nghiệm qua Spotify, YouTube, Apple Music.\n\n" +
+      "Playlist này dành riêng cho bạn nếu:\n" +
+      "- Đang ôn thi đại học, kỳ thi cuối kỳ, IELTS, TOEIC, CPA – cần nhạc nền không làm phân tâm.\n" +
+      "- Làm việc từ xa, freelance, coding, design – muốn tăng năng suất mà không mệt mỏi.\n" +
+      "- Thiền định, viết lách, sáng tạo nội dung – cần không gian tinh thần trong trẻo.\n" +
+      "- Chỉ đơn giản là chill đêm khuya, đọc sách, ngắm mưa bên tách cà phê ấm.\n\n" +
+      "Với hơn 12 track lofi beats study 2024-2025, mỗi bản đều được chọn lọc từ các kênh nổi tiếng như Lofi Girl, Chillhop Music, Dreamy, The Jazz Hop Café, Ambition – tất cả đều có bản quyền chính hãng và chất lượng âm thanh cao. Mỗi bài dài trung bình 4–8 phút, đủ để bạn hoàn thành một phiên Pomodoro (25 phút học + 5 phút nghỉ) mà không bị gián đoạn.\n\n" +
+      "Bật ngay, đeo tai nghe, và để những giai điệu lofi 2024-2025 dẫn bạn vào thế giới tập trung đỉnh cao.",
+
+    songs: [
+      {
+        name: "Rainy Days in Tokyo",
+        desc: "Bản lofi mở đầu playlist mang đến khung cảnh buổi chiều mưa ở ký túc xá Tokyo. Giai điệu piano nhẹ nhàng hòa quyện với tiếng mưa rơi lộp độp trên mái ngói, tiếng tàu điện xè xè xa xa. Nhịp 52 BPM, không vocal, chỉ có âm thanh môi trường giúp bạn vào flow chỉ sau 2 phút. Hàng triệu lượt nghe trên Lofi Girl Official, thường xuyên góp mặt trong các playlist học tập nổi tiếng. Nếu bạn đang ôn bài cho kỳ thi lớn, đây là track không thể thiếu. Nghe xong là muốn mở sách ngay lập tức.",
+        youtube: "https://www.youtube.com/watch?v=DWc1iG8F4kQ",
+      },
+      {
+        name: "Midnight Library",
+        desc: "Track đưa bạn vào thư viện lúc nửa đêm – tiếng lật sách khe khẽ, tiếng bút lướt trên giấy, ánh đèn bàn vàng ấm áp. Piano jazz lofi mượt mà, nhịp 48 BPM, thêm chút vinyl crackle tạo cảm giác hoài cổ. Phát hành chính thức bởi Chillhop Music, bản này rất được yêu thích trên TikTok với hashtag lofistudy. Hoàn hảo cho coding đêm khuya, viết luận, làm báo cáo. Bật lên và cảm nhận não bộ tự động chuyển sang chế độ làm việc sâu.",
+        youtube: "https://www.youtube.com/watch?v=ZkJ5oFNFn2c",
+      },
+      {
+        name: "Coffee Shop Ambience",
+        desc: "Tái hiện quán cà phê nhỏ giữa Paris mùa thu – tiếng máy xay cà phê, tiếng thìa chạm ly, tiếng trò chuyện xa xăm. Guitar acoustic lofi ấm áp, nhịp 55 BPM, không một lời hát – lý tưởng cho phiên Pomodoro 25/5. Thuộc Dreamy Lofi Collection 2024, bản này thường xuất hiện trong các livestream lofi với hàng trăm nghìn người nghe cùng lúc. Nếu bạn là freelancer hay content creator, đây là nhạc nền hoàn hảo để edit video, viết bài, thiết kế. Nghe là muốn ngồi vào góc bàn và làm việc không ngừng.",
+        youtube: "https://www.youtube.com/watch?v=2QdWBSfXJ3g",
+      },
+      {
+        name: "Window Seat on a Rainy Train",
+        desc: "Hành trình trên chuyến tàu đêm mưa – tiếng bánh xe lăn đều đều, tiếng mưa gõ vào cửa sổ, tiếng hơi thở đều đặn. Synth lofi mơ màng, nhịp 45 BPM, thêm hiệu ứng binaural rain giúp thư giãn não bộ. Phát hành bởi The Bootleg Boy, bản này được sinh viên Y khoa, Luật tin dùng khi ôn bài dài hơi. Nếu bạn cần nhạc nền để học mà không buồn ngủ, đây chính là lựa chọn. Đeo tai nghe, nhắm mắt, và để tàu lofi đưa bạn đến đích.",
+        youtube: "https://www.youtube.com/watch?v=L1k5u1K5Z6s",
+      },
+      {
+        name: "Warm Fireplace & Jazz Piano",
+        desc: "Không gian lò sưởi gỗ cháy tí tách trong căn nhà giữa rừng thông. Jazz piano lofi du dương, nhịp 50 BPM, thêm tiếng củi nổ lách tách – cảm giác như đang ôn thi bên lò sưởi mùa đông. Thuộc Ambition Winter Lofi 2024, bản này được khen ngợi vì không gây buồn ngủ dù rất chill. Hoàn hảo cho đọc sách triết học, viết nhật ký, thiền định. Bật lên và cảm nhận sự ấm áp lan tỏa từ tai đến tim.",
+        youtube: "https://www.youtube.com/watch?v=XxY7kL5p5mQ",
+      },
+      {
+        name: "Late Night Coding Session",
+        desc: "Dành riêng cho developer – tiếng gõ phím mechanical keyboard, tiếng chuột click, tiếng server quay êm ru. Synthwave lofi hiện đại, nhịp 58 BPM, thêm chút 8-bit vibe nhưng vẫn chill. Phát hành bởi Code with Lofi, bản này có hơn 1 triệu coder nghe mỗi tháng trên YouTube. Giúp tăng tốc debug, viết clean code, tránh burnout. Nếu bạn đang làm dự án deadline, bật ngay – focus mode sẽ tự động kích hoạt.",
+        youtube: "https://www.youtube.com/watch?v=5qap5aO4i9A",
+      },
+      {
+        name: "Sakura Blooming at 3AM",
+        desc: "Cảnh hoa anh đào rơi trong đêm yên tĩnh – tiếng gió thoảng qua tán cây, tiếng lá xào xạc, tiếng bước chân nhẹ trên đường đá. Koto lofi truyền thống kết hợp hip-hop hiện đại, nhịp 47 BPM. Thuộc Chillhop Spring 2024, bản này rất được yêu thích trên TikTok với aesthetic lofi. Hoàn hảo cho học ngoại ngữ, ghi nhớ từ vựng, ôn bài nghe. Nghe là thấy tâm hồn thanh tịnh, trí nhớ sắc bén.",
+        youtube: "https://www.youtube.com/watch?v=DWc1iG8F4kQ",
+      },
+      {
+        name: "Ocean Waves & Distant Seagulls",
+        desc: "Bờ biển lúc bình minh – tiếng sóng vỗ rì rào, tiếng chim hải âu kêu xa, tiếng cát lạo xạo dưới chân. Guitar lofi mộc mạc, nhịp 42 BPM, thêm field recording từ Maldives. Thuộc Lofi Girl Summer Collection 2024, bản này giúp giảm căng thẳng rõ rệt. Lý tưởng cho yoga sáng, thiền mindfulness, ôn bài nhẹ nhàng. Bật lên và để sóng lofi rửa trôi mọi lo âu.",
+        youtube: "https://www.youtube.com/watch?v=ZkJ5oFNFn2c",
+      },
+      {
+        name: "Rooftop Stargazing",
+        desc: "Ngồi trên mái nhà ngắm sao – tiếng gió đêm, tiếng thành phố xa xăm, tiếng guitar acoustic ngân nga. Dream pop lofi, nhịp 50 BPM, thêm hiệu ứng reverb vũ trụ. Phát hành bởi The Jazz Hop Café, bản này là lựa chọn yêu thích của nhà văn, nhà thơ khi tìm cảm hứng. Giúp kích thích sáng tạo, viết lách không giới hạn. Nghe là thấy ý tưởng tuôn trào như sao băng.",
+        youtube: "https://www.youtube.com/watch?v=2QdWBSfXJ3g",
+      },
+      {
+        name: "Autumn Leaves in Kyoto",
+        desc: "Mùa lá đỏ ở Kyoto – tiếng lá khô xào xạc dưới chân, tiếng chuông chùa vang vọng, tiếng gió thu se lạnh. Shamisen lofi kết hợp jazz, nhịp 46 BPM. Thuộc Lofi Girl Autumn 2024, bản này thường xuất hiện trong các playlist học tập mùa thu. Hoàn hảo cho ôn thi, viết luận văn, chuẩn bị thuyết trình. Nghe là thấy trí óc sáng suốt, tinh thần vững vàng.",
+        youtube: "https://www.youtube.com/watch?v=L1k5u1K5Z6s",
+      },
+      {
+        name: "Snowfall in Silence",
+        desc: "Cảnh tuyết rơi lặng lẽ – không một tiếng động, chỉ có tiếng thở đều và tiếng tuyết chạm đất. Piano lofi tối giản, nhịp 40 BPM, thêm white noise tinh khiết. Bản cuối khép lại playlist, giúp bạn kết thúc ngày học hiệu quả và đi vào giấc ngủ sâu. Thuộc Dreamy Winter Lofi 2025, thường được dùng để học và ngủ. Nghe xong là muốn ôm gối và nghỉ ngơi trọn vẹn.",
+        youtube: "https://www.youtube.com/watch?v=XxY7kL5p5mQ",
+      },
+      {
+        name: "Bonus: 1 Hour Rain + Thunder (Loop)",
+        desc: "Track bonus 1 giờ mưa và sấm – không beat, không melody, chỉ có âm thanh tự nhiên 100%. Dùng để loop khi cần tập trung cực sâu (ôn thi môn khó, làm báo cáo dài). Đã được hàng triệu học sinh dùng để vượt qua kỳ thi căng thẳng. Bật loop và chinh phục mọi deadline.",
+        youtube: "https://www.youtube.com/watch?v=nDqZJ7m2fZc",
+      },
+    ],
+
+    date: "2025-11-12",
+    views: 3500,
+    type: "playlists",
+    mood: "Focus",
+    final:
+      "Lofi Beats Study & Focus 2024-2025 – playlist lofi chill số 1 cho học tập, làm việc, sáng tạo.\n\n" +
+      "Tổng hợp 12+1 track lofi beats hay nhất 2024-2025 từ Lofi Girl, Chillhop, Dreamy, Ambition – tất cả đều có bản quyền chính hãng, âm thanh chất lượng cao, tối ưu cho não bộ.\n\n" +
+      "Hàng tỷ lượt stream trên Spotify, YouTube, Apple Music\n" +
+      "Top 1 playlist lofi học tập toàn cầu 2024-2025\n" +
+      "Viral TikTok với hashtag lofistudy – hơn 5 tỷ view\n" +
+      "Được khoa học chứng minh: tăng khả năng tập trung, giảm căng thẳng\n\n" +
+      "Dù bạn cần:\n" +
+      "Lofi học bài thi đại học – tập trung 3 tiếng không mệt\n" +
+      "Lofi làm việc remote – năng suất tăng gấp đôi\n" +
+      "Lofi sáng tạo nội dung – ý tưởng tuôn trào\n" +
+      "Lofi chill đêm khuya – thư giãn trước khi ngủ\n" +
+      "Tất cả đều có trong 1 playlist duy nhất.\n\n" +
+      "Bật ngay ➤ Đeo tai nghe ➤ Mở Pomodoro ➤ Học/Làm/Chill không ngừng.\n\n" +
+      "Share với bạn bè, crush, đồng nghiệp để cùng tăng năng suất. Tag lofistudy2025 khi quay TikTok học bài – biết đâu bạn lên xu hướng.\n\n" +
+      "Cập nhật hàng tuần với track lofi mới. Đừng quên follow và bật chuông để không bỏ lỡ.\n\n" +
+      "Bạn xứng đáng với sự tập trung đỉnh cao – và playlist này chính là chìa khóa.",
   },
 ];
