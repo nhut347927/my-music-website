@@ -25,6 +25,7 @@ export interface LyricPost extends BasePost {
   year: string; // năm phát hành
   lyrics: Lyric[]; // mảng lời bài hát
   singerPhoto: string | any; // ảnh ca sĩ
+  audio: string | any; // audio.mp3
   composer: string; // tên nhạc sĩ
   producer: string; // tên nhà sản xuất
   otherSongs: string[];

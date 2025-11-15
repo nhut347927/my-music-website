@@ -25,6 +25,13 @@ import aikeben from "../asset/lyric-img/1aikeben.jpg";
 import mylina from "../asset/lyric-img/mylina.jpg";
 import leehi from "../asset/lyric-img/leehi.jpg";
 import only from "../asset/lyric-img/only.jpg";
+import mylina_ketuday from "../asset/lyric-img/ketuday.jpg";
+import phuongly from "../asset/lyric-img/phuongly.jpg";
+import anhlaai from "../asset/lyric-img/anhlaai.jpg";
+
+
+
+
 
 export const lyricsData: LyricPost[] = [
   {
@@ -33,6 +40,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric ấm - Sweet Liquor",
     categories: [categoriesData[5], categoriesData[6], categoriesData[7]],
     image: sweetliquorAm.src,
+    audio: "/audio/am.MP3",
     date: "2024-11-19", // ngày phát hành theo thông tin SoundCloud :contentReference[oaicite:2]{index=2}
     views: 1200, // giữ nguyên hoặc bạn cập nhật nếu có dữ liệu mới
     type: "lyrics",
@@ -81,6 +89,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vctVetmua.src, // ảnh đại diện bài hát
+    audio: "/audio/vetmua.MP3",
     date: "2014-12-23", // ngày phát hành chính thức
     views: 1750,
     type: "lyrics",
@@ -139,6 +148,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric Không Buông - Hngle ft. Ari",
     categories: [categoriesData[0], categoriesData[7], categoriesData[14]],
     image: kbly.src,
+    audio: "/audio/khongbuong.MP3",
     date: "2025-08-25",
     views: 1200,
     type: "lyrics",
@@ -188,6 +198,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vctNguoiBinhThuong.src, // ảnh đại diện bài hát
+    audio: "/audio/nguoibinhthuong.MP3",
     date: "2020-06-18", // ngày phát hành chính thức
     views: 2180,
     type: "lyrics",
@@ -252,6 +263,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric Gọi Tên Em - MIN",
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
     image: minGoiTenEm.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/goitenem.MP3",
     date: "2016-12-09", // ngày phát hành chính thức
     views: 15000, // approximate views, adjust as needed
     type: "lyrics",
@@ -312,6 +324,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vycdd.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/viyeucudamdau.MP3",
     date: "2020-07-28", // ngày phát hành chính thức
     views: 25000, // approximate views, adjust as needed
     type: "lyrics",
@@ -366,6 +379,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric id 072019 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id072019.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/id072019.MP3",
     date: "2023-07-31", // ngày phát hành chính thức
     views: 50000, // approximate views, adjust as needed
     type: "lyrics",
@@ -414,6 +428,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric id T41104 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: idt41104.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/idT41104.MP3",
     date: "2023-10-31", // ngày phát hành chính thức
     views: 45000, // approximate views, adjust as needed
     type: "lyrics",
@@ -462,6 +477,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric id 2022 - W/n",
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id2022.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/id2022.MP3",
     date: "2023-12-31", // ngày phát hành chính thức
     views: 60000, // approximate views, adjust as needed
     type: "lyrics",
@@ -512,6 +528,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vuonmayvuahay.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/vuonmayvuahay.MP3",
     date: "2025-05-07", // ngày phát hành chính thức (dựa trên thông tin mới)
     views: 30000, // approximate views, adjust as needed
     type: "lyrics",
@@ -566,6 +583,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: thangdien.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/thangdien.MP3",
     date: "2018-10-19", // ngày phát hành chính thức
     views: 100000, // approximate views, adjust as needed
     type: "lyrics",
@@ -621,6 +639,7 @@ export const lyricsData: LyricPost[] = [
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: aikeben.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/1aikeben.MP3",
     date: "2024-09-01", // ngày phát hành chính thức (ước lượng, do không có thông tin chính xác)
     views: 20000, // approximate views, adjust as needed
     type: "lyrics",
@@ -690,6 +709,7 @@ export const lyricsData: LyricPost[] = [
     title: "Lyric ONLY - Lee Hi",
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]],
     image: only.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
+    audio: "/audio/only.MP3",
     date: "2021-08-27", // ngày phát hành chính thức
     views: 50000000, // approximate views, adjust as needed
     type: "lyrics",
@@ -748,4 +768,109 @@ export const lyricsData: LyricPost[] = [
     comment:
       "'ONLY' là một bản ballad nhẹ nhàng và sâu lắng của Lee Hi, thể hiện qua giọng hát đầy cảm xúc và kỹ thuật điêu luyện. Bài hát mang đến một không gian âm nhạc êm dịu, nơi người nghe có thể cảm nhận được sự chân thành và tình yêu sâu sắc. Lời ca ý nghĩa kết hợp với giai điệu tinh tế đã tạo nên một tác phẩm âm nhạc đáng nhớ, khiến người nghe dễ dàng bị cuốn hút và đắm chìm trong từng nốt nhạc.",
   },
+  {
+  id: 14,
+  slug: "lyric-ke-tu-day-mylina",
+  title: "Lyric Kể Từ Đây - Mylina",
+  categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
+  image: mylina_ketuday.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
+  audio: "/audio/ketuday-mylina.MP3", // Đặt file audio vào public/audio/ketuday.MP3
+  date: "2025-07-17", // ngày phát hành chính thức
+  views: 4032003, // ước tính views trending (cập nhật theo thực tế)
+  type: "lyrics",
+  artist: "Mylina'",
+  lyrics: [
+    {
+      type: "Intro",
+      content:
+        "Một em bé ngu ngơ, tâm hồn em như trang giấy trắng\nBị vò nát trong một tích tắc\nNước mắt lưng tròng, thế giới xoay vòng\nMột em bé ngây thơ, tâm hồn em như trang giấy trắng\nChẳng biết mình làm gì sai, đã hủy hoại một ai\nCuộc đời em sẽ khó khăn nhiều thêm"
+    },
+    {
+      type: "Chorus",
+      content:
+        "Kể từ đây, những lắng lo sẽ không ngừng lại\nKể từ đây, cảm giác kia sẽ không dừng lại\nKể từ đây, em sẽ phải học cách đương đầu\nThay vì mong nó qua đi, sẽ chẳng qua đi\nNó chỉ lớn dần mà thôi, mà thôi\nÚhh-uhh huu, nó chỉ lớn dần mà thôi\nNước mắt lưng tròng, thế giới xoay vòng"
+    },
+    {
+      type: "Verse",
+      content:
+        "Nếu thế giới này không có em\nNhững nỗi buồn sẽ vơi đi nhiều\nNhưng nếu thế giới này không có em\nNhững hạnh phúc trọn vẹn sẽ thiếu\nMặc dù em đã biết, cho dù đi qua hết\nNỗi đau vẫn sẽ kéo dài đến đây\nVà cuộc đời em sẽ khó khăn nhiều thêm"
+    },
+    {
+      type: "Chorus",
+      content:
+        "Kể từ đây, những lắng lo sẽ không ngừng lại\nKể từ đây, cảm giác kia sẽ không dừng lại\nKể từ đây, em sẽ phải học cách đương đầu\nThay vì mong nó qua đi, sẽ chẳng qua đi\nNó chỉ lớn dần mà thôi, mà thôi\nHumm-humm-humm huum, nó chỉ lớn dần mà thôi\nNó chỉ lớn dần mà thôi\nHàa haa-haa, háa hàa\nHàa haa, hàa-haa, hàa haa háa-haa hàa"
+    },
+    {
+      type: "Bridge",
+      content:
+        "Dù có bao nhiêu nỗi đau đi qua\nChỉ là cảm giác cuốn trôi tất cả đi xa\nVề miền đất kỳ lạ, cay đắng ngập tràn\nCuộc đời em sẽ khó khăn nhiều thêm"
+    },
+    {
+      type: "Chorus",
+      content:
+        "Kể từ đây, những lắng lo sẽ không ngừng lại\nKể từ đây, cảm giác kia sẽ không dừng lại\nKể từ đây, em sẽ phải học cách đương đầu\nThay vì mong nó qua đi, sẽ chẳng qua đi\nNó chỉ lớn dần mà thôi, mà thôi\nÚhh-uhh huu, nó chỉ lớn dần mà thôi\nNước mắt lưng tròng, em cũng xoay vòng"
+    }
+  ],
+  year: "2025",
+  duration: "03:18", // thời lượng bài hát thực tế
+  singerPhoto: mylina.src, // ảnh ca sĩ (thay bằng ảnh thực tế từ public/images/)
+  composer: "MYLINA", // tự sáng tác (dựa trên info)
+  producer: "DAO MUSIC ENTERTAINMENT", // nhà sản xuất chính thức
+  otherSongs: ["Giấc Mơ Của Em", "Ơ Anh Mắng Em À", "Tóc Em Ướt Rồi"], // các bài khác nổi bật của Mylina'
+  userCommentAvatar: anonymous.src,
+  userNameComment: "Anonymous",
+  userRoleComment: "Admin",
+  comment:
+    "'Kể Từ Đây' là một bản ballad suy tư của Mylina, tái hiện hành trình trưởng thành với những nỗi đau và bài học chân thực. Giọng hát đầy cảm xúc của cô ấy kết hợp giai điệu nhẹ nhàng, khiến người nghe dễ dàng đồng cảm và suy ngẫm về cuộc đời mình. Một ca khúc Vpop đáng nhớ trong năm 2025!",
+},
+{
+  id: 15,
+  slug: "lyric-anh-la-ai-phuong-ly",
+  title: "Lyric Anh Là Ai - Phương Ly",
+  categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, R&B
+  image: anhlaai.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
+  audio: "/audio/anhlaai.mp3", // Đặt file audio vào public/audio/anhlaai.mp3
+  date: "2019-01-09", // ngày phát hành chính thức
+  views: 1523, // ước tính views trên YouTube và các nền tảng (cập nhật theo thực tế)
+  type: "lyrics",
+  artist: "Phương Ly",
+  lyrics: [
+    {
+      type: "Verse 1",
+      content:
+        "Anh là ai nỗi nhớ khôn nguôi là anh\nMưa phùn rơi từ nơi quá khứ như đưa về đâu\nTôi đang ở đây cơn mưa làm rơi ướt vai vì ai.. vì sao?\nGiờ anh ở đâu?"
+    },
+    {
+      type: "Chorus",
+      content:
+        "Anh là ai ngày mai nếu bước chân tôi cô đơn về\nAnh là ai mà tôi cứ luôn luôn đợi\nTừ khi nào biết yêu rồi\nTừ lâu tôi muốn nói về anh\nAnh là ai? Khiến nước mắt cứ rơi rơi nhẹ\nAnh là ai? Đã giết chết hết bao hy vọng\nAnh là ai?"
+    },
+    {
+      type: "Verse 2",
+      content:
+        "Chắc có lẽ vẫn như xưa, chắc có lẽ mỗi tôi yêu anh\nAnh là ai? Khiến phút chốc trái tim rung động\nAnh là ai? Mang yêu thương theo sau dường như\nLang thang trôi đi đâu tìm kiếm"
+    },
+    {
+      type: "Bridge",
+      content:
+        "Vì nhớ anh, thương anh, tìm anh nơi nỗi đau\nVì nhớ anh, thương anh, tìm anh trong giấc mơ"
+    },
+    {
+      type: "Chorus",
+      content:
+        "Anh là ai ngày mai nếu bước chân tôi cô đơn về\nAnh là ai mà tôi cứ luôn luôn đợi\nTừ khi nào biết yêu rồi\nTừ lâu tôi muốn nói về anh\nAnh là ai? Khiến nước mắt cứ rơi rơi nhẹ\nAnh là ai? Đã giết chết hết bao hy vọng\nAnh là ai?"
+    }
+  ],
+  year: "2019",
+  duration: "04:05", // thời lượng bài hát thực tế
+  singerPhoto: phuongly.src, // ảnh ca sĩ (thay bằng ảnh thực tế từ public/images/)
+  composer: "Kiên Trần", // sáng tác chính thức
+  producer: "JustaTee", // nhà sản xuất âm nhạc chính thức
+  otherSongs: ["Mặt Trời Của Em", "Thằng Điên (ft. JustaTee)", "Missing You"], // các bài khác nổi bật của Phương Ly
+  userCommentAvatar: anonymous.src,
+  userNameComment: "Anonymous",
+  userRoleComment: "Admin",
+  comment:
+    "'Anh Là Ai' là bản ballad R&B đầy hoài niệm của Phương Ly, khắc họa nỗi nhớ da diết về một tình yêu mơ hồ và những câu hỏi day dứt về bản thân người ấy. Với giọng hát mượt mà, giai điệu da diết kết hợp sản xuất tinh tế từ JustaTee, ca khúc nhanh chóng trở thành hit Vpop 2019, chạm đến trái tim những ai từng lạc lối trong ký ức tình yêu.",
+},
 ];
