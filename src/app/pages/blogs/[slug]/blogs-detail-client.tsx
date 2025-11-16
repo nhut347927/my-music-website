@@ -43,9 +43,10 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
 
           {/* Đoạn văn đầu tiên (paragraphs[0]) - chỉ nếu là text */}
           {blog.paragraphs[0]?.type === "text" && (
-            <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line">
-              {blog.paragraphs[0].content}
-            </p>
+            <p
+              className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line"
+              dangerouslySetInnerHTML={{ __html: blog.paragraphs[0].content }}
+            />
           )}
         </div>
 
@@ -137,7 +138,8 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
             <span className="absolute -left-4 top-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
               “
             </span>
-            {blog?.comment}
+
+            <span dangerouslySetInnerHTML={{ __html: blog?.comment }} />
             <span className="absolute -right-4 bottom-0 text-4xl text-gray-300 dark:text-gray-600 select-none">
               ”
             </span>

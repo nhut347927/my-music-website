@@ -37,13 +37,13 @@ export default function HomeClient() {
           className="relative z-10 max-w-3xl mx-auto"
         >
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-            Vì định mệnh nói tớ tạo ra{" "}
-            <span className="text-pink-400">Moe</span>
+            Chào mừng bạn đã đến với <span className="text-pink-400">Moe</span>
           </h1>
 
           <p className="text-base sm:text-lg text-neutral-200 mb-8 max-w-2xl mx-auto">
-            Ở đây, tớ sẽ viết những thứ mà chắc chắn trong dòng chảy thời gian
-            bạn nhất định sẽ đọc được.
+            Ở đây, tớ chia sẻ về chính mình — về những điều tớ thích, những trải
+            nghiệm đã đi qua, những bài học rút ra được và cả những ý tưởng hơi
+            kỳ lạ.
           </p>
 
           <Button
@@ -59,12 +59,45 @@ export default function HomeClient() {
           </Button>
         </motion.div>
       </section>
+      {/* GIỚI THIỆU */}
+      <section className="max-w-6xl mx-auto text-justify text-neutral-600 leading-relaxed space-y-4">
+        <p>
+          Nói một chút về cái tên <strong>"Moe"</strong> và chiếc logo nhỏ này.
+          Thật ra mình đã tạo ra nó cách đây hai năm (nay là 2025). “Moe” là một
+          cái tên khá đặc biệt cả về cách viết lẫn cách đọc — nó không giống bất
+          kỳ từ quen thuộc nào. Lúc tìm hiểu, mình biết được rằng trong văn hoá
+          Nhật, “Moe” còn mang ý nghĩa về sự hạnh phúc, sự dễ thương và cảm giác
+          được truyền cảm hứng. Thế là mình chốt luôn cái tên này, nghe vừa đơn
+          giản vừa có chút cảm xúc.
+        </p>
+
+        <p>
+          Còn về logo, mình lấy cảm hứng từ phong cách tối giản của GitHub. Đúng
+          thời điểm đó, AI của Bing (tiền thân của Copilot bây giờ) mới ra mắt,
+          nên mình mix thêm một chút vibe công nghệ hiện đại. Logo hoàn toàn
+          không liên quan gì đến “mèo đen” như nhiều bạn hay nghĩ đâu nha!
+        </p>
+
+        <p>
+          Trang web này được mình tạo ra ban đầu để thử nghiệm SEO và kiểm tra
+          nhiều ý tưởng nhỏ lẻ. Nhưng càng làm thì mình càng muốn phát triển nó
+          thành một blog cá nhân thực thụ. Sắp tới có thể mình sẽ thêm mục{" "}
+          <strong>“Câu chuyện”</strong> và <strong> “Code”</strong> để chia sẻ
+          trải nghiệm, kiến thức lập trình, cũng như vài thứ linh tinh mà mình
+          thấy thú vị.
+        </p>
+
+        <p>
+          Hi vọng những nội dung trên trang sẽ mang lại điều gì đó hữu ích hoặc
+          truyền cảm hứng cho bạn. Cảm ơn vì đã ghé thăm!
+        </p>
+      </section>
 
       {/* 🎵 LYRICS SECTION */}
       <section className="max-w-6xl mx-auto ">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 text-center sm:text-left">
           <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-0">
-            🎵 Lời bài hát nổi bật
+            List bài hát mà mình hay nghe có lời và nghe được luôn nha
           </h2>
           <Link
             href="/pages/lyrics"
@@ -105,7 +138,7 @@ export default function HomeClient() {
       <section className="max-w-6xl mx-auto ">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 text-center sm:text-left">
           <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-0">
-            🎧 Playlist hay hôm nay
+            Playlist theo chủ đề và có nhún vào video của Youtube
           </h2>
           <Link
             href="/pages/playlists"
@@ -152,7 +185,7 @@ export default function HomeClient() {
       <section className="max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 text-center sm:text-left">
           <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-0">
-            📊 Bài blogs đáng chú ý
+            Bài blogs những bài học và tip nhỏ nhỏ trong cuộc sống
           </h2>
           <Link
             href="/pages/blogs"
@@ -191,11 +224,39 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+      {/* MÔ TẢ */}
+      <section className="max-w-6xl mx-auto text-justify text-neutral-600 leading-relaxed space-y-4">
+        <p>
+          Những điều nhỏ nhỏ trong cuộc sống — như âm nhạc, những bài học, vài
+          tips và chút kiến thức linh tinh — luôn khiến mình cảm thấy thú vị.
+          Mình biết bản thân vẫn còn cẩu thả ở nhiều chỗ, chưa thật sự chỉnh
+          chu. Nhưng mình nghĩ chỉ cần mỗi ngày có việc để làm, có thứ để mình
+          cố gắng, thì bản thân đã có thêm cơ hội để cải thiện và phát triển
+          rồi. Nhanh hay chậm còn tùy nỗ lực, nhưng chắc chắn là sẽ có ích.
+        </p>
+
+        <p>
+          Khi tạo ra một sản phẩm nào đó, mình cảm giác nó phản ánh khoảng
+          60–90% con người mình. Không phải theo kiểu “sản phẩm tệ thì bạn cũng
+          tệ”, mà là cách bạn xử lý thông tin, cách bạn học, cách bạn suy nghĩ
+          sẽ vô tình được gửi gắm vào đó. Chúng ta khác AI ở chỗ có thể tự tạo
+          ra thông tin mới, tự kiểm chứng nó, và dường như cả đời ai cũng làm
+          việc này mà không để ý.
+        </p>
+
+        <p>
+          Mình nhận ra điều đó nên mới chọn cách viết lại mọi thứ — để bản thân
+          luôn giữ được sự lo lắng vừa đủ, giữ sự tập trung, và giữ tinh thần
+          cải thiện liên tục.
+        </p>
+
+        <p>Và… đó là mình. Kết bạn không?</p>
+      </section>
 
       {/* 🎨 GALLERY CUỐI TRANG */}
       <section className="w-full pb-16">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 max-w-6xl mx-auto text-center sm:text-left">
-          📸 Mấy tấm ảnh đẹp đẹp hợp tâm trạng
+          Mấy tấm ảnh mô tả về mình ?
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

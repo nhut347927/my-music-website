@@ -50,7 +50,7 @@ export const lyricsData: LyricPost[] = [
     image: sweetliquorAm.src,
     audio: "/audio/am.MP3",
     date: "2024-11-19", // ngày phát hành theo thông tin SoundCloud :contentReference[oaicite:2]{index=2}
-    views: 1200, // giữ nguyên hoặc bạn cập nhật nếu có dữ liệu mới
+    views: 1245, // giữ nguyên hoặc bạn cập nhật nếu có dữ liệu mới
     type: "lyrics",
     artist: "Sweet Liquor",
     lyrics: [
@@ -160,7 +160,7 @@ export const lyricsData: LyricPost[] = [
     image: kbly.src,
     audio: "/audio/khongbuong.MP3",
     date: "2025-08-25",
-    views: 1200,
+    views: 784,
     type: "lyrics",
     artist: "Hngle ft. Ari",
     lyrics: [
@@ -276,7 +276,7 @@ export const lyricsData: LyricPost[] = [
     image: minGoiTenEm.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/goitenem.MP3",
     date: "2016-12-09", // ngày phát hành chính thức
-    views: 15000, // approximate views, adjust as needed
+    views: 3546, // approximate views, adjust as needed
     type: "lyrics",
     artist: "MIN",
 lyrics: [
@@ -322,7 +322,7 @@ lyrics: [
     image: vycdd.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/viyeucudamdau.MP3",
     date: "2020-07-28", // ngày phát hành chính thức
-    views: 25000, // approximate views, adjust as needed
+    views: 234, // approximate views, adjust as needed
     type: "lyrics",
     artist: "MIN ft. Đen Vâu & JustaTee",
    lyrics: [
@@ -382,7 +382,7 @@ lyrics: [
     image: id072019.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/id072019.MP3",
     date: "2023-07-31", // ngày phát hành chính thức
-    views: 50000, // approximate views, adjust as needed
+    views: 645, // approximate views, adjust as needed
     type: "lyrics",
     artist: "W/n ft. 267",
    lyrics: [
@@ -437,7 +437,7 @@ lyrics: [
     image: idt41104.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/idT41104.MP3",
     date: "2023-10-31", // ngày phát hành chính thức
-    views: 45000, // approximate views, adjust as needed
+    views: 1443, // approximate views, adjust as needed
     type: "lyrics",
     artist: "W/n ft. 267",
    lyrics: [
@@ -491,7 +491,7 @@ lyrics: [
     image: id2022.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/id2022.MP3",
     date: "2023-12-31", // ngày phát hành chính thức
-    views: 60000, // approximate views, adjust as needed
+    views: 688, // approximate views, adjust as needed
     type: "lyrics",
     artist: "W/n ft. 267",
     lyrics: [
@@ -547,7 +547,7 @@ lyrics: [
     image: vuonmayvuahay.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/vuonmayvuahay.MP3",
     date: "2025-05-07", // ngày phát hành chính thức (dựa trên thông tin mới)
-    views: 30000, // approximate views, adjust as needed
+    views: 567, // approximate views, adjust as needed
     type: "lyrics",
     artist: "Ân Ngờ ft. MYLINA",
     lyrics: [
@@ -608,7 +608,7 @@ lyrics: [
     image: thangdien.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/thangdien.MP3",
     date: "2018-10-19", // ngày phát hành chính thức
-    views: 100000, // approximate views, adjust as needed
+    views: 2656, // approximate views, adjust as needed
     type: "lyrics",
     artist: "JustaTee ft. Phương Ly",
    lyrics: [
@@ -674,7 +674,7 @@ lyrics: [
     image: aikeben.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/1aikeben.MP3",
     date: "2024-09-01", // ngày phát hành chính thức (ước lượng, do không có thông tin chính xác)
-    views: 20000, // approximate views, adjust as needed
+    views: 925, // approximate views, adjust as needed
     type: "lyrics",
     artist: "MYLINA",
     lyrics: [
@@ -744,7 +744,7 @@ lyrics: [
     image: only.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/only.MP3",
     date: "2021-08-27", // ngày phát hành chính thức
-    views: 50000000, // approximate views, adjust as needed
+    views: 1785, // approximate views, adjust as needed
     type: "lyrics",
     artist: "Lee Hi",
     lyrics: [
@@ -809,7 +809,7 @@ lyrics: [
     image: mylina_ketuday.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/ketuday-mylina.MP3", // Đặt file audio vào public/audio/ketuday.MP3
     date: "2025-07-17", // ngày phát hành chính thức
-    views: 4032003, // ước tính views trending (cập nhật theo thực tế)
+    views: 1246, // ước tính views trending (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Mylina'",
     lyrics: [
@@ -864,7 +864,7 @@ lyrics: [
     image: anhlaai.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/anhlaai.MP3", // Đặt file audio vào public/audio/anhlaai.mp3
     date: "2019-01-09", // ngày phát hành chính thức
-    views: 1523, // ước tính views trên YouTube và các nền tảng (cập nhật theo thực tế)
+    views: 1244, // ước tính views trên YouTube và các nền tảng (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Phương Ly",
    lyrics: [
@@ -914,7 +914,7 @@ lyrics: [
     image: anhlathangtoi.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/anhlathangtoi.MP3", // Đặt file audio vào public/audio/anhlathangtoi.mp3
     date: "2025-10-18", // ngày phát hành chính thức
-    views: 1200000, // ước tính views trending mới ra (cập nhật theo thực tế)
+    views: 798, // ước tính views trending mới ra (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Phùng Khánh Linh",
     lyrics: [
@@ -974,7 +974,7 @@ lyrics: [
     image: binhyen.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/binhyen.MP3", // Đặt file audio vào public/audio/binhyen.mp3
     date: "2024-08-29", // ngày phát hành chính thức
-    views: 3500000, // ước tính views trên YouTube và các nền tảng (cập nhật theo thực tế)
+    views: 1964, // ước tính views trên YouTube và các nền tảng (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Vũ. (ft. Binz)",
     lyrics: [
@@ -1038,7 +1038,7 @@ lyrics: [
     image: chimsau.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/chimsau.MP3", // Đặt file audio vào public/audio/chimsau.mp3
     date: "2022-02-24", // ngày phát hành chính thức
-    views: 50000000, // views thực tế trên YouTube và các nền tảng (cập nhật theo thực tế)
+    views: 935, // views thực tế trên YouTube và các nền tảng (cập nhật theo thực tế)
     type: "lyrics",
     artist: "RPT MCK (ft. Trung Trần)",
     lyrics: [
@@ -1093,7 +1093,7 @@ lyrics: [
     image: chungtacuahientai.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/chungtacuahientai.MP3", // Đặt file audio vào public/audio/chungtacuahientai.mp3
     date: "2020-12-20", // ngày phát hành chính thức
-    views: 300000000, // views thực tế trên YouTube và các nền tảng (cập nhật theo thực tế)
+    views: 983, // views thực tế trên YouTube và các nền tảng (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Sơn Tùng M-TP",
    lyrics: [
@@ -1162,7 +1162,7 @@ lyrics: [
     image: iloveyou3000.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/iloveyou3000.MP3", // Đặt file audio vào public/audio/iloveyou3000.mp3
     date: "2019-04-12", // ngày phát hành chính thức
-    views: 425000000, // views thực tế trên Spotify/YouTube và các nền tảng (cập nhật theo thực tế)
+    views: 1234, // views thực tế trên Spotify/YouTube và các nền tảng (cập nhật theo thực tế)
     type: "lyrics",
     artist: "Stephanie Poetri",
     lyrics: [
@@ -1220,9 +1220,9 @@ lyrics: [
     title: "Lyric Lúc Em Nhớ Anh - Lena",
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, Nhạc Trẻ
     image: lucemnhoanh.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
-    audio: "/audio/lucemnhoanh.mp3", // Đặt file audio vào public/audio/lucemnhanh.mp3
+    audio: "/audio/lucemnhoanh.MP3", // Đặt file audio vào public/audio/lucemnhanh.mp3
     date: "2024-12-11", // ngày phát hành chính thức
-    views: 500000, // ước tính views trên YouTube/Spotify (cập nhật theo thực tế, đang trending)
+    views: 734, // ước tính views trên YouTube/Spotify (cập nhật theo thực tế, đang trending)
     type: "lyrics",
     artist: "Lena",
     lyrics: [
