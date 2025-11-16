@@ -155,7 +155,7 @@ export default function HomeClient() {
             📊 Bài blogs đáng chú ý
           </h2>
           <Link
-            href="/pages/blog"
+            href="/pages/blogs"
             className="text-sm text-neutral-500 hover:text-foreground transition-colors"
           >
             Xem chi tiết →
@@ -193,7 +193,7 @@ export default function HomeClient() {
       </section>
 
       {/* 🎨 GALLERY CUỐI TRANG */}
-      <section className="w-full px-4 sm:px-6 pb-16">
+      <section className="w-full pb-16">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 max-w-6xl mx-auto text-center sm:text-left">
           📸 Mấy tấm ảnh đẹp đẹp hợp tâm trạng
         </h2>

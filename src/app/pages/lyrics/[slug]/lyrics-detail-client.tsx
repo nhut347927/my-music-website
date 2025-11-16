@@ -161,7 +161,7 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
         </div>
 
         {/* Section 2: Lời bài hát */}
-        <div className="max-w-6xl mx-auto px-4 space-y-4">
+        <div className="max-w-6xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold text-black dark:text-white mb-6">
             Lời bài hát
           </h2>
@@ -215,7 +215,7 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
             height={192}
             className="object-cover rounded-full aspect-square"
           />
-          <div className="space-y-3 w-full px-4">
+          <div className="space-y-3 w-full">
             <p className="text-2xl font-bold text-black dark:text-white">{song.title}</p>
             <p className="text-gray-500 dark:text-gray-400 text-lg">{song.artist}</p>
             <p className="text-gray-500 dark:text-gray-400 text-base">Composer: {song.composer}</p>
@@ -223,7 +223,7 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
           </div>
         </div>
 
-        <div className="space-y-2 ps-4">
+        <div className="space-y-2">
           <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
             Bài hát khác của ca sĩ
           </h3>

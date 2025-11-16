@@ -15,7 +15,7 @@ import {
   PaginationItem,
   PaginationLink,
 } from "@/components/ui/pagination";
-import {Search, Filter, SortAsc } from "lucide-react";
+import { Search, Filter, SortAsc } from "lucide-react";
 
 import PostCard from "@/app/components/items/post-card";
 import { Post } from "@/app/types/type";
@@ -61,13 +61,12 @@ export default function BlogClient(): JSX.Element {
   );
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-16">
+    <section className="max-w-7xl mx-auto px-2 sm:px-0 py-12 mb-16">
       <div className="flex flex-col items-center w-full space-y-10 mb-16">
         {/* Tiêu đề */}
- <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-gray-900 dark:text-gray-100">
-  Playlists
-</h1>
-
+        <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-gray-900 dark:text-gray-100">
+          Playlists
+        </h1>
 
         {/* Khối lọc + tìm kiếm */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-3xl">
@@ -129,11 +128,9 @@ export default function BlogClient(): JSX.Element {
           ))}
         </div>
       ) : (
-      
-          <div className="text-center text-gray-500 my-48">
-            Không tìm thấy playlists nào phù hợp.
-          </div>
-        
+        <div className="text-center text-gray-500 my-48">
+          Không tìm thấy playlists nào phù hợp.
+        </div>
       )}
 
       {/* Phân trang */}

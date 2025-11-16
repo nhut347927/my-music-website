@@ -31,7 +31,7 @@ export default function PlaylistDetailClient({
   };
 
   return (
-    <div className="max-w-6xl mx-auto mt-14 space-y-16 px-6">
+    <div className="max-w-6xl mx-auto mt-14 space-y-16">
       {/* Banner */}
       <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden">
         <Image
