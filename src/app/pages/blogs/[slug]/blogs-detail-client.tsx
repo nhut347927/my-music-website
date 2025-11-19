@@ -87,17 +87,20 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "image") {
             return (
-              <div
-                key={originalIdx}
-                className="relative w-full h-80 sm:h-[80vh] my-6"
-              >
-                <Image
-                  src={para.content}
-                  alt={`Hình ảnh ${originalIdx}`}
-                  fill
-                  className="object-cover rounded-2xl"
-                />
-              </div>
+            <div key={originalIdx} className="w-full my-8 max-h-screen rounded-2xl overflow-hidden bg-gray-100">
+  <Image
+    src={para.content}
+    alt={`Hình ảnh ${originalIdx + 1}`}
+    layout="responsive"      // quan trọng: thay fill bằng responsive
+    width={1920}             // bất kỳ số nào cũng được, chỉ để khai báo tỉ lệ
+    height={1080}            // giữ nguyên tỉ lệ ảnh gốc càng tốt
+    className="object-contain object-top"
+    sizes="100vw"
+    quality={90}
+    priority={originalIdx <= 1}
+    style={{ maxHeight: "100vh", width: "100%", height: "auto" }}
+  />
+</div>
             );
           }
           if (para.type === "link") {

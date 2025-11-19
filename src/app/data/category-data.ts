@@ -55,5 +55,9 @@ export const categoriesData: Category[] = [
   { name: "Tết ăn gì" },                // [45]
   // tết trang trí
   { name: "Tết trang trí" },           // [46]
+  //đám cưới
+  { name: "Đám cưới" },                // [47]
+  // ngày vui
+  {name:"Ngày vui"}                 // [48]
   
 ];

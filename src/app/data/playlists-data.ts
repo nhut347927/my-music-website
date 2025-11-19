@@ -10,13 +10,14 @@ import longlay from "../asset/playlist-img/longlay.jpg";
 import indie from "../asset/playlist-img/indi.jpg";
 import indie2 from "../asset/playlist-img/indi2.jpg";
 
+import chill1 from "../asset/playlist-img/chill.jpg";
+import chill2 from "../asset/playlist-img/chill2.jpg";
 
-import chill1 from "../asset/playlist-img/chill.jpg"
-import chill2 from "../asset/playlist-img/chill2.jpg"
+import dcmt1 from "../asset/playlist-img/dcmt1.jpg";
+import dcmt2 from "../asset/playlist-img/dcmt2.jpg";
 
-
-
-
+import dc from "../asset/playlist-img/dc.jpg";
+import dc2 from "../asset/playlist-img/dc2.jpg";
 
 export const playlistsData: PlaylistPost[] = [
   {
@@ -568,5 +569,142 @@ export const playlistsData: PlaylistPost[] = [
       "Share với bạn bè, crush, đồng nghiệp để cùng tăng năng suất. Tag lofistudy2025 khi quay TikTok học bài – biết đâu bạn lên xu hướng.\n\n" +
       "Cập nhật hàng tuần với track lofi mới. Đừng quên follow và bật chuông để không bỏ lỡ.\n\n" +
       "Bạn xứng đáng với sự tập trung đỉnh cao – và playlist này chính là chìa khóa.",
+  },
+  {
+    id: 7,
+    slug: "20-bai-nhac-dam-cuoi-mien-tay-co-dien",
+    title:
+      "20 Bài Nhạc Đám Cưới Miền Tây Cổ Điển – Giai Điệu Ngọt Ngào Cho Ngày Vui",
+    categories: [categoriesData[0], categoriesData[47], categoriesData[48]],
+    image: dcmt1.src,
+    banner: dcmt2.src,
+    description:
+      "Tổng hợp 20 bài nhạc đám cưới miền Tây cổ điển, bao gồm dân ca, bolero và tân cổ giao duyên. Những giai điệu ngọt ngào, rộn rã này sẽ làm bữa tiệc cưới thêm sống động, cả cô dâu chú rể và khách mời đều mê mẩn.\n\n" +
+      "Danh sách này phù hợp cho:\n" +
+      "- Đám cưới miền Tây truyền thống\n" +
+      "- Cặp đôi muốn giữ hồn quê trong tiệc cưới tại thành phố\n" +
+      "- Gia đình chuẩn bị lễ vu quy, muốn âm nhạc đậm chất Nam Bộ\n" +
+      "- Ai yêu thích nhạc miền Tây cổ điển và giai điệu ngọt ngào\n\n" +
+      "Âm thanh chất lượng cao, bản quyền đầy đủ, bật loa lớn để cả họ vui cùng!",
+    songs: [
+      {
+        name: "Thuyền Hoa – Phi Nhung & Mạnh Quỳnh",
+        desc: "Ca khúc huyền thoại miền Tây, mở đầu bằng tiếng đàn bầu réo rắt, khiến cả hội trường rưng rưng.",
+        youtube: "https://www.youtube.com/watch?v=9y0t1O1yq9o",
+      },
+      {
+        name: "Bằng Lòng Đi Em – Lưu Ánh Loan & Huỳnh Thật",
+        desc: "Bản tân cổ giao duyên ngọt ngào, câu vọng cổ cuối bài khiến cô dâu xúc động.",
+        youtube: "https://www.youtube.com/watch?v=9XU5iO5jK7M",
+      },
+      {
+        name: "Đám Cưới Trên Đường Quê – Lê Sang & Ngọc Hân",
+        desc: "Rộn ràng từ đầu đến cuối, lý tưởng để rước dâu và mở đầu bữa tiệc.",
+        youtube: "https://www.youtube.com/watch?v=8vP8s9l2m3k",
+      },
+      {
+        name: "Tình Anh – Dương Đình Trí ft Đoàn Minh",
+        desc: "Bolero ngọt ngào, giai điệu trữ tình và lời thề nguyện cho tình yêu trọn đời.",
+        youtube: "https://www.youtube.com/watch?v=Zz7pL2v9qjY",
+      },
+      {
+        name: "Về Miền Tây Lấy Chồng – Jin Tú",
+        desc: "Giai điệu vui tươi mà da diết, hoàn hảo cho phần gia tiên và tiễn dâu.",
+        youtube: "https://www.youtube.com/watch?v=7kP5nR3v8sQ",
+      },
+      {
+        name: "Nỗi Buồn Hoa Phượng – Quang Lập & Giáng Tiên",
+        desc: "Bản vọng cổ bất hủ, phần tiễn dâu không thể thiếu, khiến cả nhà rưng rưng.",
+        youtube: "https://www.youtube.com/watch?v=Jv5m9pL2k8c",
+      },
+      {
+        name: "Lý Cây Đa – Various Artists (Live Đám Cưới)",
+        desc: "Lý Nam Bộ rộn ràng, mời trầu mời rượu, khách mời tự nhún nhảy theo.",
+        youtube: "https://www.youtube.com/watch?v=Qw8rT9pLm5x",
+      },
+      {
+        name: "Bonus: 30 Phút Lý – Hò – Vọng Cổ Miền Tây Liên Khúc",
+        desc: "Dành cho phần lễ gia tiên và tiệc dài, liên khúc không quảng cáo, loop thoải mái.",
+        youtube: "https://www.youtube.com/watch?v=mK9pL2vXs7t",
+      },
+    ],
+    date: "2025-11-19",
+    views: 12800,
+    type: "playlists",
+    mood: "Vui tươi – Cổ điển miền Tây",
+    final:
+      "20 bài nhạc đám cưới miền Tây cổ điển – những giai điệu ngọt ngào, trữ tình, hoàn hảo cho lễ cưới Nam Bộ.\n\n" +
+      "Danh sách giúp tạo không gian tiệc cưới ấm cúng, rộn ràng, từ nghi lễ gia tiên đến đãi khách ngoài sân.\n\n" +
+      "Bật ngay để:\n" +
+      "→ Rước dâu thêm phần sống động\n" +
+      "→ Tiễn dâu thật cảm xúc\n" +
+      "→ Gây ấn tượng với khách mời\n\n" +
+      "Chia sẻ playlist này cho bạn bè chuẩn bị cưới để mọi khoảnh khắc trở nên đáng nhớ hơn.",
+  },
+  {
+    id: 8,
+    slug: "nhac-tre-cuoi-hay-nhat-cho-le-cuoi",
+    title:
+      "20 Bài Nhạc Trẻ Cưới Hay Nhất – Ngọt Ngào, Hiện Đại, Cảm Xúc Dâng Trào",
+    categories: [categoriesData[0], categoriesData[47], categoriesData[48]],
+    image: dc.src,
+    banner: dc2.src,
+    description:
+      "Muốn lễ cưới vừa sang vừa đầy cảm xúc? Playlist 20 bài nhạc trẻ cưới hay nhất tổng hợp những ca khúc ngọt ngào, hiện đại, hợp với mọi khoảnh khắc: từ lễ gia tiên, rước dâu, trao nhẫn đến tiệc cưới. Bật lên là cả hội trường cùng hòa nhịp, cô dâu chú rể rưng rưng xúc động, khách mời vui nhộn theo nhạc.\n\n" +
+      "Playlist gồm các hit như 'Một Nhà', 'Ấm', 'Hơn Cả Yêu', 'Ngày Đầu Tiên'… – tất cả đều chất lượng cao, bản quyền đầy đủ, sẵn sàng cho mọi loại tiệc: nhà hàng, resort, tiệc ngoài trời hay tiệc vườn.",
+    songs: [
+      {
+        name: "Một Nhà – Da LAB",
+        desc: "Ca khúc mở đầu lễ cưới cực kỳ xúc động, cả hội trường cùng hát theo, cô dâu rưng rưng.",
+        youtube: "https://www.youtube.com/watch?v=LlzFR7G7Y8A",
+      },
+      {
+        name: "Ấm – Vũ Cát Tường ft Hoàng Dũng (Live Wedding Ver.)",
+        desc: "Bản live đặc biệt cho lễ cưới, nghe là muốn ôm nhau ngay, đã làm tan chảy nhiều cặp đôi.",
+        youtube: "https://www.youtube.com/watch?v=5qW8v9m3k2p",
+      },
+      {
+        name: "Hơn Cả Yêu – Đức Phúc",
+        desc: "Bài hát tặng cô dâu và chú rể trong phần trao nhẫn, chất lượng cao, giai điệu ngọt ngào.",
+        youtube: "https://www.youtube.com/watch?v=R07MG5kD7YY",
+      },
+      {
+        name: "Ngày Đầu Tiên – Đức Phúc",
+        desc: "Hit 2025 cho phần mở đầu hoặc rước dâu, lyric đúng tâm trạng, nghe mà nổi da gà.",
+        youtube: "https://www.youtube.com/watch?v=Z8kP9mQ2v7x",
+      },
+      {
+        name: "Mình Cưới Nhau Đi – Huỳnh James x Pjnboys",
+        desc: "Nhạc EDM vui nhộn pha ballad, hợp phần tiệc, bật lên là khách mời nhún nhảy theo ngay.",
+        youtube: "https://www.youtube.com/watch?v=8xK9pL2mZs5",
+      },
+      {
+        name: "Yêu Là Cưới – Phát Hồ x JokeS",
+        desc: "Hit TikTok 2025, giai điệu bắt tai, khách trẻ nghe là hò hét, không khí cực vui.",
+        youtube: "https://www.youtube.com/watch?v=T9mP2vL8kQs",
+      },
+      {
+        name: "Có Em Là Đủ – Phạm Trưởng x Ngọc Kaylam",
+        desc: "Ballad sâu lắng, phần cảm ơn cha mẹ hai bên, nghe xong ai cũng rưng rưng.",
+        youtube: "https://www.youtube.com/watch?v=Q2vL9pK7mXs",
+      },
+      {
+        name: "Bonus: 1 Giờ Nhạc Trẻ Cưới Liên Khúc 2025 (No Ads)",
+        desc: "Liên khúc 60 phút, không quảng cáo, chuyển bài mượt mà, hoàn hảo cho tiệc kéo dài.",
+        youtube: "https://www.youtube.com/watch?v=H9pL5vN2m9t",
+      },
+    ],
+    date: "2025-11-19",
+    views: 21500,
+    type: "playlists",
+    mood: "Ngọt ngào – Hiện đại – Cảm xúc",
+    final:
+      "Playlist 20 bài nhạc trẻ cưới hay nhất – ngọt ngào, hiện đại và đầy cảm xúc cho mọi lễ cưới.\n\n" +
+      "Dành cho mọi khoảnh khắc: lễ gia tiên, rước dâu, trao nhẫn, tiệc cưới.\n\n" +
+      "Bật ngay để:\n" +
+      "→ Cô dâu bước vào lễ đường đầy xúc động\n" +
+      "→ Chú rể trao nhẫn lãng mạn\n" +
+      "→ Khách mời vui nhộn, không khí lễ cưới tràn ngập niềm vui\n\n" +
+      "Chia sẻ cho bạn bè chuẩn bị cưới để mọi khoảnh khắc trở nên đáng nhớ, ngọt ngào và hiện đại hơn.",
   },
 ];

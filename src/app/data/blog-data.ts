@@ -51,6 +51,20 @@ import antet6 from "../asset/blog-img/antet6.jpg";
 import antet7 from "../asset/blog-img/antet7.jpg";
 import antet8 from "../asset/blog-img/antet8.jpg";
 
+import ttt1 from "../asset/blog-img/ttt1.jpg";
+import ttt2 from "../asset/blog-img/ttt2.jpg";
+import ttt3 from "../asset/blog-img/ttt3.jpg";
+import ttt4 from "../asset/blog-img/ttt4.jpg";
+import ttt5 from "../asset/blog-img/ttt5.jpg";
+import ttt6 from "../asset/blog-img/ttt6.jpg";
+import ttt7 from "../asset/blog-img/ttt7.jpg";
+import ttt8 from "../asset/blog-img/ttt8.jpg";
+import ttt9 from "../asset/blog-img/ttt9.jpg";
+import ttt10 from "../asset/blog-img/ttt10.jpg";
+import ttt11 from "../asset/blog-img/ttt11.jpg";
+import ttt12 from "../asset/blog-img/ttt12.jpg";
+import ttt13 from "../asset/blog-img/ttt13.jpg";
+
 export const blogData: BlogsPost[] = [
   {
     id: 1,
@@ -1639,5 +1653,220 @@ export const blogData: BlogsPost[] = [
     ],
     comment:
       "Mỗi món trong bộ 8 món này đều dễ làm, bảo quản tốt và hợp khẩu vị nhiều thế hệ. Chỉ cần nấu đúng từng bước và chia thời gian hợp lý là bạn sẽ có một cái Tết nhẹ nhàng, ngon miệng và không lo thừa đồ ăn.",
+  },
+  {
+    id: 10,
+    slug: "tet-trang-tri-gi-cho-dep-12-y-tuong-don-gian-ma-sang",
+    title:
+      "Tết Trang Trí Gì Cho Đẹp? 12 Gợi Ý Chuẩn Không Khí – Đơn Giản Mà Sang",
+    categories: [categoriesData[38], categoriesData[43], categoriesData[46]], // Trang trí nhà cửa & Tết
+    image: ttt1.src, // ảnh chính: phòng khách ấm áp với mai vàng, đèn lồng đỏ, bàn thờ gọn đẹp
+    date: "2025-12-20",
+    views: 2323,
+    type: "blogs",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Nghiện decor Tết 10 năm liền",
+    paragraphs: [
+      // MỞ ĐẦU
+      {
+        type: "text",
+        content:
+          "Ngày Tết luôn mang một cảm giác rất riêng: sum vầy, rộn ràng, mới mẻ và đầy hy vọng. Nhưng để tạo nên không khí đó trong chính ngôi nhà của mình, câu hỏi đầu tiên ai cũng băn khoăn là:\n\n<strong>“Tết trang trí gì cho đẹp, hợp phong thủy, lại đơn giản mà vẫn có không khí?”</strong>\n\nBài này tổng hợp 12 gợi ý dễ làm nhất – đẹp mắt nhất – tiết kiệm nhất, phù hợp mọi không gian: nhà phố, chung cư, cửa hàng, văn phòng… Mỗi ý đều kèm lý do, cách làm, mẹo hay và gợi ý phối màu để bạn áp dụng ngay trong 1–2 ngày là xong.",
+      },
+
+      // 1
+      {
+        type: "title",
+        content: "1. Hoa mai, hoa đào – Không khí Tết bật ngay lập tức",
+      },
+      {
+        type: "image",
+        content: ttt2.src,
+      },
+      {
+        type: "text",
+        content:
+          "Chỉ cần một cành mai hoặc cây đào là cả nhà đã thấy Tết đến. Đây là biểu tượng mạnh nhất của sự may mắn, sung túc và khởi đầu mới.\n\n• Miền Nam: hoa mai vàng (tự nhiên hoặc mai giả cao cấp)\n• Miền Bắc: hoa đào phai, đào bích\n• Nhà nhỏ/chung cư: cành mai/đào mini 80–120 cm, cắm phễu thủy tinh\n• Cửa hàng: mai/đào giả cao 1m6–2m2, dùng lại được nhiều năm\n\nMẹo: Treo thêm bao lì xì đỏ vàng, thẻ gỗ Phúc-Lộc-Thọ, quấn đèn LED vàng ấm (2700K) → buổi tối lung linh như phim.",
+      },
+
+      // 2
+      {
+        type: "title",
+        content: "2. Bàn thờ ngày Tết – Gọn gàng, sạch sẽ, trang trọng",
+      },
+      {
+        type: "image",
+        content: ttt3.src,
+      },
+      {
+        type: "text",
+        content:
+          "Bàn thờ đẹp = Tết trọn vẹn. Chỉ cần nhớ 3 chữ: Sạch – Đủ – Gọn.\n\n• Hoa tươi: cúc đại đóa, lay ơn, huệ trắng\n• Mâm ngũ quả đúng vùng miền\n• Khăn trải mới màu đỏ hoặc vàng nhạt\n• Lau dọn kỹ tất cả vật phẩm thờ cúng\n\nMẹo: Cắm hoa đối xứng 2 bên, không bày quá 7 món trên bàn thờ để giữ sự thanh tịnh.",
+      },
+
+      // 3
+      {
+        type: "title",
+        content: "3. Phòng khách: chơi lớn tông vàng – đỏ – xanh lá",
+      },
+      {
+        type: "image",
+        content: ttt4.src,
+      },
+      {
+        type: "text",
+        content:
+          "Ba màu phong thủy Tết: vàng (tài lộc), đỏ (may mắn), xanh lá (tái sinh).\n\nThay nhanh trong 30 phút:\n• Vỏ gối sofa đỏ/vàng\n• Khăn trải bàn hoặc thảm họa tiết Tết\n• Bình hoa lớn: hướng dương, cúc vàng, đồng tiền\n• Đặt thêm khay mứt gỗ + đèn lồng nhỏ",
+      },
+
+      // 4
+      {
+        type: "title",
+        content: "4. Decal & câu đối thư pháp – Điểm nhấn tức thì",
+      },
+      {
+        type: "image",
+        content: ttt5.src,
+      },
+      {
+        type: "text",
+        content:
+          "Dán 15 phút là nhà khác hẳn:\n• Cửa chính: câu đối đỏ\n• Tủ gỗ, kính ban công: chữ Phúc, Lộc, An Khang\n• Tường bếp/tường sofa: decal vàng bo góc kiểu tối giản\n\nHot nhất 2026: chữ thư pháp phong cách hiện đại, font mảnh + viền vàng metallic.",
+      },
+
+      // 5
+      {
+        type: "title",
+        content: "5. Bàn ăn ngày Tết – Nhỏ mà có võ",
+      },
+      {
+        type: "image",
+        content: ttt6.src,
+      },
+      {
+        type: "text",
+        content:
+          "Bàn ăn là nơi cả nhà tụ tập nhiều nhất → thay đổi chút là thấy Tết rõ rệt.\n\n• Khăn trải bàn đỏ hoặc vàng nhạt\n• Khay gỗ + bình hoa cúc nhỏ giữa bàn\n• Bộ chén dĩa họa tiết mai đào\n• Đĩa bánh mứt + lọ pháo mini trang trí\n\nTip: đừng bày quá 5 món trên bàn → dễ rối mắt, khó dọn.",
+      },
+
+      // 6
+      {
+        type: "title",
+        content: "6. Đèn lồng & đèn LED – Ban đêm mới là giờ vàng",
+      },
+      {
+        type: "image",
+        content: ttt7.src,
+      },
+      {
+        type: "text",
+        content:
+          "Ban ngày hoa đẹp, ban đêm ánh sáng đẹp.\n\n• Treo đèn lồng đỏ lối đi, cầu thang\n• Quấn LED vàng ấm quanh khung cửa, khung gương\n• Đèn bàn nhỏ hắt sáng vào cây mai/đào\n\nQuan trọng: chỉ dùng ánh sáng vàng ấm 2700–3500K, tránh đèn trắng lạnh.",
+      },
+
+      // 7
+      {
+        type: "title",
+        content: "7. Bộ khay mứt Tết – Nhỏ mà cực kỳ “rất Tết”",
+      },
+      {
+        type: "image",
+        content: ttt8.src,
+      },
+      {
+        type: "text",
+        content:
+          "Nhiều nhà không decor gì, chỉ cần bộ khay mứt đẹp là đủ không khí.\n\nChọn khay:\n• Gỗ tự nhiên: ấm áp, sang trọng\n• Gốm Bát Tràng: truyền thống\n• Acrylic mạ vàng: hợp nhà hiện đại\n\nKhay lục giác 6–8 ô đang hot nhất 2026.",
+      },
+
+      // 8
+      {
+        type: "title",
+        content: "8. Gian bếp – Đừng quên khu vực “ăn uống nhiều nhất”",
+      },
+      {
+        type: "image",
+        content: ttt9.src,
+      },
+      {
+        type: "text",
+        content:
+          "Bếp có không khí → cả nhà ấm áp hẳn.\n\n• Treo câu đối mini 2 bên tủ bếp\n• Bình cúc nhỏ trên bàn đảo\n• Khăn lau bếp, khăn treo lò màu đỏ/vàng\n• Dây pháo giấy hoặc đèn LED nhỏ quanh kệ gia vị",
+      },
+
+      // 9
+      {
+        type: "title",
+        content: "9. Mâm ngũ quả – Biểu tượng không thể thiếu",
+      },
+      {
+        type: "image",
+        content: ttt10.src,
+      },
+      {
+        type: "text",
+        content:
+          "Miền Bắc: chuối – bưởi – hồng – quất – lê ki ma\nMiền Nam: mãng cầu – dừa – đu đủ – xoài – sung\n\nMẹo xếp đẹp:\n• Trái lớn ở dưới, nhỏ ở trên\n• Lót lá chuối hoặc rơm khô viền quanh\n• Chọn trái bóng đẹp, không dập",
+      },
+
+      // 10
+      {
+        type: "title",
+        content: "10. Ban công & cửa sổ – Góc sống ảo đẹp nhất nhà chung cư",
+      },
+      {
+        type: "image",
+        content: ttt11.src,
+      },
+      {
+        type: "text",
+        content:
+          "• Treo đèn lồng nhỏ dọc lan can\n• Chậu mào gà, thược dược, sống đời, vạn thọ\n• Dây tiền vàng hoặc pháo đỏ\n• Decal kính hoa mai/đào\n\nChụp ảnh lên ảnh lung linh không cần filter.",
+      },
+
+      // 11
+      {
+        type: "title",
+        content: "11. Góc chụp hình Tết – Xu hướng không thể bỏ qua",
+      },
+      {
+        type: "image",
+        content: ttt12.src,
+      },
+      {
+        type: "text",
+        content:
+          "Chỉ cần 1m² là có cả trăm bức ảnh đẹp:\n• Nền vải đỏ hoặc backdrop in hoa văn Tết\n• Bàn gỗ nhỏ + bình mai/đào giả + quạt giấy + nón lá\n• Thêm đèn LED vàng ấm + vài bao lì xì treo lủng lẳng",
+      },
+
+      // 12
+      {
+        type: "title",
+        content: "12. Phụ kiện decor nhỏ mà có võ (30–80k)",
+      },
+      {
+        type: "image",
+        content: ttt13.src,
+      },
+      {
+        type: "text",
+        content:
+          "• Bao lì xì thiết kế đẹp\n• Dây pháo giấy dài 2–3 m\n• Đồng tiền vàng nhựa treo cửa\n• Tượng em bé Phúc Lộc Thọ mini\n• Quạt giấy cầm tay đỏ/vàng\n• Hộp quà vintage để bàn",
+      },
+
+      // KẾT LUẬN + BẢNG TỔNG HỢP
+      {
+        type: "title",
+        content: "Chốt lại: Chỉ cần tập trung 4 khu vực vàng này là đủ",
+      },
+      {
+        type: "text",
+        content:
+          "• Cửa chính: câu đối, đèn lồng ⭐⭐⭐⭐⭐\n• Phòng khách: mai/đào, gối, hoa ⭐⭐⭐⭐⭐\n• Bàn thờ: hoa + ngũ quả + khăn mới ⭐⭐⭐⭐⭐\n• Bàn ăn: khăn + khay mứt + hoa nhỏ ⭐⭐⭐⭐\n\nTrang trí đúng 4 chỗ này, dù nhà 40m² hay 400m² đều đẹp lung linh!\n\nTết không cần cầu kỳ, chỉ cần đúng điểm là cả nhà đã thấy ấm cúng, rực rỡ và tràn đầy năng lượng mới. Chúc bạn một mùa Tết thật đẹp nhà – đẹp cửa – đẹp ảnh!",
+      },
+    ],
+    comment:
+      "Mỗi năm mình chỉ chọn khoảng 5–6 ý trong 12 gợi ý decor ở trên là nhà đã sáng bừng, lung linh chẳng khác gì một studio chụp ảnh Tết. Không cần cầu kỳ, chỉ cần đúng điểm nhấn là khách đến chơi cứ trầm trồ mãi: “Ủa, nhà bạn trang trí gì mà đẹp dữ vậy?”. Mình tin rằng vẻ đẹp của Tết không nằm ở đồ đắt hay rẻ, mà nằm ở cảm giác ấm áp khi bước vào nhà — nơi có sắc đỏ, sắc vàng, có mai nở, có mùi gỗ trầm và sự tinh tươm khiến ai cũng muốn ngồi lại lâu hơn một chút. Bạn thử ứng dụng từng ý một, chắc chắn sẽ thấy mỗi góc nhỏ đều trở thành “điểm sống ảo” của cả gia đình. Chúc bạn một cái Tết thật ấm áp, rực rỡ và đầy cảm xúc — nơi mà từng món decor đều mang theo một lời chúc an yên cho năm mới.",
   },
 ];
