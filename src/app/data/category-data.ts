@@ -40,6 +40,20 @@ export const categoriesData: Category[] = [
   { name: "Giáng sinh" },             // [35]
   { name: "Năm mới" },                // [36]
   { name: "Valentine" },              // [37]
-  { name: "Tết Nguyên Đán" },         // [38]
+  { name: "Tết Âm Lịch" },         // [38]
+  // tri ân
+  { name: "Ngày của Mẹ" },           // [39]
+  { name: "Ngày của Cha" },          // [40]
+  { name: "Ngày Nhà giáo Việt Nam" },// [41]
+  // cảm ơn
+  { name: "Cảm ơn" },                // [42]
+  // tri ân
+  { name: "Tri ân" },                // [43]
+  // Tết nguyen đán
+  { name: "Tết Nguyên Đán" },             // [44]
+  // tết ăn gì
+  { name: "Tết ăn gì" },                // [45]
+  // tết trang trí
+  { name: "Tết trang trí" },           // [46]
   
 ];
