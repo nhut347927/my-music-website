@@ -579,53 +579,113 @@ export const playlistsData: PlaylistPost[] = [
     image: dcmt1.src,
     banner: dcmt2.src,
     description:
-      "Tổng hợp 20 bài nhạc đám cưới miền Tây cổ điển, bao gồm dân ca, bolero và tân cổ giao duyên. Những giai điệu ngọt ngào, rộn rã này sẽ làm bữa tiệc cưới thêm sống động, cả cô dâu chú rể và khách mời đều mê mẩn.\n\n" +
-      "Danh sách này phù hợp cho:\n" +
-      "- Đám cưới miền Tây truyền thống\n" +
-      "- Cặp đôi muốn giữ hồn quê trong tiệc cưới tại thành phố\n" +
-      "- Gia đình chuẩn bị lễ vu quy, muốn âm nhạc đậm chất Nam Bộ\n" +
-      "- Ai yêu thích nhạc miền Tây cổ điển và giai điệu ngọt ngào\n\n" +
-      "Âm thanh chất lượng cao, bản quyền đầy đủ, bật loa lớn để cả họ vui cùng!",
+      "Tổng hợp 20 bài hát kinh điển từ dân ca Nam Bộ, bolero trữ tình và tân cổ giao duyên miền Tây, được yêu thích qua nhiều thế hệ. Những giai điệu mộc mạc, da diết tái hiện không khí ấm cúng, rộn ràng của lễ cưới sông nước, giúp kết nối cảm xúc giữa cô dâu chú rể, gia đình và quan khách. Mỗi bài hát được chọn lọc kỹ lưỡng với liên kết YouTube chính thức, chất lượng cao, phù hợp cho các nghi thức từ rước dâu, gia tiên đến tiệc chính.\n\n" +
+      "Playlist lý tưởng cho:\n" +
+      "- Lễ cưới truyền thống miền Tây Nam Bộ\n" +
+      "- Cặp đôi yêu thích âm nhạc dân gian chân chất\n" +
+      "- Các sự kiện văn hóa, tiệc ngoài trời hoặc sân vườn\n" +
+      "- Gia đình muốn gợi nhớ ký ức quê hương\n\n" +
+      "Tất cả bài hát đều có bản quyền rõ ràng, dễ dàng tích hợp vào hệ thống âm thanh chuyên nghiệp để tạo nên buổi lễ hoàn hảo, tràn đầy tình thân ái.",
     songs: [
       {
         name: "Thuyền Hoa – Phi Nhung & Mạnh Quỳnh",
-        desc: "Ca khúc huyền thoại miền Tây, mở đầu bằng tiếng đàn bầu réo rắt, khiến cả hội trường rưng rưng.",
-        youtube: "https://www.youtube.com/watch?v=9y0t1O1yq9o",
+        desc: "Bản bolero kinh điển gợi hình ảnh thuyền hoa trên sông nước miền Tây, lời ca ngọt ngào về tình yêu bền vững, lý tưởng mở đầu phần rước dâu với tiếng đàn bầu réo rắt.",
+        youtube: "https://www.youtube.com/watch?v=C9S7DmlxvbA",
       },
       {
         name: "Bằng Lòng Đi Em – Lưu Ánh Loan & Huỳnh Thật",
-        desc: "Bản tân cổ giao duyên ngọt ngào, câu vọng cổ cuối bài khiến cô dâu xúc động.",
-        youtube: "https://www.youtube.com/watch?v=9XU5iO5jK7M",
+        desc: "Tân cổ giao duyên da diết, kể chuyện chàng trai miền Tây xin cưới, phần vọng cổ xúc động phù hợp cho nghi thức trao nhẫn, khơi gợi niềm vui đoàn tụ.",
+        youtube: "https://www.youtube.com/watch?v=BrMw-D-mpcA",
       },
       {
         name: "Đám Cưới Trên Đường Quê – Lê Sang & Ngọc Hân",
-        desc: "Rộn ràng từ đầu đến cuối, lý tưởng để rước dâu và mở đầu bữa tiệc.",
-        youtube: "https://www.youtube.com/watch?v=8vP8s9l2m3k",
+        desc: "Giai điệu rộn ràng dân ca, miêu tả đoàn rước dâu qua cánh đồng, tạo không khí phấn khởi cho phần diễu hành, khuyến khích khách mời hát theo.",
+        youtube: "https://www.youtube.com/watch?v=vhTeacTWHac",
       },
       {
-        name: "Tình Anh – Dương Đình Trí ft Đoàn Minh",
-        desc: "Bolero ngọt ngào, giai điệu trữ tình và lời thề nguyện cho tình yêu trọn đời.",
-        youtube: "https://www.youtube.com/watch?v=Zz7pL2v9qjY",
+        name: "Tình Thắm Duyên Quê – Giao Tiên",
+        desc: "Bolero quốc dân ca ngợi tình yêu quê hương, lời ca chân thành về hôn nhân bền vững, hoàn hảo cho phần chào hỏi quan khách và lời chúc phúc.",
+        youtube: "https://www.youtube.com/watch?v=Yhg_v-n7XEI",
       },
       {
         name: "Về Miền Tây Lấy Chồng – Jin Tú",
-        desc: "Giai điệu vui tươi mà da diết, hoàn hảo cho phần gia tiên và tiễn dâu.",
-        youtube: "https://www.youtube.com/watch?v=7kP5nR3v8sQ",
+        desc: "Dân ca vui tươi da diết, kể hành trình cô gái về nhà chồng, phù hợp phần tiễn dâu với nhịp điệu mời gọi mọi người nâng ly chúc mừng.",
+        youtube: "https://www.youtube.com/watch?v=wjklcOlUibE",
       },
       {
         name: "Nỗi Buồn Hoa Phượng – Quang Lập & Giáng Tiên",
-        desc: "Bản vọng cổ bất hủ, phần tiễn dâu không thể thiếu, khiến cả nhà rưng rưng.",
-        youtube: "https://www.youtube.com/watch?v=Jv5m9pL2k8c",
+        desc: "Vọng cổ bất hủ gợi nỗi nhớ quê hương, phần tiễn dâu xúc động, giúp tạo khoảnh khắc lắng đọng giữa niềm vui chung của hai họ.",
+        youtube: "https://www.youtube.com/watch?v=VmnChm7Bv2Y",
       },
       {
         name: "Lý Cây Đa – Various Artists (Live Đám Cưới)",
-        desc: "Lý Nam Bộ rộn ràng, mời trầu mời rượu, khách mời tự nhún nhảy theo.",
-        youtube: "https://www.youtube.com/watch?v=Qw8rT9pLm5x",
+        desc: "Lý Nam Bộ rộn ràng với lời mời trầu cau, lý tưởng cho phần giao lưu văn nghệ, khách mời dễ dàng tham gia nhún nhảy theo điệu dân gian.",
+        youtube: "https://www.youtube.com/watch?v=7uOFlnP1cyg",
       },
       {
-        name: "Bonus: 30 Phút Lý – Hò – Vọng Cổ Miền Tây Liên Khúc",
-        desc: "Dành cho phần lễ gia tiên và tiệc dài, liên khúc không quảng cáo, loop thoải mái.",
-        youtube: "https://www.youtube.com/watch?v=mK9pL2vXs7t",
+        name: "Đám Cưới Miền Tây – Hana Cẩm Tiên",
+        desc: "Hit hiện đại đậm chất dân ca, tái hiện không khí lễ hội sông nước, phù hợp mở đầu tiệc chính để khuấy động toàn bộ quan khách.",
+        youtube: "https://www.youtube.com/watch?v=7uOFlnP1cyg",
+      },
+      {
+        name: "Phải Lòng Con Gái Bến Tre – Various Artists",
+        desc: "Bolero ngọt ngào ca ngợi vẻ đẹp cô gái miền Tây, dùng cho phần cô dâu chú rể chào bàn, gợi sự gần gũi và chân chất.",
+        youtube: "https://www.youtube.com/watch?v=9qKtAmGVm70",
+      },
+      {
+        name: "Vui Trong Ngày Cưới – Hải Vy",
+        desc: "Dân ca sôi động miêu tả ngày vui trăm họ, lý tưởng cho phần cắt bánh và khiêu vũ, mang đến năng lượng tích cực lan tỏa.",
+        youtube: "https://www.youtube.com/watch?v=hoXwTImANiI",
+      },
+      {
+        name: "Tình Duyên Cô Út Sầu Riêng – Anh Quân Bolero",
+        desc: "Bolero trữ tình kể chuyện tình duyên miền vườn cây trái, phù hợp phần cảm ơn cha mẹ, nhấn mạnh giá trị gia đình và quê hương.",
+        youtube: "https://www.youtube.com/watch?v=so5ykAV",
+      },
+      {
+        name: "Ra Giêng Anh Cưới Em – Various Artists",
+        desc: "Tân cổ giao duyên vui tươi hứa hẹn ngày cưới, dùng cho phần rước dâu qua cầu tre, gợi hình ảnh đồng quê thơ mộng.",
+        youtube: "https://www.youtube.com/watch?v=QLfATF6SKf0",
+      },
+      {
+        name: "Cô Thắm Về Làng – Various Artists",
+        desc: "Dân ca mộc mạc kể cô dâu về nhà chồng, tạo không khí ấm áp cho nghi thức gia tiên, dễ hát theo cùng quan khách lớn tuổi.",
+        youtube: "https://www.youtube.com/watch?v=pQsxy_yymHc",
+      },
+      {
+        name: "Hỏi Vợ Ngoại Thành – Giao Tiên",
+        desc: "Bolero lãng mạn về lời hỏi cưới, phù hợp khoảnh khắc trao nhẫn, thể hiện sự chân thành và mong muốn xây dựng tổ ấm.",
+        youtube: "https://www.youtube.com/watch?v=0AMfEPWPuiM",
+      },
+      {
+        name: "Đường Về Hai Thôn – Various Artists",
+        desc: "Dân ca Nam Bộ gợi đường rước dâu qua sông, lý tưởng cho phần diễu hành, mang đến cảm giác gần gũi với thiên nhiên miền Tây.",
+        youtube: "https://www.youtube.com/watch?v=lOP1hPAwyJs",
+      },
+      {
+        name: "Thương Nhau Lý Tơ Hồng – Various Artists",
+        desc: "Lý dân gian ngọt ngào về tình yêu vượt khoảng cách, dùng cho phần lời thề nguyện, nhấn mạnh sự gắn kết lứa đôi.",
+        youtube: "https://www.youtube.com/watch?v=sKWULDXl5yQ",
+      },
+      {
+        name: "Duyên Phận – Various Artists",
+        desc: "Bolero sâu lắng về số phận làm dâu, phù hợp phần tiễn dâu, khơi gợi sự trân trọng vai trò phụ nữ trong gia đình.",
+        youtube: "https://www.youtube.com/watch?v=Sr9vUi3XND0",
+      },
+      {
+        name: "Lúa Mùa Duyên Thắm – Various Artists",
+        desc: "Dân ca trữ tình miêu tả mùa lúa chín và duyên phận, lý tưởng kết thúc tiệc với lời chúc mùa màng bội thu và hạnh phúc.",
+        youtube: "https://www.youtube.com/watch?v=g6DFfFe84-s",
+      },
+      {
+        name: "Đám Cưới Người Ta – Various Artists",
+        desc: "Bolero vui tươi dí dỏm về đám cưới làng quê, dùng cho phần giao lưu, tạo tiếng cười và sự gắn kết giữa các thế hệ.",
+        youtube: "https://www.youtube.com/watch?v=1M49Ljyj2I4",
+      },
+      {
+        name: "Bonus: Liên Khúc Dân Ca Miền Tây 30 Phút – Various Artists",
+        desc: "Tổng hợp các hit dân ca, bolero không gián đoạn, lý tưởng cho phần tiệc dài, dễ loop để duy trì không khí rộn ràng suốt buổi.",
+        youtube: "https://www.youtube.com/watch?v=zqjIMJbIXAA",
       },
     ],
     date: "2025-11-19",
@@ -633,13 +693,13 @@ export const playlistsData: PlaylistPost[] = [
     type: "playlists",
     mood: "Vui tươi – Cổ điển miền Tây",
     final:
-      "20 bài nhạc đám cưới miền Tây cổ điển – những giai điệu ngọt ngào, trữ tình, hoàn hảo cho lễ cưới Nam Bộ.\n\n" +
-      "Danh sách giúp tạo không gian tiệc cưới ấm cúng, rộn ràng, từ nghi lễ gia tiên đến đãi khách ngoài sân.\n\n" +
+      "20 bài nhạc đám cưới miền Tây cổ điển – tinh hoa dân ca, bolero và tân cổ giao duyên, mang hồn cốt Nam Bộ vào từng khoảnh khắc thiêng liêng.\n\n" +
+      "Playlist được thiết kế chuyên nghiệp cho không gian lễ cưới truyền thống: từ rước dâu qua sông nước đến tiệc gia tiên ấm cúng.\n\n" +
       "Bật ngay để:\n" +
-      "→ Rước dâu thêm phần sống động\n" +
-      "→ Tiễn dâu thật cảm xúc\n" +
-      "→ Gây ấn tượng với khách mời\n\n" +
-      "Chia sẻ playlist này cho bạn bè chuẩn bị cưới để mọi khoảnh khắc trở nên đáng nhớ hơn.",
+      "→ Tái hiện hành trình tình yêu qua giai điệu mộc mạc\n" +
+      "→ Kết nối hai họ bằng lời ca chân chất\n" +
+      "→ Tạo dấu ấn văn hóa khó quên cho quan khách\n\n" +
+      "Chia sẻ playlist này với các cặp đôi yêu quê hương để ngày vui thêm phần ý nghĩa, trọn vẹn và đậm đà bản sắc.",
   },
   {
     id: 8,
@@ -650,48 +710,113 @@ export const playlistsData: PlaylistPost[] = [
     image: dc.src,
     banner: dc2.src,
     description:
-      "Muốn lễ cưới vừa sang vừa đầy cảm xúc? Playlist 20 bài nhạc trẻ cưới hay nhất tổng hợp những ca khúc ngọt ngào, hiện đại, hợp với mọi khoảnh khắc: từ lễ gia tiên, rước dâu, trao nhẫn đến tiệc cưới. Bật lên là cả hội trường cùng hòa nhịp, cô dâu chú rể rưng rưng xúc động, khách mời vui nhộn theo nhạc.\n\n" +
-      "Playlist gồm các hit như 'Một Nhà', 'Ấm', 'Hơn Cả Yêu', 'Ngày Đầu Tiên'… – tất cả đều chất lượng cao, bản quyền đầy đủ, sẵn sàng cho mọi loại tiệc: nhà hàng, resort, tiệc ngoài trời hay tiệc vườn.",
+      "Bộ sưu tập 20 ca khúc nhạc trẻ hàng đầu 2025, từ ballad sâu lắng đến hit EDM bắt tai, được tuyển chọn từ các nghệ sĩ Vpop nổi bật. Những bản hit này không chỉ phản ánh xu hướng âm nhạc hiện đại mà còn truyền tải thông điệp tình yêu chân thành, phù hợp cho mọi giai đoạn lễ cưới: từ bước vào lễ đường, trao nhẫn đến tiệc khiêu vũ. Mỗi bài hát kèm mô tả chuyên sâu về cách sử dụng, đảm bảo buổi lễ vừa sang trọng vừa tràn đầy năng lượng tích cực.\n\n" +
+      "Playlist dành cho:\n" +
+      "- Lễ cưới hiện đại tại nhà hàng, resort hoặc sự kiện ngoài trời\n" +
+      "- Cặp đôi trẻ yêu thích Vpop và các bản hit TikTok\n" +
+      "- Buổi tiệc muốn kết hợp cảm xúc sâu lắng với phần sôi động\n" +
+      "- Khách mời đa thế hệ, từ Gen Z đến Millennials\n\n" +
+      "Tất cả liên kết YouTube chính thức, chất lượng HD, dễ dàng kết nối với DJ hoặc hệ thống âm thanh để tạo trải nghiệm âm nhạc chuyên nghiệp, cá nhân hóa.",
     songs: [
       {
         name: "Một Nhà – Da LAB",
-        desc: "Ca khúc mở đầu lễ cưới cực kỳ xúc động, cả hội trường cùng hát theo, cô dâu rưng rưng.",
-        youtube: "https://www.youtube.com/watch?v=LlzFR7G7Y8A",
+        desc: "Ballad acoustic ấm áp về cuộc sống vợ chồng, mở đầu lễ cưới với lời hứa xây dựng tổ ấm, khiến toàn hội trường hát theo và xúc động.",
+        youtube: "https://www.youtube.com/watch?v=TKlXc3iywoM",
       },
       {
         name: "Ấm – Vũ Cát Tường ft Hoàng Dũng (Live Wedding Ver.)",
-        desc: "Bản live đặc biệt cho lễ cưới, nghe là muốn ôm nhau ngay, đã làm tan chảy nhiều cặp đôi.",
+        desc: "Phiên bản live đặc biệt cho đám cưới, giai điệu piano nhẹ nhàng ôm ấp, lý tưởng cho phần cô dâu bước vào, tạo khoảnh khắc tan chảy cảm xúc.",
         youtube: "https://www.youtube.com/watch?v=5qW8v9m3k2p",
       },
       {
         name: "Hơn Cả Yêu – Đức Phúc",
-        desc: "Bài hát tặng cô dâu và chú rể trong phần trao nhẫn, chất lượng cao, giai điệu ngọt ngào.",
-        youtube: "https://www.youtube.com/watch?v=R07MG5kD7YY",
+        desc: "Ballad ngọt ngào về tình yêu vô điều kiện, dùng cho nghi thức trao nhẫn, lời ca hứa hẹn hy sinh trọn đời chạm đến trái tim mọi người.",
+        youtube: "https://www.youtube.com/watch?v=__kGJZ-kPno",
       },
       {
         name: "Ngày Đầu Tiên – Đức Phúc",
-        desc: "Hit 2025 cho phần mở đầu hoặc rước dâu, lyric đúng tâm trạng, nghe mà nổi da gà.",
-        youtube: "https://www.youtube.com/watch?v=Z8kP9mQ2v7x",
+        desc: "Hit 2025 với lyric tâm trạng 'ngày đầu tiên yêu đời anh', phù hợp rước dâu hoặc mở đầu, mang đến năng lượng tươi mới và nổi da gà.",
+        youtube: "https://www.youtube.com/watch?v=rIXhXaQ8tiM",
       },
       {
         name: "Mình Cưới Nhau Đi – Huỳnh James x Pjnboys",
-        desc: "Nhạc EDM vui nhộn pha ballad, hợp phần tiệc, bật lên là khách mời nhún nhảy theo ngay.",
-        youtube: "https://www.youtube.com/watch?v=8xK9pL2mZs5",
+        desc: "EDM ballad vui nhộn, giai điệu bắt tai cho phần tiệc, khuyến khích khách mời nhún nhảy, biến buổi lễ thành party đáng nhớ.",
+        youtube: "https://www.youtube.com/watch?v=BBRCKcGPmhI",
       },
       {
         name: "Yêu Là Cưới – Phát Hồ x JokeS",
-        desc: "Hit TikTok 2025, giai điệu bắt tai, khách trẻ nghe là hò hét, không khí cực vui.",
-        youtube: "https://www.youtube.com/watch?v=T9mP2vL8kQs",
+        desc: "Hit TikTok 2025 với beat sôi động, lời ca dí dỏm về quyết định cưới, lý tưởng cho phần giao lưu, khách trẻ hò reo theo nhịp.",
+        youtube: "https://www.youtube.com/watch?v=J9ChQu2zYEY",
       },
       {
         name: "Có Em Là Đủ – Phạm Trưởng x Ngọc Kaylam",
-        desc: "Ballad sâu lắng, phần cảm ơn cha mẹ hai bên, nghe xong ai cũng rưng rưng.",
+        desc: "Ballad sâu lắng cảm ơn cha mẹ, giai điệu violin da diết, tạo không gian xúc động giữa tiệc, nhấn mạnh giá trị gia đình.",
         youtube: "https://www.youtube.com/watch?v=Q2vL9pK7mXs",
       },
       {
-        name: "Bonus: 1 Giờ Nhạc Trẻ Cưới Liên Khúc 2025 (No Ads)",
-        desc: "Liên khúc 60 phút, không quảng cáo, chuyển bài mượt mà, hoàn hảo cho tiệc kéo dài.",
-        youtube: "https://www.youtube.com/watch?v=H9pL5vN2m9t",
+        name: "Chỉ Cần Có Nhau – Vũ Cát Tường",
+        desc: "Tình ca vượt thử thách, piano nhẹ nhàng cho phần bước vào lễ đường, truyền tải thông điệp tình yêu bền vững qua mọi gian nan.",
+        youtube: "https://www.youtube.com/watch?v=uNFjr3w94EU",
+      },
+      {
+        name: "Ta Là Của Nhau – Đông Nhi & Ông Cao Thắng",
+        desc: "Song ca lãng mạn về sự gắn kết, dùng cho điệu nhảy đầu tiên, lời ca chân thành gợi kỷ niệm hành trình tình yêu của cặp đôi.",
+        youtube: "https://www.youtube.com/watch?v=tv0ttp0bS8A",
+      },
+      {
+        name: "Em Đồng Ý (I Do) – Lou Hoàng ft. Miu Lê",
+        desc: "Pop ballad vui tươi về lời đồng ý cưới, phù hợp trao nhẫn, giai điệu bắt tai khiến khách mời mỉm cười và vỗ tay theo.",
+        youtube: "https://www.youtube.com/watch?v=_-KiD98d3_o",
+      },
+      {
+        name: "Ngày Chung Đôi – Various Artists",
+        desc: "Ballad miêu tả khoảnh khắc thành hôn, dùng cho phần kết thúc lễ, lời ca hạnh phúc lan tỏa niềm vui đến toàn quan khách.",
+        youtube: "https://www.youtube.com/watch?v=gCwiaL-t2tw",
+      },
+      {
+        name: "Cưới Nhau Đi (Yes I Do) – Bùi Anh Tuấn ft. Hiền Hồ",
+        desc: "Duet ngọt ngào lời cầu hôn, lý tưởng cho phần mở đầu tiệc, tạo không khí lãng mạn xen lẫn sôi động cho khiêu vũ.",
+        youtube: "https://www.youtube.com/watch?v=U2KCJszriGQ",
+      },
+      {
+        name: "Lễ Đường – Vũ.",
+        desc: "Ballad 2025 quốc dân về ngày cưới mơ ước, dùng cho bước vào lễ đường, ca từ chúc phúc khiến cô dâu chú rể rưng rưng.",
+        youtube: "https://www.youtube.com/watch?v=327_OFjUOfo",
+      },
+      {
+        name: "Muốn Yêu Ai Đó Cả Cuộc Đời – Đào Tùng Dương",
+        desc: "Tình ca sâu lắng về tình yêu vĩnh cửu, phù hợp phần lời thề, giai điệu guitar acoustic gợi sự giản dị và chân thực.",
+        youtube: "https://www.youtube.com/watch?v=ZWcPz3n_dPg",
+      },
+      {
+        name: "Cầu Hôn – Văn Mai Hương",
+        desc: "Ballad cảm xúc về khoảnh khắc cầu hôn, dùng cho trao nhẫn, lời ca chân thành khơi dậy niềm tin vào hôn nhân hạnh phúc.",
+        youtube: "https://www.youtube.com/watch?v=po_jKn33cus",
+      },
+      {
+        name: "Ánh Nắng Của Anh – Sơn Tùng M-TP",
+        desc: "Pop ballad ngọt ngào so sánh tình yêu như nắng mai, lý tưởng cho phần cô dâu chú rể chào bàn, mang năng lượng tích cực.",
+        youtube: "https://www.youtube.com/watch?v=psZ1g9fMfeo",
+      },
+      {
+        name: "Trọn Đời Bên Em – Various Artists",
+        desc: "Tình ca hứa hẹn bên nhau mãi mãi, dùng cho kết thúc lễ, violin dạo đầu tạo sự trang trọng và xúc động sâu sắc.",
+        youtube: "https://www.youtube.com/watch?v=4VpnrtpQcHk",
+      },
+      {
+        name: "Có Em Chờ – Đan Trường",
+        desc: "Ballad hiện đại về chờ đợi tình yêu, phù hợp phần cảm ơn khách mời, lời ca gần gũi gợi sự biết ơn và hy vọng tương lai.",
+        youtube: "https://www.youtube.com/watch?v=t96BMOVUHoI",
+      },
+      {
+        name: "Mãi Yêu – Đông Nhi",
+        desc: "Pop ballad về tình yêu bất diệt, dùng cho điệu nhảy đầu tiên, giai điệu sôi động dần lên cao trào niềm vui chung.",
+        youtube: "https://www.youtube.com/watch?v=2WpHVRaOsVM",
+      },
+      {
+        name: "Bonus: Liên Khúc Nhạc Trẻ Cưới 1 Giờ 2025 (No Ads) – Various Artists",
+        desc: "Tổng hợp 60 phút hit Vpop không gián đoạn, chuyển mượt mà, hoàn hảo cho tiệc kéo dài, từ ballad đến EDM để duy trì năng lượng.",
+        youtube: "https://www.youtube.com/watch?v=eEz2pYwPTMU",
       },
     ],
     date: "2025-11-19",
@@ -699,12 +824,12 @@ export const playlistsData: PlaylistPost[] = [
     type: "playlists",
     mood: "Ngọt ngào – Hiện đại – Cảm xúc",
     final:
-      "Playlist 20 bài nhạc trẻ cưới hay nhất – ngọt ngào, hiện đại và đầy cảm xúc cho mọi lễ cưới.\n\n" +
-      "Dành cho mọi khoảnh khắc: lễ gia tiên, rước dâu, trao nhẫn, tiệc cưới.\n\n" +
+      "20 bài nhạc trẻ cưới đỉnh cao 2025 – sự hòa quyện hoàn hảo giữa ballad sâu lắng và hit sôi động, nâng tầm lễ cưới hiện đại.\n\n" +
+      "Thiết kế dành riêng cho mọi khoảnh khắc: từ bước chân cô dâu đến điệu nhảy tiệc tùng.\n\n" +
       "Bật ngay để:\n" +
-      "→ Cô dâu bước vào lễ đường đầy xúc động\n" +
-      "→ Chú rể trao nhẫn lãng mạn\n" +
-      "→ Khách mời vui nhộn, không khí lễ cưới tràn ngập niềm vui\n\n" +
-      "Chia sẻ cho bạn bè chuẩn bị cưới để mọi khoảnh khắc trở nên đáng nhớ, ngọt ngào và hiện đại hơn.",
+      "→ Khơi dậy cảm xúc qua lời ca chân thành\n" +
+      "→ Khuấy động không khí với beat bắt tai\n" +
+      "→ Tạo playlist cá nhân hóa, đáng nhớ cho thế hệ trẻ\n\n" +
+      "Chia sẻ với bạn bè sắp cưới để hành trình tình yêu thêm phần chuyên nghiệp, ngọt ngào và tràn đầy cảm hứng.",
   },
 ];
