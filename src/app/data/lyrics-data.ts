@@ -64,7 +64,7 @@ export const lyricsData: LyricPost[] = [
     id: 1,
     slug: "lyric-am-sweet-liquor",
     title: "Lyric ấm - Sweet Liquor",
-    categories: [categoriesData[5], categoriesData[6], categoriesData[7]],
+    categories: [categoriesData[0], categoriesData[7], categoriesData[16]],
     image: sweetliquorAm.src,
     audio: "/audio/am.MP3",
     date: "2024-11-19", // ngày phát hành theo thông tin SoundCloud :contentReference[oaicite:2]{index=2}
@@ -1296,9 +1296,9 @@ export const lyricsData: LyricPost[] = [
     id: 22,
     slug: "lyric-nghe-ke-la-nam-90-an-ngo",
     title: "Lyric Nghe Kể Là Năm 90 - Ân ngờ, Suzie MK & Zer Nguyễn",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[18]], // Ballad, Vpop, Nhạc trẻ / Indie
+    categories: [categoriesData[1], categoriesData[7], categoriesData[0]], // Ballad, Vpop, Nhạc trẻ / Indie
     image: nghekelanam90.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/nghekelanam90.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/nghekelanam90.MP3", // đặt file MP3 vào public/audio/
     date: "2024-11-15",
     views: 1248,
     type: "lyrics",
@@ -1360,9 +1360,9 @@ export const lyricsData: LyricPost[] = [
     id: 23,
     slug: "lyric-vuon-hoa-con-ca-olew-ngan",
     title: "Lyric Vườn Hoa Con Cá - O.lew (ft. Ngắn)",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[9]], // Ballad, Vpop, Rap Việt / Acoustic
+    categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Rap Việt / Acoustic
     image: vuonhoaconca.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/vuonhoaconca.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/vuonhoaconca.MP3", // đặt file MP3 vào public/audio/
     date: "2023-06-09", // ngày phát hành chính thức từ Sony Music
     views: 1285, // viral mạnh trên TikTok và Spotify từ 2023
     type: "lyrics",
@@ -1424,9 +1424,9 @@ export const lyricsData: LyricPost[] = [
     id: 24,
     slug: "lyric-quen-dat-ten-pham-nguyen-ngoc",
     title: "Lyric Quên Đặt Tên - Phạm Nguyên Ngọc",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [categoriesData[1], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: quendatten.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/quendatten.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/quendatten.MP3", // đặt file MP3 vào public/audio/
     date: "2022-06-25", // ngày phát hành MV chính thức
     views: 580, // views tích lũy trên YouTube và các nền tảng (cập nhật đến 2025)
     type: "lyrics",
@@ -1489,9 +1489,9 @@ export const lyricsData: LyricPost[] = [
     id: 25,
     slug: "lyric-mot-ngan-noi-dau-van-mai-huong",
     title: "Lyric Một Ngàn Nỗi Đau - Văn Mai Hương",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [categoriesData[1], categoriesData[7], categoriesData[0]], // Ballad, Vpop, Nhạc Trẻ
     image: motngangnoidau.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/motngannoideau.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/1ngannoidau.MP3", // đặt file MP3 vào public/audio/
     date: "2022-06-23", // ngày phát hành MV chính thức
     views: 550, // views tích lũy trên YouTube và các nền tảng (ước tính đến 2025)
     type: "lyrics",
@@ -1554,9 +1554,9 @@ export const lyricsData: LyricPost[] = [
     id: 26,
     slug: "lyric-vet-thuong-fishy",
     title: "Lyric Vết Thương - Fishy",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[18]], // Ballad, Vpop, Indie
+    categories: [categoriesData[0], categoriesData[7], categoriesData[6]], // Ballad, Vpop, Indie
     image: vetthuong.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/vetthuong.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/vetthuong.MP3", // đặt file MP3 vào public/audio/
     date: "2023-06-28", // ngày phát hành chính thức trên Spotify/Zing
     views: 450, // views tích lũy trên YouTube và các nền tảng (ước tính đến 2025)
     type: "lyrics",
@@ -1619,9 +1619,14 @@ export const lyricsData: LyricPost[] = [
     id: 27,
     slug: "lyric-em-gi-oi-jack-k-icm",
     title: "Lyric Em Gì Ời - Jack (ft. K-ICM)",
-    categories: [categoriesData[7], categoriesData[9], categoriesData[16]], // Vpop, Rap Việt, Nhạc Trẻ
+    categories: [
+      categoriesData[7],
+      categoriesData[0],
+      categoriesData[15],
+      categoriesData[16],
+    ], // Vpop, Rap Việt, Nhạc Trẻ
     image: emgioi.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/emgioi.mp3", // đặt file MP3 vào public/audio/
+    audio: "/audio/emgioi.MP3", // đặt file MP3 vào public/audio/
     date: "2019-10-05", // ngày phát hành MV chính thức
     views: 279, // views trên YouTube (dữ liệu đến 2020, hiện tại cao hơn nhiều)
     type: "lyrics",
@@ -1684,9 +1689,14 @@ export const lyricsData: LyricPost[] = [
     id: 28,
     slug: "lyric-dom-dom-jack-j97",
     title: "Lyric Đóm Đóm - Jack (J97)",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [
+      categoriesData[0],
+      categoriesData[7],
+      categoriesData[5],
+      categoriesData[13],
+    ], // Ballad, Vpop, Nhạc Trẻ
     image: domdom.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/domdom.mp3",
+    audio: "/audio/domdom.MP3",
     date: "2021-08-06", // ngày phát hành MV chính thức
     views: 1680, // views YouTube tính đến 2025 (vẫn đang tăng mạnh)
     type: "lyrics",
@@ -1750,9 +1760,9 @@ export const lyricsData: LyricPost[] = [
     id: 29,
     slug: "lyric-anh-oi-anh-o-lai-chi-pu",
     title: "Lyric Anh Ơi Anh Ở Lại - Chi Pu",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: anhoianholai.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/anhoianholai.mp3",
+    audio: "/audio/anhoianholai.MP3",
     date: "2024-10-25", // ngày phát hành chính thức MV
     views: 1850, // views YouTube + TikTok tính đến đầu 2025 (đang cực viral)
     type: "lyrics",
@@ -1805,9 +1815,9 @@ export const lyricsData: LyricPost[] = [
     id: 30,
     slug: "lyric-noi-nay-co-anh-son-tung-m-tp",
     title: "Lyric Nơi Này Có Anh - Sơn Tùng M-TP",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: noinaycoanh.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/noinaycoanh.mp3",
+    audio: "/audio/noinaycoanh.MP3",
     date: "2017-02-13", // ngày phát hành chính thức
     views: 2500, // views YouTube tích lũy (ước tính đến 2025, đang tăng mạnh)
     type: "lyrics",
@@ -1865,9 +1875,9 @@ export const lyricsData: LyricPost[] = [
     id: 31,
     slug: "lyric-nang-am-trong-tim-duongg",
     title: "Lyric Nắng Ấm Trong Tim - Duongg",
-    categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ballad, Vpop, Nhạc Trẻ
+    categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
     image: nangamtrongtim.src, // thay bằng ảnh bìa thực tế trong public/images/
-    audio: "/audio/nangamtrongtim.mp3",
+    audio: "/audio/nangamtrongtim.MP3",
     date: "2024-12-20", // ngày phát hành chính thức (đang cực hot cuối 2024 – 2025)
     views: 428, // views YouTube + TikTok tích lũy đến đầu 2025 (đang tăng cực mạnh)
     type: "lyrics",
