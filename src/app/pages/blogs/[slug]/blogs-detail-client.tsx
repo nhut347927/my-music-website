@@ -105,7 +105,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "link") {
             return (
-              <p key={originalIdx} className="text-center my-4">
+              <p key={originalIdx} className="text-center my-4 ">
                 <Link
                   href={para.content}
                   className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 break-words whitespace-pre-wrap"
