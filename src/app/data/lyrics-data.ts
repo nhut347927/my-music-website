@@ -59,6 +59,15 @@ import noinaycoanh from "../asset/lyric-img/noinaycoanh.jpg";
 import nangamtrongtim from "../asset/lyric-img/nangamtrongtim.jpg";
 import duongg from "../asset/lyric-img/duongg.jpg";
 
+import amee from "../asset/lyric-img/amee.jpg";
+import ttttyyrtt from "../asset/lyric-img/tuthichthichthanhyeuyeuroithuongthuong.jpg";
+
+import grayd from "../asset/lyric-img/grayd.jpg";
+import tinhyeuchamtre from "../asset/lyric-img/tinhyeuchamtre.jpg";
+
+import btmmby from "../asset/lyric-img/baotienmotmoibinhyen.jpg";
+import btmmby2 from "../asset/lyric-img/btmmby.jpg";
+
 export const lyricsData: LyricPost[] = [
   {
     id: 1,
@@ -1935,5 +1944,191 @@ export const lyricsData: LyricPost[] = [
     userRoleComment: "Admin",
     comment:
       "“Nắng Ấm Trong Tim” – siêu hit cuối 2024 của Duongg, bản tình ca ngọt ngào + ấm áp nhất mùa đông. Với câu hook “Dù một ngàn năm đi nữa anh xin trao hết tất cả những nhớ thương” và đoạn outro “Em ơi em ơi” cực viral trên TikTok, bài hát đã phủ sóng mọi nền tảng, trở thành “quốc ca yêu đương” mới của Gen Z, giúp Duongg chính thức bứt phá lên top đầu Vpop 2025.",
+  },
+  {
+    id: 32,
+    slug: "lyric-tu-thich-thich-thanh-thuong-thuong",
+    title: "Lyric Từ Thích Thích Thành Thương Thương - Amee ft. Hoàng Dũng",
+    categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
+    image: ttttyyrtt.src, // ảnh bìa thực tế
+    audio: "/audio/tuthichthichthanhyeuyeuroithuongthuong.MP3",
+    date: "2020-12-10", // ngày phát hành chính thức
+    views: 3424, // views YouTube + TikTok tích lũy (hit lớn)
+    type: "lyrics",
+    artist: "Amee ft. Hoàng Dũng",
+    lyrics: [
+      {
+        type: "Verse 1",
+        content:
+          "Anh ơi em đâu dám nói\nKhi con tim em đang bối rối\nNhững lần mình hẹn nhau\nNhững lần không thành câu\nNhững ngại ngùng buồn vu vơ trong trái tim này\nNhững lần ôm mộng mơ ôi tay nắm tay\nBiết làm gì giờ em nhận ra\nTừ thích thích thành yêu yêu rồi thương thương",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Nên em đành viết chiếc thư tình thư tình\nĐể thay em nói hết tâm tư trong mình\nMong anh đừng nói những lời từ chối\nEm chỉ cần biết tâm tư anh thế thôi",
+      },
+      {
+        type: "Verse 2",
+        content:
+          "Em ơi anh đâu dễ dàng nói ra nên lời\nRằng trong lòng anh từ lâu cũng thấy rối bời\nNhưng hai ta nên chầm chậm thế thôi em à\nTừ thích thích thành yêu yêu rồi thương thương\nNgày anh thấy thấy tim đập nhanh lúc bên em\nLà anh đã biết biết anh chẳng có một đường lui\nThấy thấy như trạm xăng với ô tô\nVì gặp em là anh chỉ đổ mà thôi",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Nên em đành viết chiếc thư tình thư tình\nĐể thay em nói hết tâm tư trong mình\nMong anh đừng nói những lời từ chối\nEm chỉ cần biết tâm tư anh thế thôi",
+      },
+      {
+        type: "Bridge",
+        content:
+          "Dada dada\nNếu mình yêu ai hết lòng\nNgười ta cũng chờ mong để đáp lại\nThì trên đời đâu tồn tại hai chữ đơn phương\nNếu mình yêu ai hết lòng\nNgười ta cũng chờ mong để đáp lại\nThì trên đời đâu tồn tại hai chữ đơn phương\nDada dada dada dada\nNếu mình yêu ai hết lòng\nNgười ta cũng chờ mong để đáp lại\nThì trên đời đâu tồn tại hai chữ đơn phương\nNếu mình yêu ai hết lòng\nNgười ta cũng chờ mong để đáp lại\nThì trên đời đâu tồn tại hai chữ đơn phương\nThì trên đời đâu tồn tại hai chữ đơn phương",
+      },
+    ],
+    year: "2020",
+    duration: "04:05",
+    singerPhoto: amee.src, // hoặc ảnh của Amee
+    composer: "Kai Đinh, Hứa Kim Tuyền, TDK",
+    producer: "St.319",
+    otherSongs: [
+      "Anh Nhà Ở Đâu Thế",
+      "Yêu Thì Yêu Không Yêu Thì Yêu",
+      "Trời Giấu Trời Mang Đi",
+      "Sao Anh Chưa Về Nhà",
+    ],
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Admin",
+    comment:
+      "“Từ Thích Thích Thành Thương Thương” – bản hit ballad ngọt ngào của Amee ft. Hoàng Dũng năm 2020, kể về hành trình từ 'thích thích' đến 'thương thương' đầy ngại ngùng và đơn phương. Với giai điệu da diết và câu bridge 'Nếu mình yêu ai hết lòng... thì trên đời đâu tồn tại hai chữ đơn phương' viral khắp nơi, bài hát nhanh chóng chạm mốc hàng chục triệu view, trở thành 'quốc ca crush' của thế hệ trẻ Vpop.",
+  },
+  {
+    id: 34,
+    slug: "lyric-tinh-yeu-cham-tre-grey-d",
+    title: "Lyric Tình Yêu Chậm Trễ - Grey D",
+    categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
+    image: tinhyeuchamtre.src,
+    audio: "/audio/tinhyeuchamtre.MP3",
+    date: "2023-11-12",
+    views: 2343,
+    type: "lyrics",
+    artist: "Grey D",
+    lyrics: [
+      {
+        type: "Intro",
+        content:
+          "Anh thường nghĩ mình quên mất rồi\nThời gian ngỡ trôi sẽ cách lòng\nAnh thường nghĩ cảm xúc nhất thời\nMà đâu biết say một đời",
+      },
+      {
+        type: "Pre-Chorus",
+        content:
+          "Rồi khi đã biết là người em vốn thiết tha\nChẳng phải nơi này mà từ một nơi xa\nLặng nghe em nói, lòng anh đau nhói\nCứ trách sao không nhận ra tình yêu sớm hơn",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Thì ra là mất\nTình yêu đẹp nhất ta luôn hoài nghi\nDù cho ngày qua kế bên\nCòn thầm mong bấy lâu, còn nhìn em phía sau\nĐể luôn được thấy nụ cười ấy\n\nThì ra là thế\nTình yêu chậm trễ đôi khi vài giây\nThì ta sẽ lỡ mất nhau\nNgày mai đến nữa thôi\nTất cả mọi thứ sẽ trôi như một cơn gió\nAnh sớm sẽ quên được em",
+      },
+      {
+        type: "Verse 2 (Rap)",
+        content:
+          "Khi xưa khi ta chung lối đi\nKhi xưa ta thân nhau rất lâu\nYêu em ta đâu hay biết chi\nNghĩ rằng chỉ là một tình cảm nhỏ bé\nBiết thế ta chẳng để em đi\nNước mắt ta đâu rơi trên mi\nOh, giờ anh phải cố tỏ ra bình thường\nĐể em buồn vui ở bên cạnh ai",
+      },
+      {
+        type: "Pre-Chorus",
+        content:
+          "Rồi khi đã biết là người em vốn thiết tha\nChẳng phải nơi này mà từ một nơi xa\nLặng nghe em nói, lòng anh đau nhói\nCứ trách sao không nhận ra tình yêu sớm hơn",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Thì ra là mất\nTình yêu đẹp nhất ta luôn hoài nghi\nDù cho ngày qua kế bên\nCòn thầm mong bấy lâu, còn nhìn em phía sau\nĐể luôn được thấy nụ cười ấy\n\nThì ra là thế\nTình yêu chậm trễ đôi khi vài giây\nThì ta sẽ lỡ mất nhau\nNgày mai đến nữa thôi\nTất cả mọi thứ sẽ trôi như một cơn gió, hoh-uh",
+      },
+      {
+        type: "Final Chorus + Outro",
+        content:
+          "Thì ra là mất\nTình yêu đẹp nhất ta luôn hoài nghi\nDù cho ngày qua kế bên\nCòn thầm mong bấy lâu, còn nhìn em phía sau\nĐể luôn được thấy nụ cười ấy\n\nThì ra là thế\nTình yêu chậm trễ đôi khi vài giây\nThì ta sẽ lỡ mất nhau\nNgày mai đến nữa thôi\nTất cả mọi thứ sẽ trôi như một cơn gió\nAnh sớm sẽ quên được em",
+      },
+    ],
+    year: "2023",
+    duration: "04:37",
+    singerPhoto: grayd.src,
+    composer: "Grey D",
+    producer: "St.319",
+    otherSongs: [
+      "Dự Báo Thời Tiết Hôm Nay Mưa",
+      "Đừng Đổ Lỗi Bọn Đứa Điên",
+      "Vài Câu Nói Có Khiến Người Thay Đổi",
+      "Tình Yêu Màu Sunshine",
+    ],
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Admin",
+    comment:
+      "“Tình Yêu Chậm Trễ (Live Piano Ver.)” – phiên bản acoustic sâu lắng của Grey D, phát hành cuối 2023. Với chỉ cây đàn piano và giọng hát chân thành, bản live piano này đã chạm đến trái tim khán giả, viral mạnh trên YouTube và Spotify, vượt 5 triệu lượt nghe chỉ sau 2 năm, trở thành bản ballad buồn về những tình yêu đến muộn mà ai cũng từng trải qua.",
+  },
+  {
+    id: 35,
+    slug: "lyric-bao-tien-mot-mo-binh-yen",
+    title: "Lyric Bao Tiền Một Mớ Bình Yên - 14 Casper ft. Bon",
+    categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
+    image: btmmby.src,
+    audio: "/audio/baotienmotmoibinhyen.MP3",
+    date: "2020-12-30",
+    views: 2345,
+    type: "lyrics",
+    artist: "14 Casper",
+    lyrics: [
+      {
+        type: "Verse 1",
+        content:
+          "Mười giờ văn phòng vẫn sáng đèn\nLại một hôm làm thâu suốt đêm\nBàn chân đau mỏi nhức\nTựa lưng em chợp mắt\nDặn lòng vì cuộc sống êm đẹp\nHạnh phúc không đâu cách xa\nMà ta cứ đi tìm\nVậy xin em một lần\nTự yêu thương lấy mình\nMột ngày em được mấy bữa cơm\nĐợt này công việc có tốt hơn\nCòn ai hay gièm pha\nCòn ai luôn rầy la mà xót xa oà lên khóc vô vọng",
+      },
+      {
+        type: "Pre-Chorus",
+        content:
+          "Cành lá đông qua sẽ rơi\nKhổ đau sẽ vơi đời buồn sẽ qua\nMưa tạnh mây tan trời quang\nXin đừng buông xuôi dễ dàng",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Dù có lắm phút chốc em lạc lối\nHãy cho mình hồn nhiên một chút thôi\nMặc cho những âu lo ghìm chặt đôi vai\nMặc cho tiếng thở dài đập vào hư không\nDù có những lúc chỉ muốn gục ngã\nMá em hồng cười lên để thấy ta\nThật may mắn khi em như một bông hoa\nMọc lên giữa nơi sa mạc cằn cỗi\nChỉ cần vậy thôi",
+      },
+      {
+        type: "Verse 2",
+        content:
+          "Mua gì em còn phải đắn đo\nCho mình em đừng nên lắng lo\nDù ai có gièm pha\nĐừng quan tâm vài ba lời nói xa mà vấp ngã yếu lòng\nChẳng ai thu phí ước mơ\nThì hãy cứ mơ từng giây phút giờ\nEm là mây cho trời ban\nXin đừng buông xuôi dễ dàng",
+      },
+      {
+        type: "Chorus",
+        content:
+          "Dù có lắm phút chốc em lạc lối\nHãy cho mình hồn nhiên một chút thôi\nMặc cho những âu lo ghìm chặt đôi vai\nMặc cho tiếng thở dài đập vào hư không\nDù có những lúc chỉ muốn gục ngã\nMá em hồng cười lên để thấy ta\nThật may mắn khi em như một bông hoa\nMọc lên giữa nơi sa mạc cằn cỗi\nChỉ cần vậy thôi",
+      },
+      {
+        type: "Bridge",
+        content:
+          "Đã có ngày tháng năm kia vụn vỡ\nNhưng hãy nhớ tỉnh giấc mơ ngày mai rồi sẽ tốt hơn\nChẳng còn những lúc buốt giá\nDày vò tâm can yếu đuối ngày qua\nCần bao nhiêu lâu để em tìm kiếm\nCần bao nhiêu tiền đổi một mớ bình yên\nChẳng ai bán ai mua ai mần ai mang\nBình yên chứa chan nơi trong lòng nhân gian",
+      },
+      {
+        type: "Final Chorus",
+        content:
+          "Dù có những lúc chỉ muốn gục ngã\nMá ửng hồng cười lên để thấy ta\nThật may mắn khi em như một bông hoa\nMọc lên giữa nơi sa mạc cằn cỗi\nChỉ cần vậy thôi",
+      },
+    ],
+    year: "2020",
+    duration: "04:15",
+    singerPhoto: btmmby2.src,
+    composer: "14 Casper",
+    producer: "14 Casper",
+    otherSongs: [
+      "Nơi Em Không Tin",
+      "Một Điều Chưa Nói",
+      "Về Nghe Mẹ Ru",
+      "Một Đời (feat. Buitruonglinh)",
+      "Thu Hoài",
+    ],
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "Admin",
+    comment:
+      "“Bao Tiền Một Mớ Bình Yên” – bản ballad truyền cảm hứng của 14 Casper ft. Bon năm 2020, nói về hành trình tìm kiếm bình yên giữa bộn bề cuộc sống. Với câu hỏi day dứt “Cần bao nhiêu tiền đổi một mớ bình yên?” và thông điệp tự yêu thương bản thân, bài hát nhanh chóng chạm đến trái tim khán giả, vượt 15 triệu view và trở thành 'quốc ca' động viên cho những ai đang mệt mỏi, lạc lối giữa guồng quay công việc.",
   },
 ];
