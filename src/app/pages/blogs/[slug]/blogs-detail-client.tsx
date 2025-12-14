@@ -32,19 +32,24 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
       slug: generateSlug(para.content),
     }));
 
-    // Giả sử bạn có mảng allBlogs
-const currentIndex = blogData.findIndex(b => b.slug === blog.slug);
+  // Giả sử bạn có mảng allBlogs
+  const currentIndex = blogData.findIndex((b) => b.slug === blog.slug);
 
-const prevBlog = currentIndex > 0 ? {
-  slug: blogData[currentIndex - 1].slug,
-  title: blogData[currentIndex - 1].title
-} : undefined;
+  const prevBlog =
+    currentIndex > 0
+      ? {
+          slug: blogData[currentIndex - 1].slug,
+          title: blogData[currentIndex - 1].title,
+        }
+      : undefined;
 
-const nextBlog = currentIndex < blogData.length - 1 ? {
-  slug: blogData[currentIndex + 1].slug,
-  title: blogData[currentIndex + 1].title
-} : undefined;
-
+  const nextBlog =
+    currentIndex < blogData.length - 1
+      ? {
+          slug: blogData[currentIndex + 1].slug,
+          title: blogData[currentIndex + 1].title,
+        }
+      : undefined;
 
   return (
     <div className="max-w-6xl mx-auto mt-14 space-y-16">
@@ -179,11 +184,12 @@ const nextBlog = currentIndex < blogData.length - 1 ? {
           }
           if (para.type === "link") {
             return (
-              <p key={originalIdx} className="text-center my-4 ">
+              <p key={originalIdx} className="text-center my-4">
                 <Link
                   href={para.content}
                   className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 break-words whitespace-pre-wrap"
                   target="_blank"
+                  rel="noopener noreferrer nofollow" // Thêm nofollow cho link ngoài để tránh pass link juice không cần thiết, đồng thời noopener noreferrer cho bảo mật và privacy
                 >
                   {para.content}
                 </Link>
@@ -233,8 +239,18 @@ const nextBlog = currentIndex < blogData.length - 1 ? {
               className="group flex-1 flex items-center gap-4 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg
+                  className="w-6 h-6 text-blue-600 dark:text-blue-400 rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </div>
               <div className="text-left">
@@ -266,15 +282,24 @@ const nextBlog = currentIndex < blogData.length - 1 ? {
                 </p>
               </div>
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg
+                  className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </div>
             </Link>
-             )}
-            </div>
           )}
-      
+        </div>
+      )}
     </div>
   );
 }
