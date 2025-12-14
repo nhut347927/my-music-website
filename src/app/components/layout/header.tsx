@@ -33,6 +33,7 @@ export default function Header() {
             ["Lyrics", "/pages/lyrics"],
             ["Playlists", "/pages/playlists"],
             ["Blogs", "/pages/blogs"],
+            ["About", "/about"],
           ].map(([name, path]) => (
             <li key={name}>
               <Link
@@ -72,6 +73,7 @@ export default function Header() {
               ["Lyrics", "/pages/lyrics"],
               ["Playlists", "/pages/playlists"],
               ["Blogs", "/pages/blogs"],
+              ["About", "/about"],
             ].map(([name, path]) => (
               <li key={name}>
                 <Link

@@ -72,6 +72,10 @@ import khokhan from "../asset/blog-img/khokhan.jpg";
 import hanhphuc from "../asset/blog-img/hanhphuc.jpg";
 import kinhdoanh from "../asset/blog-img/kinhdoanh.jpg";
 
+import it from "../asset/blog-img/it1.jpg";
+import it2 from "../asset/blog-img/it-analy1.jpg";
+import it3 from "../asset/blog-img/ai1.jpg";
+
 export const blogData: BlogsPost[] = [
   {
     id: 1,
@@ -1475,7 +1479,7 @@ export const blogData: BlogsPost[] = [
       "Tết Ăn Gì Ngon? Gợi Ý 8 Món Chuẩn Vị Miền Nam – Dễ Làm, Để Lâu Không Ngán",
     categories: [categoriesData[44], categoriesData[45], categoriesData[38]],
     image: antet1.src,
-    date: "2025-12-19",
+    date: "2025-11-19",
     views: 3779,
     type: "blogs",
     userCommentAvatar: anonymous.src,
@@ -1668,7 +1672,7 @@ export const blogData: BlogsPost[] = [
       "Tết Trang Trí Gì Cho Đẹp? 12 Gợi Ý Chuẩn Không Khí – Đơn Giản Mà Sang",
     categories: [categoriesData[38], categoriesData[43], categoriesData[46]], // Trang trí nhà cửa & Tết
     image: ttt1.src, // ảnh chính: phòng khách ấm áp với mai vàng, đèn lồng đỏ, bàn thờ gọn đẹp
-    date: "2025-12-20",
+    date: "2025-11-20",
     views: 2323,
     type: "blogs",
     userCommentAvatar: anonymous.src,
@@ -2383,7 +2387,7 @@ export const blogData: BlogsPost[] = [
     slug: "co-nen-kinh-doanh-hay-khong-9-cau-hoi-quyet-dinh-ban-co-nen-nhay-xuong-ao-tran-nay",
     title:
       "Có Nên Kinh Doanh Hay Không? 9 Câu Hỏi Trung Thực Giúp Bạn Biết Mình Có Thực Sự Sinh Ra Để Làm Chủ",
-    categories: [categoriesData[28], categoriesData[32], categoriesData[31]],// Kinh doanh & Khởi nghiệp & Phát triển bản thân
+    categories: [categoriesData[28], categoriesData[32], categoriesData[31]], // Kinh doanh & Khởi nghiệp & Phát triển bản thân
     image: kinhdoanh.src, // ảnh chính: tông màu tối, một người ngồi một mình giữa văn phòng trống lúc 2h sáng, chỉ còn ánh sáng từ màn hình laptop chiếu lên gương mặt vừa mệt mỏi vừa kiên định
     date: "2025-11-30",
     views: 15742,
@@ -2505,4 +2509,330 @@ export const blogData: BlogsPost[] = [
     comment:
       "Quyết định kinh doanh hay không là một bước quan trọng trong cuộc đời mỗi người, và nó không phải là lựa chọn dành cho tất cả mọi người. Bằng cách tự hỏi những câu hỏi trung thực về khả năng chịu đựng rủi ro, sự kiên nhẫn và động lực cá nhân, bạn có thể xác định liệu con đường kinh doanh có phù hợp với mình hay không. Điều quan trọng là hiểu rõ bản thân và sẵn sàng đối mặt với những thách thức mà việc làm chủ doanh nghiệp mang lại. Dù bạn chọn con đường nào, hãy chắc chắn rằng đó là quyết định dựa trên sự hiểu biết sâu sắc về chính mình và những gì bạn thực sự mong muốn trong cuộc sống.",
   },
+  {
+    id: 16,
+    slug: "kham-pha-nganh-it-con-duong-nghe-nghiep-day-hua-hen-trong-thoi-dai-so",
+    title:
+      "Khám Phá Ngành IT – Con Đường Nghề Nghiệp Đầy Hứa Hẹn Trong Thời Đại Số",
+    categories: [categoriesData[28], categoriesData[32], categoriesData[31]],
+    image: it.src, // Sử dụng image 1 làm ảnh chính
+    date: "2025-12-14",
+    views: 344,
+    type: "blogs",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "anonymous",
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Trong thế giới hiện đại, ngành Công nghệ Thông tin (IT) đóng vai trò trung tâm trong sự phát triển của mọi lĩnh vực từ kinh doanh, giáo dục đến giải trí và y tế. Theo báo cáo của Mordor Intelligence, thị trường ICT Việt Nam dự kiến đạt 9,12 tỷ USD năm 2025 và tăng trưởng với CAGR 9,92% đến năm 2030.",
+      },
+      {
+        type: "text",
+        content:
+          "Tham gia ngành IT không chỉ là theo đuổi một công việc mà còn là hành trình khám phá sáng tạo và đột phá. Với tốc độ phát triển nhanh chóng của công nghệ, ngành này đòi hỏi sự cập nhật kiến thức liên tục và khả năng thích nghi để theo kịp các xu hướng toàn cầu như AI, cloud computing và cybersecurity.",
+      },
+      {
+        type: "title",
+        content:
+          "Sự Phát Triển Không Ngừng Của Ngành IT Tại Việt Nam Và Toàn Cầu",
+      },
+      {
+        type: "text",
+        content:
+          "Ngành IT Việt Nam đang tăng trưởng mạnh mẽ, với kinh tế số dự kiến đạt khoảng 45 tỷ USD vào năm 2025 theo ước tính của World Bank và các nguồn khác. Toàn cầu, thị trường IT services dự kiến đạt 1,50 nghìn tỷ USD năm 2025 (Statista).",
+      },
+      {
+        type: "text",
+        content:
+          "Sự tiến bộ trong AI, big data, an ninh mạng và phát triển phần mềm đã làm ngành IT trở nên thiết yếu. Tại Việt Nam, các doanh nghiệp đầu tư mạnh vào chuyển đổi số, tạo ra hàng trăm nghìn việc làm mới. Tuy nhiên, ngành cũng đối mặt cạnh tranh khốc liệt và nhu cầu nhân lực cao cấp. Tham khảo thêm: Báo cáo thị trường ICT Việt Nam (Mordor Intelligence).",
+      },
+      {
+        type: "link",
+        content:
+          "https://www.mordorintelligence.com/industry-reports/vietnam-ict-market",
+      },
+      {
+        type: "title",
+        content: "Cơ Hội Nghề Nghiệp Và Các Lĩnh Vực Nổi Bật Trong Ngành IT",
+      },
+
+      {
+        type: "text",
+        content:
+          "Ngành IT đa dạng với các vị trí hot như lập trình viên, kỹ sư AI/machine learning, chuyên gia an ninh mạng, data scientist, cloud engineer và developer ứng dụng di động. Theo các báo cáo 2025, nhu cầu cao nhất là AI, cybersecurity và cloud computing. Việt Nam thiếu khoảng 150.000-200.000 nhân sự IT hàng năm.",
+      },
+      {
+        type: "text",
+        content:
+          "Mức lương trung bình cho chuyên gia IT tại Việt Nam khoảng 1.820 USD/tháng (ITviec 2024-2025), cao hơn ở các lĩnh vực như AI và cybersecurity. Ngành hỗ trợ làm việc linh hoạt, remote và hợp tác toàn cầu, giúp phát triển kỹ năng mềm lẫn chuyên môn.",
+      },
+
+      {
+        type: "title",
+        content: "Kết Quả, Thách Thức Và Triển Vọng Tương Lai Của Ngành IT",
+      },
+      {
+        type: "text",
+        content:
+          "Ngành IT mang lại cơ hội lớn nhưng cũng đòi hỏi cập nhật kiến thức liên tục, thích nghi công nghệ mới và giải quyết vấn đề phức tạp. Thách thức bao gồm thiếu hụt nhân tài, áp lực công việc cao và rủi ro bảo mật.",
+      },
+      {
+        type: "text",
+        content:
+          "Tương lai, các công nghệ như AI, blockchain, IoT và robot sẽ bùng nổ, tạo ra nghề nghiệp mới. Tại Việt Nam, ngành IT tiếp tục là động lực kinh tế số, với mục tiêu đóng góp 20-30% GDP đến 2030. Những ai nắm bắt xu hướng sẽ có vị thế quan trọng. Tham khảo: ITViec Report 2025.",
+      },
+      {
+        type: "link",
+        content:
+          "https://itviec.com/blog/thi-truong-tuyen-dung-it-viet-nam-quy-1-2025-ai-python-tang-truong-manh-me/",
+      },
+      {
+        type: "title",
+        content: "Tổng Kết",
+      },
+      {
+        type: "text",
+        content:
+          "Chọn ngành IT là quyết định sáng suốt trong thời đại số. Với cơ hội việc làm phong phú, mức lương hấp dẫn và tiềm năng sáng tạo, ngành này mở ra tương lai tươi sáng. Để thành công, hãy xây dựng đam mê, nâng cao kỹ năng (đặc biệt AI, cloud và cybersecurity) và sẵn sàng đối mặt thử thách. IT chính là chìa khóa để bạn góp phần vào sự tiến bộ của xã hội số.",
+      },
+    ],
+    comment:
+      "Ngành IT thực sự là một lĩnh vực đầy hứa hẹn trong thời đại số hiện nay. Với sự phát triển không ngừng của công nghệ, ngành này không chỉ mang lại nhiều cơ hội nghề nghiệp đa dạng mà còn thúc đẩy sự sáng tạo và đổi mới. Tuy nhiên, để thành công trong ngành IT, người lao động cần phải không ngừng học hỏi, thích nghi với những thay đổi và duy trì đam mê với công nghệ. Ngành IT không chỉ là một lựa chọn nghề nghiệp mà còn là con đường dẫn đến tương lai tươi sáng và đầy tiềm năng.",
+  },
+  {
+    id: 17,
+    slug: "nghe-data-analyst-chia-khoa-thanh-cong-trong-thoi-dai-so-hoa",
+    title: "Nghề Data Analyst - Chìa Khóa Thành Công Trong Thời Đại Số Hóa",
+    categories: [categoriesData[28], categoriesData[32], categoriesData[31]],
+    image: it2.src,
+    date: "2025-12-14",
+    views: 564,
+    type: "blogs",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "anonymous",
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Trong thời đại số hóa, dữ liệu được ví như 'dầu mỏ mới' của nền kinh tế. Theo báo cáo của World Economic Forum (Future of Jobs 2025), Data Analyst nằm trong top 10 nghề nghiệp tăng trưởng nhanh nhất toàn cầu đến năm 2030.",
+      },
+      {
+        type: "text",
+        content:
+          "Nghề Data Analyst không chỉ xử lý số liệu mà còn biến chúng thành insights giá trị, hỗ trợ doanh nghiệp ra quyết định chiến lược. Bài viết này cung cấp cái nhìn toàn diện về nghề nghiệp này, dựa trên dữ liệu thị trường thực tế tại Việt Nam và toàn cầu.",
+      },
+      {
+        type: "title",
+        content:
+          "Nghề Data Analyst - Nền Tảng Của Quyết Định Dữ Liệu Trong Thời Đại Số",
+      },
+      {
+        type: "text",
+        content:
+          "Thị trường data analytics toàn cầu dự kiến đạt khoảng 65-70 tỷ USD năm 2025 và tăng trưởng với CAGR trên 20% đến 2030 (theo các nguồn như Grand View Research và IMARC Group). Tại Việt Nam, nhu cầu Data Analyst tăng mạnh nhờ chuyển đổi số, với vị trí này thuộc nhóm nghề hot trong lĩnh vực IT.",
+      },
+      {
+        type: "text",
+        content:
+          "Data Analyst thu thập, làm sạch, phân tích dữ liệu để tạo báo cáo, dự báo xu hướng và hỗ trợ tối ưu hóa hoạt động. Sự phát triển của AI và machine learning càng mở rộng vai trò, giúp doanh nghiệp hiểu khách hàng sâu hơn và nâng cao hiệu quả kinh doanh. Tham khảo: Vietnam IT Salary & Recruitment Market Report 2024-2025 (ITviec).",
+      },
+      {
+        type: "link",
+        content:
+          "https://itviec.com/report/vietnam-it-salary-and-recruitment-market",
+      },
+      {
+        type: "title",
+        content:
+          "Kỹ Năng Cần Thiết Để Trở Thành Data Analyst Chuyên Nghiệp Năm 2025",
+      },
+
+      {
+        type: "text",
+        content:
+          "Kỹ năng cốt lõi bao gồm: SQL (xử lý dữ liệu lớn), Python/R (phân tích thống kê), Excel/Tableau/Power BI (trực quan hóa dữ liệu). Theo các báo cáo 2025, kiến thức về machine learning cơ bản và data cleaning là yếu tố then chốt.",
+      },
+      {
+        type: "text",
+        content:
+          "Ngoài kỹ thuật, cần tư duy phản biện, kỹ năng giao tiếp để trình bày insights rõ ràng và storytelling với dữ liệu. Liên tục học hỏi các công cụ mới như AI-assisted analytics là bắt buộc để cạnh tranh.",
+      },
+      {
+        type: "title",
+        content: "Vai Trò Của Data Analyst Trong Các Ngành Nghề Hiện Nay",
+      },
+
+      {
+        type: "text",
+        content:
+          "Data Analyst hiện diện ở hầu hết ngành: tài chính (phát hiện gian lận), bán lẻ (dự báo nhu cầu), y tế (phân tích dữ liệu bệnh nhân), logistics (tối ưu hóa chuỗi cung ứng). Tại Việt Nam, các công ty công nghệ và ngân hàng dẫn đầu nhu cầu tuyển dụng.",
+      },
+      {
+        type: "text",
+        content:
+          "Mức lương trung bình Data Analyst tại Việt Nam khoảng 20-25 triệu VND/tháng (theo Glassdoor và NodeFlair 2025), cao hơn với kinh nghiệm và kỹ năng AI.",
+      },
+
+      {
+        type: "title",
+        content: "Thách Thức Và Cơ Hội Trong Nghề Data Analyst",
+      },
+      {
+        type: "text",
+        content:
+          "Thách thức: Dữ liệu lớn phức tạp, yêu cầu cập nhật công nghệ nhanh (AI, big data tools) và đảm bảo độ chính xác cao. Áp lực deadline và thiếu hụt nhân tài chất lượng cao tại Việt Nam.",
+      },
+      {
+        type: "text",
+        content:
+          "Cơ hội: Tăng trưởng mạnh (15-20% hàng năm theo một số báo cáo), lương hấp dẫn, làm việc remote linh hoạt và tiềm năng thăng tiến sang Data Scientist hoặc BI Analyst. Tham khảo thêm:",
+      },
+      {
+        type: "link",
+        content:
+          "https://mindx.edu.vn/blog/lam-data-analyst-ban-phai-doi-mat-voi-nhung-kho-khan-gi",
+      },
+      {
+        type: "title",
+        content: "Tổng Kết",
+      },
+      {
+        type: "text",
+        content:
+          "Nghề Data Analyst là chìa khóa trong thời đại số, mang lại cơ hội nghề nghiệp lớn với nhu cầu cao tại Việt Nam và toàn cầu. Để thành công, hãy đầu tư vào kỹ năng SQL, Python, visualization và kiến thức AI. Đây là lựa chọn lý tưởng cho những ai đam mê dữ liệu và muốn góp phần vào sự phát triển kinh tế số.",
+      },
+    ],
+    comment:
+      "Nghề Data Analyst thực sự là một chìa khóa quan trọng trong thời đại số hóa hiện nay. Với khả năng phân tích và diễn giải dữ liệu, các Data Analyst giúp doanh nghiệp đưa ra những quyết định chiến lược chính xác và hiệu quả. Mặc dù nghề này đòi hỏi nhiều kỹ năng chuyên môn và sự cập nhật liên tục về công nghệ, nhưng cơ hội phát triển và tiềm năng tài chính mà nó mang lại là rất lớn. Đối với những ai đam mê công nghệ và muốn khám phá sức mạnh của dữ liệu, nghề Data Analyst chắc chắn là một lựa chọn hấp dẫn và đầy triển vọng.",
+  },
+
+{
+  id: 18,
+  slug: "nganh-tri-tue-nhan-tao-trong-linh-vuc-cntt-huong-di-chien-luoc-cua-it-hien-dai",
+  title:
+    "Ngành trí tuệ nhân tạo trong lĩnh vực CNTT – Hướng đi chiến lược của IT hiện đại",
+  categories: [categoriesData[28], categoriesData[32], categoriesData[31]],
+  image: it3.src,
+  date: "2025-12-14",
+  views: 234,
+  type: "blogs",
+  userCommentAvatar: anonymous.src,
+  userNameComment: "Anonymous",
+  userRoleComment: "anonymous",
+  paragraphs: [
+    {
+      type: "text",
+      content:
+        "Trong lĩnh vực Công nghệ thông tin (CNTT) hiện đại, trí tuệ nhân tạo (Artificial Intelligence – AI) đã trở thành một chuyên ngành cốt lõi, đóng vai trò nền tảng trong việc phát triển phần mềm, hệ thống dữ liệu và các nền tảng số thông minh. AI không còn là khái niệm nghiên cứu thuần túy mà đã được tích hợp sâu vào các sản phẩm CNTT như hệ thống quản lý doanh nghiệp, nền tảng thương mại điện tử, ứng dụng di động và các giải pháp tự động hóa."
+    },
+    {
+      type: "text",
+      content:
+        "Theo báo cáo của PwC năm 2017 (vẫn được trích dẫn rộng rãi đến năm 2025), các công nghệ AI dự kiến đóng góp khoảng 15,7 nghìn tỷ USD vào nền kinh tế toàn cầu đến năm 2030. Phần lớn giá trị này đến từ việc ứng dụng AI trong các hệ thống CNTT nhằm tối ưu hóa xử lý dữ liệu, tự động hóa quy trình phần mềm và nâng cao hiệu suất vận hành hệ thống."
+    },
+    {
+      type: "text",
+      content:
+        "Tại Việt Nam, ngành trí tuệ nhân tạo đang phát triển chủ yếu trong khuôn khổ ngành CNTT, gắn liền với các mảng như phát triển phần mềm, khoa học dữ liệu (Data Science), điện toán đám mây và an toàn thông tin. AI được xem là hướng chuyên sâu giúp kỹ sư CNTT nâng cao năng lực chuyên môn và tạo lợi thế cạnh tranh trên thị trường lao động công nghệ."
+    },
+    {
+      type: "text",
+      content:
+        "Thị trường AI tại Việt Nam được dự báo đạt khoảng 750–932 triệu USD vào năm 2025 và có thể tăng lên 2,8–3,78 tỷ USD vào năm 2033, với tốc độ tăng trưởng hàng năm (CAGR) từ 15–26%. Sự tăng trưởng này chủ yếu đến từ nhu cầu triển khai AI trong các hệ thống CNTT doanh nghiệp, nền tảng dữ liệu lớn và các sản phẩm phần mềm thông minh."
+    },
+    {
+      type: "text",
+      content:
+        "Về mặt chuyên môn CNTT, ngành AI bao gồm các lĩnh vực cốt lõi như học máy (Machine Learning), xử lý ngôn ngữ tự nhiên (NLP), thị giác máy tính (Computer Vision), AI tạo sinh (Generative AI) và hệ thống khuyến nghị. Đây đều là những mảng yêu cầu nền tảng vững chắc về lập trình, thuật toán, cấu trúc dữ liệu và hệ thống máy tính."
+    },
+    {
+      type: "text",
+      content:
+        "Nhận thức được vai trò của AI trong hệ sinh thái CNTT, Chính phủ Việt Nam đã ban hành Chiến lược quốc gia về nghiên cứu, phát triển và ứng dụng trí tuệ nhân tạo đến năm 2030 (Quyết định 127/QĐ-TTg năm 2021), trong đó nhấn mạnh việc đào tạo nguồn nhân lực CNTT chất lượng cao và phát triển các nền tảng công nghệ AI “Make in Vietnam”."
+    },
+    {
+      type: "link",
+      content:
+        "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=202565"
+    },
+    {
+      type: "title",
+      content: "Trí tuệ nhân tạo – Chuyên ngành mũi nhọn trong chuyển đổi số CNTT"
+    },
+    {
+      type: "text",
+      content:
+        "Trong quá trình chuyển đổi số, AI đóng vai trò như một lớp công nghệ nâng cao cho các hệ thống CNTT truyền thống. Các doanh nghiệp CNTT tại Việt Nam như FPT, Viettel, VNG hay các startup công nghệ đều đang tích hợp AI vào phần mềm quản lý, hệ thống phân tích dữ liệu và nền tảng dịch vụ số để tăng khả năng tự động hóa và ra quyết định."
+    },
+    {
+      type: "text",
+      content:
+        "Ở góc độ kỹ thuật, AI giúp các hệ thống CNTT xử lý dữ liệu lớn hiệu quả hơn, giảm sự phụ thuộc vào thao tác thủ công và cải thiện độ chính xác của các thuật toán dự báo. Điều này giúp các sản phẩm phần mềm không chỉ vận hành ổn định mà còn có khả năng học hỏi và tối ưu theo thời gian."
+    },
+    {
+      type: "text",
+      content:
+        "Theo Chỉ số sẵn sàng AI của Chính phủ (Oxford Insights), Việt Nam đã cải thiện vị trí lên thứ 51/188 quốc gia năm 2024, phản ánh sự đầu tư ngày càng rõ rệt vào hạ tầng CNTT, dữ liệu và nguồn nhân lực AI."
+    },
+    {
+      type: "title",
+      content:
+        "Ứng dụng trí tuệ nhân tạo trong các hệ thống CNTT hiện nay"
+    },
+    {
+      type: "text",
+      content:
+        "Trong thực tiễn CNTT, AI được ứng dụng rộng rãi trong các hệ thống phần mềm như chatbot chăm sóc khách hàng, hệ thống khuyến nghị sản phẩm, công cụ phân tích hành vi người dùng và tự động hóa kiểm thử phần mềm. Các nền tảng như Google, Netflix, Spotify đều sử dụng AI như một thành phần không thể thiếu trong kiến trúc CNTT của họ."
+    },
+    {
+      type: "text",
+      content:
+        "Tại Việt Nam, AI được triển khai trong các hệ thống CNTT y tế như phân tích hình ảnh y khoa, xử lý dữ liệu bệnh án điện tử; trong tài chính – ngân hàng với các hệ thống phát hiện gian lận; và trong giáo dục với các nền tảng học tập thông minh. Tất cả đều yêu cầu đội ngũ kỹ sư CNTT có kiến thức sâu về AI và dữ liệu."
+    },
+    {
+      type: "text",
+      content:
+        "Những ứng dụng này cho thấy AI không tồn tại độc lập mà luôn gắn chặt với hạ tầng CNTT, từ cơ sở dữ liệu, máy chủ, điện toán đám mây cho đến bảo mật hệ thống."
+    },
+    {
+      type: "title",
+      content: "Cơ hội và thách thức của ngành AI trong lĩnh vực CNTT tại Việt Nam"
+    },
+    {
+      type: "text",
+      content:
+        "Ngành AI trong CNTT tại Việt Nam đang đối mặt với thách thức lớn về thiếu hụt nhân lực chất lượng cao, đặc biệt là các kỹ sư có khả năng triển khai AI ở quy mô hệ thống. Hiện nay, số lượng chuyên gia AI chuyên sâu vẫn còn hạn chế so với nhu cầu thực tế của doanh nghiệp CNTT."
+    },
+    {
+      type: "text",
+      content:
+        "Tuy nhiên, đây cũng là cơ hội lớn cho sinh viên và kỹ sư CNTT theo đuổi hướng chuyên sâu AI. Với lợi thế dân số trẻ, chi phí nhân lực cạnh tranh và sự hỗ trợ từ các chương trình đào tạo, hợp tác quốc tế với các tập đoàn công nghệ lớn như NVIDIA, Microsoft, Việt Nam có tiềm năng trở thành trung tâm phát triển giải pháp AI trong khu vực."
+    },
+    {
+      type: "text",
+      content:
+        "Việc kết nối chặt chẽ giữa doanh nghiệp CNTT, trường đại học và các trung tâm nghiên cứu sẽ là yếu tố then chốt để xây dựng đội ngũ kỹ sư AI vững mạnh, đáp ứng nhu cầu phát triển hệ thống CNTT thông minh trong tương lai."
+    },
+    {
+      type: "title",
+      content: "Kết luận"
+    },
+    {
+      type: "text",
+      content:
+        "Ngành trí tuệ nhân tạo trong lĩnh vực CNTT đang trở thành hướng phát triển chiến lược của công nghệ hiện đại. AI không chỉ nâng cao giá trị của các hệ thống phần mềm mà còn mở ra nhiều cơ hội nghề nghiệp cho kỹ sư CNTT trong kỷ nguyên số."
+    },
+    {
+      type: "text",
+      content:
+        "Đầu tư vào đào tạo, hạ tầng CNTT và nghiên cứu AI sẽ giúp Việt Nam xây dựng nền công nghệ bền vững, từng bước khẳng định vị thế trong chuỗi giá trị công nghệ toàn cầu."
+    }
+  ],
+  comment:
+    "Trí tuệ nhân tạo trong lĩnh vực CNTT đang trở thành chuyên ngành mũi nhọn, gắn liền với phát triển phần mềm, dữ liệu và hệ thống số thông minh. Việc tập trung đào tạo và ứng dụng AI đúng hướng sẽ giúp ngành CNTT Việt Nam nâng cao năng lực cạnh tranh và bắt kịp xu thế công nghệ toàn cầu."
+}
+
 ];
