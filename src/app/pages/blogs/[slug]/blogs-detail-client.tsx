@@ -91,7 +91,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
         </div>
 
         {/* Bên PHẢI: Hình ảnh banner */}
-        <div className="relative w-full h-full min-h-[20rem] rounded-2xl overflow-hidden">
+        <div className="relative w-full h-full min-h-80 rounded-2xl overflow-hidden">
           <Image
             src={blog.image}
             alt={blog.title}
@@ -146,7 +146,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
               <h2
                 key={originalIdx}
                 id={slug} // ← Thêm id để link nhảy đến
-                className="text-2xl sm:text-3xl font-bold my-6 text-center"
+                className="text-2xl sm:text-3xl font-bold my-6"
               >
                 {para.content}
               </h2>
@@ -187,7 +187,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
               <p key={originalIdx} className="text-center my-4">
                 <Link
                   href={para.content}
-                  className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 break-words whitespace-pre-wrap"
+                  className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 wrap-break-word whitespace-pre-wrap"
                   target="_blank"
                   rel="noopener noreferrer nofollow" // Thêm nofollow cho link ngoài để tránh pass link juice không cần thiết, đồng thời noopener noreferrer cho bảo mật và privacy
                 >
@@ -202,7 +202,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
 
       {/* Section: Cảm nghĩ */}
       <div className="flex items-start gap-6 my-16 rounded-2xl max-w-6xl py-4">
-        <Avatar className="w-16 h-16 flex-shrink-0">
+        <Avatar className="w-16 h-16 shrink-0">
           <AvatarImage
             className="object-cover"
             src={blog?.userCommentAvatar}
@@ -238,7 +238,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
               href={`/pages/blogs/${prevBlog.slug}`}
               className="group flex-1 flex items-center gap-4 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+              <div className="shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-blue-600 dark:text-blue-400 rotate-180"
                   fill="none"
@@ -281,7 +281,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
                   {nextBlog.title}
                 </p>
               </div>
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+              <div className="shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-blue-600 dark:text-blue-400"
                   fill="none"
