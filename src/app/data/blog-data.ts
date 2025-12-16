@@ -81,53 +81,30 @@ export const blogData: BlogsPost[] = [
         content: "FAQs về Nhạc Việt 2025 - Thắc mắc phổ biến của người nghe",
       },
       {
-        type: "title",
-        content: "Q1: Những nghệ sĩ nổi bật nhất của năm 2025 là ai?",
+        type: "text",
+        content:
+          "<strong>Q1: Những nghệ sĩ nổi bật nhất của năm 2025 là ai?</strong><br>Trong năm 2025, các nghệ sĩ nổi bật nhất Việt Nam bao gồm những gương mặt trẻ bùng nổ như Hòa Minzy, Phương Mỹ Chi, Đức Phúc, Quang Hùng MasterD, Quang Anh Rhyder với các hit lớn, sự trở lại ấn tượng (Hòa Minzy - Bắc Bling, Phương Mỹ Chi - Em xinh say hi), cùng các tên tuổi có sức hút bền vững như Sơn Tùng M-TP, Hoàng Thùy Linh, Mỹ Tâm, HIEUTHUHAI, và sự xuất hiện gây chú ý của công nghệ AI trong âm nhạc.",
+      },
+
+      {
+        type: "text",
+        content:
+          "<strong>Q2: Âm nhạc Việt Nam có xu hướng hòa nhập quốc tế như thế nào?</strong><br>Xu hướng hợp tác quốc tế ngày càng gia tăng, nhiều nghệ sĩ Việt kết hợp với các nghệ sĩ nước ngoài, tham gia các dự án lớn để mở rộng thị trường và nâng cao vị thế âm nhạc Việt trên bản đồ âm nhạc toàn cầu.",
       },
       {
         type: "text",
         content:
-          "Trong năm 2025, các nghệ sĩ nổi bật nhất Việt Nam bao gồm những gương mặt trẻ bùng nổ như Hòa Minzy, Phương Mỹ Chi, Đức Phúc, Quang Hùng MasterD, Quang Anh Rhyder với các hit lớn, sự trở lại ấn tượng (Hòa Minzy - Bắc Bling, Phương Mỹ Chi - Em xinh say hi), cùng các tên tuổi có sức hút bền vững như Sơn Tùng M-TP, Hoàng Thùy Linh, Mỹ Tâm, HIEUTHUHAI, và sự xuất hiện gây chú ý của công nghệ AI trong âm nhạc.",
-      },
-      {
-        type: "title",
-        content:
-          "Q2: Âm nhạc Việt Nam có xu hướng hòa nhập quốc tế như thế nào?",
+          "<strong>Q3: Các nền tảng mạng xã hội ảnh hưởng như thế nào đến nhạc Việt 2025?</strong><br>Các nền tảng như TikTok, YouTube giúp các bài hát nhanh chóng viral, phổ biến rộng rãi, đồng thời thúc đẩy các nghệ sĩ sáng tạo đa dạng nội dung phù hợp thị hiếu giới trẻ.",
       },
       {
         type: "text",
         content:
-          "Xu hướng hợp tác quốc tế ngày càng gia tăng, nhiều nghệ sĩ Việt kết hợp với các nghệ sĩ nước ngoài, tham gia các dự án lớn để mở rộng thị trường và nâng cao vị thế âm nhạc Việt trên bản đồ âm nhạc toàn cầu.",
-      },
-      {
-        type: "title",
-        content:
-          "Q3: Các nền tảng mạng xã hội ảnh hưởng như thế nào đến nhạc Việt 2025?",
+          "<strong>Q4: Những thách thức chính của ngành công nghiệp âm nhạc Việt Nam trong năm này là gì?</strong><br>Chủ yếu là vấn đề bản quyền, cạnh tranh khốc liệt, dòng chảy âm nhạc bị sao chép, và kiểm duyệt nội dung gây tranh cãi, làm giảm chất lượng và tính sáng tạo",
       },
       {
         type: "text",
         content:
-          "Các nền tảng như TikTok, YouTube giúp các bài hát nhanh chóng viral, phổ biến rộng rãi, đồng thời thúc đẩy các nghệ sĩ sáng tạo đa dạng nội dung phù hợp thị hiếu giới trẻ.",
-      },
-      {
-        type: "title",
-        content:
-          "Q4: Những thách thức chính của ngành công nghiệp âm nhạc Việt Nam trong năm này là gì?",
-      },
-      {
-        type: "text",
-        content:
-          "Chủ yếu là vấn đề bản quyền, cạnh tranh khốc liệt, dòng chảy âm nhạc bị sao chép, và kiểm duyệt nội dung gây tranh cãi, làm giảm chất lượng và tính sáng tạo",
-      },
-      {
-        type: "title",
-        content:
-          "Q5: Tương lai của nhạc Việt trong những năm tiếp theo sẽ như thế nào?",
-      },
-      {
-        type: "text",
-        content:
-          "Dựa trên các xu hướng hiện tại, ngành công nghiệp âm nhạc Việt Nam vẫn còn nhiều tiềm năng phát triển mạnh mẽ về mặt sáng tạo, hội nhập quốc tế và ứng dụng công nghệ để nâng cao trải nghiệm của người nghe.",
+          "<strong>Q5: Tương lai của nhạc Việt trong những năm tiếp theo sẽ như thế nào?</strong><br>Dựa trên các xu hướng hiện tại, ngành công nghiệp âm nhạc Việt Nam vẫn còn nhiều tiềm năng phát triển mạnh mẽ về mặt sáng tạo, hội nhập quốc tế và ứng dụng công nghệ để nâng cao trải nghiệm của người nghe.",
       },
       {
         type: "title",
@@ -381,52 +358,29 @@ export const blogData: BlogsPost[] = [
         content: "FAQ về cảm âm và trải nghiệm nghe nhạc",
       },
       {
-        type: "title",
+        type: "text",
         content:
-          "Cảm âm có phải là năng khiếu bẩm sinh mà không thể luyện tập được?",
+          "<strong>Q1: Cảm âm có phải là năng khiếu bẩm sinh mà không thể luyện tập được?</strong><br>Cảm âm vừa có yếu tố bẩm sinh, vừa có thể luyện tập và phát triển. Với những người không có cảm âm bẩm sinh mạnh, việc luyện tập thường xuyên vẫn có thể cải thiện khả năng nhận biết và cảm nhận âm thanh.",
       },
       {
         type: "text",
         content:
-          "Cảm âm vừa có yếu tố bẩm sinh, vừa có thể luyện tập và phát triển. Với những người không có cảm âm bẩm sinh mạnh, luyện tập thường xuyên vẫn có thể cải thiện được khả năng nhận biết và cảm nhận âm thanh.",
-      },
-
-      {
-        type: "title",
-        content: "Người không biết chơi nhạc cụ có thể nâng cao cảm âm không?",
+          "<strong>Q2: Người không biết chơi nhạc cụ có thể nâng cao cảm âm không?</strong><br>Hoàn toàn có thể. Phát triển cảm âm không nhất thiết phải học nhạc cụ, bạn có thể luyện nghe, phân tích âm nhạc và tham gia các lớp học nhạc lý để nâng cao khả năng cảm thụ âm nhạc.",
       },
       {
         type: "text",
         content:
-          "Hoàn toàn có thể. Phát triển cảm âm không nhất thiết phải học nhạc cụ, bạn có thể luyện nghe, phân tích âm nhạc và tham gia các lớp học nhạc lý để nâng cao khả năng cảm thụ âm nhạc.",
-      },
-      {
-        type: "title",
-        content:
-          "Tại sao nghe nhạc qua tai nghe lại cảm nhận âm nhạc khác hơn so với loa ngoài?",
+          "<strong>Q3: Tại sao nghe nhạc qua tai nghe lại cảm nhận âm nhạc khác hơn so với loa ngoài?</strong><br>Tai nghe giúp âm thanh đi trực tiếp vào tai, giảm nhiễu và hạn chế mất mát âm thanh, từ đó làm rõ các chi tiết trong bản nhạc và giúp cảm âm được phát huy hiệu quả hơn so với loa ngoài.",
       },
       {
         type: "text",
         content:
-          "Tai nghe giúp âm thanh trực tiếp vào tai, giảm nhiễu và mất mát âm thanh, từ đó làm rõ các chi tiết trong bản nhạc giúp cảm âm được phát huy hiệu quả hơn so với loa ngoài.",
-      },
-      {
-        type: "title",
-        content: "Cảm âm tốt có giúp người học nhạc nhanh hơn?",
+          "<strong>Q4: Cảm âm tốt có giúp người học nhạc nhanh hơn không?</strong><br>Có. Người có cảm âm tốt thường dễ tiếp thu các bài học liên quan đến cao độ, nhịp điệu và hòa âm, giúp việc học và biểu diễn âm nhạc trở nên nhanh chóng và chính xác hơn.",
       },
       {
         type: "text",
         content:
-          "Có. Người có cảm âm tốt thường dễ tiếp thu các bài học liên quan đến cao độ, nhịp điệu và hòa âm, giúp họ học nhanh và chính xác hơn trong việc biểu diễn âm nhạc.",
-      },
-      {
-        type: "title",
-        content: "Làm thế nào để biết mình có cảm âm tốt hay không",
-      },
-      {
-        type: "text",
-        content:
-          "Bạn có thể thử bằng cách nghe một đoạn nhạc rồi cố gắng hát lại hoặc xác định các nốt âm, cao độ hoặc nhận ra sự điều chỉnh nhỏ trong bài hát. Nếu dễ dàng làm được thì bạn có cảm âm khá tốt.",
+          "<strong>Q5: Làm thế nào để biết mình có cảm âm tốt hay không?</strong><br>Bạn có thể thử nghe một đoạn nhạc rồi hát lại, xác định cao độ hoặc nhận ra những thay đổi nhỏ trong giai điệu. Nếu bạn làm được điều này tương đối dễ dàng, khả năng cảm âm của bạn đang ở mức khá tốt.",
       },
       {
         type: "title",
@@ -568,39 +522,24 @@ export const blogData: BlogsPost[] = [
         content: "FAQs về top bài hát Sơn Tùng M-TP",
       },
       {
-        type: "title",
-        content: "Q1: Bài hát nào của Sơn Tùng có nhiều views nhất?",
+        type: "text",
+        content:
+          "<strong>Q1: Bài hát nào của Sơn Tùng có nhiều lượt xem nhất?</strong><br>“Nơi Này Có Anh” hiện đang dẫn đầu với hơn 426 triệu lượt xem, theo sau là “Hãy Trao Cho Anh” và “Lạc Trôi”.",
       },
       {
         type: "text",
         content:
-          "'Nơi Này Có Anh' hiện dẫn đầu với hơn 426 triệu views, theo sau là 'Hãy Trao Cho Anh' và 'Lạc Trôi'.",
-      },
-      {
-        type: "title",
-        content: "Q2: Sơn Tùng có bao nhiêu MV vượt 100 triệu views?",
-      },
-      {
-        type: "text",
-        content: "Hơn 10 MV, là kỷ lục của bất kỳ nghệ sĩ Việt Nam nào.",
-      },
-      {
-        type: "title",
-        content: "Q3: Bài hát mới nhất của Sơn Tùng là gì?",
+          "<strong>Q2: Sơn Tùng có bao nhiêu MV vượt mốc 100 triệu lượt xem?</strong><br>Sơn Tùng hiện có hơn 10 MV vượt mốc 100 triệu lượt xem, một kỷ lục mà chưa nghệ sĩ Việt Nam nào khác đạt được.",
       },
       {
         type: "text",
         content:
-          "'Đừng Làm Trái Tim Anh Đau' (2024) và 'Chúng Ta Của Tương Lai' đang tích lũy views rất nhanh.",
-      },
-      {
-        type: "title",
-        content: "Q4: Sơn Tùng có hợp tác quốc tế nào nổi bật?",
+          "<strong>Q3: Bài hát mới nhất của Sơn Tùng là gì?</strong><br>Những sản phẩm gần đây nhất của Sơn Tùng gồm “Đừng Làm Trái Tim Anh Đau” (2024) và “Chúng Ta Của Tương Lai”, đều đang tích lũy lượt xem rất nhanh.",
       },
       {
         type: "text",
         content:
-          "'Hãy Trao Cho Anh' ft. Snoop Dogg là sản phẩm thành công nhất, đạt hàng trăm triệu views và top trending toàn cầu.",
+          "<strong>Q4: Sơn Tùng có màn hợp tác quốc tế nào nổi bật?</strong><br>“Hãy Trao Cho Anh” kết hợp cùng Snoop Dogg là màn hợp tác quốc tế thành công nhất của Sơn Tùng, đạt hàng trăm triệu lượt xem và từng lọt top trending toàn cầu.",
       },
       {
         type: "title",
@@ -776,38 +715,24 @@ export const blogData: BlogsPost[] = [
         content: "FAQs về top bài hát năm 2018",
       },
       {
-        type: "title",
-        content: "Q1: Bài hát nào là hiện tượng lớn nhất 2018?",
+        type: "text",
+        content:
+          "<strong>Q1: Bài hát nào là hiện tượng âm nhạc lớn nhất năm 2018?</strong><br>“Người Lạ Ơi” của Karik, Orange và Superbrothers là ca khúc tạo nên hiện tượng lớn, trở thành bài hát nhanh nhất đạt 100 triệu lượt xem tại Việt Nam vào thời điểm đó.",
       },
       {
         type: "text",
         content:
-          "'Người Lạ Ơi' của Karik, Orange, Superbrothers – nhanh nhất đạt 100 triệu views ở Việt Nam lúc bấy giờ.",
-      },
-      {
-        type: "title",
-        content: "Q2: Sơn Tùng M-TP có hit nào trong năm 2018?",
-      },
-      {
-        type: "text",
-        content: "'Chạy Ngay Đi' – phá kỷ lục views 24h châu Á.",
-      },
-      {
-        type: "title",
-        content: "Q3: Ca khúc EDM nào viral nhất?",
-      },
-      {
-        type: "text",
-        content: "'Hongkong1' và 'Vô Tình' là hai đại diện nổi bật.",
-      },
-      {
-        type: "title",
-        content: "Q4: Năm 2018 có nhiều ballad buồn không?",
+          "<strong>Q2: Sơn Tùng M-TP có ca khúc hit nào trong năm 2018?</strong><br>“Chạy Ngay Đi” là bản hit nổi bật của Sơn Tùng M-TP trong năm 2018, từng phá kỷ lục lượt xem trong 24 giờ tại khu vực châu Á.",
       },
       {
         type: "text",
         content:
-          "Rất nhiều, như 'Chạm Đáy Nỗi Đau', 'Duyên Mình Lỡ', 'Sai Người Sai Thời Điểm' – phản ánh tâm trạng giới trẻ.",
+          "<strong>Q3: Ca khúc EDM nào viral nhất trong năm 2018?</strong><br>“Hongkong1” và “Vô Tình” là hai ca khúc EDM được nghe nhiều và lan truyền mạnh mẽ nhất trong cộng đồng người nghe nhạc năm 2018.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q4: Năm 2018 có nhiều ca khúc ballad buồn không?</strong><br>Năm 2018 ghi dấu với rất nhiều bản ballad buồn như “Chạm Đáy Nỗi Đau”, “Duyên Mình Lỡ”, “Sai Người Sai Thời Điểm”, phản ánh rõ tâm trạng và cảm xúc của giới trẻ thời điểm đó.",
       },
       {
         type: "title",
@@ -983,39 +908,24 @@ export const blogData: BlogsPost[] = [
         content: "FAQs về top bài hát năm 2025",
       },
       {
-        type: "title",
-        content: "Q1: Bài hát nào là hit lớn nhất năm 2025?",
+        type: "text",
+        content:
+          "<strong>Q1: Bài hát nào là hit lớn nhất năm 2025?</strong><br>“Mất Kết Nối” của Dương Domic là ca khúc dẫn đầu trên nhiều nền tảng và nhanh chóng trở thành bản hit quốc dân trong năm 2025.",
       },
       {
         type: "text",
         content:
-          "'Mất Kết Nối' của Dương Domic – dẫn đầu mọi nền tảng và trở thành bản hit quốc dân.",
-      },
-      {
-        type: "title",
-        content: "Q2: Nghệ sĩ nào nổi bật nhất năm nay?",
+          "<strong>Q2: Nghệ sĩ nào nổi bật nhất trong năm 2025?</strong><br>Hòa Minzy gây ấn tượng với nhiều bản hit liên tiếp, bên cạnh đó là sự bứt phá của Dương Domic và loạt nghệ sĩ trẻ trưởng thành từ các chương trình show thực tế.",
       },
       {
         type: "text",
         content:
-          "Hòa Minzy với nhiều hit liên tiếp, Dương Domic và các nghệ sĩ trẻ từ show thực tế.",
-      },
-      {
-        type: "title",
-        content: "Q3: Xu hướng âm nhạc nào thống trị 2025?",
-      },
-      {
-        type: "text",
-        content: "TikTok viral, remix EDM, AI cover và nhạc phim/show thực tế.",
-      },
-      {
-        type: "title",
-        content: "Q4: Có bản hit quốc tế hóa nào đáng chú ý?",
+          "<strong>Q3: Xu hướng âm nhạc nào thống trị năm 2025?</strong><br>Những xu hướng nổi bật của năm 2025 bao gồm nhạc viral trên TikTok, các bản remix EDM, AI cover và các ca khúc gắn liền với phim ảnh hoặc show thực tế.",
       },
       {
         type: "text",
         content:
-          "'Catch Me If You Can' của Quang Hùng MasterD đạt sức lan tỏa mạnh mẽ khu vực.",
+          "<strong>Q4: Có ca khúc nào mang màu sắc quốc tế đáng chú ý trong năm 2025 không?</strong><br>“Catch Me If You Can” của Quang Hùng MasterD là sản phẩm có sức lan tỏa mạnh mẽ tại khu vực, được xem là một trong những ca khúc mang màu sắc quốc tế nổi bật của năm.",
       },
       {
         type: "title",

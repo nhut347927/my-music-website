@@ -2,9 +2,9 @@ import BlogsClient from "./blogs-client";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
+  title: "Blogs | List bài hát hay",
   description:
-    "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
+    "Những list bài hát hay theo năm, thể loại, cảm nhận của mình",
   keywords: [
     "Moe",
     "blog cuộc sống",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://moe.io.vn/pages/blogs",
-    title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
+    title: "Blogs | List bài hát hay",
     description:
-      "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
+      "Những list bài hát hay theo năm, thể loại, cảm nhận của mình",
     siteName: "Moe",
     images: [
       {
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
+    title: "Blogs | List bài hát hay",
     description:
-      "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
+     "Những list bài hát hay theo năm, thể loại, cảm nhận của mình",
     images: ["https://moe.io.vn/logo.png"], // Kiểm tra file này tồn tại
   },
   robots: {
@@ -76,7 +76,7 @@ export default function BlogPage() {
         url: "https://moe.io.vn/",
         name: "Moe",
         description:
-          "Nơi lưu giữ lời bài hát, playlist và những cảm xúc được viết nên từ âm nhạc.",
+          "Những list bài hát hay theo năm, thể loại, cảm nhận của mình",
         publisher: {
           "@type": "Organization",
           "@id": "https://moe.io.vn/#organization",
@@ -101,7 +101,7 @@ export default function BlogPage() {
         name: "Blogs | Nơi tớ viết về những tâm đắc & câu chuyện cuộc sống",
         isPartOf: { "@id": "https://moe.io.vn/#website" },
         description:
-          "Nhưng trải nghiệm cuộc sống, những vấp ngã tuổi dôi mươi và cách mà tớ đúng lên từ những khó khắn đó.",
+         "Những list bài hát hay theo năm, thể loại, cảm nhận của mình",
        breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [

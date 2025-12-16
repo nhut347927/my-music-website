@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="dark:border-neutral-800 bg-background/90 backdrop-blur-sm">
+    <footer className="dark:border-neutral-800 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto py-14 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
         {/* Cột 1 - Logo & Thông tin liên hệ */}
         <div className="space-y-6">

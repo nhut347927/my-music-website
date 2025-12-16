@@ -2,11 +2,9 @@
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
-import { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/app/components/layout/header";
 import Footer from "./components/layout/footer";
-
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 // ── CHỈ THÊM ĐOẠN NÀY (1 CHỖ DUY NHẤT) ─────────────────────────────────────
@@ -27,6 +25,28 @@ export default function RootLayout({
       <head />
       <body className={`${inter.className} bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* Background Video */}
+          <div className="fixed inset-0 -z-10 overflow-hidden">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="
+      w-full h-full object-cover
+      blur-xl
+      opacity-50
+      dark:opacity-10
+    "
+            >
+              <source src="/video/vid.mp4" type="video/mp4" />
+            </video>
+
+            {/* Overlay để dễ đọc chữ */}
+            <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
+          </div>
+
           <Header />
           <main className="max-w-6xl mx-auto p-4">{children}</main>
           <Footer />
