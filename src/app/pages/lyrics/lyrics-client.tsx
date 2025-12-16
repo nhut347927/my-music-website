@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, JSX } from "react";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useState, useMemo, JSX } from "react";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -25,56 +24,11 @@ import { categoriesData } from "@/app/data/category-data";
 import { lyricsData } from "@/app/data/lyrics-data";
 
 export default function LyricsClient(): JSX.Element {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  // Lấy các giá trị từ URL (nếu có), nếu không thì dùng default
-  const currentPage = Number(searchParams.get("page")) || 1;
-  const urlSearch = searchParams.get("search") || "";
-  const urlCategory = searchParams.get("category") || "Tất cả";
-  const urlSort = (searchParams.get("sort") as "newest" | "oldest") || "newest";
-
-  // State nội bộ để người dùng tương tác mượt mà
-  const [search, setSearch] = useState<string>(urlSearch);
-  const [category, setCategory] = useState<string>(urlCategory);
-  const [sort, setSort] = useState<"newest" | "oldest">(urlSort);
-  const [page, setPage] = useState<number>(currentPage);
-
+  const [search, setSearch] = useState<string>("");
+  const [category, setCategory] = useState<string>("Tất cả");
+  const [sort, setSort] = useState<"newest" | "oldest">("newest");
+  const [page, setPage] = useState<number>(1);
   const pageSize = 12;
-
-  // Đồng bộ state với URL khi URL thay đổi (ví dụ: back/forward hoặc load trang)
-  useEffect(() => {
-    setPage(currentPage);
-    setSearch(urlSearch);
-    setCategory(urlCategory);
-    setSort(urlSort);
-  }, [currentPage, urlSearch, urlCategory, urlSort]);
-
-  // Hàm cập nhật URL mà không reload trang
-  const updateURL = () => {
-    const params = new URLSearchParams();
-
-    if (page !== 1) params.set("page", page.toString());
-    if (search.trim()) params.set("search", search.trim());
-    if (category !== "Tất cả") params.set("category", category);
-    if (sort !== "newest") params.set("sort", sort);
-
-    const queryString = params.toString();
-    router.push(`${pathname}${queryString ? `?${queryString}` : ""}`);
-  };
-
-  // Cập nhật URL khi các filter thay đổi
-  useEffect(() => {
-    updateURL();
-    // Khi filter thay đổi → reset về trang 1
-    setPage(1);
-  }, [search, category, sort]);
-
-  // Chỉ cập nhật URL khi page thay đổi (không reset các filter khác)
-  useEffect(() => {
-    updateURL();
-  }, [page]);
 
   // 🔍 Lọc dữ liệu
   const filtered: Post[] = useMemo(() => {
@@ -110,7 +64,8 @@ export default function LyricsClient(): JSX.Element {
   return (
     <section className="max-w-7xl mx-auto px-2 sm:px-0 py-12 mb-16">
       <div className="flex flex-col items-center w-full space-y-10 mb-16">
-        <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-gray-900 dark:text-gray-100">
+        {/* Tiêu đề */}
+       <h1 className="text-5xl sm:text-6xl font-extrabold text-center text-gray-900 dark:text-gray-100">
           Lyrics
         </h1>
 
@@ -133,8 +88,8 @@ export default function LyricsClient(): JSX.Element {
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <Filter className="h-5 w-5 text-gray-500" />
             <Select value={category} onValueChange={setCategory}>
-              <SelectTrigger className="sm:w-40 flex items-center px-3 gap-2 h-12">
-                <SelectValue placeholder="Thể loại" />
+              <SelectTrigger className="sm:w-40 flex items-center px-3 gap-2 h-12!">
+                <SelectValue placeholder="Thể loại" className="flex-1" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Tất cả">Tất cả</SelectItem>
@@ -147,11 +102,14 @@ export default function LyricsClient(): JSX.Element {
             </Select>
           </div>
 
-          {/* Sắp xếp */}
+          {/* Bộ lọc thời gian + icon */}
           <div className="flex items-center gap-2 w-full sm:w-auto h-12">
             <SortAsc className="h-5 w-5 text-gray-500" />
-            <Select value={sort} onValueChange={(val) => setSort(val as "newest" | "oldest")}>
-              <SelectTrigger className="w-full sm:w-40 h-12 flex items-center px-3 gap-2">
+            <Select
+              value={sort}
+              onValueChange={(val) => setSort(val as "newest" | "oldest")}
+            >
+              <SelectTrigger className="w-full sm:w-40 h-12! flex items-center px-3 gap-2">
                 <SelectValue placeholder="Sắp xếp" />
               </SelectTrigger>
               <SelectContent>
@@ -163,7 +121,7 @@ export default function LyricsClient(): JSX.Element {
         </div>
       </div>
 
-      {/* Danh sách bài hát */}
+      {/* Danh sách bài viết */}
       {paginated.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {paginated.map((post: Post) => (
@@ -171,21 +129,22 @@ export default function LyricsClient(): JSX.Element {
           ))}
         </div>
       ) : (
-        <div className="text-center text-gray-500 my-48">
-          Không tìm thấy bài hát nào phù hợp.
-        </div>
+      
+          <div className="text-center text-gray-500 my-48">
+            Không tìm thấy bài hát nào phù hợp.
+          </div>
+        
       )}
 
       {/* Phân trang */}
       {totalPages > 1 && (
         <Pagination className="mt-12 flex justify-center">
           <PaginationContent>
-            {Array.from({ length: totalPages }, (_, i) => (
+            {Array.from({ length: totalPages }).map((_, i) => (
               <PaginationItem key={i}>
                 <PaginationLink
                   onClick={() => setPage(i + 1)}
                   isActive={page === i + 1}
-                  className="cursor-pointer"
                 >
                   {i + 1}
                 </PaginationLink>
