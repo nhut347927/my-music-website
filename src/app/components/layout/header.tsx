@@ -63,7 +63,7 @@ export default function Header() {
             flex items-center justify-between
             px-4 py-3
             rounded-2xl
-          shadow-[0_4px_20px_rgba(0,0,0,0.09)] 
+          shadow-[0_4px_20px_rgba(0,0,0,0.07)] 
             bg-background/60 backdrop-blur-md
           "
         >

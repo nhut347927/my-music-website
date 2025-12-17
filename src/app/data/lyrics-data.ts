@@ -108,9 +108,9 @@ export const lyricsData: LyricPost[] = [
     composer: "Nguyễn Du Quỳnh Như", // thông tin Shazam :contentReference[oaicite:5]{index=5}
     producer: "Thịnh Mạnh Hoàng Anh / Theon", // theo Shazam :contentReference[oaicite:6]{index=6}
     otherSongs: [
-      "chuyện cây và chim",
-      "guardian angel",
-      "hai chúng ta giữa thế gian",
+      "Vũ trụ ngừng trôi",
+      "Trốn tìm",
+      "Thế giới có nơi nào cho em",
     ], // các bài khác của artist :contentReference[oaicite:7]{index=7}
     userCommentAvatar: anonymous.src,
     userNameComment: "Anonymous",

@@ -14,6 +14,7 @@ import tree3 from "../../asset/tree3.jpg";
 import tree4 from "../../asset/tree4.jpg";
 import tree5 from "../../asset/tree5.jpg";
 import tree6 from "../../asset/tree6.jpg";
+import CategoryMarquee from "@/app/components/items/category-marquee";
 const getLatestPosts = (type: Post["type"], limit = 3) =>
   allPosts
     .filter((post) => post.type === type)
@@ -56,58 +57,60 @@ export default function HomeClient() {
           </p>
         </motion.div>
       </section>
+
       {/* GIỚI THIỆU */}
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-  {/* TEXT */}
-  <div className="space-y-4 text-neutral-700 dark:text-neutral-300">
-    <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">
-      Về <span className="text-pink-500">Moe</span>
-    </h2>
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        {/* TEXT */}
+        <div className="space-y-4 text-neutral-700 dark:text-neutral-300">
+          <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">
+            Về <span className="text-pink-500">Moe</span>
+          </h2>
 
-    <p>
-      <strong className="text-neutral-900 dark:text-white">Moe</strong> là
-      một cái tên mình nghĩ ra cách đây khoảng hai năm. Khi tìm hiểu thì
-      biết trong văn hoá Nhật, “Moe” mang ý nghĩa về sự hạnh phúc, dễ
-      thương và cảm giác được truyền cảm hứng. Nghe thấy cũng hợp tai nên
-      mình quyết định chọn luôn làm tên cho trang web này.
-    </p>
+          <p>
+            <strong className="text-neutral-900 dark:text-white">Moe</strong> là
+            một cái tên mình nghĩ ra cách đây khoảng hai năm. Khi tìm hiểu thì
+            biết trong văn hoá Nhật, “Moe” mang ý nghĩa về sự hạnh phúc, dễ
+            thương và cảm giác được truyền cảm hứng. Nghe thấy cũng hợp tai nên
+            mình quyết định chọn luôn làm tên cho trang web này.
+          </p>
 
-    <p>
-      Logo được lấy cảm hứng từ phong cách tối giản của GitHub, kết hợp
-      thêm một chút vibe công nghệ hiện đại vào đúng thời điểm AI của Bing
-      (tiền thân của Copilot) vừa ra mắt. À, nói trước cho khỏi hiểu lầm:
-      logo này không phải mèo đen đâu nha.
-    </p>
+          <p>
+            Logo được lấy cảm hứng từ phong cách tối giản của GitHub, kết hợp
+            thêm một chút vibe công nghệ hiện đại vào đúng thời điểm AI của Bing
+            (tiền thân của Copilot) vừa ra mắt. À, nói trước cho khỏi hiểu lầm:
+            logo này không phải mèo đen đâu nha.
+          </p>
 
-    <p>
-      Trên{" "}
-      <strong className="text-neutral-900 dark:text-white">Moe</strong>,
-      mình chia sẻ các nội dung xoay quanh âm nhạc như lời bài hát kèm
-      đoạn nghe thử khoảng 30 giây, các playlist được chọn lọc theo từng
-      chủ đề, cùng những bài blog tổng hợp danh sách bài hát hay nhất theo
-      từng năm, các ca sĩ nổi tiếng và những ca khúc tiêu biểu của họ.
-    </p>
+          <p>
+            Trên{" "}
+            <strong className="text-neutral-900 dark:text-white">Moe</strong>,
+            mình chia sẻ các nội dung xoay quanh âm nhạc như lời bài hát kèm
+            đoạn nghe thử khoảng 30 giây, các playlist được chọn lọc theo từng
+            chủ đề, cùng những bài blog tổng hợp danh sách bài hát hay nhất theo
+            từng năm, các ca sĩ nổi tiếng và những ca khúc tiêu biểu của họ.
+          </p>
 
-    <p className="text-sm text-neutral-500 dark:text-neutral-400">
-      Cảm ơn bạn đã ghé thăm và dành thời gian đọc tới đây ✨
-    </p>
-  </div>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Cảm ơn bạn đã ghé thăm và dành thời gian đọc tới đây ✨
+          </p>
+        </div>
 
-  {/* IMAGE */}
-  <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden">
-    <Image
-      src={tree6}
-      alt="About Moe"
-      fill
-      className="object-cover hover:scale-105 transition-transform duration-700"
-      priority={false}
-    />
-    {/* overlay nhẹ cho hợp theme */}
-    <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
-  </div>
-</section>
+        {/* IMAGE */}
+        <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden">
+          <Image
+            src={tree6}
+            alt="About Moe"
+            fill
+            className="object-cover hover:scale-105 transition-transform duration-700"
+            priority={false}
+          />
+          {/* overlay nhẹ cho hợp theme */}
+          <div className="absolute inset-0 bg-black/10 dark:bg-black/30" />
+        </div>
+      </section>
 
-
+      <CategoryMarquee />
+      
       {/* ================= LYRICS ================= */}
       <section className="max-w-6xl mx-auto space-y-6">
         <div className="flex justify-between items-center">
@@ -167,7 +170,7 @@ export default function HomeClient() {
       {/* 🎨 GALLERY CUỐI TRANG */}
       <section className="w-full pb-16">
         <h2 className="text-xl sm:text-2xl font-bold mb-6 max-w-6xl mx-auto text-center sm:text-left">
-          Chỗ trưng bài ảnh thôi !
+          🎨 Thư viện ảnh Moe
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

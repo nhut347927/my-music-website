@@ -84,7 +84,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           {/* Đoạn văn đầu tiên (paragraphs[0]) - chỉ nếu là text */}
           {blog.paragraphs[0]?.type === "text" && (
             <p
-              className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify whitespace-pre-line"
+              className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line"
               dangerouslySetInnerHTML={{ __html: blog.paragraphs[0].content }}
             />
           )}
@@ -156,7 +156,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
             return (
               <p
                 key={originalIdx}
-                className="text-base sm:text-lg text-justify leading-relaxed whitespace-pre-line"
+                className="text-base sm:text-lg  leading-relaxed whitespace-pre-line"
                 dangerouslySetInnerHTML={{ __html: para.content }}
               />
             );
@@ -184,7 +184,7 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
           }
           if (para.type === "link") {
             return (
-              <p key={originalIdx} className="text-center my-4">
+              <p key={originalIdx} className="my-4">
                 <Link
                   href={para.content}
                   className="text-blue-600 dark:text-blue-400 underline hover:text-blue-700 wrap-break-word whitespace-pre-wrap"

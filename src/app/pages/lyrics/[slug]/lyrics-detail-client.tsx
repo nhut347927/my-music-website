@@ -2,9 +2,11 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Play, Pause, Calendar, Eye, Clock } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { LyricPost } from "@/app/types/type";
+import { lyricsData } from "@/app/data/lyrics-data"; // Import danh sách lyrics để tìm gợi ý
 
 interface LyricsDetailClientProps {
   song: LyricPost;
@@ -23,10 +25,9 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
     return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   };
 
-  // Xử lý khi nhấn Play/Pause
+  // Xử lý Play/Pause
   const togglePlayPause = () => {
     if (!audioRef.current) return;
-
     if (isPlaying) {
       audioRef.current.pause();
     } else {
@@ -35,14 +36,14 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
     setIsPlaying(!isPlaying);
   };
 
-  // Cập nhật thời gian khi audio đang chạy
+  // Cập nhật thời gian
   const handleTimeUpdate = () => {
     if (audioRef.current) {
       setCurrentTime(audioRef.current.currentTime);
     }
   };
 
-  // Cập nhật thanh range khi kéo
+  // Kéo thanh seek
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     const time = parseFloat(e.target.value);
     if (audioRef.current) {
@@ -51,18 +52,39 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
     }
   };
 
-  // Khi metadata load xong → lấy duration
+  // Lấy duration khi metadata load
   const handleLoadedMetadata = () => {
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
     }
   };
 
-  // Reset khi đổi bài (nếu cần)
+  // Reset khi đổi bài hát
   useEffect(() => {
     setIsPlaying(false);
     setCurrentTime(0);
   }, [song.audio]);
+
+  // Tìm bài hát trước/sau để gợi ý liên quan
+  const currentIndex = lyricsData.findIndex((l) => l.slug === song.slug);
+
+  const prevSong =
+    currentIndex > 0
+      ? {
+          slug: lyricsData[currentIndex - 1].slug,
+          title: lyricsData[currentIndex - 1].title,
+          artist: lyricsData[currentIndex - 1].artist,
+        }
+      : undefined;
+
+  const nextSong =
+    currentIndex < lyricsData.length - 1
+      ? {
+          slug: lyricsData[currentIndex + 1].slug,
+          title: lyricsData[currentIndex + 1].title,
+          artist: lyricsData[currentIndex + 1].artist,
+        }
+      : undefined;
 
   return (
     <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 mt-6">
@@ -77,7 +99,7 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
 
       {/* Phần chính */}
       <div className="flex-2 space-y-8">
-        {/* Section 1 */}
+        {/* Section 1: Info + Player */}
         <div className="flex flex-col sm:flex-row items-start gap-8 relative">
           <div className="w-56 h-56 shadow-[0_4px_20px_rgba(0,0,0,0.1)] rounded-xl">
             <Image
@@ -88,7 +110,6 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
               className="object-cover w-full h-full rounded-xl"
             />
           </div>
-
           <div className="flex-1 flex flex-col justify-between h-full">
             <div>
               <h1 className="text-2xl sm:text-3xl font-extrabold leading-tight text-black dark:text-white">
@@ -97,28 +118,25 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
               <p className="text-gray-700 dark:text-gray-300 text-lg font-semibold mb-4">
                 {song.artist}
               </p>
-
               <div className="flex flex-wrap gap-2 mb-4">
                 {song?.categories?.map((cat, i) => (
                   <span
                     key={i}
-                    className="inline-block text-[11px] border border-neutral-300 dark:border-neutral-700 
+                    className="inline-block text-[11px] border border-neutral-300 dark:border-neutral-700
                       px-2.5 py-[3px] rounded-full text-neutral-500 dark:text-neutral-400 tracking-tight"
                   >
                     {cat.name}
                   </span>
                 ))}
               </div>
-
               <div className="flex items-center space-x-6">
                 <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2 mb-2">
                   <Calendar className="w-4 h-4" /> {song.year}
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2 mb-2">
-                  <Eye className="w-4 h-4" /> {song.views}
+                  <Eye className="w-4 h-4" /> {song.views.toLocaleString()}
                 </p>
               </div>
-
               <p className="text-gray-500 dark:text-gray-400 text-base flex items-center gap-2">
                 <Clock className="w-4 h-4" /> {song.duration}
               </p>
@@ -129,7 +147,6 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
               <span className="text-sm text-gray-600 dark:text-gray-400 w-12">
                 {formatTime(currentTime)}
               </span>
-
               <input
                 type="range"
                 min={0}
@@ -140,12 +157,9 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
                 className="flex-1 h-2 bg-gray-300 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer"
                 style={{ accentColor: "black" }}
               />
-
               <span className="text-sm text-gray-600 dark:text-gray-400 w-12">
                 {formatTime(duration)}
               </span>
-
-              {/* Nút Play/Pause */}
               <button
                 onClick={togglePlayPause}
                 className="h-14 aspect-square flex items-center justify-center rounded-full border border-gray-700 dark:border-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
@@ -203,9 +217,81 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
             </p>
           </div>
         </div>
+
+        {/* GỢI Ý LIÊN QUAN: Bài hát trước & Bài hát tiếp theo */}
+        {(prevSong || nextSong) && (
+          <div className="flex flex-col sm:flex-row gap-6 my-20 border-t border-gray-200 dark:border-gray-700 pt-10">
+            {/* Bài hát trước */}
+            {prevSong && (
+              <Link
+                href={`/pages/lyrics/${prevSong.slug}`}
+                className="group flex-1 flex items-center gap-4 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+              >
+                <div className="shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-blue-600 dark:text-blue-400 rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Bài hát trước
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 transition-colors">
+                    {prevSong.title} - {prevSong.artist}
+                  </p>
+                </div>
+              </Link>
+            )}
+
+            {/* Placeholder để căn giữa nếu chỉ có một bên */}
+            {!prevSong && nextSong && <div className="flex-1" />}
+
+            {/* Bài hát tiếp theo */}
+            {nextSong && (
+              <Link
+                href={`/pages/lyrics/${nextSong.slug}`}
+                className="group flex-1 flex  items-center gap-4 p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 justify-end text-right"
+              >
+                <div className="text-right">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Bài hát tiếp theo
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 transition-colors">
+                    {nextSong.title} - {nextSong.artist}
+                  </p>
+                </div>
+                <div className="shrink-0 w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </Link>
+            )}
+          </div>
+        )}
       </div>
 
-      {/* Phần phụ */}
+      {/* Phần phụ (giữ nguyên) */}
       <div className="flex-1 max-w-sm mx-auto space-y-8">
         <div className="flex flex-col items-center space-y-8">
           <Image
@@ -222,7 +308,6 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
             <p className="text-gray-500 dark:text-gray-400 text-base">Producer: {song.producer}</p>
           </div>
         </div>
-
         <div className="space-y-2">
           <h3 className="text-lg font-semibold text-black dark:text-white mb-2">
             Bài hát khác của ca sĩ

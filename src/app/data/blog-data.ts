@@ -7,6 +7,11 @@ import nhac2 from "../asset/blog-img/nhac2.jpg";
 import nhac3 from "../asset/blog-img/nhac3.jpg";
 import nhac4 from "../asset/blog-img/nhac4.jpg";
 import nhac5 from "../asset/blog-img/nhac5.jpg";
+import nhac6 from "../asset/blog-img/nhac6.jpg";
+import nhac7 from "../asset/blog-img/nhac7.jpg";
+
+
+
 
 export const blogData: BlogsPost[] = [
   {
@@ -409,7 +414,7 @@ export const blogData: BlogsPost[] = [
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac3.src,
     date: "2025-12-15",
-    views: 3084,
+    views: 645,
     type: "blogs",
     userCommentAvatar: anonymous.src,
     userNameComment: "Anonymous",
@@ -939,5 +944,421 @@ export const blogData: BlogsPost[] = [
     ],
     comment:
       "2025 thực sự là năm bùng nổ của V-pop với hàng loạt hit chất lượng. Những bài hát này đã đồng hành cùng mình suốt cả năm, cảm ơn các nghệ sĩ vì đã mang đến những cảm xúc tuyệt vời!",
+  },
+  {
+    id: 6,
+    slug: "top-12-bai-hat-hay-nhat-jack-j97",
+    title: "Top 12 bài hát hay nhất của Jack (J97) từ trước đến nay",
+    categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
+    image: nhac6.src,
+    date: "2025-12-17",
+    views: 576,
+    type: "blogs",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "anonymous",
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Jack – J97 (tên thật Trịnh Trần Phương Tuấn, sinh ngày 12/4/1997 tại Bến Tre) là một trong những hiện tượng đặc biệt của V-pop. Xuất thân từ miền Tây sông nước, Jack mang theo chất giọng luyến láy rất riêng và một màu sắc âm nhạc khó trộn lẫn. Trước khi được công chúng biết đến rộng rãi, anh từng dạy nhạc tại một trường tiểu học tư thục ở TP.HCM và hoạt động trong nhóm underground G5R – quãng thời gian âm thầm nhưng đặt nền móng cho hành trình sau này.",
+      },
+      {
+        type: "text",
+        content:
+          "Năm 2019, ca khúc “Hồng Nhan” bất ngờ viral mạnh mẽ, đưa cái tên Jack từ cộng đồng underground bước thẳng vào dòng chảy chính của V-pop. Hợp tác cùng producer K-ICM, anh liên tục tạo nên loạt hit đình đám như “Bạc Phận”, “Sóng Gió”, “Em Gì Ơi” – những ca khúc pha trộn dân gian miền Tây với pop hiện đại, nhanh chóng phủ sóng khắp YouTube, Zing MP3 và mạng xã hội. Đây cũng là giai đoạn âm nhạc của Jack gắn liền với hình ảnh những câu chuyện tình buồn, bạc phận, chạm đúng tâm lý của khán giả trẻ.",
+      },
+      {
+        type: "text",
+        content:
+          "Sau khi tách khỏi K-ICM và trải qua nhiều biến cố cá nhân, Jack tiếp tục con đường âm nhạc độc lập với kênh J97. Các sản phẩm như “Hoa Hải Đường”, “Đom Đóm” cho thấy nỗ lực làm mới bản thân, đồng thời giữ lại màu sắc quen thuộc đã làm nên tên tuổi anh. Đến cuối năm 2025, Jack có màn trở lại đáng chú ý với nhiều single mới, khép lại một hành trình nhiều thăng trầm nhưng không thể phủ nhận dấu ấn mà anh từng để lại trong V-pop.",
+      },
+      {
+        type: "text",
+        content:
+          "Danh sách Top 12 bài hát hay nhất của Jack – J97 dưới đây được tổng hợp dựa trên lượt xem MV chính thức trên YouTube (dữ liệu ước tính đến cuối 2025), mức độ lan tỏa trên các nền tảng streaming và mạng xã hội, cùng ảnh hưởng văn hóa trong giai đoạn bùng nổ sự nghiệp của anh. Mỗi ca khúc không chỉ là một con số views, mà còn gắn liền với ký ức và cảm xúc của rất nhiều khán giả yêu nhạc Việt.",
+      },
+      {
+        type: "title",
+        content: "Tiêu chí xếp hạng top 12 bài hát hay nhất Jack - J97",
+      },
+      {
+        type: "text",
+        content:
+          "Bảng xếp hạng chủ yếu dựa trên lượt xem MV chính thức trên kênh YouTube J97 Entertainment và các kênh cũ (dữ liệu cập nhật 2025), kết hợp sức ảnh hưởng lâu dài trên Spotify, Zing MP3 và TikTok viral. Các ca khúc được chọn đều là những hiện tượng 'quốc dân', nhiều bài vượt mốc 300-400 triệu views – kỷ lục khó phá của V-pop thời kỳ 2019-2020.",
+      },
+      {
+        type: "text",
+        content:
+          "Jack sở hữu nhiều MV nằm trong top views cao nhất lịch sử YouTube Việt Nam. Phong cách âm nhạc của anh thay đổi từ folk-pop miền Tây đến ballad sâu lắng, EDM, nhưng luôn giữ chất 'buồn man mác' chạm đến trái tim giới trẻ.",
+      },
+      {
+        type: "title",
+        content:
+          "Hành trình âm nhạc của Jack - J97: Từ hiện tượng đến biểu tượng",
+      },
+      {
+        type: "text",
+        content:
+          "Sau thành công vang dội giai đoạn hợp tác K-ICM, Jack độc lập với kênh J97 và tiếp tục ra mắt loạt hit. Dù gặp sóng gió cá nhân, anh vẫn giữ fandom Đóm Đóm hùng hậu và quay lại mạnh mẽ năm 2025 với các single mới như '01 Ngoại Lệ', 'Trạm Dừng Chân', 'Vực Thẳm Của Bình Yên'.",
+      },
+      {
+        type: "title",
+        content: "Top 12 bài hát hay nhất của Jack - J97",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>1. Sóng Gió (ft. K-ICM) – khoảng 420 triệu views</strong><br>Bản hit đỉnh cao năm 2019, MV drama tình cảm miền Tây với giai điệu folk-pop bắt tai. 'Sóng Gió' từng thống trị mọi chart, trở thành 'quốc ca buồn' và đánh dấu sự kết hợp hoàn hảo Jack - K-ICM.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>2. Bạc Phận (ft. K-ICM) – khoảng 400 triệu views</strong><br>Ca khúc kể chuyện tình bạc phận, giọng hát luyến láy của Jack kết hợp beat dân gian hiện đại đã khiến MV viral khủng, phá kỷ lục views nhanh thời điểm ra mắt.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>3. Em Gì Ơi (ft. K-ICM) – khoảng 360 triệu views</strong><br>Hit vui tươi, lãng mạn năm 2019 với MV dễ thương, dance challenge lan tỏa mạnh mẽ trên mạng xã hội.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>4. Hồng Nhan – khoảng 300 triệu views</strong><br>Bài hát đột phá năm 2019 từ nhóm G5R, mang thông điệp 'hồng nhan bạc phận', mở đầu hành trình ngôi sao của Jack.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>5. Hoa Hải Đường – khoảng 215 triệu views</strong><br>Comeback độc lập năm 2020 với visual đẹp mắt, giai điệu ballad sâu lắng kết hợp future bass, khẳng định tài năng sáng tác của Jack.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>6. Là Một Thằng Con Trai – khoảng 170 triệu views</strong><br>MV đầu tiên trên kênh J97 năm 2020, phong cách disco-rap mạnh mẽ, thể hiện góc khuất tình yêu nam giới.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>7. Đom Đóm – khoảng 140 triệu views</strong><br>Ballad buồn da diết năm 2020, MV cảm xúc chạm đến nỗi đau mất mát, viral mạnh nhờ lyrics thấm thía.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>8. Thiên Lý Ơi (2024) – khoảng 100 triệu views</strong><br>Hit comeback sau im ắng, giai điệu bắt tai và MV drama giúp bài hát nhanh chóng đạt mốc views khủng.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>9. Cuối Cùng Thì (2023) – khoảng 85 triệu views</strong><br>Ballad nhẹ nhàng, sâu lắng đánh dấu sự trở lại ổn định của Jack.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>10. LayLaLay (2021) – khoảng 55 triệu views</strong><br>Ca khúc năng động, vui tươi với beat EDM gây nghiện.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>11. Ngôi Sao Cô Đơn (2022) – khoảng 35 triệu views</strong><br>Ballad cô đơn, lyrics chân thực về nỗi lòng nghệ sĩ.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>12. 01 Ngoại Lệ (2025) – views tăng nhanh</strong><br>Single mới nhất năm 2025, lọt Top Trending YouTube Music ngay khi ra mắt, hứa hẹn trở thành hit lớn tiếp theo.",
+      },
+      {
+        type: "title",
+        content: "Những ca khúc mới nổi bật năm 2025 của Jack",
+      },
+      {
+        type: "text",
+        content:
+          "Năm 2025 đánh dấu sự quay lại mạnh mẽ với 'Trạm Dừng Chân', 'Vực Thẳm Của Bình Yên' và live performance 'Liễu Thanh Yên' – những sản phẩm đang tích lũy views nhanh chóng và nhận phản hồi tích cực từ fandom.",
+      },
+      {
+        type: "title",
+        content: "Tại sao Jack - J97 từng là 'hiện tượng views' của V-pop?",
+      },
+      {
+        type: "text",
+        content:
+          "Với giọng hát đặc trưng, lyrics gần gũi và chiến lược viral trên YouTube, Jack từng chiếm lĩnh top views Việt Nam. Fandom Đóm Đóm trung thành cùng khả năng sáng tác đa dạng giúp anh vượt qua sóng gió để tiếp tục sự nghiệp.",
+      },
+      {
+        type: "text",
+        content:
+          "Các bài hát của Jack thường mang nỗi buồn man mác, bạc phận tình yêu – phản ánh hành trình cảm xúc của thế hệ trẻ, từ ngọt ngào đến đau thương.",
+      },
+      {
+        type: "title",
+        content: "FAQs về top bài hát Jack - J97",
+      },
+
+      {
+        type: "text",
+        content:
+          "<strong>Q1: Bài hát nào của Jack có nhiều views nhất?</strong><br>'Sóng Gió' dẫn đầu với hơn 420 triệu views, theo sau là 'Bạc Phận' và 'Em Gì Ơi'.",
+      },
+
+      {
+        type: "text",
+        content:
+          "<strong>Q2: Jack có bao nhiêu MV vượt 100 triệu views?</strong><br>Ít nhất 7-8 MV, chủ yếu từ giai đoạn 2019-2020 và một số sản phẩm sau.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q3: Bài hát mới nhất của Jack năm 2025 là gì?</strong><br>Loạt single như '01 Ngoại Lệ', 'Trạm Dừng Chân', 'Vực Thẳm Của Bình Yên' và live 'Liễu Thanh Yên'.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q4: Hit nổi bật nhất giai đoạn hợp tác K-ICM?</strong><br>Bộ ba 'Hồng Nhan - Bạc Phận - Sóng Gió' – những ca khúc định hình phong cách Jack.",
+      },
+      {
+        type: "title",
+        content: "Kết luận - Jack - J97: Hành trình từ hiện tượng đến bền vững",
+      },
+      {
+        type: "text",
+        content:
+          "Top 12 bài hát hay nhất của Jack - J97 là minh chứng cho tài năng và sức hút bền bỉ dù trải qua nhiều thăng trầm. Từ chàng trai Bến Tre đến biểu tượng V-pop, Jack đã mang đến những giai điệu 'quốc dân' đồng hành cùng tuổi trẻ. Với loạt comeback 2025, chúng ta hoàn toàn kỳ vọng anh sẽ tiếp tục chinh phục khán giả và đưa V-pop vươn xa hơn.",
+      },
+      {
+        type: "title",
+        content: "Nguồn tham khảo",
+      },
+      {
+        type: "link",
+        content: "https://en.wikipedia.org/wiki/Jack_%E2%80%93_J97",
+      },
+      {
+        type: "link",
+        content:
+          "https://music.youtube.com/playlist?list=OLAK5uy_lqdRBMfcVYqQnS4jzG2zUXOujSIfWIK-g",
+      },
+      {
+        type: "link",
+        content:
+          "https://znews.vn/so-phan-cac-ca-khuc-dinh-dam-cua-jack-k-icm-post1558454.html",
+      },
+      {
+        type: "link",
+        content:
+          "https://vietnamnet.vn/5-bai-hat-view-khung-nhat-showbiz-viet-2355102.html",
+      },
+    ],
+    comment:
+      "Jack - J97 với những bản hit buồn da diết đã đồng hành cùng mình qua bao cảm xúc. Hy vọng anh sẽ tiếp tục ra nhiều nhạc hay hơn nữa trong tương lai!",
+  },
+  {
+    id: 7,
+    slug: "top-20-bai-hat-hay-nhat-nam-2019-vpop",
+    title:
+      "Top 20 bài hát hay nhất năm 2019: Năm bùng nổ của tân binh Jack và những siêu hit V-pop",
+    categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
+    image: nhac7.src,
+    date: "2025-12-17",
+    views: 345,
+    type: "blogs",
+    userCommentAvatar: anonymous.src,
+    userNameComment: "Anonymous",
+    userRoleComment: "anonymous",
+    paragraphs: [
+      {
+        type: "text",
+        content:
+          "Năm 2019 là một trong những năm đỉnh cao của V-pop với sự bùng nổ chưa từng có từ các tân binh, đặc biệt là bộ đôi Jack & K-ICM thống trị mọi bảng xếp hạng. Bên cạnh đó, sự trở lại mạnh mẽ của Sơn Tùng M-TP với hợp tác quốc tế, Hoàng Thùy Linh khai thác văn hóa dân gian, Đen Vâu với rap ý nghĩa đã tạo nên bức tranh âm nhạc đa sắc màu. Top 20 bài hát hay nhất năm 2019 dưới đây được tổng hợp dựa trên lượt xem YouTube (cập nhật đến 2025), vị trí trên Zing Chart, sức lan tỏa mạng xã hội và ảnh hưởng văn hóa lâu dài.",
+      },
+      {
+        type: "text",
+        content:
+          "2019 chứng kiến V-pop chuyển mình với sự kết hợp folk-pop miền Tây, rap sâu lắng, ballad buồn và những MV chất lượng cao. Những bản hit này không chỉ đạt hàng trăm triệu views mà còn trở thành 'quốc ca' của giới trẻ, viral mạnh mẽ trên TikTok và YouTube.",
+      },
+      {
+        type: "title",
+        content: "Tiêu chí xếp hạng top 20 bài hát hay nhất năm 2019",
+      },
+      {
+        type: "text",
+        content:
+          "Bảng xếp hạng dựa trên dữ liệu lượt xem MV chính thức trên YouTube (tính đến cuối 2025), thời gian trụ hạng Zing Chart, stream trên Spotify/Zing MP3 và độ phủ sóng xã hội. Các ca khúc được chọn đều là hiện tượng lớn năm 2019, nhiều bài vẫn được nghe lại đến nay.",
+      },
+      {
+        type: "text",
+        content:
+          "Năm này nổi bật với 'liên hoàn hit' của Jack & K-ICM, comeback quốc tế của Sơn Tùng và sự trỗi dậy của rap cùng âm hưởng dân gian Việt Nam.",
+      },
+      {
+        type: "title",
+        content: "Top 20 bài hát hay nhất năm 2019",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>1. Sóng Gió – Jack & K-ICM</strong><br>MV views cao nhất năm, giai điệu folk-pop miền Tây gây nghiện, drama tình cảm đã khiến bài hát thống trị mọi chart.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>2. Bạc Phận – Jack & K-ICM</strong><br>Hit tiếp theo của bộ đôi, kể chuyện bạc phận với giọng hát luyến láy đặc trưng.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>3. Hãy Trao Cho Anh – Sơn Tùng M-TP ft. Snoop Dogg</strong><br>Comeback quốc tế hóa, MV xa hoa lập kỷ lục views 24h và trending toàn cầu.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>4. Em Gì Ơi – Jack & K-ICM</strong><br>Ca khúc vui tươi, dance challenge lan tỏa mạnh mẽ.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>5. Hồng Nhan – Jack</strong><br>Bản hit đột phá, mở đầu hiện tượng Jack với thông điệp 'hồng nhan bạc phận'.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>6. Để Mị Nói Cho Mà Nghe – Hoàng Thùy Linh</strong><br>Siêu hit khai thác văn hóa Tây Bắc, MV sáng tạo viral khắp nơi.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>7. Bài Này Chill Phết – Đen Vâu ft. Min</strong><br>Rap ý nghĩa kết hợp ballad, giai điệu thư giãn gây nghiện.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>8. Anh Ơi Ở Lại – Chi Pu</strong><br>Hit bất ngờ với visual đẹp, lời ca thả thính viral.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>9. Ai Là Người Thương Em – Quân A.P</strong><br>Ballad buồn da diết từ tân binh, thống trị chart lâu dài.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>10. Bước Qua Đời Nhau – Lê Bảo Bình</strong><br>Ballad cảm xúc, lyrics thấm thía về chia ly.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>11. Mượn Rượu Tỏ Tình – BigDaddy & Emily</strong><br>Ca khúc thả thính vui nhộn, rap ngọt ngào.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>12. Sáng Mắt Chưa – Trúc Nhân</strong><br>Hit vui tươi, MV hài hước gây sốt.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>13. Đừng Yêu Nữa, Em Mệt Rồi – Min</strong><br>Ballad mạnh mẽ, giọng hát nội lực của Min.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>14. Hết Thương Cạn Nhớ – Đức Phúc</strong><br>Ballad buồn với visual cổ trang đẹp mắt.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>15. Có Tất Cả Nhưng Thiếu Anh – Erik</strong><br>Hit ngọt ngào từ Erik, giai điệu dễ nghe.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>16. Truyền Thái Y – Ngô Kiến Huy</strong><br>Ca khúc hài hước, MV cổ trang vui nhộn.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>17. Hai Triệu Năm – Đen Vâu</strong><br>Rap triết lý sâu sắc, MV ý nghĩa.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>18. Một Bước Yêu Vạn Dặm Đau – Mr. Siro</strong><br>Ballad kinh điển của Mr. Siro về tình yêu đau khổ.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>19. Thanh Xuân – Da LAB</strong><br>Giai điệu tươi trẻ, lyrics ý nghĩa về tuổi trẻ.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>20. Tứ Phủ – Hoàng Thùy Linh</strong><br>Ca khúc văn hóa dân gian, phần kết album Hoàng ấn tượng.",
+      },
+      {
+        type: "title",
+        content: "Tại sao năm 2019 lại là năm vàng son của V-pop?",
+      },
+      {
+        type: "text",
+        content:
+          "Sự lên ngôi của tân binh Jack & K-ICM, hợp tác quốc tế của Sơn Tùng, rap của Đen Vâu và văn hóa dân gian từ Hoàng Thùy Linh đã mang đến sự đa dạng chưa từng có. YouTube trở thành nền tảng chính, giúp các MV đạt views khủng nhanh chóng.",
+      },
+      {
+        type: "text",
+        content:
+          "Những bài hát này gắn liền với cảm xúc tuổi trẻ: từ ngọt ngào lãng mạn, buồn đau chia ly đến ý nghĩa sâu sắc về cuộc sống.",
+      },
+      {
+        type: "title",
+        content: "FAQs về top bài hát năm 2019",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q1: Bài hát nào là hiện tượng lớn nhất năm 2019?</strong><br>Bộ ba “Hồng Nhan”, “Bạc Phận”, “Sóng Gió” của Jack & K-ICM thống trị YouTube, phủ sóng mọi bảng xếp hạng và mạng xã hội.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q2: Sơn Tùng M-TP có ca khúc nào nổi bật trong năm này?</strong><br>“Hãy Trao Cho Anh” kết hợp cùng Snoop Dogg – cột mốc đánh dấu nỗ lực quốc tế hóa V-pop.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q3: Xu hướng âm nhạc nào được yêu thích nhất?</strong><br>Folk-pop miền Tây kết hợp pop hiện đại, rap mang nội dung gần gũi và khai thác yếu tố văn hóa dân gian.",
+      },
+      {
+        type: "text",
+        content:
+          "<strong>Q4: Nghệ sĩ nào bùng nổ mạnh mẽ nhất năm 2019?</strong><br>Jack & K-ICM từ những tân binh trở thành hiện tượng, được mệnh danh là “ông hoàng views” của V-pop.",
+      },
+
+      {
+        type: "title",
+        content: "Kết luận - Năm 2019: Dấu ấn khó phai của V-pop",
+      },
+      {
+        type: "text",
+        content:
+          "Top 20 bài hát hay nhất năm 2019 không chỉ là những giai điệu đẹp mà còn là hành trình bùng nổ của V-pop với tân binh và sáng tạo mới mẻ. Từ Jack & K-ICM đến Sơn Tùng, Hoàng Thùy Linh, Đen Vâu – năm này đã đặt nền móng cho sự phát triển mạnh mẽ sau này. Nghe lại những bản hit này, chúng ta như sống lại một thời tuổi trẻ đầy cảm xúc.",
+      },
+      {
+        type:"title",
+        content:"Tham khảo liên quan:"
+      },
+        {
+        type:"link",
+        content:"https://tuoitre.vn/vpop-2019-da-co-den-son-tung-ha-anh-tuan-con-co-tan-binh-ack-va-k-icm-20191218101619671.htm"
+      },
+         {
+        type:"link",
+        content:"https://kenh14.vn/7-ban-hit-dinh-dam-dinh-hinh-nhac-viet-2019-hoang-thuy-linh-tao-ra-xu-huong-nam-son-tung-dat-ra-chuan-muc-moi-con-jack-va-k-icm-buoc-nguoi-nghe-phai-nho-den-20200118122355651.chn"
+      },
+         {
+        type:"link",
+        content:"https://www.saostar.vn/am-nhac/son-tung-m-tp-tung-hinh-anh-dau-tien-cua-hay-trao-cho-anh-lieu-co-lam-nen-mua-he-dang-nho-nhat-tu-truoc-den-nay-cua-sky-5467619.html"
+      }
+    ],
+    comment:
+      "2019 thực sự là năm đỉnh cao của V-pop với loạt hit bất hủ từ Jack, Sơn Tùng và Hoàng Thùy Linh. Những bài hát này vẫn hot đến tận bây giờ!",
   },
 ];

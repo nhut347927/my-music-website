@@ -36,7 +36,7 @@ export default function RootLayout({
               className="
       w-full h-full object-cover
       blur-xl
-      opacity-50
+      opacity-20
       dark:opacity-10
     "
             >

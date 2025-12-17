@@ -85,7 +85,6 @@ export default function Footer() {
                 Blogs
               </Link>
             </li>
-            
           </ul>
         </div>
 
@@ -100,6 +99,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 className="hover:text-foreground transition-colors"
+                rel="noopener noreferrer nofollow" // Thêm nofollow cho link ngoài để tránh pass link
               >
                 Facebook
               </Link>
@@ -109,6 +109,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 className="hover:text-foreground transition-colors"
+                rel="noopener noreferrer nofollow" // Thêm nofollow cho link ngoài để tránh pass link
               >
                 Instagram
               </Link>
@@ -118,6 +119,7 @@ export default function Footer() {
                 href="https://x.com"
                 target="_blank"
                 className="hover:text-foreground transition-colors"
+                rel="noopener noreferrer nofollow" // Thêm nofollow cho link ngoài để tránh pass link
               >
                 X (Twitter)
               </Link>
