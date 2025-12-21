@@ -73,6 +73,16 @@ export const lyricsData: LyricPost[] = [
     id: 1,
     slug: "lyric-am-sweet-liquor",
     title: "Lyric ấm - Sweet Liquor",
+    desc: "Bản nhạc nhẹ nhàng, sâu lắng về tình yêu và sự an trú trong vòng tay người thương của Sweet Liquor.",
+    keywords: [
+      "lyric ấm",
+      "sweet liquor",
+      "nhạc nhẹ nhàng",
+      "nhạc sâu lắng",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về an trú",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[16]],
     image: sweetliquorAm.src,
     audio: "/audio/am.MP3",
@@ -122,6 +132,16 @@ export const lyricsData: LyricPost[] = [
     id: 2,
     slug: "lyric-vet-mua-vu-cat-tuong",
     title: "Lyric Vết mưa - Vũ Cát Tường",
+    desc: "Bài hát 'Vết mưa' của Vũ Cát Tường là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu.",
+    keywords: [
+      "lyric vết mưa",
+      "vũ cát tường",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về chia ly",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vctVetmua.src, // ảnh đại diện bài hát
@@ -183,6 +203,17 @@ export const lyricsData: LyricPost[] = [
     id: 3,
     slug: "lyric-khong-buong-hngle-ft-ari",
     title: "Lyric Không Buông - Hngle ft. Ari",
+    desc: "Bài hát 'Không Buông' của Hngle ft. Ari là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu.",
+    keywords: [
+      "lyric không buông",
+      "hngle",
+      "ari",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về chia ly",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[14]],
     image: kbly.src,
     audio: "/audio/khongbuong.MP3",
@@ -233,8 +264,17 @@ export const lyricsData: LyricPost[] = [
     id: 4,
     slug: "lyric-nguoi-binh-thuong-vu-cat-tuong",
     title: "Lyric Người Bình Thường - Vũ Cát Tường",
+    desc: "Bài hát 'Người Bình Thường' của Vũ Cát Tường là một bản ballad sâu lắng, thể hiện hành trình trưởng thành và tìm kiếm hạnh phúc trong cuộc sống.",
+    keywords: [
+      "lyric người bình thường",
+      "vũ cát tường",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về cuộc sống",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
-
     image: vctNguoiBinhThuong.src, // ảnh đại diện bài hát
     audio: "/audio/nguoibinhthuong.MP3",
     date: "2020-06-18", // ngày phát hành chính thức
@@ -299,6 +339,16 @@ export const lyricsData: LyricPost[] = [
     id: 5,
     slug: "lyric-goi-ten-em-min",
     title: "Lyric Gọi Tên Em - MIN",
+    desc: "Bài hát 'Gọi Tên Em' của MIN là một bản ballad nhẹ nhàng, sâu lắng về cảm xúc khi yêu và sự an ủi mà tình yêu mang lại.",
+    keywords: [
+      "lyric gọi tên em",
+      "min",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc nhẹ nhàng",
+      "nhạc Việt",
+      "bài hát về yêu thương",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
     image: minGoiTenEm.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/goitenem.MP3",
@@ -344,6 +394,18 @@ export const lyricsData: LyricPost[] = [
     id: 6,
     slug: "lyric-vi-yeu-cu-dam-dau-min",
     title: "Lyric Vì Yêu Cứ Đâm Đầu - MIN",
+    desc: "Bài hát 'Vì Yêu Cứ Đâm Đầu' của MIN ft. Đen Vâu & JustaTee là một bản nhạc nhẹ nhàng, sâu lắng về tình yêu và sự dũng cảm trong việc theo đuổi cảm xúc của trái tim.",
+    keywords: [
+      "lyric vì yêu cứ đâm đầu",
+      "min",
+      "đen vâu",
+      "justatee",
+      "nhạc nhẹ nhàng",
+      "nhạc sâu lắng",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về dũng cảm yêu thương",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vycdd.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -405,6 +467,16 @@ export const lyricsData: LyricPost[] = [
     id: 7,
     slug: "lyric-id-072019-wn",
     title: "Lyric id 072019 - W/n",
+    desc: "Bài hát 'id 072019' của W/n là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu.",
+    keywords: [
+      "lyric id 072019",
+      "w/n",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về chia ly",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id072019.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/id072019.MP3",
@@ -460,6 +532,17 @@ export const lyricsData: LyricPost[] = [
     id: 8,
     slug: "lyric-id-t41104-wn",
     title: "Lyric id T41104 - W/n",
+    desc: "Bài hát 'id T41104' của W/n là một bản ballad đầy cảm xúc, kể về nỗi đau chia ly và những kỷ niệm ngọt ngào trong tình yêu.",
+    keywords: [
+      "lyric id t41104",
+      "w/n",
+      "267",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về chia ly",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: idt41104.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/idT41104.MP3",
@@ -514,6 +597,17 @@ export const lyricsData: LyricPost[] = [
     id: 9,
     slug: "lyric-id-2022-wn",
     title: "Lyric id 2022 - W/n",
+    desc: "Bài hát 'id 2022' của W/n là một bản ballad đầy cảm xúc, kể về nỗi lo lắng về tương lai và những ước mơ chưa thành trong cuộc sống.",
+    keywords: [
+      "lyric id 2022",
+      "w/n",
+      "267",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc buồn",
+      "nhạc Việt",
+      "bài hát về ước mơ",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[10]],
     image: id2022.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/id2022.MP3",
@@ -569,6 +663,17 @@ export const lyricsData: LyricPost[] = [
     id: 10,
     slug: "lyric-vuon-may-vua-hay-an-ngo",
     title: "Lyric Vườn Mây Vừa Hay - Ân Ngờ",
+    desc: "Bài hát 'Vườn Mây Vừa Hay' của Ân Ngờ ft. MYLINA là một bản ballad indie đầy cảm xúc, kể về những khoảnh khắc ngọt ngào và bình yên giữa hai tâm hồn đồng điệu.",
+    keywords: [
+      "lyric vườn mây vừa hay",
+      "ân ngờ",
+      "mylina",
+      "nhạc indie",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về yêu thương",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: vuonmayvuahay.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -630,6 +735,16 @@ export const lyricsData: LyricPost[] = [
     id: 11,
     slug: "lyric-thang-dien-justatee-ft-phuong-ly",
     title: "Lyric Thằng Điên - JustaTee ft. Phương Ly",
+    desc: "Bài hát 'Thằng Điên' của JustaTee ft. Phương Ly là một bản nhạc pop nhẹ nhàng, kể về câu chuyện của một người đàn ông dám yêu và sống hết mình vì tình yêu, dù có thể bị coi là 'thằng điên' trong mắt người khác.",
+    keywords: [
+      "lyric thằng điên",
+      "justatee",
+      "phương ly",
+      "nhạc pop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về dũng cảm yêu thương",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: thangdien.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -696,6 +811,16 @@ export const lyricsData: LyricPost[] = [
     id: 12,
     slug: "lyric-mot-ai-ke-ben-mylina",
     title: "Lyric Một Ai Kề Bên - MYLINA",
+    desc: "Bài hát 'Một Ai Kề Bên' của MYLINA là một bản ballad indie đầy cảm xúc, kể về hành trình tìm kiếm tình yêu và sự bình yên trong cuộc sống.",
+    keywords: [
+      "lyric một ai kề bên",
+      "mylina",
+      "nhạc indie",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về tìm kiếm tình yêu",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
 
     image: aikeben.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
@@ -767,6 +892,15 @@ export const lyricsData: LyricPost[] = [
     id: 13,
     slug: "lyric-only-lee-hi",
     title: "Lyric ONLY - Lee Hi",
+    desc: "Bài hát 'ONLY' của Lee Hi là một bản ballad nhẹ nhàng và sâu lắng, thể hiện qua giọng hát đầy cảm xúc và kỹ thuật điêu luyện.",
+    keywords: [
+      "lyric only",
+      "lee hi",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc Hàn Quốc",
+      "bài hát về tình yêu chân thành",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]],
     image: only.src, // ảnh đại diện bài hát (placeholder, replace with actual src)
     audio: "/audio/only.MP3",
@@ -832,6 +966,15 @@ export const lyricsData: LyricPost[] = [
     id: 14,
     slug: "lyric-ke-tu-day-mylina",
     title: "Lyric Kể Từ Đây - Mylina",
+    desc: "Bài hát 'Kể Từ Đây' của Mylina' là một bản ballad suy tư, tái hiện hành trình trưởng thành với những nỗi đau và bài học chân thực.",
+    keywords: [
+      "lyric kể từ đây",
+      "mylina",
+      "nhạc ballad",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về trưởng thành",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]],
     image: mylina_ketuday.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/ketuday-mylina.MP3", // Đặt file audio vào public/audio/ketuday.MP3
@@ -887,6 +1030,16 @@ export const lyricsData: LyricPost[] = [
     id: 15,
     slug: "lyric-anh-la-ai-phuong-ly",
     title: "Lyric Anh Là Ai - Phương Ly",
+    desc: "Bài hát 'Anh Là Ai' của Phương Ly là một bản ballad R&B đầy hoài niệm, khắc họa nỗi nhớ da diết về một tình yêu mơ hồ và những câu hỏi day dứt về bản thân người ấy.",
+    keywords: [
+      "lyric anh là ai",
+      "phương ly",
+      "nhạc ballad",
+      "nhạc r&b",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về nỗi nhớ",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, R&B
     image: anhlaai.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/anhlaai.MP3", // Đặt file audio vào public/audio/anhlaai.mp3
@@ -937,6 +1090,16 @@ export const lyricsData: LyricPost[] = [
     id: 16,
     slug: "lyric-anh-la-thang-toi-phung-khanh-linh",
     title: "Lyric Anh Là Thằng Tồi - Phùng Khánh Linh",
+    desc: "Bài hát 'Anh Là Thằng Tồi' của Phùng Khánh Linh là một bản ballad pop đầy cảm xúc, khắc họa nỗi đau betrayal và ghosting trong tình yêu với chorus dễ nhớ, dễ viral.",
+    keywords: [
+      "lyric anh là thằng tồi",
+      "phùng khánh linh",
+      "nhạc ballad",
+      "nhạc pop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về betrayal",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, Pop
     image: anhlathangtoi.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/anhlathangtoi.MP3", // Đặt file audio vào public/audio/anhlathangtoi.mp3
@@ -997,6 +1160,17 @@ export const lyricsData: LyricPost[] = [
     id: 17,
     slug: "lyric-binh-yen-vu-ft-binz",
     title: "Lyric Bình Yên - Vũ. (ft. Binz)",
+    desc: "Bài hát 'Bình Yên' là ca khúc Pop/R&B dịu dàng từ album thứ 3 'Bảo Tàng Của Nuối Tiếc' của Vũ., kết hợp feat. Binz với verse rap trữ tình.",
+    keywords: [
+      "lyric bình yên",
+      "vũ.",
+      "binz",
+      "nhạc pop",
+      "nhạc r&b",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về bình yên",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, R&B
     image: binhyen.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/binhyen.MP3", // Đặt file audio vào public/audio/binhyen.mp3
@@ -1061,6 +1235,17 @@ export const lyricsData: LyricPost[] = [
     id: 18,
     slug: "lyric-chim-sau-rpt-mck-ft-trung-tran",
     title: "Lyric Chìm Sâu - RPT MCK (ft. Trung Trần)",
+    desc: "Bài hát 'Chìm Sâu' là bản hit Rap/R&B lãng mạn của RPT MCK feat. Trung Trần, với giai điệu uyển chuyển và lời rap chân thành về sự si mê tình yêu xen lẫn mong muốn người ấy hạnh phúc dù có chia ly.",
+    keywords: [
+      "lyric chìm sâu",
+      "rpt mck",
+      "trung trần",
+      "nhạc rap",
+      "nhạc r&b",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về si mê",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Rap, Vpop, R&B
     image: chimsau.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/chimsau.MP3", // Đặt file audio vào public/audio/chimsau.mp3
@@ -1116,6 +1301,16 @@ export const lyricsData: LyricPost[] = [
     id: 19,
     slug: "lyric-chung-ta-cua-hien-tai-son-tung-m-tp",
     title: "Lyric Chúng Ta Của Hiện Tại - Sơn Tùng M-TP",
+    desc: "Bài hát 'Chúng Ta Của Hiện Tại' của Sơn Tùng M-TP là một bản ballad pop đầy cảm xúc, khắc họa nỗi nhớ và kỷ niệm về một tình yêu đã qua với giai điệu da diết và lời ca sâu lắng.",
+    keywords: [
+      "lyric chúng ta của hiện tại",
+      "sơn tùng m-tp",
+      "nhạc ballad",
+      "nhạc pop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về nỗi nhớ",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, Pop
     image: chungtacuahientai.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/chungtacuahientai.MP3", // Đặt file audio vào public/audio/chungtacuahientai.mp3
@@ -1185,6 +1380,16 @@ export const lyricsData: LyricPost[] = [
     id: 20,
     slug: "lyric-i-love-you-3000-stephanie-poetri",
     title: "Lyric I Love You 3000 - Stephanie Poetri",
+    desc: "Bài hát 'I Love You 3000' là bản hit Indie Pop/R&B dễ thương của Stephanie Poetri, lấy cảm hứng từ câu thoại kinh điển 'I love you 3000' trong Avengers: Endgame.",
+    keywords: [
+      "lyric i love you 3000",
+      "stephanie poetri",
+      "nhạc indie pop",
+      "nhạc r&b",
+      "nhạc tình yêu",
+      "nhạc quốc tế",
+      "bài hát về lời cầu hôn",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Pop, R&B, International
     image: iloveyou3000.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/iloveyou3000.MP3", // Đặt file audio vào public/audio/iloveyou3000.mp3
@@ -1245,6 +1450,16 @@ export const lyricsData: LyricPost[] = [
     id: 21,
     slug: "lyric-luc-em-nho-anh-lena",
     title: "Lyric Lúc Em Nhớ Anh - Lena",
+    desc: "Bài hát 'Lúc Em Nhớ Anh' là ca khúc Ballad sâu lắng từ album 'LEMONADE' của Lena, khắc họa nỗi nhớ da diết và những đêm dài cô đơn sau chia ly.",
+    keywords: [
+      "lyric lúc em nhớ anh",
+      "lena",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về nỗi nhớ",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[16]], // Ví dụ: Ballad, Vpop, Nhạc Trẻ
     image: lucemnhoanh.src, // ảnh bìa bài hát (thay bằng ảnh thực tế từ public/images/)
     audio: "/audio/lucemnhoanh.MP3", // Đặt file audio vào public/audio/lucemnhanh.mp3
@@ -1305,6 +1520,16 @@ export const lyricsData: LyricPost[] = [
     id: 22,
     slug: "lyric-nghe-ke-la-nam-90-an-ngo",
     title: "Lyric Nghe Kể Là Năm 90 - Ân ngờ, Suzie MK & Zer Nguyễn",
+    desc: "Bài hát 'Nghe Kể Là Năm 90' của Ân Ngờ là hiện tượng Vpop cuối 2024, đầu 2025 với giai điệu retro mơ màng pha chút city-pop, lời hát hoài niệm về một mối tình tưởng như từ thập niên 90 cùng đoạn thoại viral cuối bài.",
+    keywords: [
+      "lyric nghe kể là năm 90",
+      "ân ngờ",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc indie",
+      "nhạc Việt",
+      "bài hát về hoài niệm",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[0]], // Ballad, Vpop, Nhạc trẻ / Indie
     image: nghekelanam90.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/nghekelanam90.MP3", // đặt file MP3 vào public/audio/
@@ -1369,6 +1594,16 @@ export const lyricsData: LyricPost[] = [
     id: 23,
     slug: "lyric-vuon-hoa-con-ca-olew-ngan",
     title: "Lyric Vườn Hoa Con Cá - O.lew (ft. Ngắn)",
+    desc: "Bài hát 'Vườn Hoa Con Cá' là bản tình ca ngọt ngào viral từ 2023 của O.lew feat. Ngắn (thành viên BCTM). Với hình ảnh đời thường 'chăm cá, tưới hoa' tượng trưng cho tình yêu bình dị, healing, kết hợp rap chân thành về niềm tin và hạnh phúc trong tình yêu.",
+    keywords: [
+      "lyric vườn hoa con cá",
+      "olew",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc rap việt",
+      "nhạc Việt",
+      "bài hát về tình yêu bình dị",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Rap Việt / Acoustic
     image: vuonhoaconca.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/vuonhoaconca.MP3", // đặt file MP3 vào public/audio/
@@ -1433,6 +1668,16 @@ export const lyricsData: LyricPost[] = [
     id: 24,
     slug: "lyric-quen-dat-ten-pham-nguyen-ngoc",
     title: "Lyric Quên Đặt Tên - Phạm Nguyên Ngọc",
+    desc: "Bài hát 'Quên Đặt Tên' là ca khúc Ballad sâu lắng ra mắt năm 2022 của Phạm Nguyên Ngọc, khắc họa nỗi đau tình yêu tuổi đôi mươi với những hình ảnh thơ mộng như cơn bão, nắng mưa và thư tình gửi vào nắng.",
+    keywords: [
+      "lyric quên đặt tên",
+      "phạm nguyên ngọc",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về nỗi đau tình yêu",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: quendatten.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/quendatten.MP3", // đặt file MP3 vào public/audio/
@@ -1498,6 +1743,17 @@ export const lyricsData: LyricPost[] = [
     id: 25,
     slug: "lyric-mot-ngan-noi-dau-van-mai-huong",
     title: "Lyric Một Ngàn Nỗi Đau - Văn Mai Hương",
+    desc: "Bài hát 'Một Ngàn Nỗi Đau' là bản ballad da diết năm 2022 của Văn Mai Hương, sáng tác bởi Hứa Kim Tuyền dựa trên câu chuyện thật về 'người đến sau'. Với giọng hát đầy cảm xúc khắc họa nỗi đau tình yêu dang dở, lời ca như lời tâm sự lúc 11:11  "
+,
+    keywords: [
+      "lyric một ngàn nỗi đau",
+      "văn mai hương",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",  
+      "nhạc Việt",
+      "bài hát về người đến sau",
+    ],
     categories: [categoriesData[1], categoriesData[7], categoriesData[0]], // Ballad, Vpop, Nhạc Trẻ
     image: motngangnoidau.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/1ngannoidau.MP3", // đặt file MP3 vào public/audio/
@@ -1563,6 +1819,16 @@ export const lyricsData: LyricPost[] = [
     id: 26,
     slug: "lyric-vet-thuong-fishy",
     title: "Lyric Vết Thương - Fishy",
+    desc: "Bài hát 'Vết Thương' là bản ballad indie năm 2023 của Fishy, kể về nỗi đau khi chứng kiến người mình yêu thương bên người khác. Với giai điệu nhẹ nhàng, lời ca sâu sắc, bài hát nhanh chóng viral trên TikTok và Spotify, chạm đến trái tim những ai từng trải qua tổn thương trong tình yêu.",
+    keywords: [
+      "lyric vết thương",
+      "fishy",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc indie",
+      "nhạc Việt",
+      "bài hát về nỗi đau tình yêu",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[6]], // Ballad, Vpop, Indie
     image: vetthuong.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/vetthuong.MP3", // đặt file MP3 vào public/audio/
@@ -1628,6 +1894,16 @@ export const lyricsData: LyricPost[] = [
     id: 27,
     slug: "lyric-em-gi-oi-jack-k-icm",
     title: "Lyric Em Gì Ời - Jack (ft. K-ICM)",
+    desc: "Bài hát 'Em Gì Ơi' là bản hit Vpop năm 2019 của Jack và K-ICM, kết hợp giữa pop và nhạc dân gian. Với giai điệu bắt tai, lời ca lãng mạn về tình yêu tuổi trẻ và MV triệu view, bài hát đã trở thành hiện tượng âm nhạc, đưa Jack trở thành ngôi sao sáng của Vpop.",
+    keywords: [
+      "lyric em gì ơi",   
+      "jack",
+      "k-icm",
+      "nhạc vpop",
+      "nhạc dân gian",
+      "nhạc trẻ",
+      "bài hát về tình yêu tuổi trẻ",
+    ],
     categories: [
       categoriesData[7],
       categoriesData[0],
@@ -1698,6 +1974,16 @@ export const lyricsData: LyricPost[] = [
     id: 28,
     slug: "lyric-dom-dom-jack-j97",
     title: "Lyric Đóm Đóm - Jack (J97)",
+    desc: "Bài hát 'Đóm Đóm' là kiệt tác ballad năm 2021 của Jack (J97), dành tặng fandom Đóm và người con gái anh từng yêu. Với giai điệu da diết, ca từ đậm chất thơ miền Trung và hình ảnh 'đóm đóm' tượng trưng cho tình yêu cháy mãi trong tim, bài hát đã chạm mốc hơn 168 triệu views, trở thành một trong những bản tình ca buồn được cover nhiều nhất Vpop thập kỷ.",
+    keywords: [
+      "lyric đóm đóm",
+      "jack j97",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về tình yêu cháy mãi",
+    ],
     categories: [
       categoriesData[0],
       categoriesData[7],
@@ -1769,6 +2055,16 @@ export const lyricsData: LyricPost[] = [
     id: 29,
     slug: "lyric-anh-oi-anh-o-lai-chi-pu",
     title: "Lyric Anh Ơi Anh Ở Lại - Chi Pu",
+    desc: "Bài hát 'Anh Ơi Anh Ở Lại' là bản ballad comeback cực mạnh năm 2024 của Chi Pu, do Đạt G sáng tác. Với câu hát 'Anh ơi anh ở lại' và hình ảnh cầu vồng – bông hoa tàn úa, bài hát nhanh chóng phủ sóng TikTok, chiếm mọi BXH và trở thành “quốc ca chia tay” mới của Gen Z. MV drama + giọng hát đầy cảm xúc đã giúp Chi Pu chứng minh sức hút không hề giảm sau nhiều năm.",
+    keywords: [
+      "lyric anh ơi anh ở lại",
+      "chi pu",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về chia tay",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: anhoianholai.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/anhoianholai.MP3",
@@ -1824,6 +2120,16 @@ export const lyricsData: LyricPost[] = [
     id: 30,
     slug: "lyric-noi-nay-co-anh-son-tung-m-tp",
     title: "Lyric Nơi Này Có Anh - Sơn Tùng M-TP",
+    desc: "Bài hát 'Nơi Này Có Anh' là bản tình ca kinh điển năm 2017 của Sơn Tùng M-TP, tự sáng tác và sản xuất. Với giai điệu pop/R&B ngọt ngào, lời ca lãng mạn về tình yêu bất diệt qua bốn mùa, bài hát đã đạt hơn 250 triệu views trên YouTube, trở thành biểu tượng Vpop, thường được dùng trong MV phim và cover hàng triệu lần bởi fan Sky.",
+    keywords: [
+      "lyric nơi này có anh",
+      "sơn tùng m-tp",
+      "nhạc pop",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về tình yêu bất diệt",
+    ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[15]], // Ballad, Vpop, Nhạc Trẻ
     image: noinaycoanh.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/noinaycoanh.MP3",
@@ -1884,6 +2190,16 @@ export const lyricsData: LyricPost[] = [
     id: 31,
     slug: "lyric-nang-am-trong-tim-duongg",
     title: "Lyric Nắng Ấm Trong Tim - Duongg",
+    desc: "Bài hát 'Nắng Ấm Trong Tim' là bản ballad hit cuối 2024 của Duongg, do chính anh sáng tác và sản xuất. Với giai điệu ngọt ngào, lời ca về tình yêu ấm áp vượt qua mọi khó khăn, bài hát nhanh chóng lan tỏa trên TikTok và YouTube, trở thành hiện tượng âm nhạc đầu năm 2025. MV lãng mạnh cùng giọng hát truyền cảm đã giúp Duongg khẳng định vị thế trong làng nhạc Việt.",
+    keywords: [
+      "lyric nắng ấm trong tim",
+      "duongg",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về tình yêu ấm áp",
+    ],
     categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
     image: nangamtrongtim.src, // thay bằng ảnh bìa thực tế trong public/images/
     audio: "/audio/nangamtrongtim.MP3",
@@ -1949,6 +2265,17 @@ export const lyricsData: LyricPost[] = [
     id: 32,
     slug: "lyric-tu-thich-thich-thanh-thuong-thuong",
     title: "Lyric Từ Thích Thích Thành Thương Thương - Amee ft. Hoàng Dũng",
+    desc: "Bài hát 'Từ Thích Thích Thành Thương Thương' là bản hit ballad ngọt ngào năm 2020 của Amee ft. Hoàng Dũng, kể về hành trình từ 'thích thích' đến 'thương thương' đầy ngại ngùng và đơn phương. Với giai điệu da diết và câu bridge viral khắp nơi, bài hát nhanh chóng chạm mốc hàng chục triệu view, trở thành 'quốc ca crush' của thế hệ trẻ Vpop.",
+    keywords: [
+      "lyric từ thích thích thành thương thương",
+      "amee",
+      "hoàng dũng",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về crush",
+    ],
     categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
     image: ttttyyrtt.src, // ảnh bìa thực tế
     audio: "/audio/tuthichthichthanhyeuyeuroithuongthuong.MP3",
@@ -2004,6 +2331,16 @@ export const lyricsData: LyricPost[] = [
     id: 34,
     slug: "lyric-tinh-yeu-cham-tre-grey-d",
     title: "Lyric Tình Yêu Chậm Trễ - Grey D",
+    desc: "Bài hát 'Tình Yêu Chậm Trễ (Live Piano Ver.)' là phiên bản acoustic sâu lắng của Grey D, phát hành cuối 2023. Với chỉ cây đàn piano và giọng hát chân thành, bản live piano này đã chạm đến trái tim khán giả, viral mạnh trên YouTube và Spotify, vượt 5 triệu lượt nghe chỉ sau 2 năm, trở thành bản ballad buồn về những tình yêu đến muộn mà ai cũng từng trải qua.",
+    keywords: [
+      "lyric tình yêu chậm trễ",
+      "grey d",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc tình yêu",
+      "nhạc Việt",
+      "bài hát về tình yêu đến muộn",
+    ],
     categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
     image: tinhyeuchamtre.src,
     audio: "/audio/tinhyeuchamtre.MP3",
@@ -2069,6 +2406,17 @@ export const lyricsData: LyricPost[] = [
     id: 35,
     slug: "lyric-bao-tien-mot-mo-binh-yen",
     title: "Lyric Bao Tiền Một Mớ Bình Yên - 14 Casper ft. Bon",
+    desc: "Bài hát 'Bao Tiền Một Mớ Bình Yên' là bản ballad truyền cảm hứng của 14 Casper ft. Bon năm 2020, nói về hành trình tìm kiếm bình yên giữa bộn bề cuộc sống. Với câu hỏi day dứt “Cần bao nhiêu tiền đổi một mớ bình yên?” và thông điệp tự yêu thương bản thân, bài hát nhanh chóng chạm đến trái tim khán giả, vượt 15 triệu view và trở thành 'quốc ca' động viên cho những ai đang mệt mỏi, lạc lối giữa guồng quay công việc.",
+    keywords: [
+      "lyric bao tiền một mớ bình yên",
+      "14 casper",
+      "bon",
+      "nhạc ballad",
+      "nhạc vpop",
+      "nhạc truyền cảm hứng",
+      "nhạc Việt",
+      "bài hát về bình yên",
+    ],
     categories: [categoriesData[15], categoriesData[7], categoriesData[14]], // Ballad, Vpop, Nhạc Trẻ
     image: btmmby.src,
     audio: "/audio/baotienmotmoibinhyen.MP3",

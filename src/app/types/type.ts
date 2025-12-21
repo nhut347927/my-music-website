@@ -9,6 +9,8 @@ export interface BasePost {
   id: number;
   slug: string;
   title: string;
+  desc: string;
+  keywords: string[];
   categories: Category[]; // ✅ Dùng Category[]
   image: string;
   date?: string | null; // ngày tạo bài viết

@@ -19,14 +19,16 @@ export const blogData: BlogsPost[] = [
     slug: "nhac-viet-2025",
     title:
       "Nhạc Việt 2025: Một năm nhìn lại từ góc nhìn người nghe - Những thay đổi và dấu ấn đậm nét",
-    categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
+    desc:"Nhận định về những thay đổi và dấu ấn nổi bật trong lĩnh vực âm nhạc Việt Nam năm 2025.",
+    keywords: [ "Nhạc Việt 2025", "âm nhạc Việt Nam", "xu hướng âm nhạc", "nghệ sĩ Việt", "thị trường âm nhạc"],
+      categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac1.src,
     date: "2025-12-15",
     views: 234,
     type: "blogs",
     userCommentAvatar: anonymous.src,
     userNameComment: "Anonymous",
-    userRoleComment: "anonymous",
+    userRoleComment: "Admin",
     paragraphs: [
       {
         type: "text",
@@ -130,6 +132,8 @@ export const blogData: BlogsPost[] = [
     slug: "cam-am-la-gi",
     title:
       "Cảm âm là gì? Vì sao có người nghe nhạc “đã” hơn người khác – Giải mã bí ẩn trải nghiệm âm nhạc sâu sắc",
+    desc: "Khám phá khái niệm cảm âm và vai trò của nó trong việc thưởng thức âm nhạc một cách sâu sắc hơn.",
+    keywords: ["cảm âm", "nghe nhạc", "âm nhạc Việt Nam", "trải nghiệm âm nhạc"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac2.src,
     date: "2025-12-15",
@@ -411,6 +415,9 @@ export const blogData: BlogsPost[] = [
     slug: "top-12-bai-hat-hay-nhat-son-tung-m-tp",
     title:
       "Top 12 bài hát hay nhất của Sơn Tùng M-TP: Những bản hit định hình V-pop hiện đại",
+
+    desc: "Khám phá top 12 bài hát hay nhất của Sơn Tùng M-TP, những bản hit đã định hình V-pop hiện đại.",
+    keywords: ["Sơn Tùng M-TP", "bài hát hay nhất", "V-pop 2025", "top 12 bài hát"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac3.src,
     date: "2025-12-15",
@@ -564,6 +571,9 @@ export const blogData: BlogsPost[] = [
     slug: "top-20-bai-hat-hay-nhat-nam-2018-vpop",
     title:
       "Top 20 bài hát hay nhất năm 2018: Những bản hit định hình V-pop một thời",
+
+    desc: "Khám phá top 20 bài hát hay nhất năm 2018, những bản hit đã định hình V-pop một thời.",
+    keywords: ["Top 20 bài hát hay nhất năm 2018", "V-pop 2018", "bài hát hay nhất"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac4.src,
     date: "2025-12-15",
@@ -757,6 +767,9 @@ export const blogData: BlogsPost[] = [
     slug: "top-20-bai-hat-hay-nhat-nam-2025-vpop",
     title:
       "Top 20 bài hát hay nhất năm 2025: Những bản hit thống trị V-pop một năm rực rỡ",
+
+    desc: "Khám phá top 20 bài hát hay nhất năm 2025, những bản hit đã định hình V-pop một thời.",
+    keywords: ["Top 20 bài hát hay nhất năm 2025", "V-pop 2025", "bài hát hay nhất"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac5.src,
     date: "2025-12-15",
@@ -949,6 +962,8 @@ export const blogData: BlogsPost[] = [
     id: 6,
     slug: "top-12-bai-hat-hay-nhat-jack-j97",
     title: "Top 12 bài hát hay nhất của Jack (J97) từ trước đến nay",
+    desc: "Khám phá top 12 bài hát hay nhất của Jack – J97, những bản hit đã định hình V-pop hiện đại.",
+    keywords: ["Jack", "J97", "bài hát hay nhất", "V-pop 2025", "top 12 bài hát"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac6.src,
     date: "2025-12-17",
@@ -1156,6 +1171,9 @@ export const blogData: BlogsPost[] = [
     slug: "top-20-bai-hat-hay-nhat-nam-2019-vpop",
     title:
       "Top 20 bài hát hay nhất năm 2019: Năm bùng nổ của tân binh Jack và những siêu hit V-pop",
+    
+    desc: "Khám phá top 20 bài hát hay nhất năm 2019, những bản hit đã định hình V-pop một thời.",
+    keywords: ["Top 20 bài hát hay nhất năm 2019", "V-pop 2019", "bài hát hay nhất"],
     categories: [categoriesData[49], categoriesData[24], categoriesData[0]],
     image: nhac7.src,
     date: "2025-12-17",

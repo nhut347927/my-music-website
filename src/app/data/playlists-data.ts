@@ -24,6 +24,8 @@ export const playlistsData: PlaylistPost[] = [
     id: 1,
     slug: "playlist-ky-niem-tinh-yeu-nhung-khoanh-khac-cua-hai-ta",
     title: "Playlist Kỷ Niệm Tình Yêu: Những Khoảnh Khắc Của Hai Ta",
+    desc: "Khám phá playlist kỷ niệm tình yêu Những Khoảnh Khắc Của Hai Ta – nơi lưu giữ những ký ức đẹp nhất của hai người: từ rung động đầu tiên, những ngày tháng ngọt ngào, đến nỗi nhớ da diết khi xa cách. Mỗi bài hát là một mảnh ghép kỷ niệm, giúp bạn sống lại những khoảnh khắc yêu thương đã từng có.", 
+    keywords: [ "playlist kỷ niệm tình yêu", "những khoảnh khắc của hai ta", "nhạc tình yêu", "nhạc ballad", "nhạc lofi", "nhạc nhẹ nhàng", "nhạc Việt", "playlist cảm xúc" ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]], // Nhạc Việt, Ballad, Playlist cảm xúc
     image: doita.src,
     banner: doita.src,
@@ -104,6 +106,8 @@ export const playlistsData: PlaylistPost[] = [
     id: 2,
     slug: "playlist-thon-thuc-tinh-yeu-mot-not-tram-trong-tim",
     title: "Playlist Thổn Thức Tình Yêu: Một Nốt Trầm Trong Tim",
+    desc: "Khám phá playlist thổn thức tình yêu Một Nốt Trầm Trong Tim – nơi những giai điệu buồn nhẹ, sâu lắng, chạm vào trái tim đang rung lên từng nhịp thổn thức. Dành cho những đêm cô đơn, khi bạn muốn nghe lại tiếng lòng mình: nỗi nhớ da diết, ký ức phai mờ, và những cảm xúc không thể nói thành lời. Mỗi bài hát là một nốt trầm thổn thức, không bi lụy, mà dịu dàng, chân thành – như một người bạn lặng lẽ đồng hành.",
+    keywords: [ "playlist thổn thức tình yêu", "một nốt trầm trong tim", "nhạc buồn nhẹ", "nhạc ballad", "nhạc Việt", "playlist cảm xúc", "nhạc sâu lắng" ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]], // Nhạc Việt, Ballad, Playlist cảm xúc
     image: tram.src,
     banner: live.src,
@@ -184,6 +188,8 @@ export const playlistsData: PlaylistPost[] = [
     id: 3,
     slug: "playlist-truong-thanh-khi-ta-du-lon-de-hieu-minh",
     title: "Playlist Trưởng Thành: Khi Ta Đủ Lớn Để Hiểu Mình",
+    desc: "Khám phá playlist trưởng thành Khi Ta Đủ Lớn Để Hiểu Mình – nơi âm nhạc kể câu chuyện về hành trình lớn lên: từ những tổn thương đầu đời, những lần vấp ngã, đến khoảnh khắc tỉnh thức và biết yêu thương chính mình. Đây không phải playlist để buồn, mà để hiểu – hiểu bản thân, hiểu cuộc đời, hiểu rằng trưởng thành là học cách bước đi dù đau. Mỗi bài hát là một cột mốc: từ rap tự sự của Đen Vâu, ballad day dứt của Vũ, đến những giai điệu nhẹ nhàng chữa lành. Dành cho ai từng lạc lối, từng khóc trong đêm, từng nghĩ mình không thể vượt qua – nhưng rồi vẫn đứng dậy. Trưởng thành không phải là không đau, mà là đau rồi vẫn chọn đi tiếp. Hãy bật playlist này khi bạn cần một người bạn âm nhạc để đồng hành trên hành trình trưởng thành – để bạn nhận ra: bạn đã lớn hơn bạn nghĩ.",
+    keywords: [ "playlist trưởng thành", "khi ta đủ lớn để hiểu mình", "nhạc rap tự sự", "nhạc ballad", "nhạc nhẹ nhàng", "nhạc Việt", "playlist cảm xúc", "nhạc chữa lành" ],
     categories: [categoriesData[0], categoriesData[7], categoriesData[19]], // Nhạc Việt, Ballad, Playlist cảm xúc
     image: chualanh.src,
     banner: buocqua.src,
@@ -259,6 +265,8 @@ export const playlistsData: PlaylistPost[] = [
     id: 4,
     slug: "hit-vpop-2023-2025",
     title: "Hit V-Pop 2023-2025: Những Bài Hot Nhất, Trending Nhất",
+    desc: "Khám phá playlist Hit V-Pop 2023-2025 – tổng hợp những ca khúc đang làm mưa làm gió trên mọi nền tảng",
+    keywords: [ "hit V-pop 2023", "hit V-pop 2024", "hit V-pop 2025", "nhạc Việt hot", "nhạc Việt trending", "playlist V-pop", "nhạc trẻ Việt Nam" ],
     categories: [categoriesData[0], categoriesData[15], categoriesData[24]],
     image: cao.src,
     banner: longlay.src,
@@ -360,7 +368,10 @@ export const playlistsData: PlaylistPost[] = [
     slug: "top-indie-folk-songs-2024-2025",
     title:
       "Top Indie Folk Songs 2024-2025: Best Acoustic Chill Tracks for Relaxation, Study, and Road Trips",
-    categories: [
+    desc:"Khám phá top bài hát indie folk 2024-2025 – những ca khúc acoustic nhẹ nhàng, sâu lắng, mang đến không gian thư giãn hoàn hảo cho học tập, làm việc hay đường dài.",
+    keywords:["top indie folk songs 2024", "top indie folk songs 2025", "indie folk tracks 2024", "indie folk tracks 2025", "acoustic chill music", "indie folk playlist", "indie folk relaxing music"],
+
+      categories: [
       categoriesData[5],
       categoriesData[6],
       categoriesData[11],
@@ -466,7 +477,19 @@ export const playlistsData: PlaylistPost[] = [
     slug: "lofi-beats-study-focus-2024-2025",
     title:
       "Lofi Beats Study & Focus 2024-2025: Nhạc Lofi Chill Học Bài, Làm Việc, Tập Trung Không Phân Tâm",
-    categories: [
+    desc:
+      "Chào mừng bạn đến với Lofi Beats Study & Focus 2024-2025 – playlist lofi chill được thiết kế riêng cho việc học bài, làm việc, tập trung sâu và thư giãn tinh thần.",
+    keywords: [
+      "lofi beats study 2024",
+      "lofi beats study 2025",
+      "lofi chill học bài",
+
+      "nhạc lofi tập trung",
+      "lofi chill làm việc",
+      "playlist lofi học tập",
+      "nhạc lofi thư giãn",
+    ],
+      categories: [
       categoriesData[9],
       categoriesData[6],
       categoriesData[19],
@@ -575,6 +598,17 @@ export const playlistsData: PlaylistPost[] = [
     slug: "20-bai-nhac-dam-cuoi-mien-tay-co-dien",
     title:
       "20 Bài Nhạc Đám Cưới Miền Tây Cổ Điển – Giai Điệu Ngọt Ngào Cho Ngày Vui",
+    desc:
+      "Khám phá tuyển tập 20 bài nhạc đám cưới miền Tây cổ điển, mang đậm nét trữ tình, ngọt ngào và đậm chất sông nước, lý tưởng cho không gian lễ cưới truyền thống.",
+    keywords: [ 
+      "nhạc đám cưới miền Tây cổ điển",
+      "bài hát đám cưới miền Tây",
+      "nhạc cưới trữ tình miền Tây",
+      "playlist nhạc đám cưới miền Tây",
+      "nhạc đám cưới bolero miền Tây",
+      "nhạc cưới miền Tây hay nhất",
+      "nhạc đám cưới dân ca miền Tây",
+    ],
     categories: [categoriesData[0], categoriesData[47], categoriesData[48]],
     image: dcmt1.src,
     banner: dcmt2.src,
@@ -690,6 +724,17 @@ export const playlistsData: PlaylistPost[] = [
     slug: "nhac-tre-cuoi-hay-nhat-cho-le-cuoi",
     title:
       "20 Bài Nhạc Trẻ Cưới Hay Nhất – Ngọt Ngào, Hiện Đại, Cảm Xúc Dâng Trào",
+    desc:
+      "Khám phá tuyển tập 20 bài nhạc trẻ cưới hay nhất, kết hợp giữa những bản ballad cảm xúc và giai điệu sôi động hiện đại, lý tưởng cho ngày trọng đại của bạn.",
+    keywords: [
+      "nhạc trẻ cưới hay nhất",
+      "bài hát đám cưới nhạc trẻ",
+      "playlist nhạc trẻ cưới",
+      "nhạc cưới Vpop hiện đại",
+      "nhạc trẻ lễ cưới 2025",
+      "nhạc trẻ đám cưới viral",
+      "nhạc trẻ lễ cưới cảm xúc",
+    ],
     categories: [categoriesData[0], categoriesData[47], categoriesData[48]],
     image: dc.src,
     banner: dc2.src,
