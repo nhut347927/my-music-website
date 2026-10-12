@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-foreground shrink-0" />
-              <span className="text-sm">nhut2846@gmail.com</span>
+              <span className="text-sm">nhutnm379.work@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-foreground shrink-0" />
@@ -58,7 +58,7 @@ export default function Footer() {
                 href="/about"
                 className="hover:text-foreground transition-colors"
               >
-                Về chúng tôi
+                Giới thiệu &amp; Bản quyền (DMCA)
               </Link>
             </li>
             <li>
@@ -66,7 +66,7 @@ export default function Footer() {
                 href="/pages/lyrics"
                 className="hover:text-foreground transition-colors"
               >
-                Lyrics
+                Lyrics &amp; Cảm nhận
               </Link>
             </li>
             <li>
@@ -149,10 +149,17 @@ export default function Footer() {
 
       {/* Dòng cuối - Copyright */}
       <div className="border-t border-neutral-200 dark:border-neutral-800 mt-10 pt-6 pb-8 text-center px-4">
-        <p className="text-xs text-neutral-500 dark:text-neutral-500 leading-relaxed">
-          Copyright © {new Date().getFullYear()}{" "}
+        <p className="text-xs text-neutral-500 dark:text-neutral-500 leading-relaxed flex items-center justify-center gap-1.5">
+          <span>Copyright © {new Date().getFullYear()}</span>
           <span className="font-semibold text-foreground">Moe</span>. Mọi quyền
           được bảo lưu.
+          <Link
+            href="/admin"
+            className="opacity-20 hover:opacity-100 transition-opacity p-0.5 ml-1 text-neutral-400 hover:text-rose-500"
+            title="Đăng nhập trang Quản trị viên"
+          >
+            🔒
+          </Link>
         </p>
       </div>
     </footer>

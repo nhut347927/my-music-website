@@ -65,7 +65,59 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LyricsPage() {
+import { getSongs, getCurrentSong, SongLyricRecord } from "@/services/music-supabase-service";
+import { LyricPost } from "@/app/types/type";
+
+export const revalidate = 60;
+
+export default async function LyricsPage() {
+  let initialSongs: LyricPost[] = [];
+  let initialCurrentSong: SongLyricRecord | null = null;
+
+  try {
+    const [songsRes, currentSong] = await Promise.all([
+      getSongs({ page: 1, limit: 200, onlyActive: true }),
+      getCurrentSong(),
+    ]);
+
+    if (songsRes && songsRes.data && songsRes.data.length > 0) {
+      initialSongs = songsRes.data.map((item) => ({
+        id: item.id || 0,
+        type: "lyrics" as const,
+        slug: item.slug,
+        title: item.title,
+        artist: item.artist,
+        composer: item.composer || item.artist,
+        producer: item.producer || "",
+        year: item.year || "2024",
+        duration: item.duration || "03:45",
+        desc: item.desc || "",
+        keywords: [],
+        categories: item.categories && item.categories.length > 0 ? item.categories : [],
+        image: item.image_base64 || "",
+        singerPhoto: item.singer_photo_base64 || "",
+        audio: item.audio_url || item.spotify_url || "",
+        spotifyUrl: item.spotify_url,
+        spotifyTrackId: item.spotify_track_id,
+        vibe: item.vibe,
+        genre: item.genre,
+        mood: item.mood,
+        story: item.story,
+        instruments: item.instruments,
+        lyrics: item.lyrics || [],
+        views: item.views || 0,
+        date: item.created_at || "2025-01-01",
+        otherSongs: [],
+        userNameComment: "Admin",
+        userRoleComment: "Music Editor",
+        comment: "",
+      }));
+    }
+    initialCurrentSong = currentSong;
+  } catch (err) {
+    console.warn("Notice server pre-fetching for lyrics page:", err);
+  }
+
   // Schema.org (Article)
   const schemaData = {
     "@context": "https://schema.org",
@@ -128,7 +180,7 @@ export default function LyricsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      <LyricsClient />
+      <LyricsClient initialSongs={initialSongs} initialCurrentSong={initialCurrentSong} />
     </>
   );
 }

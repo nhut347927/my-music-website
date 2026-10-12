@@ -1,8 +1,8 @@
-import { playlistsData } from "@/app/data/playlists-data";
 import { PlaylistPost } from "@/app/types/type";
 import PlaylistDetailClient from "./playlist-detail-client";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getPlaylistBySlug, getPlaylists, PlaylistRecord } from "@/services/music-supabase-service";
 
 interface PlaylistDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -15,7 +15,6 @@ const defaultIcons = {
 };
 
 const getPlaylistDescription = (playlist: PlaylistPost): string => {
-  
   return (
     playlist.desc?.trim() || "Khám phá những playlist âm nhạc đa dạng và cảm xúc tại Moe."
   );
@@ -23,6 +22,26 @@ const getPlaylistDescription = (playlist: PlaylistPost): string => {
 
 const getPublishDate = (playlist: PlaylistPost): string =>
   playlist.date ? new Date(playlist.date).toISOString() : new Date().toISOString();
+
+function recordToPlaylistPost(record: PlaylistRecord): PlaylistPost {
+  return {
+    id: record.id || 0,
+    type: "playlists" as const,
+    slug: record.slug,
+    title: record.title,
+    desc: record.desc || "",
+    description: record.description || record.desc || "",
+    keywords: record.keywords || [],
+    categories: record.categories || [],
+    image: record.image || "",
+    banner: record.banner || record.image || "",
+    songs: record.songs || [],
+    mood: record.mood || "",
+    final: record.final || "",
+    views: record.views || 0,
+    date: record.date || "2025-01-01",
+  };
+}
 
 export async function generateMetadata({
   params,
@@ -37,8 +56,9 @@ export async function generateMetadata({
     };
   }
 
-  const playlist = playlistsData.find((p) => p.slug === slug);
-  if (!playlist) {
+  const record = await getPlaylistBySlug(slug);
+
+  if (!record) {
     return {
       title: "Playlist không tồn tại | Moe",
       description: "Không tìm thấy playlist.",
@@ -46,6 +66,7 @@ export async function generateMetadata({
     };
   }
 
+  const playlist = recordToPlaylistPost(record);
   const description = getPlaylistDescription(playlist);
   const canonicalUrl = `https://moe.io.vn/pages/playlists/${slug}`;
   const imageUrl = playlist.banner || playlist.image || "https://moe.io.vn/logo.png";
@@ -91,9 +112,14 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return playlistsData.map((playlist) => ({
-    slug: playlist.slug,
-  }));
+  try {
+    const res = await getPlaylists({ limit: 1000, onlyActive: true });
+    return (res.data || []).map((playlist) => ({
+      slug: playlist.slug,
+    }));
+  } catch {
+    return [];
+  }
 }
 
 export default async function PlaylistDetailPage({
@@ -102,9 +128,10 @@ export default async function PlaylistDetailPage({
   const { slug } = await params;
   if (!slug || typeof slug !== "string") notFound();
 
-  const playlist = playlistsData.find((p) => p.slug === slug);
-  if (!playlist) notFound();
+  const record = await getPlaylistBySlug(slug);
+  if (!record) notFound();
 
+  const playlist = recordToPlaylistPost(record);
   const canonicalUrl = `https://moe.io.vn/pages/playlists/${slug}`;
   const imageUrl = playlist.banner || playlist.image || "https://moe.io.vn/logo.png";
   const publishDate = getPublishDate(playlist);
@@ -139,29 +166,19 @@ export default async function PlaylistDetailPage({
         url: canonicalUrl,
         name: playlist.title,
         description: getPlaylistDescription(playlist),
+        numTracks: playlist.songs.length,
         image: {
           "@type": "ImageObject",
           url: imageUrl,
         },
         datePublished: publishDate,
-        genre: playlist.categories?.map((cat) => cat.name) || [],
-        numTracks: playlist.songs.length,
-        track: {
-          "@type": "ItemList",
-          itemListElement: playlist.songs.map((song, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            item: {
-              "@type": "MusicRecording",
-              name: song.name,
-              byArtist: {
-                "@type": "MusicGroup",
-                name: song.name || "Unknown Artist", // fallback nếu có artist
-              },
-              url: song.youtube,
-            },
-          })),
-        },
+        track: playlist.songs.map((song, index) => ({
+          "@type": "MusicRecording",
+          position: index + 1,
+          name: song.name,
+          description: song.desc,
+          url: song.youtube,
+        })),
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": canonicalUrl,

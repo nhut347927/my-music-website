@@ -1,33 +1,37 @@
 "use client";
 
 import React from "react";
-import { categoriesData } from "@/app/data/category-data";
+import Link from "next/link";
+import { Sparkles } from "lucide-react";
+import { categoriesData } from "@/lib/constants/category-data";
 
 export default function CategoryMarquee() {
-  return (
-    <div
-      className="
-        py-4 overflow-hidden relative
-      "
-    >
-     
+  const displayCategories = categoriesData.slice(0, 24);
 
-      <div className="flex animate-marquee whitespace-nowrap">
-        {[...categoriesData, ...categoriesData].map((cat, index) => (
-          <div
+  return (
+    <div className="py-2 overflow-hidden relative group">
+      {/* Left and Right Fade Overlays */}
+      <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+      <div className="flex animate-marquee whitespace-nowrap gap-3 hover:[animation-play-state:paused]">
+        {[...displayCategories, ...displayCategories].map((cat, index) => (
+          <Link
             key={index}
+            href={`/pages/lyrics?category=${encodeURIComponent(cat.name)}`}
             className="
-              mx-4 inline-flex items-center justify-center
-              px-6 py-2 rounded-full text-sm font-medium
-              bg-white text-gray-800 border border-gray-200
-              hover:bg-gray-100 transition-all duration-300
-              dark:bg-gray-700/50 dark:text-white dark:border-gray-600
-              dark:hover:bg-gray-600/70
-              backdrop-blur-sm select-none
+              inline-flex items-center gap-1.5
+              px-4 py-2 rounded-full text-xs font-semibold
+              bg-background/80 text-neutral-700 dark:text-neutral-300
+              border border-neutral-200/80 dark:border-neutral-800/80
+              hover:border-neutral-900 hover:text-neutral-900 hover:bg-neutral-100 dark:hover:border-white dark:hover:text-white dark:hover:bg-neutral-800
+              transition-all duration-300 shadow-2xs backdrop-blur-md
+              select-none shrink-0 cursor-pointer
             "
           >
-            {cat.name}
-          </div>
+            <Sparkles className="w-3 h-3 text-neutral-400" />
+            <span>{cat.name}</span>
+          </Link>
         ))}
       </div>
     </div>

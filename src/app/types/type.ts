@@ -28,12 +28,20 @@ export interface LyricPost extends BasePost {
   lyrics: Lyric[]; // mảng lời bài hát
   singerPhoto: string | any; // ảnh ca sĩ
   audio: string | any; // audio.mp3
+  spotifyTrackId?: string; // Spotify Track ID
+  spotifyUrl?: string; // Link bài hát trên Spotify
+  vibe?: string; // Vibe cảm xúc
+  genre?: string; // Thể loại âm nhạc
+  story?: string; // Hoàn cảnh sáng tác & Câu chuyện bài hát
+  mood?: string; // Tâm trạng phù hợp
+  instruments?: string[]; // Nhạc cụ nổi bật
   composer: string; // tên nhạc sĩ
   producer: string; // tên nhà sản xuất
   otherSongs: string[];
   userCommentAvatar?: string;
   userNameComment: string;
-  userRoleComment: string;
+  userRoleComment?: string;
+  quote?: string; // Trích dẫn câu hát nổi bật (cho Trang chủ & Chia sẻ)
   comment: string;
 }
 

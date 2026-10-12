@@ -5,7 +5,9 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import Header from "@/app/components/layout/header";
 import Footer from "./components/layout/footer";
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+import VisitorTracker from "@/app/components/layout/visitor-tracker";
+import FloatingActions from "@/app/components/items/floating-actions";
+const inter = Inter({ subsets: ["latin", "vietnamese"], display: "swap" });
 
 // ── CHỈ THÊM ĐOẠN NÀY (1 CHỖ DUY NHẤT) ─────────────────────────────────────
 // export const metadata: Metadata = {
@@ -23,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="vi" suppressHydrationWarning>
       <head />
-      <body className={`${inter.className} bg-background text-foreground`}>
+      <body suppressHydrationWarning className={`${inter.className} bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <VisitorTracker />
           {/* Background Video */}
           <div className="fixed inset-0 -z-10 overflow-hidden">
             <video
@@ -50,6 +53,7 @@ export default function RootLayout({
           <Header />
           <main className="max-w-6xl mx-auto p-4">{children}</main>
           <Footer />
+          <FloatingActions />
 
           <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-X22ZH1QRQ6"
