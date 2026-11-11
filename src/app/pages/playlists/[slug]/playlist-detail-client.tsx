@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Disc, Eye, Calendar, ChevronRight, ListMusic, Sparkles, Music2, Share2 } from "lucide-react";
 import { PlaylistPost } from "@/app/types/type";
-import { getPlaylists } from "@/services/music-supabase-service";
 import { usePostViewTracker } from "@/hooks/use-post-view-tracker";
 import defaultTree from "@/app/asset/tree1.jpg";
 import ReadingProgressBar from "@/app/components/items/reading-progress-bar";
@@ -14,10 +13,14 @@ import EmotionReactions from "@/app/components/items/emotion-reactions";
 
 interface PlaylistDetailClientProps {
   playlist: PlaylistPost;
+  prevPlaylist?: { slug: string; title: string };
+  nextPlaylist?: { slug: string; title: string };
 }
 
 export default function PlaylistDetailClient({
   playlist,
+  prevPlaylist,
+  nextPlaylist,
 }: PlaylistDetailClientProps) {
   const { views } = usePostViewTracker({
     type: "playlists",
@@ -26,21 +29,6 @@ export default function PlaylistDetailClient({
   });
 
   const [isTocOpen, setIsTocOpen] = useState(true);
-  const [allPlaylists, setAllPlaylists] = useState<Array<{ slug: string; title: string }>>([]);
-
-  useEffect(() => {
-    async function loadPlaylists() {
-      try {
-        const res = await getPlaylists({ limit: 100, onlyActive: true });
-        if (res && res.data) {
-          setAllPlaylists(res.data.map((p) => ({ slug: p.slug, title: p.title })));
-        }
-      } catch (err) {
-        console.warn("Notice loading playlists list:", err);
-      }
-    }
-    loadPlaylists();
-  }, []);
 
   // Tạo mục lục từ tên các bài hát trong playlist
   const headings = playlist.songs.map((song, index) => ({
@@ -48,25 +36,6 @@ export default function PlaylistDetailClient({
     title: song.name,
     slug: `song-${index + 1}`,
   }));
-
-  // Tìm bài playlist trước/sau để gợi ý liên quan
-  const currentIndex = allPlaylists.findIndex((p) => p.slug === playlist.slug);
-
-  const prevPlaylist =
-    currentIndex > 0
-      ? {
-          slug: allPlaylists[currentIndex - 1].slug,
-          title: allPlaylists[currentIndex - 1].title,
-        }
-      : undefined;
-
-  const nextPlaylist =
-    currentIndex !== -1 && currentIndex < allPlaylists.length - 1
-      ? {
-          slug: allPlaylists[currentIndex + 1].slug,
-          title: allPlaylists[currentIndex + 1].title,
-        }
-      : undefined;
 
   const getEmbedUrl = (url: string) => {
     if (!url) return "";

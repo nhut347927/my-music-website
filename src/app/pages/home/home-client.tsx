@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -30,9 +30,6 @@ import tree6 from "../../asset/tree6.jpg";
 import CategoryMarquee from "@/app/components/items/category-marquee";
 import CurrentSongBanner from "@/app/components/items/current-song-banner";
 import {
-  getSongs,
-  getPlaylists,
-  getBlogs,
   recordVisitorEntranceNonBlocking,
   SongLyricRecord,
 } from "@/services/music-supabase-service";
@@ -150,12 +147,12 @@ export default function HomeClient({
   initialCounts = { songs: 59, playlists: 8, blogs: 7 },
 }: HomeClientProps = {}) {
   const router = useRouter();
-  const [latestLyrics, setLatestLyrics] = useState<Post[]>(initialLyrics);
-  const [latestPlaylists, setLatestPlaylists] = useState<Post[]>(initialPlaylists);
-  const [latestBlogs, setLatestBlogs] = useState<Post[]>(initialBlogs);
-  const [totalCounts, setTotalCounts] = useState(initialCounts);
+  const latestLyrics = initialLyrics;
+  const latestPlaylists = initialPlaylists;
+  const latestBlogs = initialBlogs;
+  const totalCounts = initialCounts;
   const [heroSearch, setHeroSearch] = useState("");
-  const [quoteList, setQuoteList] = useState<MusicalQuote[]>(curatedQuotes);
+  const quoteList = curatedQuotes;
   const [quoteIndex, setQuoteIndex] = useState(0);
 
   const currentQuote = quoteList[quoteIndex % quoteList.length] || curatedQuotes[0];
@@ -183,112 +180,8 @@ export default function HomeClient({
     // Randomize initial quote on client mount to prevent SSR hydration mismatch
     setQuoteIndex(Math.floor(Math.random() * curatedQuotes.length));
 
-    // 1. Ghi nhận lượt truy cập của khách vào trang chủ (bất đồng bộ)
+    // Ghi nhận lượt truy cập của khách vào trang chủ (bất đồng bộ)
     recordVisitorEntranceNonBlocking({ page: "/" });
-
-    // 2. Tải dữ liệu mới nhất từ Supabase Cloud (làm mới ngầm hoặc nạp nếu chưa có)
-    async function loadDynamicContent() {
-      try {
-        const [songsRes, playlistsRes, blogsRes] = await Promise.all([
-          getSongs({ page: 1, limit: 12, onlyActive: true }),
-          getPlaylists({ page: 1, limit: 3 }),
-          getBlogs({ page: 1, limit: 3 }),
-        ]);
-
-        if (songsRes && songsRes.data && songsRes.data.length > 0) {
-          const mappedLyrics: LyricPost[] = songsRes.data.slice(0, 3).map((item) => {
-            return {
-              id: item.id || 0,
-              type: "lyrics" as const,
-              slug: item.slug,
-              title: item.title,
-              artist: item.artist,
-              composer: item.composer || item.artist,
-              producer: item.producer || "",
-              year: item.year || "2024",
-              duration: item.duration || "03:45",
-              desc: item.desc || "",
-              keywords: [],
-              categories: item.categories || [],
-              image: item.image_base64 || "",
-              singerPhoto: item.singer_photo_base64 || "",
-              audio: item.audio_url || item.spotify_url || "",
-              spotifyUrl: item.spotify_url,
-              spotifyTrackId: item.spotify_track_id,
-              vibe: item.vibe,
-              genre: item.genre,
-              mood: item.mood,
-              story: item.story,
-              instruments: item.instruments,
-              lyrics: item.lyrics || [],
-              views: item.views || 0,
-              date: item.created_at || "2025-01-01",
-              otherSongs: [],
-              userNameComment: "Admin",
-              userRoleComment: "Music Editor",
-              comment: "",
-            };
-          });
-          setLatestLyrics(mappedLyrics);
-        }
-
-        if (playlistsRes && playlistsRes.data && playlistsRes.data.length > 0) {
-          const mappedPlaylists: PlaylistPost[] = playlistsRes.data.map((item) => {
-            return {
-              id: item.id || 0,
-              type: "playlists" as const,
-              slug: item.slug,
-              title: item.title,
-              desc: item.desc || "",
-              description: item.description || item.desc || "",
-              keywords: item.keywords || [],
-              categories: item.categories || [],
-              image: item.image || "",
-              banner: item.banner || item.image || "",
-              songs: item.songs || [],
-              mood: item.mood || "",
-              final: item.final || "",
-              views: item.views || 0,
-              date: item.date || item.created_at || "2025-01-01",
-            };
-          });
-          setLatestPlaylists(mappedPlaylists);
-        }
-
-        if (blogsRes && blogsRes.data && blogsRes.data.length > 0) {
-          const mappedBlogs: BlogsPost[] = blogsRes.data.map((item) => {
-            return {
-              id: item.id || 0,
-              type: "blogs" as const,
-              slug: item.slug,
-              title: item.title,
-              desc: item.desc || "",
-              keywords: item.keywords || [],
-              categories: item.categories || [],
-              image: item.image || "",
-              paragraphs: (item.paragraphs as any) || [],
-              userCommentAvatar: item.user_comment_avatar,
-              userNameComment: item.user_name_comment || "Admin",
-              userRoleComment: item.user_role_comment || "Editor",
-              comment: item.comment || "",
-              views: item.views || 0,
-              date: item.date || item.created_at || "2025-01-01",
-            };
-          });
-          setLatestBlogs(mappedBlogs);
-        }
-
-        setTotalCounts({
-          songs: songsRes?.total || (songsRes?.data ? songsRes.data.length : 59),
-          playlists: playlistsRes?.total || (playlistsRes?.data ? playlistsRes.data.length : 8),
-          blogs: blogsRes?.total || (blogsRes?.data ? blogsRes.data.length : 7),
-        });
-      } catch (err) {
-        console.warn("Notice loading dynamic content for home:", err);
-      }
-    }
-
-    loadDynamicContent();
   }, []);
 
   return (

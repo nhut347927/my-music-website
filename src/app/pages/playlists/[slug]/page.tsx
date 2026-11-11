@@ -2,7 +2,14 @@ import { PlaylistPost } from "@/app/types/type";
 import PlaylistDetailClient from "./playlist-detail-client";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPlaylistBySlug, getPlaylists, PlaylistRecord } from "@/services/music-supabase-service";
+import {
+  getStaticPlaylistBySlug,
+  getStaticPlaylists,
+  recordToPlaylistPost,
+  toAbsoluteSiteUrl,
+} from "@/services/static-music-data";
+
+export const dynamicParams = false;
 
 interface PlaylistDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -23,26 +30,6 @@ const getPlaylistDescription = (playlist: PlaylistPost): string => {
 const getPublishDate = (playlist: PlaylistPost): string =>
   playlist.date ? new Date(playlist.date).toISOString() : new Date().toISOString();
 
-function recordToPlaylistPost(record: PlaylistRecord): PlaylistPost {
-  return {
-    id: record.id || 0,
-    type: "playlists" as const,
-    slug: record.slug,
-    title: record.title,
-    desc: record.desc || "",
-    description: record.description || record.desc || "",
-    keywords: record.keywords || [],
-    categories: record.categories || [],
-    image: record.image || "",
-    banner: record.banner || record.image || "",
-    songs: record.songs || [],
-    mood: record.mood || "",
-    final: record.final || "",
-    views: record.views || 0,
-    date: record.date || "2025-01-01",
-  };
-}
-
 export async function generateMetadata({
   params,
 }: PlaylistDetailPageProps): Promise<Metadata> {
@@ -56,7 +43,7 @@ export async function generateMetadata({
     };
   }
 
-  const record = await getPlaylistBySlug(slug);
+  const record = getStaticPlaylistBySlug(slug);
 
   if (!record) {
     return {
@@ -69,7 +56,13 @@ export async function generateMetadata({
   const playlist = recordToPlaylistPost(record);
   const description = getPlaylistDescription(playlist);
   const canonicalUrl = `https://moe.io.vn/pages/playlists/${slug}`;
-  const imageUrl = playlist.banner || playlist.image || "https://moe.io.vn/logo.png";
+  const rawImg =
+    typeof playlist.banner === "string" && playlist.banner
+      ? playlist.banner
+      : typeof playlist.image === "string"
+      ? playlist.image
+      : "";
+  const imageUrl = toAbsoluteSiteUrl(rawImg);
 
   return {
     title: `${playlist.title} | Moe`,
@@ -112,14 +105,10 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  try {
-    const res = await getPlaylists({ limit: 1000, onlyActive: true });
-    return (res.data || []).map((playlist) => ({
-      slug: playlist.slug,
-    }));
-  } catch {
-    return [];
-  }
+  const res = getStaticPlaylists({ limit: 1000 });
+  return res.data.map((playlist) => ({
+    slug: playlist.slug,
+  }));
 }
 
 export default async function PlaylistDetailPage({
@@ -128,12 +117,29 @@ export default async function PlaylistDetailPage({
   const { slug } = await params;
   if (!slug || typeof slug !== "string") notFound();
 
-  const record = await getPlaylistBySlug(slug);
+  const record = getStaticPlaylistBySlug(slug);
   if (!record) notFound();
 
   const playlist = recordToPlaylistPost(record);
+  const allPlaylists = getStaticPlaylists({ limit: 500 }).data;
+  const currentIndex = allPlaylists.findIndex((p) => p.slug === playlist.slug);
+  const prevPlaylist =
+    currentIndex > 0
+      ? { slug: allPlaylists[currentIndex - 1].slug, title: allPlaylists[currentIndex - 1].title }
+      : undefined;
+  const nextPlaylist =
+    currentIndex !== -1 && currentIndex < allPlaylists.length - 1
+      ? { slug: allPlaylists[currentIndex + 1].slug, title: allPlaylists[currentIndex + 1].title }
+      : undefined;
+
   const canonicalUrl = `https://moe.io.vn/pages/playlists/${slug}`;
-  const imageUrl = playlist.banner || playlist.image || "https://moe.io.vn/logo.png";
+  const rawImg =
+    typeof playlist.banner === "string" && playlist.banner
+      ? playlist.banner
+      : typeof playlist.image === "string"
+      ? playlist.image
+      : "";
+  const imageUrl = toAbsoluteSiteUrl(rawImg);
   const publishDate = getPublishDate(playlist);
 
   const schemaData = {
@@ -220,7 +226,11 @@ export default async function PlaylistDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      <PlaylistDetailClient playlist={playlist} />
+      <PlaylistDetailClient
+        playlist={playlist}
+        prevPlaylist={prevPlaylist}
+        nextPlaylist={nextPlaylist}
+      />
     </>
   );
 }

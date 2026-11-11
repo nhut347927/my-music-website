@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -19,14 +19,11 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { LyricPost } from "@/app/types/type";
 import { usePostViewTracker } from "@/hooks/use-post-view-tracker";
-import { getSongBySlug, getSongs } from "@/services/music-supabase-service";
 import {
+  ArtistSongItem,
   getCopyrightSafeLyricsExcerpt,
   getSpotifyInfo,
   getSongVibeProfile,
-  getSongsByComposer,
-  getArtistDiscography,
-  getSimilarVibeSongs,
 } from "@/lib/song-vibe-helper";
 import Spotify30sPlayer from "@/app/components/items/spotify-player";
 import ReadingProgressBar from "@/app/components/items/reading-progress-bar";
@@ -36,81 +33,22 @@ import LyricReaderControls from "@/app/components/items/lyric-reader-controls";
 
 interface LyricsDetailClientProps {
   song: LyricPost;
+  composerSongs?: LyricPost[];
+  artistDiscography?: ArtistSongItem[];
+  similarSongs?: LyricPost[];
+  prevSong?: { slug: string; title: string };
+  nextSong?: { slug: string; title: string };
 }
 
-export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
-  const [liveSong, setLiveSong] = useState<LyricPost>(song);
-  const [allSongs, setAllSongs] = useState<LyricPost[]>([]);
-
-  // Cập nhật dữ liệu mới nhất từ Supabase Cloud khi vào trang
-  useEffect(() => {
-    async function loadFreshSong() {
-      try {
-        const record = await getSongBySlug(song.slug);
-        if (record && !record.isLocalFallback) {
-          setLiveSong((prev) => ({
-            ...prev,
-            spotifyUrl: record.spotify_url || prev.spotifyUrl,
-            spotifyTrackId: record.spotify_track_id || prev.spotifyTrackId,
-            audio: record.audio_url || record.spotify_url || prev.audio,
-            title: record.title || prev.title,
-            artist: record.artist || prev.artist,
-            composer: record.composer || prev.composer,
-            producer: record.producer || prev.producer,
-            views: record.views || prev.views,
-            lyrics: record.lyrics && record.lyrics.length > 0 ? record.lyrics : prev.lyrics,
-          }));
-        }
-      } catch (err) {
-        console.warn("Could not load dynamic song updates:", err);
-      }
-    }
-
-    async function loadAllSongs() {
-      try {
-        const res = await getSongs({ limit: 100, onlyActive: true });
-        if (res && res.data) {
-          const mapped: LyricPost[] = res.data.map((item) => ({
-            id: item.id || 0,
-            type: "lyrics" as const,
-            slug: item.slug,
-            title: item.title,
-            artist: item.artist,
-            composer: item.composer || item.artist,
-            producer: item.producer || "",
-            year: item.year || "2024",
-            duration: item.duration || "03:45",
-            desc: item.desc || "",
-            keywords: [],
-            categories: item.categories || [],
-            image: item.image_base64 || "",
-            singerPhoto: item.singer_photo_base64 || "",
-            audio: item.audio_url || item.spotify_url || "",
-            spotifyUrl: item.spotify_url,
-            spotifyTrackId: item.spotify_track_id,
-            vibe: item.vibe,
-            genre: item.genre,
-            mood: item.mood,
-            story: item.story,
-            instruments: item.instruments,
-            lyrics: item.lyrics || [],
-            views: item.views || 0,
-            date: item.created_at || "2025-01-01",
-            otherSongs: [],
-            userNameComment: "Admin",
-            userRoleComment: "Music Editor",
-            comment: "",
-          }));
-          setAllSongs(mapped);
-        }
-      } catch (err) {
-        console.warn("Could not load all songs for sidebar/relations:", err);
-      }
-    }
-
-    loadFreshSong();
-    loadAllSongs();
-  }, [song.slug]);
+export default function LyricsDetailClient({
+  song,
+  composerSongs = [],
+  artistDiscography: initialArtistDiscography,
+  similarSongs = [],
+  prevSong,
+  nextSong,
+}: LyricsDetailClientProps) {
+  const liveSong = song;
 
   const { views } = usePostViewTracker({
     type: "lyrics",
@@ -131,19 +69,7 @@ export default function LyricsDetailClient({ song }: LyricsDetailClientProps) {
 
   // Vibe profile
   const vibeProfile = getSongVibeProfile(liveSong);
-
-  // Bài hát cùng nhạc sĩ & danh mục bài hát ca sĩ
-  const composerSongs = getSongsByComposer(liveSong.composer, liveSong.slug, allSongs);
-  const artistDiscography = getArtistDiscography(liveSong, allSongs);
-
-  // Bài hát cùng vibe
-  const similarSongs = getSimilarVibeSongs(liveSong, allSongs);
-
-  // Bài hát trước / sau
-  const currentIndex = allSongs.findIndex((l) => l.slug === liveSong.slug);
-  const prevSong = currentIndex > 0 ? allSongs[currentIndex - 1] : undefined;
-  const nextSong =
-    currentIndex !== -1 && currentIndex < allSongs.length - 1 ? allSongs[currentIndex + 1] : undefined;
+  const artistDiscography = initialArtistDiscography || [];
 
   // Xử lý sao chép trích đoạn lời
   const handleCopyExcerpt = async () => {

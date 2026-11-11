@@ -15,7 +15,7 @@ import { Search, Heart, X, Disc, Sparkles, Loader2 } from "lucide-react";
 import PostCard from "@/app/components/items/post-card";
 import { Post, PlaylistPost } from "@/app/types/type";
 import { categoriesData } from "@/lib/constants/category-data";
-import { getPlaylists, recordVisitorEntranceNonBlocking } from "@/services/music-supabase-service";
+import { recordVisitorEntranceNonBlocking } from "@/services/music-supabase-service";
 
 interface PlaylistsClientProps {
   initialPlaylists?: PlaylistPost[];
@@ -26,8 +26,8 @@ function PlaylistsContent({ initialPlaylists = [] }: PlaylistsClientProps): JSX.
   const initialCategory = searchParams.get("category") || "Tất cả";
   const initialQuery = searchParams.get("q") || "";
 
-  const [playlistsList, setPlaylistsList] = useState<PlaylistPost[]>(initialPlaylists);
-  const [loading, setLoading] = useState<boolean>(initialPlaylists.length === 0);
+  const playlistsList = initialPlaylists;
+  const loading = false;
   const [search, setSearch] = useState<string>(initialQuery);
   const [category, setCategory] = useState<string>(initialCategory);
   const [onlyFavorites, setOnlyFavorites] = useState<boolean>(false);
@@ -44,43 +44,6 @@ function PlaylistsContent({ initialPlaylists = [] }: PlaylistsClientProps): JSX.
 
   useEffect(() => {
     recordVisitorEntranceNonBlocking({ page: "/pages/playlists" });
-
-    async function fetchSupabasePlaylists() {
-      try {
-        if (playlistsList.length === 0) {
-          setLoading(true);
-        }
-        const res = await getPlaylists({ page: 1, limit: 100 });
-        if (res && res.data && res.data.length > 0) {
-          const mapped: PlaylistPost[] = res.data.map((item) => {
-            return {
-              id: item.id || 0,
-              type: "playlists" as const,
-              slug: item.slug,
-              title: item.title,
-              desc: item.desc || item.description || "",
-              description: item.description || item.desc || "",
-              keywords: item.keywords || [],
-              categories: item.categories || [],
-              image: item.image || "",
-              banner: item.banner || item.image || "",
-              songs: item.songs || [],
-              mood: item.mood || "",
-              final: item.final || "",
-              views: item.views || 0,
-              date: item.date || item.created_at || "2025-01-01",
-            };
-          });
-          setPlaylistsList(mapped);
-        }
-      } catch (err) {
-        console.warn("Notice loading playlists from Supabase:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchSupabasePlaylists();
   }, []);
 
   // 🔍 Lọc dữ liệu

@@ -65,38 +65,11 @@ export const metadata: Metadata = {
   },
 };
 
-import { getBlogs } from "@/services/music-supabase-service";
-import { BlogsPost } from "@/app/types/type";
+import { getStaticBlogs, recordToBlogCard } from "@/services/static-music-data";
 
-export const revalidate = 60;
-
-export default async function BlogPage() {
-  let initialBlogs: BlogsPost[] = [];
-
-  try {
-    const res = await getBlogs({ page: 1, limit: 100 });
-    if (res && res.data && res.data.length > 0) {
-      initialBlogs = res.data.map((item) => ({
-        id: item.id || 0,
-        type: "blogs" as const,
-        slug: item.slug,
-        title: item.title,
-        desc: item.desc || "",
-        keywords: item.keywords || [],
-        categories: item.categories || [],
-        image: item.image || "",
-        paragraphs: (item.paragraphs as any) || [],
-        userCommentAvatar: item.user_comment_avatar || "",
-        userNameComment: item.user_name_comment || "Anonymous",
-        userRoleComment: item.user_role_comment || "Music Editor",
-        comment: item.comment || "",
-        views: item.views || 0,
-        date: item.date || item.created_at || "2025-01-01",
-      }));
-    }
-  } catch (err) {
-    console.warn("Notice server pre-fetching for blogs page:", err);
-  }
+export default function BlogPage() {
+  const res = getStaticBlogs({ page: 1, limit: 500 });
+  const initialBlogs = res.data.map(recordToBlogCard);
 
   // Schema.org (Article)
   const schemaData = {

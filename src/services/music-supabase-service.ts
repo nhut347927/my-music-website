@@ -587,9 +587,6 @@ export async function getCurrentSong(): Promise<SongLyricRecord | null> {
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/lyrics_music?is_current=eq.true&is_active=eq.true&limit=1`,
@@ -733,9 +730,6 @@ export async function getSongs({
         Prefer: 'count=exact',
       },
     };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(url, fetchOptions);
 
@@ -781,9 +775,6 @@ export async function getSongById(id: number): Promise<SongLyricRecord | null> {
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/lyrics_music?id=eq.${id}&select=*&limit=1`,
@@ -815,9 +806,6 @@ export async function getSongBySlug(slug: string): Promise<SongLyricRecord | nul
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/lyrics_music?slug=eq.${encodeURIComponent(slug)}&select=*&limit=1`,
@@ -1036,9 +1024,6 @@ export async function getPlaylists({
         Prefer: 'count=exact',
       },
     };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(url, fetchOptions);
 
@@ -1081,9 +1066,6 @@ export async function getPlaylistById(id: number): Promise<PlaylistRecord | null
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/playlists_music?id=eq.${id}&select=*&limit=1`,
@@ -1115,9 +1097,6 @@ export async function getPlaylistBySlug(slug: string): Promise<PlaylistRecord | 
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/playlists_music?slug=eq.${encodeURIComponent(slug)}&limit=1`,
@@ -1281,9 +1260,6 @@ export async function getBlogs({
         Prefer: 'count=exact',
       },
     };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(url, fetchOptions);
 
@@ -1326,9 +1302,6 @@ export async function getBlogById(id: number): Promise<BlogRecord | null> {
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/blogs_music?id=eq.${id}&select=*&limit=1`,
@@ -1360,9 +1333,6 @@ export async function getBlogBySlug(slug: string): Promise<BlogRecord | null> {
 
   try {
     const fetchOptions: any = { headers: defaultHeaders };
-    if (isServer) {
-      fetchOptions.next = { revalidate: 60 };
-    }
 
     const res = await fetch(
       `${SUPABASE_URL}/rest/v1/blogs_music?slug=eq.${encodeURIComponent(slug)}&limit=1`,

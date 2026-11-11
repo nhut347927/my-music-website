@@ -2,7 +2,20 @@ import { LyricPost } from "@/app/types/type";
 import LyricsDetailClient from "./lyrics-detail-client";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getSongBySlug, getSongs, SongLyricRecord } from "@/services/music-supabase-service";
+import {
+  getStaticSongBySlug,
+  getStaticSongs,
+  recordToLyricPost,
+  recordToLyricCard,
+  toAbsoluteSiteUrl,
+} from "@/services/static-music-data";
+import {
+  getSongsByComposer,
+  getArtistDiscography,
+  getSimilarVibeSongs,
+} from "@/lib/song-vibe-helper";
+
+export const dynamicParams = false;
 
 interface LyricsDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -23,40 +36,6 @@ const getSongDescription = (song: LyricPost): string => {
 const getPublishDate = (song: LyricPost): string =>
   song.date ? new Date(song.date).toISOString() : new Date().toISOString();
 
-function recordToLyricPost(record: SongLyricRecord): LyricPost {
-  return {
-    id: record.id || 0,
-    type: "lyrics" as const,
-    slug: record.slug,
-    title: record.title || "",
-    artist: record.artist || "",
-    composer: record.composer || record.artist || "",
-    producer: record.producer || "",
-    year: record.year || "2024",
-    duration: record.duration || "03:45",
-    desc: record.desc || "",
-    keywords: [],
-    categories: record.categories && record.categories.length > 0 ? record.categories : [],
-    image: record.image_base64 || "",
-    singerPhoto: record.singer_photo_base64 || "",
-    audio: record.audio_url || record.spotify_url || "",
-    spotifyUrl: record.spotify_url,
-    spotifyTrackId: record.spotify_track_id,
-    vibe: record.vibe,
-    genre: record.genre,
-    mood: record.mood,
-    story: record.story,
-    instruments: record.instruments,
-    lyrics: record.lyrics && record.lyrics.length > 0 ? record.lyrics : [],
-    views: record.views || 0,
-    date: record.created_at || "2025-01-01",
-    otherSongs: [],
-    userNameComment: "Admin",
-    userRoleComment: "Music Editor",
-    comment: "",
-  };
-}
-
 export async function generateMetadata({
   params,
 }: LyricsDetailPageProps): Promise<Metadata> {
@@ -70,7 +49,7 @@ export async function generateMetadata({
     };
   }
 
-  const record = await getSongBySlug(slug);
+  const record = getStaticSongBySlug(slug);
 
   if (!record) {
     return {
@@ -83,7 +62,7 @@ export async function generateMetadata({
   const song = recordToLyricPost(record);
   const description = getSongDescription(song);
   const canonicalUrl = `https://moe.io.vn/pages/lyrics/${slug}`;
-  const imageUrl = song.image || "https://moe.io.vn/logo.png";
+  const imageUrl = toAbsoluteSiteUrl(typeof song.image === "string" ? song.image : "");
 
   return {
     title: `${song.title} - ${song.artist} | Moe`,
@@ -128,14 +107,10 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  try {
-    const res = await getSongs({ limit: 1000, onlyActive: true });
-    return (res.data || []).map((song) => ({
-      slug: song.slug,
-    }));
-  } catch {
-    return [];
-  }
+  const res = getStaticSongs({ limit: 1000, onlyActive: true });
+  return res.data.map((song) => ({
+    slug: song.slug,
+  }));
 }
 
 export default async function LyricsDetailPage({
@@ -147,17 +122,30 @@ export default async function LyricsDetailPage({
     notFound();
   }
 
-  const record = await getSongBySlug(slug);
+  const record = getStaticSongBySlug(slug);
 
   if (!record) {
     notFound();
   }
 
   const song = recordToLyricPost(record);
+  const allSongCards = getStaticSongs({ limit: 500, onlyActive: true }).data.map(recordToLyricCard);
+  const composerSongs = getSongsByComposer(song.composer, song.slug, allSongCards);
+  const artistDiscography = getArtistDiscography(song, allSongCards);
+  const similarSongs = getSimilarVibeSongs(song, allSongCards);
+  const currentIndex = allSongCards.findIndex((s) => s.slug === song.slug);
+  const prevSong =
+    currentIndex > 0
+      ? { slug: allSongCards[currentIndex - 1].slug, title: allSongCards[currentIndex - 1].title }
+      : undefined;
+  const nextSong =
+    currentIndex !== -1 && currentIndex < allSongCards.length - 1
+      ? { slug: allSongCards[currentIndex + 1].slug, title: allSongCards[currentIndex + 1].title }
+      : undefined;
+
   const canonicalUrl = `https://moe.io.vn/pages/lyrics/${slug}`;
   const publishDate = getPublishDate(song);
-  const imageUrl =
-    typeof song.image === "string" ? song.image : "https://moe.io.vn/logo.png";
+  const imageUrl = toAbsoluteSiteUrl(typeof song.image === "string" ? song.image : "");
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -233,7 +221,14 @@ export default async function LyricsDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      <LyricsDetailClient song={song} />
+      <LyricsDetailClient
+        song={song}
+        composerSongs={composerSongs}
+        artistDiscography={artistDiscography}
+        similarSongs={similarSongs}
+        prevSong={prevSong}
+        nextSong={nextSong}
+      />
     </>
   );
 }

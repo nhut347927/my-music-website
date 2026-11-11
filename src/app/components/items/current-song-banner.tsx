@@ -1,44 +1,22 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { Play, Pause, Music, Disc, Sparkles, ChevronDown, ChevronUp, Radio, ExternalLink } from "lucide-react";
-import { getCurrentSong, SongLyricRecord } from "@/services/music-supabase-service";
+import type { SongLyricRecord } from "@/services/music-supabase-service";
+import { getStaticCurrentSong } from "@/services/static-music-data";
 
 interface CurrentSongBannerProps {
   initialSong?: SongLyricRecord | null;
 }
 
 export default function CurrentSongBanner({ initialSong = null }: CurrentSongBannerProps = {}) {
-  const [song, setSong] = useState<SongLyricRecord | null>(initialSong);
+  const song = initialSong ?? getStaticCurrentSong();
   const [isPlaying, setIsPlaying] = useState(false);
   const [showLyrics, setShowLyrics] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  useEffect(() => {
-    let isMounted = true;
-
-    async function loadCurrent() {
-      try {
-        const current = await getCurrentSong();
-        if (isMounted && current) {
-          setSong(current);
-        }
-      } catch (err) {
-        console.warn("Could not load current song:", err);
-      }
-    }
-
-    // Nếu đã có initialSong, có thể kiểm tra nền hoặc chỉ tải nếu chưa có
-    if (!song) {
-      loadCurrent();
-    }
-    return () => {
-      isMounted = false;
-    };
-  }, [song]);
 
   const isDirectAudio = Boolean(
     song?.audio_url &&

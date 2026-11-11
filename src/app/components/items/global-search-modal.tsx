@@ -13,7 +13,6 @@ import {
   Sparkles,
   Loader2,
 } from "lucide-react";
-import { getSongs, getPlaylists, getBlogs } from "@/services/music-supabase-service";
 
 interface SearchResultItem {
   id: string | number;
@@ -41,7 +40,7 @@ export default function GlobalSearchModal({
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  // Reset & focus on open + fetch data dynamically from Supabase
+  // Reset & focus on open + load static data chunk lazily
   useEffect(() => {
     if (isOpen) {
       setQuery("");
@@ -50,15 +49,14 @@ export default function GlobalSearchModal({
 
       if (allItems.length === 0) {
         setLoading(true);
-        Promise.all([
-          getSongs({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-          getPlaylists({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-          getBlogs({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-        ])
-          .then(([songsRes, playlistsRes, blogsRes]) => {
+        import("@/services/static-music-data")
+          .then(({ getStaticSongs, getStaticPlaylists, getStaticBlogs }) => {
+            const songsRes = getStaticSongs({ limit: 1000, onlyActive: true });
+            const playlistsRes = getStaticPlaylists({ limit: 1000 });
+            const blogsRes = getStaticBlogs({ limit: 1000 });
             const list: SearchResultItem[] = [];
 
-            (songsRes.data || []).forEach((song) => {
+            songsRes.data.forEach((song) => {
               list.push({
                 id: `lyric-${song.slug}`,
                 type: "lyrics",
@@ -70,7 +68,7 @@ export default function GlobalSearchModal({
               });
             });
 
-            (playlistsRes.data || []).forEach((pl) => {
+            playlistsRes.data.forEach((pl) => {
               list.push({
                 id: `pl-${pl.slug}`,
                 type: "playlists",
@@ -82,7 +80,7 @@ export default function GlobalSearchModal({
               });
             });
 
-            (blogsRes.data || []).forEach((bl) => {
+            blogsRes.data.forEach((bl) => {
               list.push({
                 id: `blog-${bl.slug}`,
                 type: "blogs",

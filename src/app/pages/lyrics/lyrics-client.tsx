@@ -16,7 +16,7 @@ import PostCard from "@/app/components/items/post-card";
 import { Post, LyricPost } from "@/app/types/type";
 import { categoriesData } from "@/lib/constants/category-data";
 import CurrentSongBanner from "@/app/components/items/current-song-banner";
-import { getSongs, recordVisitorEntranceNonBlocking, SongLyricRecord } from "@/services/music-supabase-service";
+import { recordVisitorEntranceNonBlocking, SongLyricRecord } from "@/services/music-supabase-service";
 
 interface LyricsClientProps {
   initialSongs?: LyricPost[];
@@ -28,8 +28,8 @@ function LyricsContent({ initialSongs = [], initialCurrentSong = null }: LyricsC
   const initialCategory = searchParams.get("category") || "Tất cả";
   const initialQuery = searchParams.get("q") || "";
 
-  const [songsList, setSongsList] = useState<LyricPost[]>(initialSongs);
-  const [loading, setLoading] = useState<boolean>(initialSongs.length === 0);
+  const songsList = initialSongs;
+  const loading = false;
   const [search, setSearch] = useState<string>(initialQuery);
   const [category, setCategory] = useState<string>(initialCategory);
   const [onlyFavorites, setOnlyFavorites] = useState<boolean>(false);
@@ -46,60 +46,8 @@ function LyricsContent({ initialSongs = [], initialCurrentSong = null }: LyricsC
   }, [searchParams]);
 
   useEffect(() => {
-    // 1. Ghi vết truy cập bất đồng bộ (không block render)
+    // Ghi vết truy cập bất đồng bộ (không block render)
     recordVisitorEntranceNonBlocking({ page: "/pages/lyrics" });
-
-    // 2. Tải bài hát từ Supabase (nếu chưa có dữ liệu ban đầu hoặc làm mới ngầm)
-    async function fetchSupabaseSongs() {
-      try {
-        if (songsList.length === 0) {
-          setLoading(true);
-        }
-        const res = await getSongs({ page: 1, limit: 200, onlyActive: true });
-        if (res && res.data && res.data.length > 0) {
-          const mapped: LyricPost[] = res.data.map((item) => {
-            return {
-              id: item.id || 0,
-              type: "lyrics" as const,
-              slug: item.slug,
-              title: item.title,
-              artist: item.artist,
-              composer: item.composer || item.artist,
-              producer: item.producer || "",
-              year: item.year || "2024",
-              duration: item.duration || "03:45",
-              desc: item.desc || "",
-              keywords: [],
-              categories: item.categories && item.categories.length > 0 ? item.categories : [],
-              image: item.image_base64 || "",
-              singerPhoto: item.singer_photo_base64 || "",
-              audio: item.audio_url || item.spotify_url || "",
-              spotifyUrl: item.spotify_url,
-              spotifyTrackId: item.spotify_track_id,
-              vibe: item.vibe,
-              genre: item.genre,
-              mood: item.mood,
-              story: item.story,
-              instruments: item.instruments,
-              lyrics: item.lyrics || [],
-              views: item.views || 0,
-              date: item.created_at || "2025-01-01",
-              otherSongs: [],
-              userNameComment: "Admin",
-              userRoleComment: "Music Editor",
-              comment: "",
-            };
-          });
-          setSongsList(mapped);
-        }
-      } catch (err) {
-        console.warn("Notice loading songs for lyrics page:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchSupabaseSongs();
   }, []);
 
   // 🔍 Lọc dữ liệu

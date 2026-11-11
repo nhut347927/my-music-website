@@ -15,7 +15,7 @@ import { Search, Heart, X, BookOpen, Sparkles, Loader2 } from "lucide-react";
 import PostCard from "@/app/components/items/post-card";
 import { Post, BlogsPost } from "@/app/types/type";
 import { categoriesData } from "@/lib/constants/category-data";
-import { getBlogs, recordVisitorEntranceNonBlocking } from "@/services/music-supabase-service";
+import { recordVisitorEntranceNonBlocking } from "@/services/music-supabase-service";
 
 interface BlogsClientProps {
   initialBlogs?: BlogsPost[];
@@ -26,8 +26,8 @@ function BlogsContent({ initialBlogs = [] }: BlogsClientProps): JSX.Element {
   const initialCategory = searchParams.get("category") || "Tất cả";
   const initialQuery = searchParams.get("q") || "";
 
-  const [blogsList, setBlogsList] = useState<BlogsPost[]>(initialBlogs);
-  const [loading, setLoading] = useState<boolean>(initialBlogs.length === 0);
+  const blogsList = initialBlogs;
+  const loading = false;
   const [search, setSearch] = useState<string>(initialQuery);
   const [category, setCategory] = useState<string>(initialCategory);
   const [onlyFavorites, setOnlyFavorites] = useState<boolean>(false);
@@ -44,43 +44,6 @@ function BlogsContent({ initialBlogs = [] }: BlogsClientProps): JSX.Element {
 
   useEffect(() => {
     recordVisitorEntranceNonBlocking({ page: "/pages/blogs" });
-
-    async function fetchSupabaseBlogs() {
-      try {
-        if (blogsList.length === 0) {
-          setLoading(true);
-        }
-        const res = await getBlogs({ page: 1, limit: 100 });
-        if (res && res.data && res.data.length > 0) {
-          const mapped: BlogsPost[] = res.data.map((item) => {
-            return {
-              id: item.id || 0,
-              type: "blogs" as const,
-              slug: item.slug,
-              title: item.title,
-              desc: item.desc || "",
-              keywords: item.keywords || [],
-              categories: item.categories || [],
-              image: item.image || "",
-              paragraphs: (item.paragraphs as any) || [],
-              userCommentAvatar: item.user_comment_avatar || "",
-              userNameComment: item.user_name_comment || "Anonymous",
-              userRoleComment: item.user_role_comment || "Music Editor",
-              comment: item.comment || "",
-              views: item.views || 0,
-              date: item.date || item.created_at || "2025-01-01",
-            };
-          });
-          setBlogsList(mapped);
-        }
-      } catch (err) {
-        console.warn("Notice loading blogs from Supabase:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchSupabaseBlogs();
   }, []);
 
   // 🔍 Lọc dữ liệu

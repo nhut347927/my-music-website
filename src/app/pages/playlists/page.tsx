@@ -66,38 +66,11 @@ export const metadata: Metadata = {
   },
 };
 
-import { getPlaylists } from "@/services/music-supabase-service";
-import { PlaylistPost } from "@/app/types/type";
+import { getStaticPlaylists, recordToPlaylistPost } from "@/services/static-music-data";
 
-export const revalidate = 60;
-
-export default async function PlaylistsPage() {
-  let initialPlaylists: PlaylistPost[] = [];
-
-  try {
-    const res = await getPlaylists({ page: 1, limit: 100 });
-    if (res && res.data && res.data.length > 0) {
-      initialPlaylists = res.data.map((item) => ({
-        id: item.id || 0,
-        type: "playlists" as const,
-        slug: item.slug,
-        title: item.title,
-        desc: item.desc || item.description || "",
-        description: item.description || item.desc || "",
-        keywords: item.keywords || [],
-        categories: item.categories || [],
-        image: item.image || "",
-        banner: item.banner || item.image || "",
-        songs: item.songs || [],
-        mood: item.mood || "",
-        final: item.final || "",
-        views: item.views || 0,
-        date: item.date || item.created_at || "2025-01-01",
-      }));
-    }
-  } catch (err) {
-    console.warn("Notice server pre-fetching for playlists page:", err);
-  }
+export default function PlaylistsPage() {
+  const res = getStaticPlaylists({ page: 1, limit: 500 });
+  const initialPlaylists = res.data.map(recordToPlaylistPost);
 
   // Schema.org (Article)
   const schemaData = {

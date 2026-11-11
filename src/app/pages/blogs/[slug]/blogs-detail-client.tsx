@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { BlogsPost } from "@/app/types/type";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { getBlogs } from "@/services/music-supabase-service";
 import { usePostViewTracker } from "@/hooks/use-post-view-tracker";
 import defaultTree from "@/app/asset/tree1.jpg";
 import ReadingProgressBar from "@/app/components/items/reading-progress-bar";
@@ -24,9 +23,15 @@ import EmotionReactions from "@/app/components/items/emotion-reactions";
 
 interface BlogsDetailClientProps {
   blog: BlogsPost;
+  prevBlog?: { slug: string; title: string };
+  nextBlog?: { slug: string; title: string };
 }
 
-export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
+export default function BlogsDetailClient({
+  blog,
+  prevBlog,
+  nextBlog,
+}: BlogsDetailClientProps) {
   const { views } = usePostViewTracker({
     type: "blogs",
     slug: blog.slug,
@@ -34,21 +39,6 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
   });
 
   const [isTocOpen, setIsTocOpen] = useState(true);
-  const [allBlogs, setAllBlogs] = useState<Array<{ slug: string; title: string }>>([]);
-
-  useEffect(() => {
-    async function loadBlogs() {
-      try {
-        const res = await getBlogs({ limit: 100, onlyActive: true });
-        if (res && res.data) {
-          setAllBlogs(res.data.map((b) => ({ slug: b.slug, title: b.title })));
-        }
-      } catch (err) {
-        console.warn("Notice loading blogs list:", err);
-      }
-    }
-    loadBlogs();
-  }, []);
 
   function generateSlug(title: string): string {
     return title
@@ -77,24 +67,6 @@ export default function BlogsDetailClient({ blog }: BlogsDetailClientProps) {
     .join(" ")
     .split(/\s+/).length;
   const readTimeMinutes = Math.max(1, Math.ceil(totalWords / 180));
-
-  const currentIndex = allBlogs.findIndex((b) => b.slug === blog.slug);
-
-  const prevBlog =
-    currentIndex > 0
-      ? {
-          slug: allBlogs[currentIndex - 1].slug,
-          title: allBlogs[currentIndex - 1].title,
-        }
-      : undefined;
-
-  const nextBlog =
-    currentIndex !== -1 && currentIndex < allBlogs.length - 1
-      ? {
-          slug: allBlogs[currentIndex + 1].slug,
-          title: allBlogs[currentIndex + 1].title,
-        }
-      : undefined;
 
   const imageSrc = Boolean(
     blog.image &&

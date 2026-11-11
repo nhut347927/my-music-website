@@ -1,8 +1,8 @@
 // app/sitemap.xml/route.ts
 import { NextResponse } from 'next/server';
-import { getSongs, getPlaylists, getBlogs } from '@/services/music-supabase-service';
+import { getStaticSongs, getStaticPlaylists, getStaticBlogs } from '@/services/static-music-data';
 
-export const revalidate = 3600;
+export const dynamic = 'force-static';
 
 const baseUrl = 'https://moe.io.vn';
 const BUILD_TIME = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
@@ -10,17 +10,16 @@ const BUILD_TIME = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 // Trang tĩnh
 const staticUrls = [
   { loc: '', changefreq: 'daily', priority: '1.0', lastmod: BUILD_TIME },
+  { loc: '/about', changefreq: 'monthly', priority: '0.7', lastmod: BUILD_TIME },
   { loc: '/pages/blogs', changefreq: 'weekly', priority: '0.8', lastmod: BUILD_TIME },
   { loc: '/pages/lyrics', changefreq: 'weekly', priority: '0.8', lastmod: BUILD_TIME },
   { loc: '/pages/playlists', changefreq: 'weekly', priority: '0.8', lastmod: BUILD_TIME },
 ];
 
 export async function GET() {
-  const [songsRes, playlistsRes, blogsRes] = await Promise.all([
-    getSongs({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-    getPlaylists({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-    getBlogs({ limit: 1000, onlyActive: true }).catch(() => ({ data: [] })),
-  ]);
+  const songsRes = getStaticSongs({ limit: 1000, onlyActive: true });
+  const playlistsRes = getStaticPlaylists({ limit: 1000 });
+  const blogsRes = getStaticBlogs({ limit: 1000 });
 
   const dynamicUrls: Array<{ loc: string; lastmod: string; changefreq: string; priority: string }> = [];
 

@@ -138,7 +138,7 @@ export default function PostCard({ post }: PostCardProps) {
           </div>
 
           {/* TIÊU ĐỀ */}
-          <Link href={post.id ? `/pages/${post.type}/${post.slug}` : "#"}>
+          <Link href={post.id ? `/pages/${post.type}/${post.slug}` : "#"} prefetch={false}>
             <h3 className="text-sm sm:text-base font-bold mb-1.5 text-foreground leading-snug line-clamp-2 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors">
               {post.title}
             </h3>
